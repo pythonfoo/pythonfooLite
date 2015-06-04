@@ -12,16 +12,16 @@ Nur Python 3.x
 
 ### Level 0:
 Level 0 ist auf $Menschen ausgerichtet, die zum ersten
-Mal programmieren. Deshalb werden zum Anfang ganz rudi-
-mentäre Fragen beantwortet und Dinge geklärt.
+Mal programmieren. Deshalb werden zum Anfang ganz rudimentäre
+Fragen beantwortet und Dinge geklärt.
 * Was ist eine Programmiersprache
 * Was genau ist Python?
 * Wie wird Python ausgeführt?
 * Wie programmiere ich mit Python?
 
 ### Level 1:
-Level 1 bietet den praktischen Einstieg in die Programm-
-mierung mit Python. Dabei ist es auf dieselbe Zielgruppe
+Level 1 bietet den praktischen Einstieg in die Programmmierung
+mit Python. Dabei ist es auf dieselbe Zielgruppe
 ausgerichtet wie Level 0.
 * Was ist eine Variable?
 * int und unäre und binäre int-Operatoren
@@ -37,8 +37,8 @@ Level 2 führt nun in die einfachen Kontrollstrukturen ein
 * logische Operatoren
 
 ### Level 3:
-Level 3 beschäftigt sich nun mit einer weiteren Kommando-
-struktur den Schleifen und führt zu dieser Gelegenheit 
+Level 3 beschäftigt sich nun mit einer weiteren Kommandostruktur
+den Schleifen und führt zu dieser Gelegenheit 
 den Datentyp der verschiedenen Listen ein.
 * lists, tupel und dictionaries
 * for- und while-Schleife

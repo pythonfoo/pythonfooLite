@@ -5,10 +5,15 @@ Nur Python 3.x
 ### TODO:
 * CrashCourse an den Plan anpassen und dokumentieren
 * Plan ergänzen
+* Aufgaben für die Level ausdenken
+* Folien für die Vorträge machen (Können auch aus gut dokumentierten
+Code bestehen)
 
 ### Unsortierte Notizen:
 * Wir können in jeden Level theoretische und praktische
   Teile einbauen.
+* Level 0-2 sollte man locker an einem Abend schaffen
+* Wo setzten wir zwischen den Leveln am besten die Pausen?
 
 ### Level 0:
 Level 0 ist auf $Menschen ausgerichtet, die zum ersten

@@ -43,7 +43,7 @@ den Datentyp der verschiedenen Listen ein.
 * lists, tupel und dictionaries
 * for- und while-Schleife
 
-### Level 4:**
+### Level 4:
 Level 4 behandelt nun Funktionen ein und ermöglicht so das
 schreiben eigener Funktionen.
 * Funktionen

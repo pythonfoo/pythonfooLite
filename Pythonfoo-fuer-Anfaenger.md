@@ -16,6 +16,7 @@ Code bestehen)
 * Wo setzten wir zwischen den Leveln am besten die Pausen?
 * Generelle Syntax
  * Einrückung 
+
 ### Level 0:
 Level 0 ist auf $Menschen ausgerichtet, die zum ersten
 Mal programmieren. Deshalb werden zum Anfang ganz rudimentäre

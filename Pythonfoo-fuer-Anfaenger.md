@@ -14,6 +14,7 @@ Code bestehen)
   Teile einbauen.
 * Level 0-2 sollte man locker an einem Abend schaffen
 * Wo setzten wir zwischen den Leveln am besten die Pausen?
+* Generelle Syntax
 
 ### Level 0:
 Level 0 ist auf $Menschen ausgerichtet, die zum ersten

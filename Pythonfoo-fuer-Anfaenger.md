@@ -26,6 +26,7 @@ Fragen beantwortet und Dinge geklärt.
 * Was genau ist Python?
 * Wie wird Python ausgeführt?
 * Wie programmiere ich mit Python?
+
 #### Aufgaben:
 * Hello World
 
@@ -39,11 +40,13 @@ ausgerichtet wie Level 0.
 * Eingabe und Ausgabe
 * Kommentare
 * Schlüsselwörter
+
 #### Aufgaben:
 * Addierer
 * Multiplizierer
 * Strings konkatinieren
 * Strings multiplizieren
+* `math`
 
 ### Level 2:
 Level 2 führt nun in die einfachen Kontrollstrukturen ein
@@ -61,6 +64,7 @@ den Schleifen und führt zu dieser Gelegenheit
 den Datentyp der verschiedenen Listen ein.
 * lists, tupel und dictionaries
 * for- und while-Schleife
+* `getpass`
 
 #### Aufgaben:
 * Kennwortabfragen
@@ -87,12 +91,15 @@ schreiben eigener Funktionen.
 * Gültigkeitsbereiche
 * Rekursionen
 * mit und ohne Rückgabewert
+* `time`
 
 #### Aufgaben:
 * Fakultät rekursiv
 * Potenz rekursiv
 * Gauß rekursiv
 * quersumme rekursiv
+* Sortierfunktionen
+* Ladebalken
 
 ### Level 6.1 (OOP 1):
 Level 6 bildet den Abschluss der Beginnerlevel und bietet
@@ -106,6 +113,7 @@ Programmierung.
 * Wozu brauche ich Klassen?
 * Module
 * Imports
+* Attribute und Methoden
 
 ### Level 6.2 (OOP 2):
 * Vererbung

@@ -19,7 +19,7 @@ Code bestehen)
 Level 0 ist auf $Menschen ausgerichtet, die zum ersten
 Mal programmieren. Deshalb werden zum Anfang ganz rudimentäre
 Fragen beantwortet und Dinge geklärt.
-* Was ist eine Programmiersprache
+* Was ist eine Programmiersprache?
 * Was genau ist Python?
 * Wie wird Python ausgeführt?
 * Wie programmiere ich mit Python?
@@ -31,7 +31,7 @@ ausgerichtet wie Level 0.
 * Was ist eine Variable?
 * int und unäre und binäre int-Operatoren
 * string und einfache string-Manipulation
-* eingabe und ausgabe
+* Eingabe und Ausgabe
 * Kommentare
 
 ### Level 2:
@@ -62,8 +62,14 @@ Programmierung.
 * Klassen
 * Bibliotheken
 * Welche Bibliotheken gibt es?
-* Was ist ein object?
+* Was ist ein `object`?
 * Wie benutze ich Klassen?
 * Wozu brauche ich Klassen?
 * Module
 * Imports
+
+### Level 6:
+* format()
+* erweiterte Stringmanipulation
+
+### Exkurs: turtle

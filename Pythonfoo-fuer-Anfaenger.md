@@ -16,6 +16,7 @@ Code bestehen)
 * Wo setzten wir zwischen den Leveln am besten die Pausen?
 * Generelle Syntax
  * Einrückung 
+* Arbeiten mit Git
 
 ### Level 0:
 Level 0 ist auf $Menschen ausgerichtet, die zum ersten
@@ -51,14 +52,17 @@ den Datentyp der verschiedenen Listen ein.
 * for- und while-Schleife
 
 ### Level 4:
-Level 4 behandelt nun Funktionen ein und ermöglicht so das
+* Dateizugriff und Dateimanipulation
+
+### Level 5:
+Level 5 behandelt nun Funktionen ein und ermöglicht so das
 schreiben eigener Funktionen.
 * Funktionen
 * Gültigkeitsbereiche
 * Rekursionen
 
-### Level 5 (OOP):
-Level 5 bildet den Abschluss der Beginnerlevel und bietet
+### Level 6.1 (OOP 1):
+Level 6 bildet den Abschluss der Beginnerlevel und bietet
 einen rudimentären Einblick in die objektorientierte
 Programmierung.
 * Klassen
@@ -70,8 +74,18 @@ Programmierung.
 * Module
 * Imports
 
-### Level 6:
+### Level 6.2 (OOP 2):
+
+* Vererbung
+* Überladung
+* super()
+* isInstance() und is
+
+### Level 7:
+
 * format()
 * erweiterte Stringmanipulation
+* Generatoren und yield
+* Decoratoren
 
 ### Exkurs: turtle

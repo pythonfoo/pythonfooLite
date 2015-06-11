@@ -54,6 +54,7 @@ Level 2 führt nun in die einfachen Kontrollstrukturen ein
 * if-Bedingungen
 * boolean
 * logische Operatoren
+
 #### Aufgaben:
 * einfache Passwortabfragen
 
@@ -133,4 +134,5 @@ nisstand passen.
 * try, except und finally
 
 ### Exkurse:
-* turtle
+* `turtle`
+* `random`

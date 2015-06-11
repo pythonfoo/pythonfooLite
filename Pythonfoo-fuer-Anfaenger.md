@@ -15,7 +15,7 @@ Code bestehen)
 * Level 0-2 sollte man locker an einem Abend schaffen
 * Wo setzten wir zwischen den Leveln am besten die Pausen?
 * Generelle Syntax
-
+ * Einrückung 
 ### Level 0:
 Level 0 ist auf $Menschen ausgerichtet, die zum ersten
 Mal programmieren. Deshalb werden zum Anfang ganz rudimentäre
@@ -26,7 +26,7 @@ Fragen beantwortet und Dinge geklärt.
 * Wie programmiere ich mit Python?
 
 ### Level 1:
-Level 1 bietet den praktischen Einstieg in die Programmmierung
+Level 1 bietet den praktischen Einstieg in die Programmierung
 mit Python. Dabei ist es auf dieselbe Zielgruppe
 ausgerichtet wie Level 0.
 * Was ist eine Variable?

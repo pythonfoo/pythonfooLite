@@ -71,7 +71,7 @@ den Datentyp der verschiedenen Listen ein.
 * Kennwortabfragen
 * Fakultät repitativ
 * Potenz repitativ
-* Gauß repitativ
+* Euklid-Algorithmus repitativ
 * quersumme repitativ
 
 ### Level 4:
@@ -97,7 +97,7 @@ schreiben eigener Funktionen.
 #### Aufgaben:
 * Fakultät rekursiv
 * Potenz rekursiv
-* Gauß rekursiv
+* Euklid-Algorithmus rekursiv
 * quersumme rekursiv
 * Sortierfunktionen
 * Ladebalken

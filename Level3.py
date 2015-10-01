@@ -3,36 +3,36 @@
 
 # Typen von Listen:
 
-# 1. Der Array:
+# 1. Der Liste:
 
-# Ein Array ist eine veränderbare und unsortierte
+# Eine Liste ist eine veränderbare und unsortierte
 # Liste von Elementen, welche alles mögliche sein
 # können. Unsortiert heißt in dem Fall, das die
 # Reihenfolge der elemente eine Rolle spielt.
 
-# Ein Array wird über eckige Klammern definiert.
-array = [0, "foo"]
-print(array)
+# Eine Liste wird über eckige Klammern definiert.
+liste = [0, "foo"]
+print(liste)
 
-# Auf ein Element in einem Array wird über dessen Index
+# Auf ein Element in einer Liste wird über dessen Index
 # zugegriffen, das ist die Stelle an der das element
 # steht. Wichtig: Die Zählung des Index beginnt mit 0,
 # daher hat das erste Element den Index 0.
-element = array[0]
+element = liste[0]
 print(element)
 
-# Mit len() kann man sich die Anzahl an Elementen eines
-# Arrays ausgeben lassen:
-l = len(array)
+# Mit len() kann man sich die Anzahl an Elementen einer
+# Liste ausgeben lassen:
+l = len(liste)
 print(l)
 
-# Die append() Methode fügt einem Array ein beliebiges
+# Die append() Methode fügt einer Liste ein beliebiges
 # Element hinzu:
-array.append("bar")
-print(array)
+liste.append("bar")
+print(liste)
 
 # Der Datentyp String hat große Ähnlichkeit mit dem
-# Datentyp Array. So funktioniert der Zugriff über den
+# Datentyp Liste. So funktioniert der Zugriff über den
 # Index auch bei einem String.
 
 String = "ABCDEFGHIJKLMNOPQRSTUVW"
@@ -43,7 +43,7 @@ print(String[4])
 String += "XYZ"
 print(String)
 
-# Mit list() lässt sich ein String in einen Array verwandeln:
+# Mit list() lässt sich ein String in einen Liste verwandeln:
 print(list(String))
 
 

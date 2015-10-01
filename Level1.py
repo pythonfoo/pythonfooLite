@@ -66,7 +66,7 @@ summe = x + y
 produkt = x * z
 quotient = 9 / 3
 differenz = x - z
-potenz = pow(basis, exponent) # Oder: basis ^ exponent
+potenz = pow(basis, exponent) # Oder: basis ** exponent
 
 
 # Kommentiere die einzelnen Codeblöcke doch

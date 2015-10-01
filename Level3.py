@@ -65,28 +65,28 @@ print(Tuple[0])
 print(len(Tuple))
 
 
-# 3. Das Dictonary:
+# 3. Das Dictionary:
 
-# Ein Dictonary ist eine unsortierte Liste, in der
+# Ein Dictionary ist eine unsortierte Liste, in der
 # immer einem key ein value zugeordnet ist.
 
-# Ein Dictonary wird über geschweifte Klammern
+# Ein Dictionary wird über geschweifte Klammern
 # definiert:
-Dictonary = {"Eins":"one", "Zwei":"two"}
-print(Dictonary)
+dictionary = {"Eins":"one", "Zwei":"two"}
+print(dictionary)
 
 # Auf einen value wird mit Hilfe des keys zu-
 # gegriffen:
-print(Dictonary["Eins"])
+print(dictionary["Eins"])
 
 # Ein neues Key-Value-Paar wird erstellt,
 # indem auf ein nicht existirenden Value zu-
 # gegriffen wird und dieser definiert wird:
-Dictonary["Wasser"] = "water"
-print(Dictonary)
+dictionary["Wasser"] = "water"
+print(dictionary)
 
 # Mit len() lässt sich die Länge ausgeben:
-print(len(Dictonary))
+print(len(dictionary))
 
 
 

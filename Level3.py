@@ -3,21 +3,22 @@
 
 # Typen von Listen:
 
-# 1. Der Liste:
+# 1. Die Liste:
 
 # Eine Liste ist eine veränderbare und unsortierte
-# Liste von Elementen, welche alles mögliche sein
+# Menge von Elementen, welche alles mögliche sein
 # können. Unsortiert heißt in dem Fall, das die
-# Reihenfolge der elemente eine Rolle spielt.
+# Reihenfolge der Elemente eine Rolle spielt.
 
-# Eine Liste wird über eckige Klammern definiert.
+# Eine Liste wird mit Hilfe von eckigen Klammern definiert.
 liste = [0, "foo"]
 print(liste)
 
 # Auf ein Element in einer Liste wird über dessen Index
 # zugegriffen, das ist die Stelle an der das element
-# steht. Wichtig: Die Zählung des Index beginnt mit 0,
-# daher hat das erste Element den Index 0.
+# steht.
+# Wichtig: Die Zählung des Index beginnt mit 0,
+# daher ist der Index des ersten Elements 0.
 element = liste[0]
 print(element)
 
@@ -42,15 +43,18 @@ print(String[4])
 # Anstatt append() hat der String das +=:
 String += "XYZ"
 print(String)
+# Dabei ist 'String += "XYZ"' eine Abkürzung für
+# String = String + "XYZ", was bedeutet, dass ein
+# String neudefiniert wird und nicht verändert wird.
 
 # Mit list() lässt sich ein String in einen Liste verwandeln:
 print(list(String))
 
 
-# 2. Der Tuple:
+# 2. Das Tuple:
 
 # Ein Tuple ist eine unveränderliche und unsortierte
-# Liste von Elementen.
+# Menge von Elementen.
 
 # Ein Tuple wird über runde Klammern definiert:
 Tuple = ("foo", "bar")

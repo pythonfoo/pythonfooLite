@@ -49,7 +49,7 @@ ausgerichtet wie Level 0.
 * `math`
 
 ### Level 2:
-Level 2 führt nun in die einfachen Kontrollstrukturen ein
+Level 2 führt nun in die einfachen Kontrollstrukturen ein.
 * Programmablaufdiagramme
 * if-Bedingungen
 * boolean
@@ -83,10 +83,10 @@ den Datentyp der verschiedenen Listen ein.
 
 #### Aufgaben:
 * quine
-* Dictonaries in .csv Dateien abspeichern
+* Dictionaries in .csv Dateien abspeichern
 
 ### Level 5:
-Level 5 behandelt nun Funktionen ein und ermöglicht so das
+Level 5 behandelt nun Funktionen und ermöglicht so das
 schreiben eigener Funktionen.
 * Funktionen
 * Gültigkeitsbereiche
@@ -125,8 +125,7 @@ Programmierung.
 
 ### Level 7:
 Level 7 beschäftigt sich mit Dingen, die thematisch
-in andere Level gehören, aber nicht zu deren Kennt-
-nisstand passen.
+in andere Level gehören, aber nicht zu deren Kenntnisstand passen.
 * format()
 * erweiterte Stringmanipulation
 * Generatoren und yield

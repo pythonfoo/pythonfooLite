@@ -1,0 +1,2 @@
+class Tier():
+	pass

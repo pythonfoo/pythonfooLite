@@ -1,5 +1,7 @@
-class Hund(object):
-	
+from tier import Tier
+
+class Hund(Tier):
+
 	def __init__(self, name):
 
 		self.name = name
@@ -17,6 +19,9 @@ class Hund(object):
 	def list_attribute(self):
 		for key in self.eigenschaften:
 			print(str(key) + ": " + str(self.eigenschaften[key]))
+
+	def __str__(self):
+		return "Hallo, ich bin {}.".format(self.name)
 
 
 if __name__ == "__main__":

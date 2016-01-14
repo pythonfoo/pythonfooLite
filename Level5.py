@@ -14,13 +14,12 @@ def funktion(text, wirklich):
     if wirklich:
         print(text)
         
-    
-
 
 funktion("Hallo", True)
 # OUT: Hallo
 funktion(True, "Hallo")
 # OUT: True
+
 
 >>> def funktion(text="Beispiel" , wirklich=False):
 ...     if wirklich:
@@ -29,8 +28,10 @@ funktion(True, "Hallo")
 ...     
 ... 
 >>> funktion()
+
 >>> funktion(wirklich=True)
 Beispiel
+
 >>> funktion(wirklich=True, text="Abc")
 Abc
 
@@ -41,13 +42,13 @@ Abc
 'Ja'
 
 
-#Rekusion
+# Rekursion:
 
 def fun():
 	print("Fun!")
 	fun()
 
-#Zeit
+# Zeit:
 
 >>> import time
 >>> time.time()
@@ -61,7 +62,7 @@ time.struct_time(tm_year=2015, tm_mon=10, tm_mday=8, tm_hour=20, tm_min=2, tm_se
 >>> time.localtime().tm_year
 2015
 
-#Ladebalken
+# Ladebalken:
 
 >>> import time
 >>> while True:
@@ -71,7 +72,7 @@ time.struct_time(tm_year=2015, tm_mon=10, tm_mday=8, tm_hour=20, tm_min=2, tm_se
 ... 
 ...........................................
 
-#Quersumme
+# Quersumme:
 
 >>> def quersumme(zahl):
 ...     qs = 0

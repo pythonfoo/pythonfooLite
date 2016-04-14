@@ -124,12 +124,12 @@ String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 for char in String:
 	print(char)
 
-# Beim Durchlaufen eines Dictonary wird jedoch nur
+# Beim Durchlaufen eines Dictionary wird jedoch nur
 # der key zurückgegeben:
-Dictonary = {"one":"Eins", "two":"Zwei", "three":"drei"}
-for key in Dictonary:
+Dictionary = {"one":"Eins", "two":"Zwei", "three":"drei"}
+for key in Dictionary:
 	print(key)
-	print(Dictonary[key])
+	print(Dictionary[key])
 
 # Mit dem Befehl range() erschafft man ein iterierbares
 # Objekt, das mit Zahlen gefüllt ist:
@@ -154,7 +154,7 @@ for i in range(10):
 """
 Aufgaben:
 * fakultaet.py:
-  Schreibe ein Programm, das die Fakultaet einer Zahl 
+  Schreibe ein Programm, das die Fakultaet einer Zahl
   ausgibt, die der User eingibt.
   Fakultaet(n) = Fakultaet(n-1) * n
   Fakultaet(0) = 1

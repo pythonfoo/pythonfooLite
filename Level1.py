@@ -1,5 +1,6 @@
 # Level 1:
 
+import getpass
 
 # Das ist ein Kommentar.
 # Ein Kommentar kann benutzt werden um den Code
@@ -84,14 +85,14 @@ Aufgaben:
 
 * Addierer.py
 	Schreibe ein Programm, das zwei Zahlen vom User ent-
-	gegennimmt und die Summe ausgibt.	
+	gegennimmt und die Summe ausgibt.
 
 * Kreis.py
 	Schreibe ein Programm, das den Flächeninhalt eines
 	Kreises zu einem Radius ausgibt, den der User ein-
 	geben kann.
 	Tipp:
-	
+
 	import math
 	pi = math.pi
 

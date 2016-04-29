@@ -135,3 +135,32 @@ in andere Level gehören, aber nicht zu deren Kenntnisstand passen.
 ### Exkurse:
 * `turtle`
 * `random`
+
+**Folgendes ist eher fortgeschritten.**
+
+### Level 8: Nebenläufigkeit und Alternativen
+* Threads
+* `multiprocessing`
+* `asyncio`
+
+### Level 9: GUI
+Es gibt wahnsinnig viele Möglichkeiten,
+grafische Benutzeroberflächen mit Python zu realisieren.
+Wir beschränken uns hier auf Qt 5 als GUI-Toolkit.
+**nur kurz anreißen!**
+
+#### Aufgaben
+Ein Hauptfenster soll einen Button und ein Textfeld
+enthalten. Beim Klick auf den Button soll der Inhalt des
+Textfelds in einem Dialog angezeigt werden.
+
+### Level 10: Web
+Webanwendungen sind ein häufiger Einsatzzweck von Python.
+* Was ist HTTP und wie funktioniert es?
+* CGI
+* WSGI
+* Werkzeug
+* Django (/Flask?) **nur kurz anreißen!**
+
+#### Aufgaben
+* *Hallo Welt!* als Webapp

@@ -108,7 +108,9 @@ def onClick():
 	# die Eingabe holen
 	input = text.text()
 	print("Eingabe: {}".format(input))
+	#MessageBox erstellen
 	mb = QMessageBox(QMessageBox.Information, "Titel", "Der eingegebene Text war: \n{}".format(input), QMessageBox.Ok, window)
+	#MessageBox anzeigen
 	mb.show()
 
 #Button und Funktion verbinden

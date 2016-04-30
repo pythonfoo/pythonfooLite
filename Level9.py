@@ -4,8 +4,8 @@
 """
 In diesem Level verwenden wir Qt 5 (https://www.qt.io/).
 Für eine Anbindung an Python nehmen wir PySide 2 (https://wiki.qt.io/PySide2).
-Dies ist leider in vielen Distributionen noch in den Paketquellen.
-Also für die aktuelle Ubuntu LTS (16.04) muss das PPA ppa:thopiekar/pyside-git
+Dies ist leider in vielen Distributionen noch nicht in den Paketquellen.
+Für die aktuelle Ubuntu LTS (16.04) muss z.B. das PPA ppa:thopiekar/pyside-git
 (https://launchpad.net/~thopiekar/+archive/ubuntu/pyside-git) hinzugefügt und
 das Paket "python3-pyside2" installiert werden.
 """

@@ -63,13 +63,62 @@ $ konsole --help-qt
 
 app = QApplication(sys.argv)
 
-# Das Folgende ist einfaches "Hallo Welt!"-Beispiel.
+#Das Folgende ist einfaches "Hallo Welt!"-Beispiel.
 
-# Zuerst erstellen wir ein QLabel mit unserem Text.
+#Zuerst erstellen wir ein QLabel mit unserem Text.
+#Widgets, die kein parent haben, sind ein neues Fenster.
 label = QLabel("Hallo Welt!")
 
 #Dann zeigen wir es an.
 label.show()
 
 #Und jetzt übergeben wir die Kontrolle an die Qt-Mainloop.
+app.exec_()
+
+"""
+Jetzt wird es etwas komplizierter.
+Wir haben Buttons und Eingabefelder.
+"""
+
+#erstellt ein neues Fenster
+window = QWidget()
+
+#vertikales Layout
+layout = QVBoxLayout()
+
+#Label
+label = QLabel("Bitte Text eingeben und den Button drücken.", window)
+
+#Textfeld
+text = QLineEdit(window)
+
+#Button
+button = QPushButton("Hier klicken", window)
+
+#alles ins Layout packen
+layout.addWidget(label)
+layout.addWidget(text)
+layout.addWidget(button)
+
+#Layout auf das Fenster anwenden
+window.setLayout(layout)
+
+#die Funktion, die beim Klick ausgeführt werden soll
+def onClick():
+	# die Eingabe holen
+	input = text.text()
+	print("Eingabe: {}".format(input))
+	mb = QMessageBox(QMessageBox.Information, "Titel", "Der eingegebene Text war: \n{}".format(input), QMessageBox.Ok, window)
+	mb.show()
+
+#Button und Funktion verbinden
+button.clicked.connect(onClick)
+
+#Alternative:
+#button.clicked.connect(lambda: QMessageBox(QMessageBox.Information, "Titel", "Der eingegebene Text war: \n{}".format(text.getText()), QMessageBox.Ok, window).show())
+
+#Fenster anzeigen
+window.show()
+
+#main loop
 app.exec_()

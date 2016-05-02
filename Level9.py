@@ -117,7 +117,7 @@ def onClick():
 button.clicked.connect(onClick)
 
 #Alternative:
-#button.clicked.connect(lambda: QMessageBox(QMessageBox.Information, "Titel", "Der eingegebene Text war: \n{}".format(text.getText()), QMessageBox.Ok, window).show())
+#button.clicked.connect(lambda: QMessageBox(QMessageBox.Information, "Titel", "Der eingegebene Text war: \n{}".format(text.text()), QMessageBox.Ok, window).show())
 
 #Fenster anzeigen
 window.show()

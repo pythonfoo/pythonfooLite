@@ -124,3 +124,12 @@ window.show()
 
 #main loop
 app.exec_()
+
+"""
+Diese Anleitung benutzt Qt als QWidgets von Python aus.
+In Zukunft™ sollen Qt-Anwendungen allerdings mit Qt Quick
+und QML entwickelt werden (siehe https://de.wikipedia.org/wiki/QML,
+https://qmlbook.github.io/, https://doc.qt.io/qt-5/qtqml-index.html).
+Hierbei kann mittels PyOtherSide (https://thp.io/2011/pyotherside/)
+auch Python verwendet werden - von QML aus.
+"""

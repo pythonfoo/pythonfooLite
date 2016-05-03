@@ -89,6 +89,10 @@ window.show()
 app.exec_()
 
 """
+Für mehr Informationen und komplexere Beispiele siehe die offizielle Qt-Dokumentation:
+https://doc.qt.io/qt-5/reference-overview.html
+(Ja, die ist auf C++ bezogen, aber das meiste lässt sich auf Python übertragen.)
+
 Diese Anleitung benutzt Qt als QWidgets von Python aus.
 In Zukunft™ sollen Qt-Anwendungen allerdings mit Qt Quick
 und QML entwickelt werden (siehe https://de.wikipedia.org/wiki/QML,

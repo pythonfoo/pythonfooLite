@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Level 2:
 
 
@@ -89,11 +91,11 @@ c = 5
 if a < b:
 	if b < c:
 		print("C ist der Größte!")
-	
+
 	else:
 		if b > c:
 			print("B ist der Größte!")
-		
+
 		else:
 			print("B und C sind die Größten!")
 
@@ -101,11 +103,11 @@ else:
 	if a > b:
 		if a > c:
 			print("A ist der Größte!")
-		
+
 		else:
 			if a < c:
 				print("C ist der Größte!")
-			
+
 			else:
 				print("A und C sind die Größten!")
 
@@ -118,7 +120,7 @@ Aufgaben:
 * passwort.py:
   Programmiere eine einfache Passwortabfrage.
   Gibt der User das Passwort richtig ein, soll
-  ein beliebiger Text angezigt werden, gibt er 
+  ein beliebiger Text angezigt werden, gibt er
   es falsch ein, soll ein anderer Text angezeigt
   werden.
 

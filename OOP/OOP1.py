@@ -47,8 +47,8 @@ wenig sinnvoll dem Attribut Schulterhöhe eine Liste zuzuordnen.
 
 # Definition einer Klasse:
 
-class foo(object):
-	
+class foo():
+
 	pass
 
 f = foo()
@@ -56,8 +56,8 @@ f = foo()
 
 # Definition einer Klasse mit Initialisierungsmethode:
 
-class foo(object):
-	
+class foo():
+
 	def __init__(self):
 
 		pass
@@ -71,7 +71,7 @@ f = foo()
 
 # Übergabeparameter der __init__() Methode:
 
-class foo(object):
+class foo():
 
 	def __init__(self, x):
 
@@ -83,7 +83,7 @@ f = foo(x)
 
 # Definition eines Attributes:
 
-class foo(object):
+class foo():
 
 	def __init__(self, x):
 
@@ -97,7 +97,7 @@ foo(x)
 
 # get- und set-Methoden
 
-class foo(object):
+class foo():
 
 	def __init__(self, x):
 
@@ -124,7 +124,7 @@ hinter dem Namen deklariert werden z.B. "__privat__()"
 
 # Aufruf einer Methode:
 
-class foo(object):
+class foo():
 
 	def __init__(self, x):
 

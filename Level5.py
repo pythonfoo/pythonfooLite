@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+import sys
+
 # Level 5:
 
 def funktion():
@@ -61,6 +63,7 @@ time.localtime().tm_year
 import time
 while True:
     print(".", end="")
+    sys.stdout.flush()
     time.sleep(1)
 # OUT: ...........................................
 

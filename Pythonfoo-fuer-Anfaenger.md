@@ -15,8 +15,9 @@ Code bestehen)
 * Level 0-2 sollte man locker an einem Abend schaffen
 * Wo setzten wir zwischen den Leveln am besten die Pausen?
 * Generelle Syntax
- * Einrückung 
+ * Einrückung
 * Arbeiten mit Git
+* schöner Code (docstrings und so)
 
 ### Level 0:
 Level 0 ist auf $Menschen ausgerichtet, die zum ersten
@@ -61,7 +62,7 @@ Level 2 führt nun in die einfachen Kontrollstrukturen ein.
 
 ### Level 3:
 Level 3 beschäftigt sich nun mit einer weiteren Kommandostruktur
-den Schleifen und führt zu dieser Gelegenheit 
+den Schleifen und führt zu dieser Gelegenheit
 den Datentyp der verschiedenen Listen ein.
 * lists, tupel und dictionaries
 * for- und while-Schleife

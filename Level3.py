@@ -3,21 +3,21 @@
 # Level 3:
 
 
-# Typen von Listen:
+# Listentypen:
 
 # 1. Die Liste:
 
 # Eine Liste ist eine veränderbare und unsortierte
 # Menge von Elementen, welche alles mögliche sein
-# können. Unsortiert heißt in dem Fall, das die
-# Reihenfolge der Elemente eine Rolle spielt.
+# können. Unsortiert heißt in dem Fall, dass es eine Rolle
+# spielt, in welcher Reihenfolge die Elemente hinzugefügt werden.
 
 # Eine Liste wird mit Hilfe von eckigen Klammern definiert.
 liste = [0, "foo"]
 print(liste)
 
 # Auf ein Element in einer Liste wird über dessen Index
-# zugegriffen, das ist die Stelle an der das element
+# zugegriffen. Der Index ist die Stelle, an der das Element
 # steht.
 # Wichtig: Die Zählung des Index beginnt mit 0,
 # daher ist der Index des ersten Elements 0.
@@ -29,13 +29,13 @@ print(element)
 l = len(liste)
 print(l)
 
-# Die append() Methode fügt einer Liste ein beliebiges
+# Die append()-Methode fügt einer Liste ein beliebiges
 # Element hinzu:
 liste.append("bar")
 print(liste)
 
-# Der Datentyp String hat große Ähnlichkeit mit dem
-# Datentyp Liste. So funktioniert der Zugriff über den
+# Der Datentyp <String> hat große Ähnlichkeit mit dem
+# Datentyp <Liste>. So funktioniert der Zugriff über den
 # Index auch bei einem String.
 
 String = "ABCDEFGHIJKLMNOPQRSTUVW"
@@ -47,7 +47,7 @@ String += "XYZ"
 print(String)
 # Dabei ist 'String += "XYZ"' eine Abkürzung für
 # String = String + "XYZ", was bedeutet, dass ein
-# String neudefiniert wird und nicht verändert wird.
+# String neu definiert und nicht verändert wird.
 
 # Mit list() lässt sich ein String in einen Liste verwandeln:
 print(list(String))
@@ -66,7 +66,7 @@ print(Tuple)
 # werden:
 print(Tuple[0])
 
-# Mit dem len() Befehl lässt sich die Länge aus-
+# Mit dem len()-Befehl lässt sich die Länge aus-
 # geben:
 print(len(Tuple))
 
@@ -74,7 +74,7 @@ print(len(Tuple))
 # 3. Das Dictionary:
 
 # Ein Dictionary ist eine unsortierte Liste, in der
-# immer einem key ein value zugeordnet ist.
+# immer ein <value>/Wert einem <key>/Schlüssel zugeordnet ist.
 
 # Ein Dictionary wird über geschweifte Klammern
 # definiert:
@@ -86,7 +86,7 @@ print(dictionary)
 print(dictionary["Eins"])
 
 # Ein neues Key-Value-Paar wird erstellt,
-# indem auf ein nicht existirenden Value zu-
+# indem auf ein nicht-existierenden value zu-
 # gegriffen wird und dieser definiert wird:
 dictionary["Wasser"] = "water"
 print(dictionary)
@@ -101,15 +101,14 @@ print(len(dictionary))
 # 1. Die while-Schleife:
 
 # Im Kopf der while-Schleife steht eine Bedingung.
-# Sie prüft ob, die Bedingung True ist und durch-
-# läuft ihren Bauch. Danach prüft sie erneut die
-# Bedingung. Und das immer so weiter.
+# Wenn die Begindung erfüllt ist, durchläuft die while-Schleife ihren Bauch.
+# Danach prüft sie erneut die Bedingung. Und das immer so weiter.
 counter = 0
 
 while counter < 10:
 	counter += 1
 
-# Endloswhile:
+# Endlosschleife:
 """
 while True:
 	print("foo")
@@ -167,14 +166,14 @@ Aufgaben:
   Potenz ausrechnet.
 
 * passwort.py:
-  Ändere deine Passwort so ab, dass die Anzahl an Ver-
-  suchen, die der Benutzer hat als int-Variable im Code
+  Ändere dein Passwortprogramm so ab, dass die Anzahl an Ver-
+  suchen, die der Benutzer hat, als int-Variable im Code
   hinterlegt werden kann.
 
 * zahlenRaten.py:
   Ändere dein Programm so ab, dass der User den Bereich
   mit zwei Integern festlegen kann und die Anzahl an Ver-
-  suchen, die er hat von der Größe des Intervalls abhängt.
+  suchen, die er hat, von der Größe des Intervalls abhängt.
 
 Du solltest die Aufgaben in eigene Codedateien speichern,
 weil spätere Level eventuell auf diese zurückgreifen.

@@ -12,16 +12,16 @@ import getpass
 
 
 
-# Input:
+# Eingabe/<input>:
 eingabe = input()
 
-# Input mit Nachricht:
+# Eingabe mit Inhalt:
 eingabe = input("Bitte geben Sie einen Text ein: ")
 
-# Input ohne Anzeige des Inputs:
+# Eingabe ohne die Eingabe anzuzeigen:
 getpass.getpass()
 
-# getpass mit Nachricht:
+# <getpass> mit Inhalt:
 getpass.getpass("Bitte geben Sie eine Nachricht ein: ")
 
 
@@ -36,7 +36,7 @@ print(h + w)
 
 
 
-# Der Datentyp string:
+# Der Datentyp <String>:
 
 eine_Zeile = "Dies ist ein einzeiliger String"
 
@@ -58,7 +58,7 @@ x = str(5)
 
 
 
-# Der Datentyp int:
+# Der Datentyp <int>:
 x = 5
 y = int("6")
 z = -3

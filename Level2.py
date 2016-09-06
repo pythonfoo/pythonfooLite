@@ -3,7 +3,7 @@
 # Level 2:
 
 
-# Der Datentyp boolean:
+# Der Datentyp <boolean>:
 boolean = True
 boolean2 = False
 
@@ -21,7 +21,7 @@ print()
 
 
 
-# Der 'not' Operator:
+# Der not-Operator:
 
 boolean3 = not boolean
 print(boolean3)
@@ -35,7 +35,7 @@ if boolean3 == True:
 	print(True)
 
 # Wenn nur geprüft werden soll, ob ein Ausdruck
-# True ist, kann das '== True' weggelassen werden,
+# <True> ist, kann das '== True' weggelassen werden,
 # da der Compiler überprüft, ob der Ausdruck True
 # ist.
 
@@ -53,7 +53,7 @@ else:
 	print("Ohh, it's winter!")
 
 
-# if-Bedingung zum Vergleichen von int's:
+# if-Bedingung zum Vergleichen von int-Werten:
 a = 5
 b = 10
 if a > b:
@@ -112,23 +112,23 @@ else:
 				print("A und C sind die Größten!")
 
 # Wichtig:
-# Einrückung beibehalten
-# Gültigkeitsbereiche beachten!
+# * Einrückung beibehalten!
+# * Gültigkeitsbereiche beachten!
 
 """
 Aufgaben:
 * passwort.py:
   Programmiere eine einfache Passwortabfrage.
   Gibt der User das Passwort richtig ein, soll
-  ein beliebiger Text angezigt werden, gibt er
+  ein beliebiger Text angezeigt werden. Gibt er
   es falsch ein, soll ein anderer Text angezeigt
   werden.
 
 * zahlenRaten.py
-  Gib dem User 3 Versuche eine von dir vorgegebene
-  Zahl, in einem bestimmten Intervall, zu erraten.
-  Nachdem er geraten hat, gib ihm aus ob er die Zahl
-  getroffen hat, drüber oder drunter liegt.
+  Gib dem User 3 Versuche, eine von dir vorgegebene
+  Zahl in einem bestimmten Intervall zu erraten.
+  Nachdem er geraten hat, gib ihm aus, ob er die Zahl
+  getroffen hat oder darüber oder darunter liegt.
 
 Du solltest die Aufgaben in eigene Codedateien speichern,
 weil spätere Level eventuell auf diese zurückgreifen.

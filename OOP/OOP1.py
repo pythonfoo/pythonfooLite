@@ -2,9 +2,9 @@
 Objektorientierte Programmierung mit Python:
 
 1. Was ist eine Klasse?
-Eine Klasse ist ein Objekt. Sie besitzt Eigenschaften (Attribute)
-und Funktionen (Methoden). Wenn wir uns den Hund als Klasse vor-
-stellen hätte er beispielsweise:
+Eine Klasse ist ein Objekt. Sie besitzt Eigenschaften (Attribute) und
+Funktionen (Methoden). Wenn wir uns den Hund als Klasse vorstellen hätte er
+beispielsweise...
 
 Die Attribute:
 * Fellfarbe
@@ -19,7 +19,7 @@ Die Attribute:
 
 und die Methoden:
 * bellen
-* frisbee fangen
+* Frisbee fangen
 * futtern
 * schlafen
 * laufen
@@ -27,18 +27,17 @@ und die Methoden:
 * springen
 * usw.
 
-Wie zu sehen ist beschreiben Attribute Zustände oder Eigenschaften,
-wohingegen Methoden Abläufe oder Vorgänge beschreiben.
+Wie man sieht, beschreiben Attribute Zustände oder Eigenschaften.
+Methoden beschreiben stattdessen Abläufe oder Vorgänge.
 
-Sowohl beim Hund als auch bei einer Klasse können Methoden auf
-Attribute zugreifen und diese verändern. Zum Beispiel senkt die
-Methode essen das Attribut Hunger des Hundes und die Methode schlafen
-das Attribut Müdigkeit.
+Bei einer Klasse können Methoden auf Attribute zugreifen und diese verändern.
+Zum Beispiel senkt die Methode <essen> das Attribut <Hunger> des Hundes und
+die Methode <schlafen> das Attribut <Müdigkeit>.
 
-Ein Attribut hat immer einen Typen. Dieser muss natürlich nicht beibehalten
+Ein Attribut hat immer einen Typ. Dieser muss natürlich nicht beibehalten
 werden, aber es ist schon sinnvoll die Typen der Attribute kohärent zu
 lassen, um sie besser verarbeiten zu können. So ist es beispielsweise
-wenig sinnvoll dem Attribut Schulterhöhe eine Liste zuzuordnen.
+wenig sinnvoll, dem Attribut <Schulterhöhe> eine Liste zuzuordnen.
 
 '''
 
@@ -95,7 +94,7 @@ foo(x)
 
 
 
-# get- und set-Methoden
+# get- und set-Methoden:
 
 class foo():
 
@@ -115,10 +114,10 @@ x = input(":")
 f = foo(x)
 
 """
-Da Python keine privaten Variabeln hat, ist es theoretisch möglich
+Da Python keine privaten Variablen hat, ist es theoretisch möglich,
 auf eingebaute Methoden und Attribute eingebauter Klassen zuzugreifen.
-Es hat sich als Standart entwickelt, dass Methoden, die nur für den
-internen Gebrauch in der Klasse bestimmt sind mit zwei "_" vor und
+Es hat sich als Standard entwickelt, dass Methoden, die nur für den
+internen Gebrauch in der Klasse bestimmt sind, mit zwei "_" vor und
 hinter dem Namen deklariert werden z.B. "__privat__()"
 """
 

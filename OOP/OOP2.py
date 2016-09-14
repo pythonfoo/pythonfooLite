@@ -4,9 +4,9 @@ from hund import Hund
 
 rex = Hund("Rex")
 
-#isinstance prüft, ob ein bestimmtes Objekt einer bestimmten Klasse entstammt
+#<isinstance> prüft, ob ein bestimmtes Objekt von einer bestimmten Klasse stammt
 isinstance(rex, Hund) #True
 isinstance(rex, Tier) #True
 
-#mit Methoden mit bestimmten Namen (z.B. "__add__") können Operatoren überladen werden
+#Methoden mit bestimmten Namen (z.B. "__add__") können Operatoren überladen
 str(rex) #"Hallo, ich bin Rex."

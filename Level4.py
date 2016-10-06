@@ -13,15 +13,25 @@ os.path.exists("Beispiele/loremipsum.txt")
 
 # einen Ordner erstellen
 
-os.mkdir("/tmp/nkhsekgs")
+os.mkdir("Beispiele/test")
 
 # eine Datei auslesen
 
-lorem_ipsum = open("loremipsum.txt", "r")
+lorem_ipsum = open("Beispiele/loremipsum.txt", "r")
 print(lorem_ipsum.read())
+lorem_ipsum.close()
 
 # eine Datei schreiben
 
-test = open("test.txt", "w")
+test = open("Beispiele/test/test.txt", "w")
 test.write("total toller Text")
+test.close()
 # OUT: 17
+
+#eine Datei löschen
+
+os.remove("Beispiele/test/test.txt")
+
+#einen Ordner löschen
+
+os.rmdir("Beispiele/test")

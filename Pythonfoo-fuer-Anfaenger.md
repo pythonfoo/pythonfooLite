@@ -8,6 +8,8 @@ Nur Python 3.x
 * Aufgaben für die Level ausdenken
 * Folien für die Vorträge machen (Können auch aus gut dokumentierten
 Code bestehen)
+* == nicht offensichtlich
+* Turtle als Beispiel für Funktionen
 
 ### Unsortierte Notizen:
 * Wir können in jeden Level theoretische und praktische
@@ -25,8 +27,8 @@ Mal programmieren. Deshalb werden zum Anfang ganz rudimentäre
 Fragen beantwortet und Dinge geklärt.
 * Was ist eine Programmiersprache?
 * Was genau ist Python?
-* Wie wird Python ausgeführt?
 * Wie programmiere ich mit Python?
+* Wie wird Python ausgeführt?
 
 #### Aufgaben:
 * Hello World

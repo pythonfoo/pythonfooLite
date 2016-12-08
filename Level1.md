@@ -17,6 +17,10 @@ ja die Eingabe bekommen möchte, muss ich die Eingabe einer Variablen übergeben
         Testeingabe
     >>> print(eingabe)
         Testeingabe
+    >>> eingabe2 = input("Bitte geben Sie etwas ein: ")
+        Bitte geben Sie etwas ein: Hallo
+    >>> print(eingabe2)
+        Hallo
 
 ## Was ist eine Variable?
 Eine Variable ist eine Art Container für einen beliebigen Wert, dabei ist in Python im Gegensatz zu vielen
@@ -64,6 +68,7 @@ Weiterhin gibt es noch Vergleichsoperatoren, die auch für andere Typen gelten:
 
 Diese Rechenoperatoren können auch mit Variablen benutzt werden.
  
+
 ## Was bedeutet das "#"?
 Mit dem Nummernzeichen "#" kann man einen Kommentar einfügen. Nach einem "#" wird der Kompiler oder Interpreter
 bis zum Ende der Zeile alles ignorieren, was es ermöglicht hier sinnvolle Kommentare hin zu schreiben. Ein
@@ -71,7 +76,31 @@ Kommentar dient dazu den Code lesbarer zu machen, damit man auch später noch na
 machen sollte. Kommentare sind somit ein Werkzeug der Dokumentation, die das Ziel hat, den Code nachvollziehbar
 zu machen, damit zum Beispiel auch andere ihn verstehen können.
 
+    >>> sum = 1 + 2   # Zwei Zahlen werden addiert
+    >>> print(sum)
+        3
+             
+
 ## Was ist ein String?
 Ein String ist eine Zeichenkette. Diese Zeichenkette kann ein Wort, einen Satz, einen Text, eine Seite oder sogar
-ein Buch enthalten, das einzige was zählt, das in einem String Text enthalten ist. Dies macht den String zu einem
-sehr variablen Typen. 
+ein Buch enthalten, wichtig ist nur, dass in einem String Text enthalten ist. Dies macht den String zu eine sehr
+variablen Typen. Python 3.x unterstützt Unicode, was bedeutet, dass auch Sonderzeichen und Umlaute in einem String
+benutzt werden können, dies war in Python 2.x nicht der Fall. Ein String wird mit Gänsefüßschen oder Hochkommata definiert:
+
+    >>> a = "Hallo"
+    >>> b = 'Welt!'
+    >>> print (a, b)
+        Hallo Welt
+
+## Schlüsselwörter
+In Python gibt es Schlüsselwörter, die eine feste Bedeutung haben und daher nicht als Variablennamen verwendet werden
+können. In den meisten Texteditoren, die Syntax Highligthing unterstützen werden diese Schlüsselwörter farblich
+markiert.
+
+    >>> import keyword
+    >>> print(keyword.kwlist)
+
+Gibt eine Liste von Schlüsselwörtern aus. Im Allgemeinen sollte man aber auf keine Kollisionen stoßen, wenn man seine
+Variablennamen so gestaltet, dass der Name aussagt, wofür die Variable verwendet wird, da die Schlüsselwörter recht
+eindeutig und spezifisch sind.
+

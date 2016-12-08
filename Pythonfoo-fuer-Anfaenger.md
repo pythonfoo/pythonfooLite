@@ -8,6 +8,8 @@ Nur Python 3.x
 * Codebeispiele zu jedem Level im Repository
 * Aufteilung in Präsentationsdateien und Beispielscode
 * genauere Formulierung der Aufgaben pro Level im Wiki
+* Verlinkung der Seiten im Wiki mit den Codebeispielen
+* Beispielslösungen für die Aufgaben
 
 ### Level 0:
 Level 0 ist auf $Menschen ausgerichtet, die zum ersten

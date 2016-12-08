@@ -3,23 +3,11 @@
 Nur Python 3.x
 
 ### TODO:
-* CrashCourse an den Plan anpassen und dokumentieren
-* Plan ergänzen
-* Aufgaben für die Level ausdenken
-* Folien für die Vorträge machen (Können auch aus gut dokumentierten
-Code bestehen)
-* == nicht offensichtlich
-* Turtle als Beispiel für Funktionen
-
-### Unsortierte Notizen:
-* Wir können in jeden Level theoretische und praktische
-  Teile einbauen.
-* Level 0-2 sollte man locker an einem Abend schaffen
-* Wo setzten wir zwischen den Leveln am besten die Pausen?
-* Generelle Syntax
- * Einrückung
-* Arbeiten mit Git
-* schöner Code (docstrings und so)
+* Einstieg in Funktionen mit `turtle`
+* Weitere .md Dateien zu jedem Level im Wiki
+* Codebeispiele zu jedem Level im Repository
+* Aufteilung in Präsentationsdateien und Beispielscode
+* genauere Formulierung der Aufgaben pro Level im Wiki
 
 ### Level 0:
 Level 0 ist auf $Menschen ausgerichtet, die zum ersten
@@ -105,6 +93,21 @@ schreiben eigener Funktionen.
 * Sortierfunktionen
 * Ladebalken
 
+### Level 5.5
+Level 5.5 ist ein Zwischenschritt und behandelt all die Sachen,
+die in bisherigen Leveln keinen Platz gefunden haben, also quasi
+ein Lost and Found Level. Dies betrifft:
+
+* Programmieren mit Versionskontrolle - Einstieg in Git und GitHub
+* Code richtig dokumentieren - Docstrings und sinnvolle Doku
+* Unser Code sol schöner werden - PEP8
+* Stringtheorie - Stringformatierung und Stringfunktionen
+* Kein Bashing! - Der Umgang mit der Shell
+* Käfersammeln - Suche nach Bugs und Refactoring
+
+Einige der Themen haben nicht direkt etwas mit Python zu tun,
+vermitteln abe dennoch wichtige Kompetenzen.
+
 ### Level 6.1 (OOP 1):
 Level 6 bildet den Abschluss der Beginnerlevel und bietet
 einen rudimentären Einblick in die objektorientierte
@@ -129,8 +132,6 @@ Programmierung.
 ### Level 7:
 Level 7 beschäftigt sich mit Dingen, die thematisch
 in andere Level gehören, aber nicht zu deren Kenntnisstand passen.
-* format()
-* erweiterte Stringmanipulation
 * Generatoren und yield
 * Decoratoren
 * try, except und finally

@@ -16,8 +16,8 @@ Zum Beispiel ist Python eine stark und dynamisch typisierte Sprache, die sowohl 
 ausgeführt werden kann. Sie wird meistens objektorientiert und imperativ verwendet. Was genau diese Attribute bedeuten, wird später noch erläutert.
 
 ## Was genau ist Python?
-Python ist eine Programmiersprache, die darauf ausgerichtet wurde leicht erlernbar zu sein. Um dieses Ziel zu
-erreichen verzichtet Python auf gewisse Eigenheiten anderer Programmiersprachen, die für Anfänger oft schwer
+Python ist eine Programmiersprache, die darauf ausgerichtet wurde, leicht benutzbar zu sein. Um dieses Ziel zu
+erreichen verzichtet Python auf gewisse Eigenheiten anderer Programmiersprachen, die teilweise oft schwer
 verständlich sind und häufig gerade Anfänger verwirren. Das bedeutet aber auch, dass andere Programmiersprachen
 in bestimmten Anwendungsfällen besser geeignet sind als Python, weil sie zum Beispiel darauf optimiert wurden.
 Trotzdem ist es sinnvoll, um eine Programmiersprache zu lernen, mit Python anzufangen, da zwischen den vielen

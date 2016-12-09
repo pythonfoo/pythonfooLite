@@ -1,18 +1,18 @@
 # Level 1
 ## Wie gebe ich mit Python etwas aus?
-Zur trivialen Ausgabe in der Konsole bietet Python die print()-Funktion. Diese gibt Dinge, die ihr
+Zur trivialen Ausgabe in der Konsole bietet Python die `print()`-Funktion. Diese gibt Dinge, die ihr
 übergeben werden in der Konsole aus. Wie genau das funktioniert ist in dem aktuellen Lernfortschritt
-noch nicht relevant. Wichtig jedoch ist, das die print()-Funktion in der Lage eine Vielzahl an Dingen
-zu drucken. Wenn einfach nur ein Text ausgegeben werden soll, muss dieser allerdings in "" gesetzt
+noch nicht relevant. Wichtig jedoch ist, das die `print()`-Funktion in der Lage eine Vielzahl an Dingen
+zu drucken. Wenn einfach nur ein Text ausgegeben werden soll, muss dieser allerdings in `""` gesetzt
 werden, z.B.
 
     >>> print("Test")
         Test
 
 ## Wie lese ich eine Eingabe ein?
-Auch für die Eingabe bietet Python eine Funktion, die input() Funktion. Wichtig hierbei ist, da ich
+Auch für die Eingabe bietet Python eine Funktion, die `input()` Funktion. Wichtig hierbei ist, da ich
 ja die Eingabe bekommen möchte, muss ich die Eingabe einer Variablen übergeben.
-    
+
     >>> eingabe = input()
         Testeingabe
     >>> print(eingabe)
@@ -27,7 +27,7 @@ Eine Variable ist eine Art Container für einen beliebigen Wert, dabei ist in Py
 anderen Programmiersprachen, egal welcher Art dieser Wert ist. Dabei kann in Python sowohl der Wert im
 Container, als auch der Typ des Wertes geändert werden (Typen sind beispielsweise Zahlen, Wörter, Wahrheitswerte).
 Der Wert einer Variable kann entweder im Quellcode definiert werden oder aus externen Quellen, wie beispielsweise
-der Konsoleneingabe, lokalen Dateien, dem Netzwerk oder einer grafischen Oberfläche kommen. Die Verwendung von 
+der Konsoleneingabe, lokalen Dateien, dem Netzwerk oder einer grafischen Oberfläche kommen. Die Verwendung von
 Variablen macht ein Programm flexibel, da Werte zur Laufzeit verändert werden können und Ergebnisse im Programm
 für weitere Berechnungen weiterverwendet werden können.
 
@@ -67,10 +67,10 @@ Weiterhin gibt es noch Vergleichsoperatoren, die auch für andere Typen gelten:
 		False
 
 Diese Rechenoperatoren können auch mit Variablen benutzt werden.
- 
 
-## Was bedeutet das "#"?
-Mit dem Nummernzeichen "#" kann man einen Kommentar einfügen. Nach einem "#" wird der Kompiler oder Interpreter
+
+## Was bedeutet das `#`?
+Mit dem Nummernzeichen `#` kann man einen Kommentar einfügen. Nach einem `#` wird der Kompiler oder Interpreter
 bis zum Ende der Zeile alles ignorieren, was es ermöglicht hier sinnvolle Kommentare hin zu schreiben. Ein
 Kommentar dient dazu den Code lesbarer zu machen, damit man auch später noch nachvollziehen kann, was der Code
 machen sollte. Kommentare sind somit ein Werkzeug der Dokumentation, die das Ziel hat, den Code nachvollziehbar
@@ -79,7 +79,7 @@ zu machen, damit zum Beispiel auch andere ihn verstehen können.
     >>> sum = 1 + 2   # Zwei Zahlen werden addiert
     >>> print(sum)
         3
-             
+
 
 ## Was ist ein String?
 Ein String ist eine Zeichenkette. Diese Zeichenkette kann ein Wort, einen Satz, einen Text, eine Seite oder sogar
@@ -103,4 +103,3 @@ markiert.
 Gibt eine Liste von Schlüsselwörtern aus. Im Allgemeinen sollte man aber auf keine Kollisionen stoßen, wenn man seine
 Variablennamen so gestaltet, dass der Name aussagt, wofür die Variable verwendet wird, da die Schlüsselwörter recht
 eindeutig und spezifisch sind.
-

@@ -5,14 +5,14 @@
 
 ## Was ist eine Programmiersprache?
 Eine Programmiersprache dient dazu, dass ein Benutzer dem Computer durch Befehle (commands) und eine Syntax,
-einen Algorithmus (oder eine Aufgaben) ausführen lässt. Die Programmiersprache ist eine formale Sprache, die 
+einen Algorithmus (oder eine Aufgaben) ausführen lässt. Die Programmiersprache ist eine formale Sprache, die
 es ermöglicht dem Computer präzise zu kommunizieren, was er tun soll. Allerdings ist die Programmiersprache
 nur ein Zwischenschritt, da der Computer die Programmiersprache nochmal in eine Maschinensprache übersetzt.
 Da diese Maschinensprache allerdings für den Menschen schwer lesbar ist, wird eine Programmiersprache wie
 Python, Java, oder C benutzt. Es gibt viele verschiedene Programmiersprachen, die jedoch teilweise aufeinander
 aufbauen, trotzdem kann man Programmiersprachen klassifizieren (Typisierung, Art der Ausführung, Syntax).
 Zum Beispiel ist Python eine stark dynamisch typisierte Sprache, die sowohl im Interpreter als auch als Skript
-ausgeführt werden kann. Was genau diese Attribute bedeuten werden später noch erläutert.
+ausgeführt werden kann. Sie wird meistens objektorientiert und imperativ verwendet. Was genau diese Attribute bedeuten werden später noch erläutert.
 
 ## Was genau ist Python?
 Python ist eine Programmiersprache, die darauf ausgerichtet wurde leicht erlernbar zu sein. Um dieses Ziel zu

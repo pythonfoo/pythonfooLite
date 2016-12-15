@@ -2,7 +2,7 @@
 
 ## Der Programmfluss
 Bisher hat unser Programm einen Schritt nach den anderen ausgeführt. Man kann also sagen,
-dass unsere Programme sehr linear aufgebaut waren. Daher waren die bissherigen Programme
+dass unsere Programme sehr linear aufgebaut waren. Daher waren die bisherigen Programme
 noch sehr primitiv, da sie noch nicht auf verschiedene Eingaben mit verschiedenen Aktionen
 reagieren konnten. Um dies zu ändern gibt es in den meisten Programmiersprachen sogenannte
 Kontrollstrukturen, die dazu dienen einerseits dem Benutzer das Programmieren zu erleichtern,
@@ -28,7 +28,7 @@ Die aus der Mathematik bekannten Vergleichsoperatoren geben Booleanwerte zurück
         False
     >>> print (True != False) # a != b entspricht not(a == b)
         True
-        
+
 Die Vergleichsoperatoren "==", "!=", "<", ">", sowie die Kombinationen "<=" und ">=" heißen
 binäre Operatoren, da sie zwei Elemente bearbeiten. Das `not` ist, ähnlich zu dem `-` in der
 Mathematik ein unärer Operator, da es nur ein Element benötigt.
@@ -46,7 +46,7 @@ beachten, dass dies nur in Ausnahmefällen sinnvoll ist.
 
 So ist ein String immer als Boolean True, solange er nicht leer ist und ein Integer immer True,
 solange er nicht `0` ist.
-    
+
 ## Die if-Bedingung
 Man stelle sich eine Passwortabfrage vor: Das Programm soll nur weiterlaufen, wenn
 der Benutzer ein richtiges Passwort eingegeben hat. Dies war uns aktuell nicht möglich, da wir
@@ -63,14 +63,14 @@ ausführt, wenn der boolsche Ausdruck `True` ist.
 Allein mit einer if-Bedingung ist schon vieles möglich, allerdings möchte der Programmierer
 teilweise mehrere Fälle voneinander unterscheiden und verschieden darauf reagieren.
 Dafür gibt es das Schlüsselwort `else`, dass immer am Ende einer if-Bedingung steht und nur
-dann ausgeführt wird, wenn alle vorherigen Abfragen gescheitert sind. 
+dann ausgeführt wird, wenn alle vorherigen Abfragen gescheitert sind.
 
     >>> password = input("Bitte das Passwort eingeben: ")
     >>> if password == "Geheim":
     >>>     print("Willkommen")
     >>> else:
     >>>    print("Zutritt verweigert")
-    
+
 Zu beachten sind bei der if-Bedingung und allgemein auch bei anderen Kontrollstrukturen die
 Einrückung und die Syntax. Die Definition einer if-Bedingung ist allgemein ausgedrückt:
 
@@ -78,8 +78,8 @@ Einrückung und die Syntax. Die Definition einer if-Bedingung ist allgemein ausg
         Anweisungen
     else:
         Anweisungen
-        
-Bei der Tiefe der Einrückung liegt eine häufige Fehlerquelle, deshalb hat man sich auf 4 
+
+Bei der Tiefe der Einrückung liegt eine häufige Fehlerquelle, deshalb hat man sich auf 4
 Leerzeichen oder einen Tab derselben Länge geeinigt. PEP8, ein Styleguide für die
 Programmierung mit Python, legt 4 Leerzeichen als Einrückungstiefe fest. Egal wie viele
 Leerzeichen oder Tabs du benutzt, ist es wichtig im gesamten Programm oder noch besser

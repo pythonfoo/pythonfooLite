@@ -37,4 +37,4 @@ Bei Listen funktioniert das auch:
 
 ## tuple
 
-Bei Tupeln funktionier alles genau wie bei Listen mit der Besonderheit, dass alle Rückgabewerte auch `tuple` sind.
+Bei Tupeln funktioniert alles genau wie bei Listen mit der Besonderheit, dass alle Rückgabewerte auch `tuple` sind.

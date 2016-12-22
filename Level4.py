@@ -28,10 +28,10 @@ test.write("total toller Text")
 test.close()
 # OUT: 17
 
-#eine Datei löschen
+# eine Datei löschen
 
 os.remove("Beispiele/test/test.txt")
 
-#einen Ordner löschen
+# einen Ordner löschen
 
 os.rmdir("Beispiele/test")

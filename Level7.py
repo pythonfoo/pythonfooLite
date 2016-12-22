@@ -1,60 +1,61 @@
-#format
+# format
 "Das folgende Wort wird ersetzt: '{}' Der Rest nicht.".format("blargh")
 
-#String
->>> s = "a;b;cd"
->>> s.split(";")
+# String
+>> > s = "a;b;cd"
+>> > s.split(";")
 ['a', 'b', 'cd']
->>> l = s.split(";")
->>> ";".join(l)
+>> > l = s.split(";")
+>> > ";".join(l)
 'a;b;cd'
 
-#Generatoren und yield
->>> def gen(s):
-...     for char in s:
-...         yield char
+# Generatoren und yield
+>> > def gen(s):
+... for char in s:
+... yield char
 ...
 ...
->>> for x in gen("abcdef"):
-...     print(x)
+>> > for x in gen("abcdef"):
+... print(x)
 
-#Dekoratoren
->>> def f(x):
-...     return x**2
+# Dekoratoren
+>> > def f(x):
+... return x**2
 ...
->>> f(2)
+>> > f(2)
 4
->>> f(3)
+>> > f(3)
 9
 
->>> def dec(func):
-...     def inner_func(*args):
-...         print(args)
+>> > def dec(func):
+... def inner_func(*args):
+... print(args)
 ...         r = func(*args)
-...         print("Return: {}".format(r))
-...         return r
-...     return inner_func
+... print("Return: {}".format(r))
+... return r
+... return inner_func
 ...
->>> @dec
+>> > @dec
 ... def f(x):
-...     return x**2
+... return x**2
 ...
->>> f(2)
+>> > f(2)
 (2,)
-Return: 4
+Return:
+    4
 4
 
-#Exceptions
->>> try:
-...     1/0
+# Exceptions
+>> > try:
+...     1 / 0
 ...
 ... except ZeroDivisionError as exc:
-...     print(exc)
+... print(exc)
 ...
 ... finally:
-...     print("Fertig.")
+... print("Fertig.")
 ...
 division by zero
 Fertig.
 
-#Nett ist auch "raise" innerhalb eines except-Blocks.
+# Nett ist auch "raise" innerhalb eines except-Blocks.

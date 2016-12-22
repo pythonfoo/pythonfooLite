@@ -78,7 +78,7 @@ print(len(Tuple))
 
 # Ein Dictionary wird über geschweifte Klammern
 # definiert:
-dictionary = {"Eins":"one", "Zwei":"two"}
+dictionary = {"Eins": "one", "Zwei": "two"}
 print(dictionary)
 
 # Auf einen value wird mit Hilfe des keys zu-
@@ -95,7 +95,6 @@ print(dictionary)
 print(len(dictionary))
 
 
-
 # Schleifen:
 
 # 1. Die while-Schleife:
@@ -106,7 +105,7 @@ print(len(dictionary))
 counter = 0
 
 while counter < 10:
-	counter += 1
+    counter += 1
 
 # Endlosschleife:
 """
@@ -123,14 +122,14 @@ while True:
 String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 for char in String:
-	print(char)
+    print(char)
 
 # Beim Durchlaufen eines Dictionary wird jedoch nur
 # der key zurückgegeben:
-Dictionary = {"one":"Eins", "two":"Zwei", "three":"drei"}
+Dictionary = {"one": "Eins", "two": "Zwei", "three": "drei"}
 for key in Dictionary:
-	print(key)
-	print(Dictionary[key])
+    print(key)
+    print(Dictionary[key])
 
 # Mit dem Befehl range() erschafft man ein iterierbares
 # Objekt, das mit Zahlen gefüllt ist:
@@ -139,18 +138,18 @@ print(list(R))
 
 # Dabei kann man auch den Startwert und die Schrittweite
 # angeben:
-R = range(0,101,2)
+R = range(0, 101, 2)
 print(list(R))
 
 # Somit kann man eine Zählschleife implementieren:
 R = range(10)
 for i in R:
-	print(i)
+    print(i)
 
 # oder:
 
 for i in range(10):
-	print(i)
+    print(i)
 
 """
 Aufgaben:

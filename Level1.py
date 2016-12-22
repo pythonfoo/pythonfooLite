@@ -11,7 +11,6 @@ import getpass
 # des Programms.
 
 
-
 # Eingabe/<input>:
 eingabe = input()
 
@@ -25,7 +24,6 @@ getpass.getpass()
 getpass.getpass("Bitte geben Sie eine Nachricht ein: ")
 
 
-
 # Ausgabe:
 print("Hello World")
 
@@ -33,7 +31,6 @@ h = "Hello"
 w = "World"
 
 print(h + w)
-
 
 
 # Der Datentyp <String>:
@@ -51,11 +48,10 @@ b = "bar"
 space = " "
 
 print(f + b)
-print(5*f)
-print(5*(f + space))
+print(5 * f)
+print(5 * (f + space))
 
 x = str(5)
-
 
 
 # Der Datentyp <int>:
@@ -69,7 +65,7 @@ summe = x + y
 produkt = x * z
 quotient = 9 / 3
 differenz = x - z
-potenz = pow(basis, exponent) # Oder: basis ** exponent
+potenz = pow(basis, exponent)  # Oder: basis ** exponent
 
 
 # Kommentiere die einzelnen Codeblöcke doch

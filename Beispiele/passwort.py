@@ -7,8 +7,8 @@ PWD = "123456"
 eingabe = getpass()
 
 if eingabe == PWD:
-	print ("Richtig.")
+    print("Richtig.")
 elif eingabe in PWD:
-	print ("Fast.")
+    print("Fast.")
 else:
-	print("Falsch.")
+    print("Falsch.")

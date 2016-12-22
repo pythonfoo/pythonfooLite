@@ -56,6 +56,7 @@ Level 2 führt nun in die einfachen Kontrollstrukturen ein.
 Level 3 beschäftigt sich nun mit einer weiteren Kommandostruktur
 den Schleifen und führt zu dieser Gelegenheit
 den Datentyp der verschiedenen Listen ein.
+
 * lists, tupel und dictionaries
 * for- und while-Schleife
 * `getpass`

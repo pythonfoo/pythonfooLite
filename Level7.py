@@ -1,13 +1,3 @@
-# format
-"Das folgende Wort wird ersetzt: '{}' Der Rest nicht.".format("blargh")
-
-# String
->> > s = "a;b;cd"
->> > s.split(";")
-['a', 'b', 'cd']
->> > l = s.split(";")
->> > ";".join(l)
-'a;b;cd'
 
 # Generatoren und yield
 >> > def gen(s):

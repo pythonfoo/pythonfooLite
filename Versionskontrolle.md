@@ -13,12 +13,12 @@ Mit einer funktionierenden Versionskontrolle kann ich:
  * Auf einfache Weise nachvollziehen wie sich mein Projekt entwickelt hat
  * Den Fortschritt meines Projektes im Auge behalten
  
- Versionsverwaltung hat zwar nur indirekt mit Programmierung zu tun, ist aber
- ein sehr praktisches Hilfsmittel, gerade wenn es um größere Projekte geht, an
- denen eventuell auch mehrere Leute arbeiten. Durch die Möglichkeit zu einer
- bestimmten Version zurückspringen zu können, wird es einfacher Fehler zu
- finden. Sobald die Verwaltung der Versionskontrolle in den Workflow eines
- Projektes übergegangen ist, wird die Entwicklung
+Versionsverwaltung hat zwar nur indirekt mit Programmierung zu tun, ist aber
+ein sehr praktisches Hilfsmittel, gerade wenn es um größere Projekte geht, an
+denen eventuell auch mehrere Leute arbeiten. Durch die Möglichkeit zu einer
+bestimmten Version zurückspringen zu können, wird es einfacher Fehler zu
+finden. Sobald die Verwaltung der Versionskontrolle in den Workflow eines
+Projektes übergegangen ist, wird die Entwicklung
 ## Was ist git?
 ## Wie benutze ich git?
 ## Was ist Github?

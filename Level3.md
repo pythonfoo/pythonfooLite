@@ -1,5 +1,8 @@
 # Level 3
 
+ToDo:
+* Link zu Operatoren.md, wenn es um .append geht.
+
 ## Listen
 Eine Liste ist eine Folge von beliebigen Objekten mit einer beliebigen Länge.
 Eine Liste wird mit `[]` definiert und kann beliebige Objekte enthalten.
@@ -25,7 +28,8 @@ hat den Index `0`, das Objekt an der letzten Stelle hat den Index `-1`.
 ```
 
 Ein Objekt kann wie folgt einer Liste hinzugefügt werden, dabei wird die Liste verändert,
-so dass kein Rückgabewert benötigt wird.
+so dass kein Rückgabewert benötigt wird. Das Objekt wird dabei immer hinten an die Liste
+angehangen.
 
 ``` python
 >>> a.append(False)

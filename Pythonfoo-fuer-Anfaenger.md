@@ -101,9 +101,10 @@ Level 5.5 ist ein Zwischenschritt und behandelt all die Sachen,
 die in bisherigen Leveln keinen Platz gefunden haben, also quasi
 ein Lost and Found Level. Dies betrifft:
 
+* Ich hab' da eine IDE - Programmieren mit IDEs
 * Programmieren mit Versionskontrolle - Einstieg in Git und GitHub
 * Code richtig dokumentieren - Docstrings und sinnvolle Doku
-* Unser Code sol schöner werden - PEP8
+* Unser Code soll schöner werden - PEP8
 * Stringtheorie - Stringformatierung und Stringfunktionen
 * Kein Bashing! - Der Umgang mit der Shell
 * Käfersammeln - Suche nach Bugs und Refactoring

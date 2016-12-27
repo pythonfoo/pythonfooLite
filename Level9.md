@@ -7,7 +7,7 @@ Dies ist leider in vielen Distributionen noch nicht in den Paketquellen enthalte
 Für die aktuelle Ubuntu LTS (16.04) muss z.B. das [PPA](https://launchpad.net/~thopiekar/+archive/ubuntu/pyside-git) `ppa:thopiekar/pyside-git` hinzugefügt und
 das Paket `python3-pyside2` installiert werden.
 
-## benötigte Module laden
+## Benötigte Module laden:
 
 Qt besteht aus vielen einzelnen Modulen - je nach Verwendung müssen die benötigten Module zuerst geladen werden.
 Dies können (je nach Einsatz) mehr oder weniger sein - diese hier sind allerdings üblich:
@@ -34,7 +34,7 @@ app = QApplication(sys.argv)
 
 Die Befehlszeilenparameter unseres Programms geben wir an Qt weiter, damit es auf bestimmte Parameter darin reagieren kann (u.a. [diese](https://doc.qt.io/qt-5/qapplication.html#QApplication)).
 
-## ein Widget erstellen
+## Ein Widget erstellen:
 
 Alle grafischen Komponenten in Qt sind `QWidgets`.
 
@@ -47,7 +47,7 @@ label.show()
 
 Normalerweise würde man dieses Label in einem Fenster mit anderen Elementen unterbringen - in diesem einfachen Fall lassen wir das aber.
 
-## main loop
+## Die main loop:
 
 Jetzt ist alles so eingerichtet, wie wir das wollen.
 Wir sehen aber noch nichts.

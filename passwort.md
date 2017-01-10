@@ -128,6 +128,8 @@ while counter <= 3
 Es liegt aber noch ein Problem vor:
 Hashfunktionen verlieren Informationen, das heißt, dass mehrere Eingaben den selben Hashwert liefern können, weshalb der Benutzer nicht **das** Passwort eingeben muss, dass den Hashwert ergibt, sondern nur **eins** von denen, die diesen Hashwert ergeben. An dieser Stelle vertrauen wir darauf, dass die Wahrscheinlichkeit für so eine Kollision niedrig genug ist um sie zu tolerieren, zumal wir ja die Eingabe auf 3 Versuche beschränkt haben.
 
+**Achtung**: *Für den praktischen Einsatz ist diese Hashfunktion ziemlich ungeeignet!*
+
 ## Fazit:
 Wir haben mit einem Programm angefangen, das genau den gestellten Anforderungen entsprach. Anschließend haben wir Probleme mit unseren Programm ausgemacht und diese Issues in 5 Schritten behoben. Dabei haben wir zuerst nur Funktionalität hinzugefügt und in den letzten beiden Schritten auch bestehenden Code verändert. Wir haben aber die Funktionalität der ersten Version erhalten gelassen. Diesen Vorgang nennt man Refactoring. Bei dem Optimieren des Codes kann Versionskontrolle eine sehr wichtige Rolle spielen, denn es kann sein, dass man den Code überoptimiert und er auf ein mal nicht mehr tut was er soll. Vorrausgesetzt man hat eine ordentliche Versionskontrolle durchgeführt, kann man nun von dem letzten funktionierenden Stand aus vorwärts gehen und so die Änderung ausfindig machen, die das Programm zerschossen hat.
 Sowohl zu Refactoring als auch zu Versionskontrolle haben wir eigene Folien (geplant).

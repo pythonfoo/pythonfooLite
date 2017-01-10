@@ -33,7 +33,7 @@ if password == password_input:
 else:
 	print("Das Passwort war falsch")
 ```
-Durch den `else`-Zweig wird auch etwas ausgegeben, falls das Passwort nicht rchtig war.
+Durch den `else`-Zweig wird auch etwas ausgegeben, falls das Passwort nicht richtig war.
 
 ### Das Programm beendet direkt nach einer falschen Eingabe
 Hier bemerken wir, dass wir ihn schon behoben haben, da jetzt etwas ausgegeben wird.
@@ -97,9 +97,9 @@ while counter <= 3
 		print("Das Passwort war falsch")
 	counter += 1
 ```
-Zum Glück funktioniert `getpass.getpass()`fast genauso wie `input()` weshalb wir  nur minimale Änderungen vornehmen mussten. Was aber auffällt ist, das wir gerade etwas geändert haben, was seit der ersten Version des Programms schon da war und somit sehr relevant war. Das sollte uns daran erinnern, das wir kein Code in Stein meißeln sondern so agil sein müssen auch altbewährtes neu zu schreiben.
+Zum Glück funktioniert `getpass.getpass()`fast genauso wie `input()` weshalb wir  nur minimale Änderungen vornehmen mussten. Was aber auffällt ist, das wir gerade etwas geändert haben, was seit der ersten Version des Programms schon da war und somit sehr relevant war. Das sollte uns daran erinnern, das wir kein Code in Stein meißeln sondern so agil sein müssen, auch altbewährtes neu zu schreiben.
 ### Das Passwort kann aus dem Quellcode gelesen werden
-Dieser Issue ist gewissermaßen ein wenig widersinning, denn wenn ich den Quellcode lesen kann, habe ich prinzipiell auch die Möglichkeit die Passwortabfrage einfach raus zu programmieren, aber wir wollen uns trotzdem anschauen, wie wir diesen Issue schließen können. Dafür müssen wir uns kurz mit Hashwerten befassen. Das Prinzip hinter einem Hashwert ist, dass ich aus einer Eingabe einen Wert erzeuge, wobei die Eingabe immer zu diesem Hashwert führen wird aber auch andere Eingaben zu diesem Hashwert führen können, weshalb man aus dem Hashwert nicht auf die Eingabe schließen kann. Beim Hashen der Eingabe gehen Informationen verloren, die nicht wiederhergestellt werden können. Genau diesen Effekt nutzen wir im folgenden aus.
+Dieser Issue ist gewissermaßen ein wenig widersinning, denn wenn ich den Quellcode lesen kann, habe ich prinzipiell auch die Möglichkeit die Passwortabfrage einfach raus zu programmieren, aber wir wollen uns trotzdem anschauen, wie wir diesen Issue schließen können. Dafür müssen wir uns kurz mit Hashwerten befassen. Das Prinzip hinter einem Hashwert ist, dass ich aus einer Eingabe einen Wert erzeuge, wobei die Eingabe immer zu diesem Hashwert führen wird aber auch andere Eingaben zu diesem Hashwert führen können, weshalb man aus dem Hashwert nicht auf die Eingabe schließen kann. Beim Hashen der Eingabe gehen Informationen verloren, die nicht wiederhergestellt werden können. Genau diesen Effekt nutzen wir im Folgenden aus.
 In Python kann man einen Hashwert aus einem Objekt mit der hash() Funktion erzeugen:
 ```
 print(hash("Test")
@@ -129,5 +129,5 @@ Es liegt aber noch ein Problem vor:
 Hashfunktionen verlieren Informationen, das heißt, dass mehrere Eingaben den selben Hashwert liefern können, weshalb der Benutzer nicht **das** Passwort eingeben muss, dass den Hashwert ergibt, sondern nur **eins** von denen, die diesen Hashwert ergeben. An dieser Stelle vertrauen wir darauf, dass die Wahrscheinlichkeit für so eine Kollision niedrig genug ist um sie zu tolerieren, zumal wir ja die Eingabe auf 3 Versuche beschränkt haben.
 
 ## Fazit:
-Wir haben damit angefangen ein Programm, das genau den gestellten Anforderungen entsprach. Anschließend haben wir Probleme mit unseren Programm ausgemacht und diese Issues in 5 Schritten behoben. Dabei haben wir zuerst nur Funktionalität hinzugefügt und in den letzten beiden Schritten auch bestehenden Code verändert. Wir haben aber die Funktionalität der ersten Version erhalten gelassen. Diesen Vorgang nennt man Refactoring. Bei dem Optimieren des Codes kann Versionskontrolle eine sehr wichtige Rolle spielen, denn es kann sein, dass man den Code überoptimiertund er auf ein mal nicht mehr tut was er soll. Vorrausgesetzt man hat eine ordentliche Versionskontrolle durchgeführt kann man nun, von dem letzten funktionierenden Stand aus vorwärts gehen und so die Änderung ausfindig machen, die das Programm zerschossen hat.
+Wir haben mit einem Programm angefangen, das genau den gestellten Anforderungen entsprach. Anschließend haben wir Probleme mit unseren Programm ausgemacht und diese Issues in 5 Schritten behoben. Dabei haben wir zuerst nur Funktionalität hinzugefügt und in den letzten beiden Schritten auch bestehenden Code verändert. Wir haben aber die Funktionalität der ersten Version erhalten gelassen. Diesen Vorgang nennt man Refactoring. Bei dem Optimieren des Codes kann Versionskontrolle eine sehr wichtige Rolle spielen, denn es kann sein, dass man den Code überoptimiert und er auf ein mal nicht mehr tut was er soll. Vorrausgesetzt man hat eine ordentliche Versionskontrolle durchgeführt, kann man nun von dem letzten funktionierenden Stand aus vorwärts gehen und so die Änderung ausfindig machen, die das Programm zerschossen hat.
 Sowohl zu Refactoring als auch zu Versionskontrolle haben wir eigene Folien (geplant).

@@ -5,7 +5,7 @@ Wenn wir also als Anforderung hätten
 **Schreiben SIe ein Programm, das ein Passwort abfragt und etwas ausgibt, falls das Passwort dem vorgegebenen entspricht.**
 würde folgendes Programm der Anforderungen komplett entsprechen:
 
-```
+```python
 password = "12345678"
 password_input = input("Bitte geben Sie das Passwort ein: ")
 if password == password_input:
@@ -25,7 +25,7 @@ Um diese Nachteile wollen wir uns jetzt kleinschrittig kümmern, um am Ende ein 
 ### Es gibt keine Ausgabe bei Eingabe eines falschen Passwort
 Dies lässt sich mit wenig Aufwand am vorhandenen Code ändern:
 
-```
+```python
 password = "12345678"
 password_input = input("Bitte geben Sie das Passwort ein: ")
 if password == password_input:
@@ -39,7 +39,7 @@ Durch den `else`-Zweig wird auch etwas ausgegeben, falls das Passwort nicht rich
 Hier bemerken wir, dass wir ihn schon behoben haben, da jetzt etwas ausgegeben wird.
 ###Der Benutzer hat nur eine Möglichkeit das Passwort einzugeben
 Dies ist tatsächlich ein Problem, da gerade bei langen komplizierten Passwörtern die Möglichkeit größer wird, sich bei einem einzigen Zeichen zu vertun. Wir wollen also nun dem Benutzer 3 Versuche geben das Passwort richtig einzugeben:
-```
+```python
 password = "12345678"
 counter = 1
 while counter <= 3
@@ -52,7 +52,7 @@ while counter <= 3
 	counter += 1
 ```
 Durch das benutzen der while-Schleife hat der Benutzer jetzt 3 Versuche das Passwort einzugeben, ohne, dass es neu abgefragt wird, wenn es bereits richtig eingegeben wurde. Hier wurde ein Teil der Optimierung schon implizit übernommen, da eine Schleife nicht notwendig gewesen wäre um ein Password 3 mal abzufragen. So hätte man das Programm auch folgendermaßen schreiben können:
-```
+```python
 password = "12345678"
 access = False
 if not access:
@@ -98,24 +98,25 @@ while counter <= 3
 	counter += 1
 ```
 Zum Glück funktioniert `getpass.getpass()`fast genauso wie `input()` weshalb wir  nur minimale Änderungen vornehmen mussten. Was aber auffällt ist, das wir gerade etwas geändert haben, was seit der ersten Version des Programms schon da war und somit sehr relevant war. Das sollte uns daran erinnern, das wir kein Code in Stein meißeln sondern so agil sein müssen, auch altbewährtes neu zu schreiben.
+
 ### Das Passwort kann aus dem Quellcode gelesen werden
-Dieser Issue ist gewissermaßen ein wenig widersinning, denn wenn ich den Quellcode lesen kann, habe ich prinzipiell auch die Möglichkeit die Passwortabfrage einfach raus zu programmieren, aber wir wollen uns trotzdem anschauen, wie wir diesen Issue schließen können. Dafür müssen wir uns kurz mit Hashwerten befassen. Das Prinzip hinter einem Hashwert ist, dass ich aus einer Eingabe einen Wert erzeuge, wobei die Eingabe immer zu diesem Hashwert führen wird aber auch andere Eingaben zu diesem Hashwert führen können, weshalb man aus dem Hashwert nicht auf die Eingabe schließen kann. Beim Hashen der Eingabe gehen Informationen verloren, die nicht wiederhergestellt werden können. Genau diesen Effekt nutzen wir im Folgenden aus.
+Dieser Issue ist gewissermaßen ein wenig widersinning, denn bisher kann das unser Programm vom Benutzer geändert werden. Trotzdem wollen wir uns anschauen wie dieser Issue geschlossen werden kann. Dafür müssen wir uns kurz mit Hashwerten befassen. Das Prinzip hinter einem Hashwert ist, dass ich aus einer Eingabe einen Wert erzeuge, wobei die Eingabe immer zu diesem Hashwert führen wird aber auch andere Eingaben zu diesem Hashwert führen können, weshalb man aus dem Hashwert nicht auf die Eingabe schließen kann. Beim Hashen der Eingabe gehen Informationen verloren, die nicht wiederhergestellt werden können. Genau diesen Effekt nutzen wir im Folgenden aus.
 
 ```python
 import hashlib
 MD5 = hashlib.md5()
-md5.update("Test")
-md5.hexdigest()
+MD5.update("Test".encode("UTF-8"))
+MD5.hexdigest()
 
 ```
 
 Doch wie nutzen wir den jetzt konkret Hashwerte für unsere Passwortabfrage? Nun im folgenden werden wir nicht mehr Passworteingabe und Passwort vergleichen, sondern die Passworteingabe hashen und mit dem Hash vom Passwort vergleichen, sodass das Passwort selber nicht im Quellcode steht. Wir nutzen dafür den MD5 Algorithmus, den das `hashlib` Modul bereitstellt: 
 
 ``` python
-import hashlib
+import hashlib	
 MD5 = hashlib.md5()
-MD5.update("12345678".encode("12345678"))
-MD5.hexdigits()
+MD5.update("12345678".encode("UTF-8"))
+MD5.hexdigest()
 '25d55ad283aa400af464c76d713c07ad'
 ```
 
@@ -130,7 +131,7 @@ while counter <= 3
 	password_input = passinput("Bitte geben Sie das Passwort ein: ")
 	MD5 = hashlib.md5()
 	MD5.update(password_input.encode("UTF-8"))
-	input_hash = MD5.hexdigits()
+	input_hash = MD5.hexdigest()
 	if passwordHash == inputHash:
 		print("Zugang gewährt")
 		break

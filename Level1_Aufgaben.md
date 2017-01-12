@@ -11,7 +11,7 @@ Programmname: addierer.py
 
 * Schreibe ein Programm, das die Zahlen 23 und 42 addiert.
 * Ändere dein Programm so ab, dass die Zahlen in zwei Variablen gespeichert werden.
-* Ändere dein Programm so ab, dass die Zahlen in der Kommandozeile eingegeben werden können.
+* Ändere dein Programm so ab, dass die Zahlen vom Benutzer eingegeben werden können.
 
 
 ## Aufgabe 2

@@ -100,24 +100,37 @@ while counter <= 3
 Zum Glück funktioniert `getpass.getpass()`fast genauso wie `input()` weshalb wir  nur minimale Änderungen vornehmen mussten. Was aber auffällt ist, das wir gerade etwas geändert haben, was seit der ersten Version des Programms schon da war und somit sehr relevant war. Das sollte uns daran erinnern, das wir kein Code in Stein meißeln sondern so agil sein müssen, auch altbewährtes neu zu schreiben.
 ### Das Passwort kann aus dem Quellcode gelesen werden
 Dieser Issue ist gewissermaßen ein wenig widersinning, denn wenn ich den Quellcode lesen kann, habe ich prinzipiell auch die Möglichkeit die Passwortabfrage einfach raus zu programmieren, aber wir wollen uns trotzdem anschauen, wie wir diesen Issue schließen können. Dafür müssen wir uns kurz mit Hashwerten befassen. Das Prinzip hinter einem Hashwert ist, dass ich aus einer Eingabe einen Wert erzeuge, wobei die Eingabe immer zu diesem Hashwert führen wird aber auch andere Eingaben zu diesem Hashwert führen können, weshalb man aus dem Hashwert nicht auf die Eingabe schließen kann. Beim Hashen der Eingabe gehen Informationen verloren, die nicht wiederhergestellt werden können. Genau diesen Effekt nutzen wir im Folgenden aus.
-In Python kann man einen Hashwert aus einem Objekt mit der hash() Funktion erzeugen:
+
+```python
+import hashlib
+MD5 = hashlib.md5()
+md5.update("Test")
+md5.hexdigest()
+
 ```
-print(hash("Test")
-print(hash("test"))
+
+Doch wie nutzen wir den jetzt konkret Hashwerte für unsere Passwortabfrage? Nun im folgenden werden wir nicht mehr Passworteingabe und Passwort vergleichen, sondern die Passworteingabe hashen und mit dem Hash vom Passwort vergleichen, sodass das Passwort selber nicht im Quellcode steht. Wir nutzen dafür den MD5 Algorithmus, den das `hashlib` Modul bereitstellt: 
+
+``` python
+import hashlib
+MD5 = hashlib.md5()
+MD5.update("12345678".encode("12345678"))
+MD5.hexdigits()
+'25d55ad283aa400af464c76d713c07ad'
 ```
-Doch wie nutzen wir den jetzt konkret Hashwerte für unsere Passwortabfrage? Nun im folgenden werden wir nicht mehr Passworteingabe und Passwort vergleichen, sondern die Passworteingabe hashen und mit dem Hash vom Passwort vergleichen, sodass das Passwort selber nicht im Quellcode steht. Dafür müssen wir aber erstmal an den Hashwert unseres Passwortes kommen:
-```
->>> hash("12345678")
-   -3267442341694311876
-```
+
 Nun können wir unser Programm umändern:
-```
+
+``` python
 from getpass import getpass as passinput
-passwordHash = -3267442341694311876
+import hashlib
+passwordHash = '25d55ad283aa400af464c76d713c07ad'
 counter = 1
 while counter <= 3
 	password_input = passinput("Bitte geben Sie das Passwort ein: ")
-	input_hash = hash(password_input)
+	MD5 = hashlib.md5()
+	MD5.update(password_input.encode("UTF-8"))
+	input_hash = MD5.hexdigits()
 	if passwordHash == inputHash:
 		print("Zugang gewährt")
 		break
@@ -127,8 +140,6 @@ while counter <= 3
 ```
 Es liegt aber noch ein Problem vor:
 Hashfunktionen verlieren Informationen, das heißt, dass mehrere Eingaben den selben Hashwert liefern können, weshalb der Benutzer nicht **das** Passwort eingeben muss, dass den Hashwert ergibt, sondern nur **eins** von denen, die diesen Hashwert ergeben. An dieser Stelle vertrauen wir darauf, dass die Wahrscheinlichkeit für so eine Kollision niedrig genug ist um sie zu tolerieren, zumal wir ja die Eingabe auf 3 Versuche beschränkt haben.
-
-**Achtung**: *Für den praktischen Einsatz ist diese Hashfunktion ziemlich ungeeignet!*
 
 ## Fazit:
 Wir haben mit einem Programm angefangen, das genau den gestellten Anforderungen entsprach. Anschließend haben wir Probleme mit unseren Programm ausgemacht und diese Issues in 5 Schritten behoben. Dabei haben wir zuerst nur Funktionalität hinzugefügt und in den letzten beiden Schritten auch bestehenden Code verändert. Wir haben aber die Funktionalität der ersten Version erhalten gelassen. Diesen Vorgang nennt man Refactoring. Bei dem Optimieren des Codes kann Versionskontrolle eine sehr wichtige Rolle spielen, denn es kann sein, dass man den Code überoptimiert und er auf ein mal nicht mehr tut was er soll. Vorrausgesetzt man hat eine ordentliche Versionskontrolle durchgeführt, kann man nun von dem letzten funktionierenden Stand aus vorwärts gehen und so die Änderung ausfindig machen, die das Programm zerschossen hat.

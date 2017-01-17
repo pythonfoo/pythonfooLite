@@ -209,11 +209,6 @@ Aufgaben:
   einen Exponenten eingeben lässt und ihm dann die
   Potenz ausrechnet.
 
-* passwort.py:
-  Ändere dein Passwortprogramm so ab, dass die Anzahl an Ver-
-  suchen, die der Benutzer hat, als int-Variable im Code
-  hinterlegt werden kann.
-
 * zahlenRaten.py:
   Ändere dein Programm so ab, dass der User den Bereich
   mit zwei Integern festlegen kann und die Anzahl an Ver-

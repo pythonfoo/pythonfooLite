@@ -75,27 +75,19 @@ liste2.sort()
 print(liste2)
 
 
-
-# Der Datentyp <String> hat große Ähnlichkeit mit dem
-# Datentyp <Liste>. So funktioniert der Zugriff über den
-# Index auch bei einem String.
-
+# Auf die einzelnen Zeichen eines Strings kann ebenfalls über den Index
+# zugegriffen werden, wie bei einer Liste.
 String = "ABCDEFGHIJKLMNOPQRSTUVW"
 print(String)
 print(String[4])
 
-# Anstatt append() hat der String das +=:
-String += "XYZ"
-print(String)
-# Dabei ist 'String += "XYZ"' eine Abkürzung für
-# String = String + "XYZ", was bedeutet, dass ein
-# String neu definiert und nicht verändert wird.
+
 
 
 # 2. Das Tuple:
 
 # Ein Tuple ist eine unveränderliche und unsortierte
-# Menge von Elementen.
+# Folge von Elementen.
 
 # Ein Tuple wird über runde Klammern definiert:
 Tuple = ("foo", "bar")
@@ -108,6 +100,8 @@ print(Tuple[0])
 # Mit dem len()-Befehl lässt sich die Länge aus-
 # geben:
 print(len(Tuple))
+
+
 
 
 # 3. Das Dictionary:
@@ -129,9 +123,21 @@ print(dictionary["Eins"])
 # gegriffen wird und dieser definiert wird:
 dictionary["Wasser"] = "water"
 print(dictionary)
+# Als keys geeignet sind zum Beispiel: Integer, Strings, Tupel, Boolean
+
 
 # Mit len() lässt sich die Länge ausgeben:
 print(len(dictionary))
+
+
+# Die Schlüssel eines Dictionarys können als Liste zurückgegeben werden:
+print(dictionary.keys())
+
+
+# ebenso wie die Values:
+print(dictionary.items())
+
+
 
 
 # Schleifen:

@@ -8,11 +8,14 @@ DIese können eine Graphische Oberfläche haben, können aber auch nur Textbasie
 ## Welche Unterschiede gibt es zwischen den Betriebssystemen?
 ## Welche Befehle sind für den Anfang wichtig?
 #### UNIX:
-* **clear** - Löscht die aktuelle Ausgabe
-* **cd** - Wechselt das Verzeichnis in den angegebenen Pfad 
+* **cd** - Wechselt das Verzeichnis in den angegebenen Pfad
+* **mv** - Verschiebt eine Datei oder einen Ordner
+* **touch** - Legt eine leere Datei an
+* **mkdir** - Legt ein neues Verzeichnis an 
 * **ls** - Listet den Inhalt eines Verzeichnises auf
+* **rm** - Löscht eine Datei oder ein Verzeichnis
 * **man** - Öffnet den Handbucheintrag zu einem Befehl oder Programm
-
+* **clear** - Löscht die aktuelle Ausgabe
 #### Windows:
 
 

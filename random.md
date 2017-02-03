@@ -41,3 +41,15 @@ import random
 random.random()
 ```
 
+### random.randint()
+Diese Methode erwartet zwei Parameter (einen Startwert und einen Endwert) und gibt eine Zufallszahl zwischen diesen beiden Werten zurück, wobei der Endwert ausgenommen ist.
+```python
+import random
+R = random.randint(0,10)
+print(R)
+```
+ist äquivalent zu:
+```python
+import random
+R = int(random.random()*10)
+```

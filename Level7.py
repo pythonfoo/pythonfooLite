@@ -1,4 +1,3 @@
-
 # Generatoren und yield
 >> > def gen(s):
 ... for char in s:

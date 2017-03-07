@@ -2,15 +2,6 @@
 
 Nur Python 3.x
 
-### TODO:
-* Einstieg in Funktionen mit `turtle`
-* Weitere .md Dateien zu jedem Level im Wiki
-* Codebeispiele zu jedem Level im Repository
-* Aufteilung in Präsentationsdateien und Beispielscode
-* genauere Formulierung der Aufgaben pro Level im Wiki
-* Verlinkung der Seiten im Wiki mit den Codebeispielen
-* Beispielslösungen für die Aufgaben
-
 ### Level 0:
 Level 0 ist auf $Menschen ausgerichtet, die zum ersten
 Mal programmieren. Deshalb werden zum Anfang ganz rudimentäre
@@ -33,19 +24,20 @@ ausgerichtet wie Level 0.
 * Eingabe und Ausgabe
 * Kommentare
 * Schlüsselwörter
+* Eingabe mit `getpass`
 
 #### Aufgaben:
-* Addierer
-* Multiplizierer
+* Zahlen addieren
+* Zahlen multipliziereren
 * Strings konkatinieren
 * Strings multiplizieren
-* `math`
+* Funktionen aus `math`
 
 ### Level 2:
 Level 2 führt nun in die einfachen Kontrollstrukturen ein.
-* Programmablaufdiagramme
+* Der Programmablauf
 * if-Bedingungen
-* boolean
+* Der Datentyp boolean
 * logische Operatoren
 
 #### Aufgaben:
@@ -57,23 +49,25 @@ Level 3 beschäftigt sich nun mit einer weiteren Kommandostruktur
 den Schleifen und führt zu dieser Gelegenheit
 den Datentyp der verschiedenen Listen ein.
 
-* lists, tupel und dictionaries
 * for- und while-Schleife
-* `getpass`
+* lists, tupel und dictionaries
+
+
 
 #### Aufgaben:
 * Kennwortabfragen
 * Fakultät repitativ
 * Potenz repitativ
 * Euklid-Algorithmus repitativ
-* quersumme repitativ
+* Quersumme berechnen
+* Fibonacci repitativ
 
 ### Level 4:
 * Dateizugriff und Dateimanipulation
 * Zugriff und Parsen von Dateien
 * Automatisches Generieren von Dateien
 * Dateisystemzugriff
-* `os`
+* Umgang mit `os` und `os.path`
 
 #### Aufgaben:
 * quine
@@ -112,7 +106,7 @@ ein Lost and Found Level. Dies betrifft:
 Einige der Themen haben nicht direkt etwas mit Python zu tun,
 vermitteln abe dennoch wichtige Kompetenzen.
 
-### Level 6.1 (OOP 1):
+### Level 6 (OOP 1):
 Level 6 bildet den Abschluss der Beginnerlevel und bietet
 einen rudimentären Einblick in die objektorientierte
 Programmierung.
@@ -125,8 +119,6 @@ Programmierung.
 * Module
 * Imports
 * Attribute und Methoden
-
-### Level 6.2 (OOP 2):
 * Vererbung
 * Überladung
 * super()

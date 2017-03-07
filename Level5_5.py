@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Mehr Stringmethoden:
 # string.format()
 print("Das folgende Wort wird ersetzt: '{}' Der Rest nicht.".format("blargh"))

@@ -1,16 +1,39 @@
 #!/usr/bin/env python3
 
-with open("loremipsum.txt", "r") as lorem_ipsum:
-    text = lorem_ipsum.read()
+# Level 4: Dateien
 
-orig = text
-text = text.upper()
+import os
 
-if "U" in text:
-    text = text.replace("U", "V")
+# Existiert eine Datei?
 
-print(text)
-print(orig)
+os.path.exists("lorem_ipsum.txt")
+# OUT: False
+os.path.exists("loremipsum.txt")
+# OUT: True
 
-with open("loremipsvm.txt", "w") as lorem_ipsvm:
-    lorem_ipsvm.write(text)
+# einen Ordner erstellen
+
+os.mkdir("test")
+
+# eine Datei auslesen
+
+lorem_ipsum = open("loremipsum.txt", "r")
+print(lorem_ipsum.read())
+lorem_ipsum.close()
+
+# eine Datei schreiben
+# open kann auch in eine with Kontextblock geöffnetet werden
+# dann wird der Datei-Handle auch geschlossen wenn es in dem
+# Block zu einer Exception kommt.
+
+with open("test/test.txt", "w") as test:
+    test.write("total toller Text")
+# OUT: 17
+
+# eine Datei löschen
+
+os.remove("test/test.txt")
+
+# einen Ordner löschen
+
+os.rmdir("test")

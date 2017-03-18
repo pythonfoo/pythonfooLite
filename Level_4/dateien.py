@@ -1,23 +1,23 @@
 #!/usr/bin/env python3
 
-# Level 4:
+# Level 4: Dateien
 
 import os
 
 # Existiert eine Datei?
 
-os.path.exists("Beispiele/lorem_ipsum.txt")
+os.path.exists("lorem_ipsum.txt")
 # OUT: False
-os.path.exists("Beispiele/loremipsum.txt")
+os.path.exists("loremipsum.txt")
 # OUT: True
 
 # einen Ordner erstellen
 
-os.mkdir("Beispiele/test")
+os.mkdir("test")
 
 # eine Datei auslesen
 
-lorem_ipsum = open("Beispiele/loremipsum.txt", "r")
+lorem_ipsum = open("loremipsum.txt", "r")
 print(lorem_ipsum.read())
 lorem_ipsum.close()
 
@@ -26,14 +26,14 @@ lorem_ipsum.close()
 # dann wird der Datei-Handle auch geschlossen wenn es in dem
 # Block zu einer Exception kommt.
 
-with open("Beispiele/test/test.txt", "w") as test:
+with open("test/test.txt", "w") as test:
     test.write("total toller Text")
 # OUT: 17
 
 # eine Datei löschen
 
-os.remove("Beispiele/test/test.txt")
+os.remove("test/test.txt")
 
 # einen Ordner löschen
 
-os.rmdir("Beispiele/test")
+os.rmdir("test")

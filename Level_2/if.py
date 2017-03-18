@@ -1,30 +1,5 @@
 #!/usr/bin/env python3
 
-# Level 2:
-
-
-# Der Datentyp <boolean>:
-boolean = True
-boolean2 = False
-
-
-# Vergleichen von zwei boolean:
-bool_result = boolean == boolean2
-bool_result2 = boolean and boolean2
-bool_result3 = boolean or boolean2
-
-print(bool_result)
-print(bool_result2)
-print(bool_result3)
-print()
-
-
-# Der not-Operator:
-
-boolean3 = not boolean
-print(boolean3)
-
-
 # Die if-Bedingung:
 boolean3 = True
 
@@ -106,26 +81,4 @@ else:
             else:
                 print("A und C sind die Größten!")
 
-# Wichtig:
-# * Einrückung beibehalten!
-# * Gültigkeitsbereiche beachten!
-
-"""
-Aufgaben:
-* passwort.py:
-  Programmiere eine einfache Passwortabfrage.
-  Gibt der User das Passwort richtig ein, soll
-  ein beliebiger Text angezeigt werden. Gibt er
-  es falsch ein, soll ein anderer Text angezeigt
-  werden.
-
-* zahlenRaten.py
-  Gib dem User 3 Versuche, eine von dir vorgegebene
-  Zahl in einem bestimmten Intervall zu erraten.
-  Nachdem er geraten hat, gib ihm aus, ob er die Zahl
-  getroffen hat oder darüber oder darunter liegt.
-
-Du solltest die Aufgaben in eigene Codedateien speichern,
-weil spätere Level eventuell auf diese zurückgreifen.
-
-"""
+# Wichtig: Einrückung beibehalten!

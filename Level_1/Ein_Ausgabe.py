@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-from getpass import getpass # benötigt für Passwortabfragen
+from getpass import getpass # hilfreich für Passwortabfragen
+
 
 ## Ausgabe
 
@@ -16,10 +17,12 @@ text = "Hallo, Welt!"
 print(text)
 print(x, text)
 
+
 ## Eingabe
 
 print("Bitte etwas eingeben:")
 eingabe = input()
+
 print("Die Eingabe war: ")
 print(eingabe)
 

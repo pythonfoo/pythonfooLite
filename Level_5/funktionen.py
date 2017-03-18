@@ -17,8 +17,10 @@ funktion("a")
 def funktion(text, wirklich):
     if wirklich:
         print(text)
+        
 funktion("Hallo", True)
 # OUT: Hallo
+
 funktion(True, "Hallo")
 # OUT: True
 
@@ -26,7 +28,9 @@ funktion(True, "Hallo")
 def funktion(text="Beispiel", wirklich=False):
     if wirklich:
         print(text)
+        
 funktion()
+# OUT: None
 
 funktion(wirklich=True)
 # OUT: Beispiel

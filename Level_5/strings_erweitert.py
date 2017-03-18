@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Character escaping:
 # escaping ist eine Möglichkeit Zeichen und Steuerzeichen (z.B. \n und \t) in einen
 # String einzubauen

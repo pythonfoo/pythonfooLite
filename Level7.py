@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+#!/usr/bin/env python3
+
+>>>>>>> c1c3a1b0d7aba895b6471068c4cb0b29bded37a3
 # Generatoren und yield
 >> > def gen(s):
 ... for char in s:

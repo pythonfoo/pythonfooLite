@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 #siehe auch diese Module
 from tier import Tier
 from hund import Hund

@@ -1,4 +1,4 @@
-#! /usr/bin/env python3
+#!/usr/bin/env python3
 print ("""Fibonacci-Reihe:
 Die Summe zweier Elemente ergibt das naechste.""")
 

@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from tier import Tier
 
 class Hund(Tier):

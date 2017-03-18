@@ -9,10 +9,10 @@ exponent = 5
 # Achtung: Dies kann fehlschlagen!
 y = int("6")
 
-# Operatoren auf Strings anwenden:
+# Operatoren auf Integer anwenden:
 # (für mehr Informationen siehe die Wiki-Seite zu Operatoren)
 summe = x + y
 produkt = x * z
 quotient = 9 / 3
 differenz = x - z
-potenz = pow(basis, exponent)  # Oder: basis ** exponent
+potenz = pow(basis, exponent)  # Oder: basis ** exponent, Falsch ist basis ^ exponent

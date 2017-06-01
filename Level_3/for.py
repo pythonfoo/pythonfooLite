@@ -19,6 +19,9 @@ for key in Dictionary:
     print(key)
     print(Dictionary[key])
 
+
+# Ebenso kann ein Tupel oder eine Liste durchlaufen werden
+
 # Mit dem Befehl range() erschafft man ein iterierbares
 # Objekt, das mit Zahlen gefüllt ist:
 R = range(10)

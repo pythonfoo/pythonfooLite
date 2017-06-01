@@ -215,11 +215,159 @@ zu den Listenmethoden `count()` und `index()` funktionieren.
 
 ## Dictionary
 Ein Dictionary kann man mit einem Wörterbuch vergleichen werden, einem Schlüssel wird
-Wert zugeordnet. Dabei kann ein Schlüssel auf mehrere Werte weisen, aber ein Schlüssel
-kann immer nur einmal verwendet werden. Bei einem Wörterbuch von Deutsch nach
-Englisch, wäre das deutsche Wort der Schlüssel und die englische Übersetzung(en) die 
-Werte.
+Wert zugeordnet. Dabei können mehrere Schlüssel auf denselben Wert zeigen, aber ein
+Schlüssel muss eindeutig sein, darf also nur einmal vorkommen.
+### Definition
+Ein Dictionary kann man mit `{}` definieren:
+``` python
+>>> d = {"eins":"one", "zwei":"two"}
+>>> print(d)
+	{'eins':'one', 'zwei':'two'}
+```
+Es ist allerdings auch möglich ein Dictionary über die Funktion `dict()` zu definieren.
+Dabei kann man der `dict()` Funktion eine zweidimensionale Liste der  Form: 
+``` python
+a = [[key, value], [key2, value2]]
+```
+oder ein zweidimensionales Tupel der Form:
+``` python
+t = ((key, value), (key2, value2))
+```
+übergeben um daraus ein entsprechendes Dictionary zu basteln.
+
+### Zugriff
+Anders als bei Listen und Tupeln, wird auf ein Wert in einem Dictonary nicht über den Index
+sondern über den Schlüssel zugegriffen. Praktischerweise ähnelt sich die Syntax dem 
+Zugriff auf eine Liste oder ein Tupel.
+``` python
+>>> d = {"eins":"one", "zwei":"two", "drei":"three"}
+>>> print(d["eins"])
+	'one'
+```
+Falls der Key, auf den man zugreifen möchte nicht vorhanden ist, wird ein Fehler geworfen.
+``` python
+>>> d = {}
+>>> d[2]
+	Traceback (most recent call last):
+ 	 File "<input>", line 1, in <module>
+    	d[2]
+	KeyError: 2
+```
+Dies kann mit Benutzung der `get()`Methode umgangen werden:
+``` python
+>>> d = {}
+>>> print(d.get(2))
+	None
+```
+
+### Methoden
+
 
 ## for-Schleifen
+Die for-Schleife ist eine der beiden Schleifenarten. Bei der for-Schleife gibt es eine
+Durchlaufvariable die durch ein iterierbares Objekt läuft. Die Syntax für eine for-Schleife ist
+wie folgt:
+``` python
+>>> a = [1,2,3,4,5]
+>>> for i in a:
+... 	print(i)
+	1
+	2
+	3
+```
+Hier bei ist `i`die Durchlaufvariable und die Liste `a` das iterierbare Objekt. 
+Mit einer for-Schleife kann über folgende Objekte beispielwwiese iteriert werden:
+
+* string
+* Listen
+* Tupel
+* dictionary
+
+Allerdings ist bei Dictionaries zu beachten, dass die Durchlaufvariable nur den Wert des
+Keys annimmt.
+``` python
+>>> dictionary = {"eins":"one", "zwei":"two", "drei":"three", "vier":"four"}
+>>> for german in dictionary:
+ ...	print("Deutsch:", german)
+ ...	print("Englisch:", dictionary[german])
+	'Deutsch: eins'
+	'Englisch: one'
+	'Deutsch: zwei'
+	'Englisch: two'
+	'Deutsch: drei'
+	'Englisch: three'
+	'Deutsch: vier'
+	'Englisch: four'	
+```
+
+### range()
+Ein häufoger Anwendungsfall für die for-Schleife sind, gerade am Anfang, Zählschleifen,
+das heißt, dass ein Integer hochgezählt wird. Mit der `range()` Funktion ist es sehr einfach
+möglich solche Zählschleifen zu erstellen. Die Funktion erstellt ein iterierbares Objekt, mit
+dem dann über die Integer iteriert wird.
+``` python
+>>> r = range(5)
+>>> for i in r:
+...		print(i)
+	0
+	1
+ 	2
+ 	3
+ 	4
+```
+ 
+Wie zu sehen ist, ist der Endwert exklusive
+Es ist allerdings auch möglich einen Startwert und eine Schrittweite anzugeben
+
+``` python
+>>> for i in range(2,11,2):
+...		print(i, end="")
+	2 4 6 8 10
+```
+Natürlich kann man auch der Startwert auch größer sein als der Endwert, dann muss aber
+auch die negative Schrittweite zwingend angegeben werden.
+
+### break und continue
+Bei for-Schleifen ist zu beachten, dass die Anzahl an Durchläufen durch die Länge des iterierbaren
+Objektes bestimmt wird. Es gibt keine Möglichkeit mehr Durchläufe durchzuführen.
+Falls man jedoch aus einer Schleife ausbrechen möchte, d.h. sie frühzeitig beenden kann
+man das Schlüsselwort `break` benutzen. Dabei ist zu beachten, dass mit `break` nur aus
+der aktuellen Schleife ausgebrochen wird. Sollte diese Schleife in einer weiteren enthalten
+sein, läuft diese weiter. 
+``` python
+l = range(10)
+>>> for i in l:
+...		if i == 4:
+...			break
+...		print(i)
+>>> print("Fertig")
+	0
+	1
+	2
+	3
+	Fertig
+``` 
+
+Mit dem Schlüsselwort `continue` ist es möglich den aktuellen Durchlauf abzubrechen, um
+mit dem nächsten fortzufahren.
+``` python
+l = range(10)
+>>> for i in l:
+...		if i == 4:
+...			continue
+...		elif i == 6:
+...			continue
+...		print(i)
+>>> print("Fertig")
+	0
+	1
+	2
+	3
+	5
+	7
+	8
+	9
+	Fertig
+```
 
 ## while-Schleifen

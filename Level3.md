@@ -391,6 +391,7 @@ Zum Beispiel kann mit der while-Schleife sehr viel flexiblere for-Schleifen impl
 ... 		if inp == "exit":
 ... 			break
 ... 		print("foo")
+...		counter += 1
 ... 	print("Fertig")
 	Eingabe: 3
 	foo

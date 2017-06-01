@@ -3,10 +3,12 @@
 **ToDo:**
 * Link zu Operatoren.md, wenn es um .append geht.
 
-## Listen
+## Iterierbare Objekte
+
+### Listen
 Eine Liste ist eine Folge von beliebigen Objekten mit einer beliebigen Länge.
 Eine Liste wird mit `[]` definiert und kann beliebige Objekte enthalten.
-### Definition:
+#### Definition:
 ``` python
 >>> a = [1, "foo", True]
 ```
@@ -18,7 +20,7 @@ Eine Liste wird mit `[]` definiert und kann beliebige Objekte enthalten.
 	['a', 'b', 'c', 'd']
 ```
 
-### Zugriff:
+#### Zugriff:
 
 Auf die Elemente einer Liste wird über deren Index zugegriffen. Das erste Element
 hat den Index `0`, das Objekt an der letzten Stelle hat den Index `-1`.
@@ -61,9 +63,9 @@ Die Länge einer Liste / bzw. die Anzahl an Elementen bekommt man über die len(
 ```
 
 
-### Methoden:
+#### Methoden:
 
-#### append()
+##### append()
 
 Ein Objekt kann wie folgt einer Liste hinzugefügt werden, dabei wird die Liste verändert,
 so dass kein Rückgabewert benötigt wird. Das Objekt wird dabei immer hinten an die Liste
@@ -76,7 +78,7 @@ angehangen.
 	[1, "foo", True, False]
 ```
 
-#### insert()
+##### insert()
 Anstatt ein Element in eine Liste einzufügen, indem man es hinten anhängt, kann man
 auch bestimmen, an welchem Index ein Objekt eingefügt werden soll.
 ``` python
@@ -86,7 +88,7 @@ auch bestimmen, an welchem Index ein Objekt eingefügt werden soll.
 	['test', True, 'foo', 'python', 'foo', 'spam', 42]
 ```
 
-#### index()
+##### index()
 Sobald man weiß, das ein Objekt in der Liste enthalten ist,
 liefert `index()` den Index des ersten Auftreten. Allerdings
 muss das Element in der Liste enthalten sein.
@@ -102,7 +104,7 @@ Traceback (most recent call last):
 ValueError: 'test' is not in list
 ```
 
-#### count()
+##### count()
 
 Mit `count()` wird die Anzahl eines Objektes in einer Liste gezählt, sollte das Objekt
 nicht in der Liste enthalten sein, wird 0 zurückgeben.
@@ -115,7 +117,7 @@ nicht in der Liste enthalten sein, wird 0 zurückgeben.
 	0
 ```
 
-#### pop()
+##### pop()
 Mit der Methode pop() ist es möglich Elemente einer Liste anhand ihres Indexes zu
 entfernen. Das entfernte Element wird daei zurückgegeben.
 ``` python
@@ -126,7 +128,7 @@ entfernen. Das entfernte Element wird daei zurückgegeben.
 	['foo','python','spam',42]
 ```
 
-#### remove()
+##### remove()
 Mithilfe von remove() lassen sich Elemente einer Liste anhand ihres Objektes entfernen.
 Das entfernte Element wird dabei nicht zurückgegeben.
 ``` python
@@ -135,7 +137,7 @@ Das entfernte Element wird dabei nicht zurückgegeben.
 >>> print(a)
 	['foo', 'python', 'foo', 42]
 ```
-#### sort()
+##### sort()
 Mithilfe von sort() lassen sich Listen alphanummerisch sortieren. Dabei wird die Liste verändert.
 ``` python
 >>> a = ["foo", "python", "spam", "hamster", "test"]
@@ -149,12 +151,12 @@ Mithilfe von sort() lassen sich Listen alphanummerisch sortieren. Dabei wird die
 ```
 
 
-## Tupel
+### Tupel
 Ein Tupel ist eine unveränderliche Folge an Elementen, die eine feste Länge besitzt.
 Ein Tupel kann, genau wie eine Liste verschiedene Elemente enthalten.
 Ein Tupel wird über `()` definiert.
 
-### Definition
+#### Definition
 Ein Tupel kann direkt definiert werden:
 ``` python
 >>> t = (42, "foo", False)
@@ -175,7 +177,7 @@ Oder als Umwandlung eines anderen Objektes definiert werden:
 	(42, 'foo', False)
 ```
 
-### Zugriff
+#### Zugriff
 Der Zugriff auf die Elemente eines Tupels erfolgt, wie bei einer Liste über den
 Index:
 ``` python
@@ -209,15 +211,15 @@ Das Schlüsselwort `in` und die Funktion `len()` funktionieren wie bei den Liste
 	6
 ```
 
-### Methoden
+#### Methoden
 Ein Tupel besitzt nur die Methoden `count()` und `index()`, welche analog
 zu den Listenmethoden `count()` und `index()` funktionieren.
 
-## Dictionary
+### Dictionary
 Ein Dictionary kann man mit einem Wörterbuch vergleichen werden, einem Schlüssel wird
 Wert zugeordnet. Dabei können mehrere Schlüssel auf denselben Wert zeigen, aber ein
 Schlüssel muss eindeutig sein, darf also nur einmal vorkommen.
-### Definition
+#### Definition
 Ein Dictionary kann man mit `{}` definieren:
 ``` python
 >>> d = {"eins":"one", "zwei":"two"}
@@ -235,7 +237,7 @@ t = ((key, value), (key2, value2))
 ```
 übergeben um daraus ein entsprechendes Dictionary zu basteln.
 
-### Zugriff
+#### Zugriff
 Anders als bei Listen und Tupeln, wird auf ein Wert in einem Dictonary nicht über den Index
 sondern über den Schlüssel zugegriffen. Praktischerweise ähnelt sich die Syntax dem 
 Zugriff auf eine Liste oder ein Tupel.
@@ -260,7 +262,11 @@ Dies kann mit Benutzung der `get()`Methode umgangen werden:
 	None
 ```
 
-## for-Schleifen
+## Schleifen
+Schleifen sind eine einfache Möglichkeit Code beliebig häufig auszuführen, was grade bei
+der Implementierung der meisten Algorithmen sehr häufig benutzt wird.
+
+### for-Schleifen
 Die for-Schleife ist eine der beiden Schleifenarten. Bei der for-Schleife gibt es eine
 Durchlaufvariable die durch ein iterierbares Objekt läuft. Die Syntax für eine for-Schleife ist
 wie folgt:
@@ -297,7 +303,7 @@ Keys annimmt.
 	'Englisch: four'	
 ```
 
-### range()
+#### range()
 Ein häufoger Anwendungsfall für die for-Schleife sind, gerade am Anfang, Zählschleifen,
 das heißt, dass ein Integer hochgezählt wird. Mit der `range()` Funktion ist es sehr einfach
 möglich solche Zählschleifen zu erstellen. Die Funktion erstellt ein iterierbares Objekt, mit
@@ -324,7 +330,7 @@ Es ist allerdings auch möglich einen Startwert und eine Schrittweite anzugeben
 Natürlich kann man auch der Startwert auch größer sein als der Endwert, dann muss aber
 auch die negative Schrittweite zwingend angegeben werden.
 
-### break und continue
+#### break und continue
 Bei for-Schleifen ist zu beachten, dass die Anzahl an Durchläufen durch die Länge des iterierbaren
 Objektes bestimmt wird. Es gibt keine Möglichkeit mehr Durchläufe durchzuführen.
 Falls man jedoch aus einer Schleife ausbrechen möchte, d.h. sie frühzeitig beenden kann
@@ -367,7 +373,7 @@ l = range(10)
 	Fertig
 ```
 
-## while-Schleifen
+### while-Schleifen
 Die while-Schleife ist die zweite Art von Schleifen in Python. Statt einer Durchlaufavariable wird
 bei der while-Schleife ein boolscher Ausdruck, d.h. ein Ausdruck, der entweder `True`oder `False`
 zurückgibt. Die Syntax ist die folgende:

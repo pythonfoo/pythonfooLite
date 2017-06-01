@@ -41,5 +41,4 @@ for x in range(count):
 while True:
     sleep(100)
 
-
-
+# siehe auch: https://docs.python.org/3.6/library/multiprocessing.html

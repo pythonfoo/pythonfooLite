@@ -45,3 +45,5 @@ for letter in string.ascii_uppercase[0:count]:
 
 while True:
     sleep(100)
+
+# siehe auch: https://docs.python.org/3.6/library/threading.html

@@ -212,3 +212,14 @@ Das Schlüsselwort `in` und die Funktion `len()` funktionieren wie bei den Liste
 ### Methoden
 Ein Tupel besitzt nur die Methoden `count()` und `index()`, welche analog
 zu den Listenmethoden `count()` und `index()` funktionieren.
+
+## Dictionary
+Ein Dictionary kann man mit einem Wörterbuch vergleichen werden, einem Schlüssel wird
+Wert zugeordnet. Dabei kann ein Schlüssel auf mehrere Werte weisen, aber ein Schlüssel
+kann immer nur einmal verwendet werden. Bei einem Wörterbuch von Deutsch nach
+Englisch, wäre das deutsche Wort der Schlüssel und die englische Übersetzung(en) die 
+Werte.
+
+## for-Schleifen
+
+## while-Schleifen

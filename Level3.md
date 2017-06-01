@@ -260,9 +260,6 @@ Dies kann mit Benutzung der `get()`Methode umgangen werden:
 	None
 ```
 
-### Methoden
-
-
 ## for-Schleifen
 Die for-Schleife ist eine der beiden Schleifenarten. Bei der for-Schleife gibt es eine
 Durchlaufvariable die durch ein iterierbares Objekt läuft. Die Syntax für eine for-Schleife ist
@@ -371,3 +368,14 @@ l = range(10)
 ```
 
 ## while-Schleifen
+Die while-Schleife ist die zweite Art von Schleifen in Python. Statt einer Durchlaufavariable wird
+bei der while-Schleife ein boolscher Ausdruck, d.h. ein Ausdruck, der entweder `True`oder `False`
+zurückgibt. Die Syntax ist die folgende:
+``` python
+>>> running = True
+>>> while running == True:
+...		print("foo")
+```
+Dies ist eine Endlosschleife, die unter normalen Umständen immer weiter laufen wird.
+Was hinter dem `while` steht wird intern in einen boolschen Ausdruck umgewandelt, daher ist
+das Vergleichen mit `True` im oberen Fall überflüssig.

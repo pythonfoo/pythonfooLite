@@ -379,3 +379,24 @@ zurückgibt. Die Syntax ist die folgende:
 Dies ist eine Endlosschleife, die unter normalen Umständen immer weiter laufen wird.
 Was hinter dem `while` steht wird intern in einen boolschen Ausdruck umgewandelt, daher ist
 das Vergleichen mit `True` im oberen Fall überflüssig.
+Im Allgemeinen wird eine variable als boolscher Ausdruck benutzt, die dann wärend der Laufzeit
+der Schleife geändert werden kann um die Laufzeit er Schleife zu beeinflussen. Bei der 
+while-Schleife ist es somit, im Gegensatz zur for-Schleife, möglich die Laufzeit zu verlängern
+oder zu verkürzen.
+Zum Beispiel kann mit der while-Schleife sehr viel flexiblere for-Schleifen implementieren.
+``` python
+>>> counter = 0
+>>> while counter < 3:
+...		inp = input("Eingabe: ")
+... 		if inp == "exit":
+... 			break
+... 		print("foo")
+	print("Fertig")
+	Eingabe: 3
+	foo
+	Eingabe: exit
+	Fertig
+```			
+			
+
+```

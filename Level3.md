@@ -264,7 +264,10 @@ Dies kann mit Benutzung der `get()`Methode umgangen werden:
 
 ## Schleifen
 Schleifen sind eine einfache Möglichkeit Code beliebig häufig auszuführen, was grade bei
-der Implementierung der meisten Algorithmen sehr häufig benutzt wird.
+der Implementierung der meisten Algorithmen sehr häufig benutzt wird. Python liefert nun
+zwei Möglichkeiten eine Schleife zu implementieren, die for-Schleife und die while-Schleife.
+Grundlegend kann man mit beiden Möglichkeiten dasselbe implementieren, jedoch macht in
+verschiedenen Anwendungsfällen die eine Möglichkeit mehr Sinn als die andere.
 
 ### for-Schleifen
 Die for-Schleife ist eine der beiden Schleifenarten. Bei der for-Schleife gibt es eine

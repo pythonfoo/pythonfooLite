@@ -147,3 +147,68 @@ Mithilfe von sort() lassen sich Listen alphanummerisch sortieren. Dabei wird die
 >>> print(a)
 	[4, 8, 23, 42, 127]
 ```
+
+
+## Tupel
+Ein Tupel ist eine unveränderliche Folge an Elementen, die eine feste Länge besitzt.
+Ein Tupel kann, genau wie eine Liste verschiedene Elemente enthalten.
+Ein Tupel wird über `()` definiert.
+
+### Definition
+Ein Tupel kann direkt definiert werden:
+``` python
+>>> t = (42, "foo", False)
+>>> print(t)
+	(42, 'foo', False)
+```
+Ohne Klammern definiert werden:
+``` python
+>>> t = 42, "foo", False
+>>> print(t)
+	(42, 'foo', False)
+```
+Oder als Umwandlung eines anderen Objektes definiert werden:
+``` python
+>>> L = [42, "foo", False]
+>>> t = tuple(L)
+>>> print(t)
+	(42, 'foo', False)
+```
+
+### Zugriff
+Der Zugriff auf die Elemente eines Tupels erfolgt, wie bei einer Liste über den
+Index:
+``` python
+>>> t = (1, "foo", True)
+>>> print(t[2])
+	True
+```
+Alternativ kann auch auf Sequenzen eines Tupels zugegriffen werden:
+``` python
+>>> t = [True, "foo", "python", "foo", "spam", 42]
+>>> print(t[0:2]) #Zuerst den Startindex, dann den Endindex. Wichtig: Der Endwert ist exklusiv!
+	[True, "foo"]
+>>> print(t[0:-1:2]) # Zusätzlich kann noch eine Schrittweite angegeben werden
+	[True, 'python', 'spam']
+>>> print(t[:-2]) # Wenn der Startindex 0 ist, kann er weggelassen werden
+	[True, 'foo', 'python', 'foo']
+>>> print(t[1:]) # Wenn der Endindex -1 ist, kann er ebenfalls entfallen
+	['foo', 'python', 'foo', 'spam', 42]
+>>> print(a[:])
+	[True, "foo", "python", "foo", "spam", 42]
+```
+
+Das Schlüsselwort `in` und die Funktion `len()` funktionieren wie bei den Listen:
+``` python
+>>> t = (True, "foo", "python", "foo", "spam", 42)
+>>> print("foo" in t)
+	True
+>>> print("test" in t)
+	False
+>>> print(len(t))
+	6
+```
+
+### Methoden
+Ein Tupel besitzt nur die Methoden `count()` und `index()`, welche analog
+zu den Listenmethoden `count()` und `index()` funktionieren.

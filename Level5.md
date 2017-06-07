@@ -22,10 +22,10 @@ Im Folgenden wollen wir eine Funktion definieren, die genau das macht was ein He
 
 ``` python
 >>> def hello_world():
-... 	print("hello world")
-... 	
+...     print("hello world")
+... 
 >>> hello_world()
-	hello world
+    hello world
 ```
 
 `def`ist ein Schlüsselwort, das zu Beginn einer Funktionsdefinition steht. Danach folgt der Funktionsname `hello_world`, für den die gleichen syntaktischen Anforderungen gelten, wie für Variablennamen, da `hello_world`in diesem Fall eine Variable ist. Demnach kann eine Funktion auch überschrieben werden, wie jede andere Variable auch. Darauf folgt eine leere runde Klammer in die Funktionsparameter eingetragen werden könnten. Darauf folgt ein Doppelpunkt und die Funktionssignatur ist abgeschlossen. Der darauf folgende Block ist eingerückt und muss zwangsweise Code enthalten. Nach der Funktionsdefinition wird die Funktion über ihren Namen, bzw. den Namen ihrer Variable, in dem Fall `hello_world`aufgerufen. Die runden Klammern am Ende der des Funktionsnamens stehen dabei für einen Aufruf und können eventuelle Parameter enthalten.
@@ -34,12 +34,12 @@ Diese Funktion macht aktuell noch keinen Sinn, da sie nur einen festgelegten Str
 Nun wollen wir unsere Funktion ein wenig aufpeppen, indem wir ihr einen Parameter übergeben, sodass sie beliebige Strings ausgeben kann.
 ``` python
 >>> def new_print(text):
-... 	print(text)
-... 	
+...     print(text)
+... 
 >>> inp_text = input("Eingabe: ")
-	Testeingabe
+    Testeingabe
 >>> new_print(inp_text)
-	Testeingabe
+    Testeingabe
 ```
 Der Parameter wurde, wie bereits erwähnt in die runden Klammern eingetragen. `text`ist nun eine Variable und steht in der Funktion zur Verfügung. Im Funktionsaufruf haben wir unserer Funktion `new_print`die Variable `inp_text` übergeben, die zu dem Zeitpunkt den String `"Testeingabe"` enthielt. Dieser String wurde nun ausgegeben.
 
@@ -49,10 +49,10 @@ In den meisten Anwendungsfällen wollen wir das Ergebnis einer Funktion allerdin
 
 ``` python
 >>> def square(x):
-... 	return x**2
+...     return x**2
 ...
 >>> print( square(5) )
-	25
+    25
 ```
 
 Die Funktion `square` nimmt einen Parameter entgegen  (sollte dieser weder `int` noch `float` sein, wird ein Fehler geworfen). Dieser wird nun erst quadriert und danach über das Schlüsselwort `return` zurückgegeben. Wichtig zu beachten ist, dass alles, was nach einem `return` in der selben Einrückungsebene steht, nicht mehr ausgeführt wird. Folglich kann es in einem Einrückungsblock nur ein `return` geben (natürlich kann man mehr hinschreiben, diese werden jedoch nicht ausgeführt werden und sind daher sinnlos). Ein `return`beendet also die Definition einer Funktion. Der Rückgabewert einer Funktion kann nun entweder direkt verwendet werden (wie oben im Beispiel) oder in einer Variable abgespeichert werden um später benutzt zu werden. Ebenfalls wichtig zu beachten ist, dass mit `return`immer nur ein Objekt zurückgegeben werden kann. Falls man mehrere Objekte zurückgeben möchte, sollte man sie in eine Liste, Tupel oder Dictionary packen.
@@ -67,12 +67,12 @@ Diese Unterscheidung ist sehr wichtig, da die Verwendung von mehreren Parametern
 
 ``` python
 >>> def diff(a, b):
-... 	return a - b
-... 	
+...     return a - b
+... 
 >>> print(5, 3)
-	2
+    2
 >>> print(3, 5)
-	-2
+    -2
 ```
 Wenn ich eine feste Anzahl an Parametern benutzen möchte, kann ich diese in der Signatur auflisten. Wichtig ist dabei, dass beim Aufruf die Reihenfolge entscheidend ist. Die obige Funktion subtrahiert das Objekt der Variable `b` von dem Objekt der Variable `a`, daher sind `a` und `b` idealerweise ganze Zahlen oder Fließkommazahlen. Beim Aufruf wird das n-te Element im Aufruf dem n-ten Element der Signatur zugeordnet (hier kann man die Benutzung einer Liste oder eines Tupels erkennen).
 
@@ -80,11 +80,11 @@ Nun möchte ich aber einer Funktion eine beliebige Anzahl an Parametern übergeb
 
 ``` python
 >>> def string_add(*elemente):
-...	result = "" 	
-... 	for e in elemente:
-...		result += str(e)	
-...	return result
-...	
+...     result = "" 
+...     for e in elemente:
+...         result += str(e)	
+...     return result
+...
 >>> print( string_add(0, 1, "test"))
-	01test
+    01test
 ```

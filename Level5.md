@@ -15,7 +15,7 @@ Aber auch viele Funktionen, die zu einem Objekt gehören (solche Funktionen nenn
 * `list.pop()`
 
 Um aber nicht auf die Menge der mitgelieferten oder aus Drittquellen bezogenen (auch dazu mehr im nächsten Level) Funktionen beschränkt zu sein, bietet Python wie viele andere Programmiersprachen, die Möglichkeit eigene Funktionen zu definieren. Dadurch kann ich kleine Teile des Programms vorhalten und sie genau dann benutzen, wenn ich sie brauche.
-Der Name Funktion maf andeuten, dass es sich dabei um etwas ähnliches wie eine mathematische Funktion handelt, das ist jedoch nur zum Teil richtig. Wärend eine mathematische Funktion einen festen Definitionsbereich besitzt, der aus mathematischen Objekten beruht, nimmt eine Funktion in Python beliebige Objekte entgegen und verarbeitet diese. Die Analogie des Ablaufs oder der Prozedur ist daher eventuell angebrachter. Wir werden im folgenden trotzdem den Begriff Funktion verwenden.
+Der Name Funktion maf andeuten, dass es sich dabei um etwas ähnliches wie eine mathematische Funktion handelt, das ist jedoch nur zum Teil richtig. Wärend eine mathematische Funktion einen festen Definitionsbereich besitzt, der aus mathematischen Objekten beruht, nimmt eine Funktion in Python beliebige Objekte entgegen und verarbeitet diese. Mit einer Pythonfunktion kann ich beliebiege mathematisch Funktionen definieren, andersherum ist das deutlich schwieriger. Die Analogie des Ablaufs oder der Prozedur ist daher eventuell angebrachter. Wir werden im folgenden trotzdem den Begriff Funktion verwenden.
 
 ## Die Funktionsdefinition
 Im Folgenden wollen wir eine Funktion definieren, die genau das macht was ein Hello-World-Programm auch macht: "Hello World" ausgeben

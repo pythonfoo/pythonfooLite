@@ -396,12 +396,12 @@ Zum Beispiel kann mit der while-Schleife sehr viel flexiblere for-Schleifen impl
 ``` python
 >>> counter = 0
 >>> while counter < 3:
-...		inp = input("Eingabe: ")
-... 		if inp == "exit":
-... 			break
+... 	inp = input("Eingabe: ")
+... 	if inp == "exit":
+... 		break
 ... 		print("foo")
 ...		counter += 1
-... 	print("Fertig")
+...	print("Fertig")
 	Eingabe: 3
 	foo
 	Eingabe: exit

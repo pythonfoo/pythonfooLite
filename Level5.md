@@ -55,6 +55,36 @@ In den meisten Anwendungsfällen wollen wir das Ergebnis einer Funktion allerdin
 	25
 ```
 
-Die Funktion `square` nimmt einen Parameter entgegen  (sollte dieser weder `int` noch `float` sein, wird ein Fehler geworfen). Dieser wird nun erst quadriert und danach über das Schlüsselwort `return` zurückgegeben. Wichtig zu beachten ist, dass alles, was nach einem `return` in der selben Einrückungsebene steht, nicht mehr ausgeführt wird. Folglich kann es in einem Einrückungsblock nur ein `return` geben (natürlich kann man mehr hinschreiben, diese werden jedoch nicht ausgeführt werden und sind daher sinnlos). Ein `return`beendet also die Definition einer Funktion. Der Rückgabewert einer Funktion kann nun entweder direkt verwendet werden (wie oben im Beispiel) oder in einer Variable abgespeichert werden um später benutzt zu werden.
+Die Funktion `square` nimmt einen Parameter entgegen  (sollte dieser weder `int` noch `float` sein, wird ein Fehler geworfen). Dieser wird nun erst quadriert und danach über das Schlüsselwort `return` zurückgegeben. Wichtig zu beachten ist, dass alles, was nach einem `return` in der selben Einrückungsebene steht, nicht mehr ausgeführt wird. Folglich kann es in einem Einrückungsblock nur ein `return` geben (natürlich kann man mehr hinschreiben, diese werden jedoch nicht ausgeführt werden und sind daher sinnlos). Ein `return`beendet also die Definition einer Funktion. Der Rückgabewert einer Funktion kann nun entweder direkt verwendet werden (wie oben im Beispiel) oder in einer Variable abgespeichert werden um später benutzt zu werden. Ebenfalls wichtig zu beachten ist, dass mit `return`immer nur ein Objekt zurückgegeben werden kann. Falls man mehrere Objekte zurückgeben möchte, sollte man sie in eine Liste, Tupel oder Dictionary packen.
 
 ## args und kwargs
+Bisher können wir einer Funktion einen Parameter geben und einen Rückgabewert zurückgeben lassen. Allerdings benötigen viele Anwendungsfälle Funktionen, die mehrere Objekte entgegen nehmen können, d.h. die mehrere Parameter haben können. Nun wäre der naive Ansatz, der schon bei Rückgabewerten benutzt wurde, statt mehreren Parametern eine Liste von Parametern zu übergeben. Praktischerweise ist in Python dieser Ansatz implementiert. Zuerst wollen wir aber zwei verschiedene Fälle unterscheiden:
+
+1. Die Menge an Parametern ist fest.
+2. Die Menge an Parametern ist variabel
+
+Diese Unterscheidung ist sehr wichtig, da die Verwendung von mehreren Parametern sich danach unterscheidet.
+
+``` python
+>>> def diff(a, b):
+... 	return a - b
+... 	
+>>> print(5, 3)
+	2
+>>> print(3, 5)
+	-2
+```
+Wenn ich eine feste Anzahl an Parametern benutzen möchte, kann ich diese in der Signatur auflisten. Wichtig ist dabei, dass beim Aufruf die Reihenfolge entscheidend ist. Die obige Funktion subtrahiert das Objekt der Variable `b` von dem Objekt der Variable `a`, daher sind `a` und `b` idealerweise ganze Zahlen oder Fließkommazahlen. Beim Aufruf wird das n-te Element im Aufruf dem n-ten Element der Signatur zugeordnet (hier kann man die Benutzung einer Liste oder eines Tupels erkennen).
+
+Nun möchte ich aber einer Funktion eine beliebige Anzahl an Parametern übergeben, weil ich zum Beispiel nicht weiß, wie viele Parameter zur Laufzeit benötigt werden.
+
+``` python
+>>> def string_add(*elemente):
+...	result = "" 	
+... 	for e in elemente:
+...		result += str(e)	
+...	return result
+...	
+>>> print( string_add(0, 1, "test"))
+	01test
+```

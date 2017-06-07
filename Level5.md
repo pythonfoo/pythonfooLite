@@ -28,7 +28,7 @@ Im Folgenden wollen wir eine Funktion definieren, die genau das macht was ein He
 	hello world
 ```
 
-`def`ist ein Schlüsselwort, das zu Beginn einer Funktionsdefinition steht. Danach folgt der Funktionsname `hello_world`, für den die gleichen syntaktischen Anforderungen gelten, wie für Variablennamen, da `hello_world`in diesem Fall eine Variable ist. Demnach kann eine Funktion auch überschrieben werden, wie jede andere Variable auch. Darauf folgt eine leere runde Klammer in die Funktionsparameter eingetragen werden könnten. Darauf folgt ein Doppelpunkt und die Funktionsdeklaration ist abgeschlossen. Der darauf folgende Block ist eingerückt und muss zwangsweise Code enthalten. Nach der Funktionsdefinition wird die Funktion über ihren Namen, bzw. den Namen ihrer Variable, in dem Fall `hello_world`aufgerufen. Die runden Klammern am Ende der des Funktionsnamens stehen dabei für einen Aufruf und können eventuelle Parameter enthalten.
+`def`ist ein Schlüsselwort, das zu Beginn einer Funktionsdefinition steht. Danach folgt der Funktionsname `hello_world`, für den die gleichen syntaktischen Anforderungen gelten, wie für Variablennamen, da `hello_world`in diesem Fall eine Variable ist. Demnach kann eine Funktion auch überschrieben werden, wie jede andere Variable auch. Darauf folgt eine leere runde Klammer in die Funktionsparameter eingetragen werden könnten. Darauf folgt ein Doppelpunkt und die Funktionssignatur ist abgeschlossen. Der darauf folgende Block ist eingerückt und muss zwangsweise Code enthalten. Nach der Funktionsdefinition wird die Funktion über ihren Namen, bzw. den Namen ihrer Variable, in dem Fall `hello_world`aufgerufen. Die runden Klammern am Ende der des Funktionsnamens stehen dabei für einen Aufruf und können eventuelle Parameter enthalten.
 Diese Funktion macht aktuell noch keinen Sinn, da sie nur einen festgelegten String ("hello world") ausgeben kann.
 
 Nun wollen wir unsere Funktion ein wenig aufpeppen, indem wir ihr einen Parameter übergeben, sodass sie beliebige Strings ausgeben kann.
@@ -42,3 +42,19 @@ Nun wollen wir unsere Funktion ein wenig aufpeppen, indem wir ihr einen Paramete
 	Testeingabe
 ```
 Der Parameter wurde, wie bereits erwähnt in die runden Klammern eingetragen. `text`ist nun eine Variable und steht in der Funktion zur Verfügung. Im Funktionsaufruf haben wir unserer Funktion `new_print`die Variable `inp_text` übergeben, die zu dem Zeitpunkt den String `"Testeingabe"` enthielt. Dieser String wurde nun ausgegeben.
+
+## Rückgabewerte
+
+In den meisten Anwendungsfällen wollen wir das Ergebnis einer Funktion allerdings nicht ausgeben, sondern zum Beispiel in einer Variabeln speichern können, um es später verwenden zu können. Dafür benötigt unsere Funktion einen Rückgabewert. Mit Hilfe eines Rückgabewertes kann eine Funktion ein Objekt beliebigen Typs zurückgeben, damit es weiter benutzt werden kann. Die folgende Funktion hat nun einen anderen Anwendungsfall verfügt jedoch über einen Übergabeparameter und einen Rückgabewert.
+
+``` python
+>>> def square(x):
+... 	return x**2
+...
+>>> print( square(5) )
+	25
+```
+
+Die Funktion `square` nimmt einen Parameter entgegen  (sollte dieser weder `int` noch `float` sein, wird ein Fehler geworfen). Dieser wird nun erst quadriert und danach über das Schlüsselwort `return` zurückgegeben. Wichtig zu beachten ist, dass alles, was nach einem `return` in der selben Einrückungsebene steht, nicht mehr ausgeführt wird. Folglich kann es in einem Einrückungsblock nur ein `return` geben (natürlich kann man mehr hinschreiben, diese werden jedoch nicht ausgeführt werden und sind daher sinnlos). Ein `return`beendet also die Definition einer Funktion. Der Rückgabewert einer Funktion kann nun entweder direkt verwendet werden (wie oben im Beispiel) oder in einer Variable abgespeichert werden um später benutzt zu werden.
+
+## args und kwargs

@@ -111,3 +111,13 @@ Noch viel praktischer ist es, wenn man Standartwerte angeben kann, die benutzt w
     Passwort: 123
     123
 ```
+Es ist auch möglich, eine beliebige Anzahl von keyword arguments zu benutzen. Dabei werden die Parameter als Dictionary interpretiert.
+``` python
+>>> def fun(**kwargs):
+...     print(kwargs.keys())
+...     print(kwargs.values())
+... 
+>>> fun(test1 = "foo", test2 = "test")
+    dict_keys(['test1', 'test2'])
+    dict_values(['foo', 'test'])
+```

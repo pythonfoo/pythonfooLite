@@ -1,6 +1,6 @@
 # Level 3 Aufgaben
 
-Viele Algorithmen in der Mathematik lassen sich als Summen oder Produkte beschreiben. Diese wiederrum können mit Schleifen implementiert werden. Später werden wir allerdings noch einen anderen Weg kennenlernen solche Algorithmen zu implementieren (Rekursion).
+Viele Algorithmen in der Mathematik lassen sich als Summen oder Produkte beschreiben. Diese wiederrum können mit Schleifen implementiert werden. Später werden wir allerdings noch einen anderen Weg kennenlernen solche Algorithmen zu implementieren (Rekursion). Im Folgenden soll die Benutzung von Schleifen an klassischen Beispielen geübt werden.
 
 ## Aufgabe 1: Die Fakultät
 Die Fakultät einer natürlichen Zahl n ist das Produkt aller natürlichen Zahlen von 1 bis einschließlich n. Wir schreiben:** n! = n * n-1 * n-2 ... * 3 * 2 * 1 **.

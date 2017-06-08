@@ -3,7 +3,7 @@
 # Generatoren und yield
 def gen(s):
     for char in s:
-    yield char
+        yield char
 
 
 for x in gen("abcdef"):

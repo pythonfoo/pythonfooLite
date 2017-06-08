@@ -121,3 +121,6 @@ Es ist auch möglich, eine beliebige Anzahl von keyword arguments zu benutzen. D
     dict_keys(['test1', 'test2'])
     dict_values(['foo', 'test'])
 ```
+
+## Rekursion
+Es ist nicht nur möglich innerhalb einer Funktion Kontrollstrukturen wie eine if-Bedingung oder eine for-Schleife benutzen, sondern auch Funktionen aufrufen und insbesondere die eigene Funktion aufrufen. Wir nennen es Rekursion, wenn eine Funktion sich selber aufruft. Rekursion kann, wie Schleifen, benutzt werden, um verschiedene mathematische Algorithmen zu implementieren.

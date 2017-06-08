@@ -88,3 +88,26 @@ Nun möchte ich aber einer Funktion eine beliebige Anzahl an Parametern übergeb
 >>> print( string_add(0, 1, "test"))
     01test
 ```
+Das `*elemente` steht dabei für ein Tupel und kann innerhalb der Funktion als Tupel mit dem Variablennamen `elemente` behandelt werden. Wichtig zu wissen ist, dass `*args` auch leer sein kann, wenn keine Argumente übergeben wurden. Manchmal ist es jedoch vorteilhaft eine Funktion zu definieren, die mindestens n Parameter entgegennimmt und danach beliebig viele weitere, dabei ist es wichtig, das die `*args` Argumente in der Signatur nach den positionalen Parametern kommen.
+``` python
+>>> def add_int(summand_a, summand_b, *more_summands):
+...     result = summand_a + summand_b
+...     for summand in more_summands:
+...         result += summand
+...     return result
+... 
+>>> print( add_int(1, 5, 6) )
+    12
+```
+
+Noch viel praktischer ist es, wenn man Standartwerte angeben kann, die benutzt werden, wenn keine Parameter angegeben werden. Für diesen Anwendungsfall gibt keyword arguments, kurz kwargs.
+``` python
+>>> def pwd_input(prompt="Passwort: "):
+...     return input(prompt)
+>>> print( pwd_input("pwd: "))
+    pwd: 123456
+    123456
+>>> print( pwd_input() )
+    Passwort: 123
+    123
+```

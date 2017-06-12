@@ -123,4 +123,15 @@ Es ist auch möglich, eine beliebige Anzahl von keyword arguments zu benutzen. D
 ```
 
 ## Rekursion
-Es ist nicht nur möglich innerhalb einer Funktion Kontrollstrukturen wie eine if-Bedingung oder eine for-Schleife benutzen, sondern auch Funktionen aufrufen und insbesondere die eigene Funktion aufrufen. Wir nennen es Rekursion, wenn eine Funktion sich selber aufruft. Rekursion kann, wie Schleifen, benutzt werden, um verschiedene mathematische Algorithmen zu implementieren.
+Es ist nicht nur möglich innerhalb einer Funktion Kontrollstrukturen wie eine if-Bedingung oder eine for-Schleife benutzen, sondern auch Funktionen aufrufen und insbesondere die eigene Funktion aufrufen. Wir nennen es Rekursion, wenn eine Funktion sich selber aufruft. Rekursion kann, wie Schleifen, benutzt werden, um verschiedene mathematische Algorithmen zu implementieren. Allerdings unterscheidet sich die Nutzung von Rekursion gegenüber der Nutzung von Schleifen, bei der Implementierung von Algorithmen, insofern, dass es ein Rekursionslimit gibt, wohingegen eine while-Schleife endlos laufen kann.
+
+``` python
+>>> import sys
+>>> print( sys.getrecursionlimit() )
+    1000
+>>> sys.setrecursionlimit(1200)
+>>> sys.getrecursionlimit()
+    1200
+```
+
+Wie oben zu sehen ist, kann das Rekursionslimit zwar geändert werden, die Tatsache, dass es ein Limit gibt, beschränkt trotzdem die Art der Algorithmen, die mit Rekursion implamentiert werden können.

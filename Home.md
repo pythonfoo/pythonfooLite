@@ -131,6 +131,7 @@ in andere Level gehören, aber nicht zu deren Kenntnisstand passen.
 * Generatoren und yield
 * Decoratoren
 * try, except und finally
+* map() und zip()
 
 ### Exkurse:
 * `turtle`

@@ -132,6 +132,7 @@ in andere Level gehören, aber nicht zu deren Kenntnisstand passen.
 * Decoratoren
 * try, except und finally
 * map() und zip()
+* assert
 
 ### Exkurse:
 * `turtle`

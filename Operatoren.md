@@ -15,11 +15,15 @@ Auf `int`-Werte angewandt, verhalten sich die Operatoren wie normale Rechenopera
  * `<int> / <int> -> <float>`: Der (exakte) Quotient der beiden Zahlen.
  * `<int> // <int> -> <int>`: Der abgerundete Quotient der beiden Zahlen.
  * `<int> ** <int> -> <int>`: Die Potenz der beiden Zahlen.
+ * `<int> << <int> -> <int>`: Bitshift nach links (äquivalent zu `<int> * (2 ** <int>)`)
+ * `<int> >> <int> -> <int>`: Bitshift nach rechts (äquivalent zu `<int> // (2 ** <int>)`)
+ * `<int> ^ <int> -> <int>`: bitweises XOR
 
 ## float
 
-Bei `float`-Werten funktioniert das alles genau so wie bei `int` mit der Besonderheit,
+Bei `float`-Werten funktioniert das fast alles genau so wie bei `int` mit der Besonderheit,
 dass alle Rückgabewerte auch `float` sind. (Dies gilt auch, wenn `int` und `float` gemischt werden.)
+Außerdem funktionieren die Bitoperatoren `<<`, `>>` und `^` nicht auf floats.
 
 ## str
 

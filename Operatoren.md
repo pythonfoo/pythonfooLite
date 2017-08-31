@@ -25,6 +25,19 @@ Bei `float`-Werten funktioniert das fast alles genau so wie bei `int` mit der Be
 dass alle Rückgabewerte auch `float` sind. (Dies gilt auch, wenn `int` und `float` gemischt werden.)
 Außerdem funktionieren die Bitoperatoren `<<`, `>>` und `^` nicht auf floats.
 
+## bool
+
+Die oben beschriebenen `int`-Operationen lassen sich auch auf `bool`-Werte anwenden. Dabei gilt:
+
+ * `True == 1`
+ * `False == 0`
+
+Außerdem gibt es auch noch weitere boolesche Operatoren:
+
+ * `<bool> and <bool> -> <bool>`: logisches Und
+ * `<bool> or <bool> -> <bool>`: logisches Oder
+ * `not <bool> -> <bool>`: logisches Nicht
+
 ## str
 
 Bei Strings ist das Verhalten auch sinnvoll, aber auf den ersten Blick evtl. anders als erwartet:

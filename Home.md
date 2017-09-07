@@ -166,3 +166,11 @@ Webanwendungen sind ein häufiger Einsatzzweck von Python.
 
 #### Aufgaben
 * *Hallo Welt!* als Webapp
+
+### Level 11: Packaging und Repos
+Mit `setuptools` und `pip` kann man Pakete erstellen, packen und installieren.
+* [pypi](https://pypi.org/) als Repository
+* Pakete aus dem Internet herunterladen und installieren
+* Pakete erstellen
+* Pakete bauen
+* Pakete hochladen

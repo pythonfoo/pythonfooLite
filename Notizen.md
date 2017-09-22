@@ -11,3 +11,5 @@
 * Weitere .md Dateien zu jedem Level im Wiki
 * Codebeispiele zu jedem Level im Repository
 * Beispielslösungen für die Aufgaben
+* Glossar vervollständigen
+* Kapitel 4?

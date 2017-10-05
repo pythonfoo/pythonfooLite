@@ -13,10 +13,11 @@ for x in gen("abcdef"):
 def f(x):
     return x**2
 
-f(2)
-4
-f(3)
-9
+
+# IN: f(2)
+# OUT: 4
+# IN: f(3)
+# OUT: 9
 
 def dec(func):
     def inner_func(*args):
@@ -30,8 +31,9 @@ def dec(func):
 def f(x):
     return x**2
 
-f(2)
-(2,)
-Return:
-    4
-4
+
+# IN: f(2)
+# OUT: (2,)
+# OUT: Return:
+# OUT:    4
+# OUT:4

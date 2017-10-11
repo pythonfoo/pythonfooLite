@@ -2,15 +2,15 @@
 
 ## Der Programmfluss
 Bisher hat unser Programm einen Schritt nach den anderen ausgeführt. Man kann also sagen,
-dass unsere Programme sehr linear aufgebaut waren. Daher waren die bisherigen Programme
-noch sehr primitiv, da sie noch nicht auf verschiedene Eingaben mit verschiedenen Aktionen
+dass unsere Programme sehr linear aufgebaut waren. Damit waren die bisherigen Programme sehr primitiv, 
+da sie noch nicht auf verschiedene Eingaben mit verschiedenen Aktionen
 reagieren konnten. Um dies zu ändern gibt es in den meisten Programmiersprachen sogenannte
-Kontrollstrukturen, die dazu dienen einerseits dem Benutzer das Programmieren zu erleichtern,
+Kontrollstrukturen. Diese dienen einerseits dazu, dem Benutzer das Programmieren zu erleichtern,
 andererseits ermöglichen diese Kontrollstrukturen aber auch erst die Formulierung komplexer
-Programme, da sie es ermöglichen den Programmablauf nonlinear zu gestalten.
+Programme, denn sie es ermöglichen den Programmablauf nonlinear zu gestalten.
 
 ## Boolean
-Der Boolean-Typ ist ein Datentyp, der einen Wahrheitswert enthält. Dieser kann entweder `True`
+Der Boolean-Typ ist ein Datentyp, der einen Wahrheitswert enthält. Er kann entweder `True`
 oder `False` sein.
 
     >>> a = True
@@ -49,7 +49,7 @@ solange er nicht `0` ist.
 
 ## Die if-Bedingung
 Man stelle sich eine Passwortabfrage vor: Das Programm soll nur weiterlaufen, wenn
-der Benutzer ein richtiges Passwort eingegeben hat. Dies war uns aktuell nicht möglich, da wir
+der Benutzer ein richtiges Passwort eingegeben hat. Dies war uns bisher nicht möglich, da wir
 noch keine Möglichkeit hatten zwei Werte miteinander zu vergleichen. Die if-Abfrage ist eine
 Kontrollstruktur, die einen boolschen Ausdruck entgegen nimmt und einen Block Code nur
 ausführt, wenn der boolsche Ausdruck `True` ist.
@@ -61,8 +61,8 @@ ausführt, wenn der boolsche Ausdruck `True` ist.
         3
 
 Allein mit einer if-Bedingung ist schon vieles möglich, allerdings möchte der Programmierer
-teilweise mehrere Fälle voneinander unterscheiden und verschieden darauf reagieren.
-Dafür gibt es das Schlüsselwort `else`, dass immer am Ende einer if-Bedingung steht und nur
+manchmal mehrere Fälle voneinander unterscheiden und verschieden darauf reagieren.
+Dafür gibt es das Schlüsselwort `else`, das immer am Ende einer if-Bedingung steht und nur
 dann ausgeführt wird, wenn alle vorherigen Abfragen gescheitert sind.
 
     >>> password = input("Bitte das Passwort eingeben: ")
@@ -83,10 +83,12 @@ Bei der Tiefe der Einrückung liegt eine häufige Fehlerquelle, deshalb hat man 
 Leerzeichen oder einen Tab derselben Länge geeinigt. PEP8, ein Styleguide für die
 Programmierung mit Python, legt 4 Leerzeichen als Einrückungstiefe fest. Egal wie viele
 Leerzeichen oder Tabs du benutzt, ist es wichtig im gesamten Programm oder noch besser
-in allen deinen Programmen, dabei einheitlich zu bleiben, da dies doofe Fehler vermeidet.
-Viele Texteditoren bieten zudem an Tabs in Leerzeichen umzuwandeln, was den Vorteil hat,
+in allen deinen Programmen einheitlich zu bleiben, da dies Fehler vermeidet.
+Viele Texteditoren bieten zudem an, Tabs in Leerzeichen umzuwandeln, was den Vorteil hat,
 dass man sich Schreibarbeit spart aber trotzdem PEP8 kompatibel bleibt. Zu PEP8 kommen
-wir in späteren Leveln nochmal. Zusätzlich zu `if` und `else`gibt es noch die Verknüpfung von
+wir in späteren Leveln nochmal. 
+
+Zu zu `if` und `else`gibt es noch die Verknüpfung von
 beiden, nämlich `elif`, was für `else if ` steht.
 
     if Bedingung1  :
@@ -97,5 +99,5 @@ beiden, nämlich `elif`, was für `else if ` steht.
         Anweisungen
 
 Eine if-Bedingung kann beliebig viele `elif`Blöcke haben, aber jeweils nur ein `if`und nur ein
-`else`. `if`, `elif` und `else`sind Schlüsselwörter, was bedeutet, dass sie für if-Abfragen
+`else`. `if`, `elif` und `else` sind Schlüsselwörter, was bedeutet, dass sie für if-Abfragen
 reserviert sind, weshalb keine Variable if, elif oder else heißen kann.

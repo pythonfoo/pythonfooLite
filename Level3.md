@@ -1,8 +1,5 @@
 # Level 3
 
-**ToDo:**
-* Link zu Operatoren.md, wenn es um .append geht.
-
 ## Iterierbare Objekte
 
 ### Listen

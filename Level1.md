@@ -101,6 +101,4 @@ markiert.
     >>> import keyword
     >>> print(keyword.kwlist)
 
-Gibt eine Liste von Schlüsselwörtern aus. Im Allgemeinen sollte man aber auf keine Kollisionen stoßen, wenn man seine
-Variablennamen so gestaltet, dass der Name aussagt, wofür die Variable verwendet wird, da die Schlüsselwörter recht
-eindeutig und spezifisch sind.
+Gibt eine Liste von Schlüsselwörtern aus. Diese sind recht eindeutig und spezifisch. Im Allgemeinen sollte man daher auf keine Kollisionen stoßen, wenn man seine Variablennamen so gestaltet, dass der Name aussagt, wofür die Variable verwendet wird.

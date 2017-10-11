@@ -10,8 +10,7 @@ werden, z.B.
         Test
 
 ## Wie lese ich eine Eingabe ein?
-Auch für die Eingabe bietet Python eine Funktion, die `input()` Funktion. Wichtig hierbei ist, da ich
-ja die Eingabe bekommen möchte, muss ich die Eingabe einer Variablen übergeben.
+Auch für die Eingabe bietet Python eine Funktion, die `input()` Funktion. Wichtig hierbei ist: da ich die Eingabe erhalten und speichern möchte, muss ich die Eingabe einer Variablen übergeben.
 
     >>> eingabe = input()
         Testeingabe
@@ -23,10 +22,10 @@ ja die Eingabe bekommen möchte, muss ich die Eingabe einer Variablen übergeben
         Hallo
 
 ## Was ist eine Variable?
-Eine Variable ist eine Art Container für einen beliebigen Wert, dabei ist in Python im Gegensatz zu vielen
-anderen Programmiersprachen, egal welcher Art dieser Wert ist. Dabei kann in Python sowohl der Wert im
-Container, als auch der Typ des Wertes geändert werden (Typen sind beispielsweise Zahlen, Wörter, Wahrheitswerte).
-Der Wert einer Variable kann entweder im Quellcode definiert werden oder aus externen Quellen, wie beispielsweise
+Eine Variable ist eine Art Container für einen beliebigen Wert, dabei ist in Python - im Gegensatz zu vielen
+anderen Programmiersprachen - egal welcher Art dieser Wert ist. Dabei kann in Python sowohl der Wert im
+Container, als auch der Typ des Wertes geändert werden. Typen sind beispielsweise Zahlen, Wörter, Wahrheitswerte.
+Der Wert einer Variable kann entweder im Quellcode definiert werden oder aus externen Quellen wie beispielsweise
 der Konsoleneingabe, lokalen Dateien, dem Netzwerk oder einer grafischen Oberfläche kommen. Die Verwendung von
 Variablen macht ein Programm flexibel, da Werte zur Laufzeit verändert werden können und Ergebnisse im Programm
 für weitere Berechnungen weiterverwendet werden können.
@@ -73,8 +72,8 @@ Diese Rechenoperatoren können auch mit Variablen benutzt werden.
 Mit dem Nummernzeichen `#` kann man einen Kommentar einfügen. Nach einem `#` wird der Kompiler oder Interpreter
 bis zum Ende der Zeile alles ignorieren, was es ermöglicht hier sinnvolle Kommentare hin zu schreiben. Ein
 Kommentar dient dazu den Code lesbarer zu machen, damit man auch später noch nachvollziehen kann, was der Code
-machen sollte. Kommentare sind somit ein Werkzeug der Dokumentation, die das Ziel hat, den Code nachvollziehbar
-zu machen, damit zum Beispiel auch andere ihn verstehen können.
+machen sollte. Kommentare sind somit ein Werkzeug der Dokumentation, welches das Ziel hat den Code nachvollziehbar
+zu machen, damit auch andere ihn verstehen können.
 
     >>> sum = 1 + 2   # Zwei Zahlen werden addiert
     >>> print(sum)

@@ -36,6 +36,8 @@ Eine Funktion ist eine Abfolge grundlegender Befehle, die eine Aufgabe ausführt
 * einen Rückgabewert ausliefern
 * weitere Funktionen aufrufen (wird später vertieft, Stichwort Rekursion)
 * Variablen manipulieren
+
+
 Eine Funktion kann zum Beispiel benutzt werden, um Code mit verschiedenen Werten auszuführen. Später wird noch
 genauer darauf eingegangen, wie eine Funktion funktioniert.
 

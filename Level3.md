@@ -7,12 +7,12 @@
 
 ### Listen
 Eine Liste ist eine Folge von beliebigen Objekten mit einer beliebigen Länge.
-Eine Liste wird mit `[]` definiert und kann beliebige Objekte enthalten.
+Eine Liste wird mit `[]` definiert.
 #### Definition:
 ``` python
 >>> a = [1, "foo", True]
 ```
-  Viele Objekte, lassen sich mit `list()`in eine Liste umwandeln, dabei wird eine neue
+  Viele Objekte lassen sich mit `list()`in eine Liste umwandeln, dabei wird eine neue
   Liste erstellt.
 
 ``` python 
@@ -67,9 +67,9 @@ Die Länge einer Liste / bzw. die Anzahl an Elementen bekommt man über die len(
 
 ##### append()
 
-Ein Objekt kann wie folgt einer Liste hinzugefügt werden, dabei wird die Liste verändert,
+Ein Objekt kann einer Liste hinzugefügt werden. Dabei wird die Liste verändert,
 so dass kein Rückgabewert benötigt wird. Das Objekt wird dabei immer hinten an die Liste
-angehangen.
+angehängt.
 
 ``` python
 >>> a = [1, "foo", True]
@@ -79,8 +79,8 @@ angehangen.
 ```
 
 ##### insert()
-Anstatt ein Element in eine Liste einzufügen, indem man es hinten anhängt, kann man
-auch bestimmen, an welchem Index ein Objekt eingefügt werden soll.
+Anstatt ein Element in eine Liste einzufügen indem man es hinten anhängt, kann man
+auch bestimmen, an welchem Index es eingefügt werden soll.
 ``` python
 >>> a = [True, "foo", "python", "foo", "spam", 42]
 >>> a.insert(0, "test")
@@ -178,7 +178,7 @@ Oder als Umwandlung eines anderen Objektes definiert werden:
 ```
 
 #### Zugriff
-Der Zugriff auf die Elemente eines Tupels erfolgt, wie bei einer Liste über den
+Der Zugriff auf die Elemente eines Tupels erfolgt wie bei einer Liste über den
 Index:
 ``` python
 >>> t = (1, "foo", True)
@@ -263,7 +263,7 @@ Dies kann mit Benutzung der `get()`Methode umgangen werden:
 ```
 
 ## Schleifen
-Schleifen sind eine einfache Möglichkeit Code beliebig häufig auszuführen, was grade bei
+Schleifen sind eine einfache Möglichkeit Code beliebig häufig auszuführen, was gerade bei
 der Implementierung der meisten Algorithmen sehr häufig benutzt wird. Python liefert nun
 zwei Möglichkeiten eine Schleife zu implementieren, die for-Schleife und die while-Schleife.
 Grundlegend kann man mit beiden Möglichkeiten dasselbe implementieren, jedoch macht in
@@ -307,8 +307,7 @@ Keys annimmt.
 ```
 
 #### range()
-Ein häufoger Anwendungsfall für die for-Schleife sind, gerade am Anfang, Zählschleifen,
-das heißt, dass ein Integer hochgezählt wird. Mit der `range()` Funktion ist es sehr einfach
+Ein häufiger Anwendungsfall für die for-Schleife sind Zählschleifen. Dies heißt, dass ein Integer hochgezählt wird. Mit der `range()` Funktion ist es sehr einfach
 möglich solche Zählschleifen zu erstellen. Die Funktion erstellt ein iterierbares Objekt, mit
 dem dann über die Integer iteriert wird.
 ``` python
@@ -322,7 +321,7 @@ dem dann über die Integer iteriert wird.
  	4
 ```
  
-Wie zu sehen ist, ist der Endwert exklusive
+Wie zu sehen ist, ist der Endwert exklusive.
 Es ist allerdings auch möglich einen Startwert und eine Schrittweite anzugeben
 
 ``` python
@@ -330,13 +329,13 @@ Es ist allerdings auch möglich einen Startwert und eine Schrittweite anzugeben
 ...		print(i, end="")
 	2 4 6 8 10
 ```
-Natürlich kann man auch der Startwert auch größer sein als der Endwert, dann muss aber
+Natürlich kann man auch der Startwert größer sein als der Endwert, dann muss aber
 auch die negative Schrittweite zwingend angegeben werden.
 
 #### break und continue
 Bei for-Schleifen ist zu beachten, dass die Anzahl an Durchläufen durch die Länge des iterierbaren
 Objektes bestimmt wird. Es gibt keine Möglichkeit mehr Durchläufe durchzuführen.
-Falls man jedoch aus einer Schleife ausbrechen möchte, d.h. sie frühzeitig beenden kann
+Falls man jedoch aus einer Schleife ausbrechen möchte, d.h. sie frühzeitig beenden, kann
 man das Schlüsselwort `break` benutzen. Dabei ist zu beachten, dass mit `break` nur aus
 der aktuellen Schleife ausgebrochen wird. Sollte diese Schleife in einer weiteren enthalten
 sein, läuft diese weiter. 
@@ -388,8 +387,8 @@ zurückgibt. Die Syntax ist die folgende:
 Dies ist eine Endlosschleife, die unter normalen Umständen immer weiter laufen wird.
 Was hinter dem `while` steht wird intern in einen boolschen Ausdruck umgewandelt, daher ist
 das Vergleichen mit `True` im oberen Fall überflüssig.
-Im Allgemeinen wird eine variable als boolscher Ausdruck benutzt, die dann wärend der Laufzeit
-der Schleife geändert werden kann um die Laufzeit er Schleife zu beeinflussen. Bei der 
+Im Allgemeinen wird eine Variable als boolscher Ausdruck benutzt, die dann wärend der Laufzeit
+der Schleife geändert werden kann um die Laufzeit der Schleife zu beeinflussen. Bei der 
 while-Schleife ist es somit, im Gegensatz zur for-Schleife, möglich die Laufzeit zu verlängern
 oder zu verkürzen.
 Zum Beispiel kann mit der while-Schleife sehr viel flexiblere for-Schleifen implementieren.

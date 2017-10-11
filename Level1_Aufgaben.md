@@ -2,7 +2,7 @@
 
 Es bleibt natürlich dir überlassen, wie du dein Programm nennst, aber da es sein kann,
 dass wir uns später noch einmal auf dieses Programm beziehen, schlagen wir einen Namen
-für das Programm vor. Außerdem empfelen wir, dass du pro Level einen Ordner anlegst, um
+für das Programm vor. Außerdem empfehlen wir, dass du pro Level einen Ordner anlegst, um
 den Überblick zu behalten.
 
 ## Aufgabe 1

@@ -22,6 +22,8 @@ try:
 except ValueError:
     print(x, " kann nicht als Integer benutzt werden.")
     raise
+else:
+    print("Kein Valuefehler")
 
 # So wird der Fehler bearbeitet, aber der Fehler bleibt nicht unentdeckt
     

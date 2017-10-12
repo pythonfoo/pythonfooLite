@@ -69,6 +69,7 @@ Weiterhin gibt es noch Vergleichsoperatoren, die auch für andere Typen gelten:
 
 Diese Rechenoperatoren können auch mit Variablen benutzt werden.
 
+[weitergehende Informationen zum Thema "Operatoren"](https://github.com/pythonfoo/pythonfooLite/wiki/Operatoren)
 
 ## Was bedeutet das `#`?
 Mit dem Nummernzeichen `#` kann man einen Kommentar einfügen. Nach einem `#` wird der Kompiler oder Interpreter

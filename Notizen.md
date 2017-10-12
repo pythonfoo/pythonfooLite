@@ -12,7 +12,8 @@
 * Codebeispiele zu jedem Level im Repository
 * Beispielslösungen für die Aufgaben
 * Glossar vervollständigen
-* Kapitel 4?
+* ~~Kapitel 4~~
 * Link zu Operatoren.md, wenn es um .append geht, in Kapitel 3
 * Kapitel 2: Soll hier eine Verknüpfung zur PW Datei / Erklärung entstehen?
 * Erklärung Vorteile / Anwendungsmöglichkeiten der Schleifen
+* `with` in Level 7

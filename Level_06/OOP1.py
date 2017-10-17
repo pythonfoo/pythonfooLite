@@ -1,163 +1,119 @@
 #!/usr/bin/env python3
+from getpass import getuser
+import webbrowser
 
-'''
-Objektorientierte Programmierung mit Python:
+class Simple:
+	""" Dies ist die einfachst mögliche Klasse.
+	Sie hat keine Methoden, keine Attribute
+	und erbt (implizit) von `object`.
 
-1. Was ist eine Klasse?
-Eine Klasse ist ein Objekt. Sie besitzt Eigenschaften (Attribute) und
-Funktionen (Methoden). Wenn wir uns den Hund als Klasse vorstellen hätte er
-beispielsweise...
+	Sie ist allerdings relativ langweilig,
+	weil man recht wenig mit ihr machen kann.
 
-Die Attribute:
-* Fellfarbe
-* Augenfarbe
-* Name
-* Schulterhöhe
-* Alter
-* Rasse
-* Hunger
-* Müdigkeit
-* usw.
-
-und die Methoden:
-* bellen
-* Frisbee fangen
-* futtern
-* schlafen
-* laufen
-* rennen
-* springen
-* usw.
-
-Wie man sieht, beschreiben Attribute Zustände oder Eigenschaften.
-Methoden beschreiben stattdessen Abläufe oder Vorgänge.
-
-Bei einer Klasse können Methoden auf Attribute zugreifen und diese verändern.
-Zum Beispiel senkt die Methode <essen> das Attribut <Hunger> des Hundes und
-die Methode <schlafen> das Attribut <Müdigkeit>.
-
-Ein Attribut hat immer einen Typ. Dieser muss natürlich nicht beibehalten
-werden, aber es ist schon sinnvoll die Typen der Attribute kohärent zu
-lassen, um sie besser verarbeiten zu können. So ist es beispielsweise
-wenig sinnvoll, dem Attribut <Schulterhöhe> eine Liste zuzuordnen.
-
-'''
-
-
-
-
-# Definition einer Klasse:
-
-class foo():
-
+	Klassennamen sollten laut PEP8 in CamelCase sein
+	und mit einem Großbuchstaben beginnen
+	(https://www.python.org/dev/peps/pep-0008/#class-names).
+	"""
 	pass
 
-f = foo()
+class HelloWorld:
+	""" Diese Klasse hat eine (statische) Methode. """
+	def hello_world():
+		""" Diese Methode gibt "Hello World!" auf der Konsole aus.
 
+		Funktions- oder Methodennamen sollten laut PEP8 kleingeschrieben
+		werden und evtl. mit Unterstrichen getrennt sein
+		(https://www.python.org/dev/peps/pep-0008/#function-names).
+		"""
+		print("Hello, World!")
 
-# Definition einer Klasse mit Initialisierungsmethode:
+# Die Methode aufrufen:
+HelloWorld.hello_world()
 
-class foo():
+class Hello:
+	def hello(name="World"):
+		""" Natürlich können Methoden auch Parameter haben.
+		Dies funktioniert genau so wie bei Funktionen.
+		"""
+		print("Hello, {}!".format(name))
 
+# Die Methode aufrufen:
+Hello.hello(getuser())
+
+class SpecialNumbers:
+	""" Diese Klasse hat nur statische Attribute.
+	Da dies hier Konstanten sind, sind ihre Namen großschrieben
+	(https://www.python.org/dev/peps/pep-0008/#constants).
+	"""
+	PI = 3.14
+	E = 2.71
+
+# Zugriff
+print(SpecialNumbers.PI)
+
+# Problem: Der Zugriff aus statischen Methoden auf statische Attribute ist unschön.
+# (`__class__` und so)
+
+class Calculator:
+	""" Diese Klasse hat zusätzlich zu den statischen Attributen
+	auch noch zwei Instanzmethoden.
+	"""
+	PI = 3.14
+	E = 2.71
+
+	def multiply_by_pi(self, number):
+		""" Dies ist eine Instanzmethode.
+		Dies lässt sich daran erkennen, dass der erste Parameter `self` ist.
+		Dieses `self` ist eine Referenz auf das aktuelle Objekt.
+		Da Variablennamen nur innerhalb von Funktionen und Modulen
+		aufgelöst werden, ist dies nötig.
+		"""
+		return number * self.PI
+
+	def multiply_by_e(self, number):
+		return number * self.E
+
+c = Calculator() # Instanziierung
+print(c.multiply_by_pi(5)) # Aufruf der Methode
+# Achtung: Was nicht funktioniert: Calculator.multiply_by_pi(5)
+
+class Thing:
+	""" Auch dies ist wieder eine ziemlich nutzlose Klasse.
+
+	Aber sie hat einen Konstruktor!
+	"""
 	def __init__(self):
+		"""  Dies ist ein Konstruktor.
+		Bis auf den Namen ähnelt er anderen Instanzmethoden.
+		Er wird aufgerufen, wenn die Klasse instanziert wird.
 
-		pass
+		Standardmäßig existiert ein leerer Konstruktor ohne Parameter.
+		"""
+		print ("Hallo!")
 
-f = foo()
+Thing() # Instanziierung
 
-# Funktion innerhalb einer Klasse: "Methode"
-# Funktion außerhalb einer Klasse: "Funktion"
+class Contact:
+	""" Ein Adressbucheintrag. """
+	def __init__(self, name, phone, email):
+		""" Dies ist ein Konstruktor.
+		Aber dieser hat Parameter.
 
+		Diese Parameter werden Instanzvariablen zugewiesen.
+		"""
+		self.name = name
+		self.phone = phone
+		self.email = email
 
+c = Contact("Ich", "01234-56789", "mail@example.org")
+print("Name: {}".format(c.name))
+print("Telefonnummer: {}".format(c.phone))
+print("E-Mail: {}".format(c.email))
 
-# Übergabeparameter der __init__() Methode:
+class HTTPURL:
+	""" Diese Klasse repräsentiert eine HTTPURL. """
+	def __init__(self, url):
+		self.url = url
 
-class foo():
-
-	def __init__(self, x):
-
-		print(x)
-
-x = input(":")
-f = foo(x)
-
-
-# Definition eines Attributes:
-
-class foo():
-
-	def __init__(self, x):
-
-		self.x  = x
-		print(self.x)
-
-x = input(":")
-foo(x)
-
-
-
-# get- und set-Methoden:
-
-class foo():
-
-	def __init__(self, x):
-
-		self.x = x
-
-
-	def set_x(self, tmp_x):
-		self.x = tmp_x
-
-
-	def get_x(self):
-		return self.x
-
-x = input(":")
-f = foo(x)
-
-"""
-Da Python keine privaten Variablen hat, ist es theoretisch möglich,
-auf eingebaute Methoden und Attribute eingebauter Klassen zuzugreifen.
-Es hat sich als Standard entwickelt, dass Methoden, die nur für den
-internen Gebrauch in der Klasse bestimmt sind, mit zwei "_" vor und
-hinter dem Namen deklariert werden z.B. "__privat__()"
-"""
-
-# Aufruf einer Methode:
-
-class foo():
-
-	def __init__(self, x):
-
-		self.x = x
-
-
-	def set_x(self, tmp_x):
-		self.x = tmp_x
-
-
-	def get_x(self):
-		return self.x
-
-x = input(":")
-f = foo(x)
-
-print(f.get_x())
-
-new_x = input(":")
-f.set_x(new_x)
-
-print(f.get_x())
-
-
-
-# Auflisten von Attributen und Methoden einer Klasse:
-
-beispiel = ""
-print( dir( beispiel ) )
-
-beispiel2 = 2
-print( dir( beispiel2 ) )
-
-beispiel3 = []
-print( dir( beispiel3 ) )
+	def open(self):
+		webbrowser.open(self.url)

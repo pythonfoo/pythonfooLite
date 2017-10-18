@@ -102,19 +102,48 @@ class Strecke:
         """
         return self == l or self > l
 
-class Vektor(Strecke):
-    """ Ein Vektor ist eine Strecke mit einer Richtung. """
+class Vektor:
+    """ Ein Vektor hat eine Richtung. """
+    
+    def __init__(self, *args):
+        if len(args) == 3: # x, y, z
+            self.x = float(args[0])
+            self.y = float(args[1])
+            self.z = float(args[2])
+        elif len(args) == 2: # p1, p2
+            self.x = args[1].x - args[0].x
+            self.y = args[1].y - args[0].y
+            self.z = args[1].z - args[0].z
+        else:
+            raise NotImplementedError
+    
+    def __repr__(self):
+        """ die menschenlesbare Darstellung -- str und repr """
+        return "({}|{}|{})".format(self.x, self.y, self.z)
     
     def __eq__(self, l):
         """ Äquivalenz: Vektoren haben eine Richtung. """
-        if not isinstance(l, Strecke):
+        if not isinstance(l, Vektor):
             return False
-        return self.p1 == l.p1 and self.p2 == l.p2
+        return self.x == l.x and self.y == l.y and self.z == l.z
+    
+    def __abs__(self):
+        """ berechnet den Betrag -- abs """
+        return math.sqrt(self.x**2 + self.y**2 + self.z**2)
+    
+    def __len__(self):
+        return int(abs(self))
+    
+    def __gt__(self, l):
+        return abs(self) > abs(l)
+    
+    def __ge__(self, l):
+        return self == l or self > l
     
     def __add__(self, l):
         """ Addition """
         assert isinstance(l, Vektor)
-        return Vektor(self.p1, self.p2 + (l.p2 - l.p1))
+        return Vektor(self.x + l.x, self.y + l.y, self.z + l.z)
     
     def __sub__(self, l):
         """ Subtraktion """
@@ -123,21 +152,21 @@ class Vektor(Strecke):
     
     def __neg__(self):
         """ Negation """
-        return Vektor(self.p2, self.p1)
+        return Vektor(-self.x, -self.y, -self.z)
     
     def __mul__(self, faktor):
         """ Multiplikation """
         if isinstance(faktor, float) or isinstance(faktor, int):
             # Multiplikation mit einem Skalar ergibt einen neuen Vektor.
-            x = self[0] * faktor
-            y = self[1] * faktor
-            z = self[2] * faktor
+            x = self.x * faktor
+            y = self.y * faktor
+            z = self.z * faktor
             return Vektor(self.p1, self.p1 + Punkt(x, y, z))
         if isinstance(faktor, Vektor):
             # Multiplikation mit einem Vektor ergibt einen Skalar.
-            x = self[0] * faktor[0]
-            y = self[1] * faktor[1]
-            z = self[2] * faktor[2]
+            x = self.x * faktor.x
+            y = self.y * faktor.y
+            z = self.z * faktor.z
             return x + y + z
         return None
     
@@ -152,9 +181,9 @@ class Vektor(Strecke):
     
     def __iter__(self):
         """ Iterator - siehe nächstes Kapitel """
-        yield self.p2.x - self.p1.x
-        yield self.p2.y - self.p1.y
-        yield self.p2.z - self.p1.z
+        yield self.x
+        yield self.y
+        yield self.z
     
     def __getitem__(self, item):
         """ Zugriff via Index """

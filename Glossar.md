@@ -28,7 +28,7 @@ Ein Typ wird definiert durch den Wertebereich und die möglichen Operationen, di
 Zum Beispiel spezifiziert der Typ **Integer** den Wertebereich der ganzen Zahlen und als Operationen verschiedene Grundrechenarten
 und Vergleichsoperationen. Neben den Typen, die von Python mitgeliefert werden, ist es auch möglich eigene Typen zu definieren.
 ### Schlüsselwort
-
+Schlüsselwörter dienen der Strukturierung des Programmcodes und können daher nicht als Namen für **Variablen** verwendet werden.
 ### Integer
 Ein Integer ist ein **Typ**, der von Python mitgeliefert wird und die ganzen Zahlen behandelt. Er bietet als Operationen die Grundrechenarten,
 sowie die Moduludivision, die Negation und Vergleichsoperationen. Ein Integer wird im Pythoncode durch die entsprechende Zahl
@@ -37,7 +37,10 @@ ausgedrückt.
 Ein String ist ein **Typ**, der von Python mitgeliefert wird. Die **Werte** eines Strings sind Zeichenketten beliebiger Länge. In
 Python wird ein String durch eine Zeichenkette in doppelten `""` oder einfach `''` Anführungszeichen ausgedrückt.
 ### Kommentare
-
+Kommentare dienen der Lesbarkeit des Codes und werden von **Compiler** und **Interpreter** ignoriert. Kommentare können benutzt werden
+um den Code zu erklären und sollten nicht nur wiederholen, was der Code tut. Im Grunde sollten Kommentare die Frage nach dem "Warum?"
+und nicht nach dem "Was?" klären. In Python kann ein Kommentar an einer beliebigen Stelle im Code mit einem "#" bis zu Ende der Zeile
+eingesetzt werden.
 ## Level 2:
 ### Programmablauf
 

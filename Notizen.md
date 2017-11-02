@@ -17,3 +17,4 @@
 * Kapitel 2: Soll hier eine Verknüpfung zur PW Datei / Erklärung entstehen?
 * Erklärung Vorteile / Anwendungsmöglichkeiten der Schleifen
 * `with` in Level 7
+* Kapitel zu CLI-Anwendungen (argparse usw.)

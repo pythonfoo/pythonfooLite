@@ -22,12 +22,10 @@ print(lorem_ipsum.read())
 lorem_ipsum.close()
 
 # eine Datei schreiben
-# open kann auch in eine with Kontextblock geöffnetet werden
-# dann wird der Datei-Handle auch geschlossen wenn es in dem
-# Block zu einer Exception kommt.
 
-with open("test/test.txt", "w") as test:
-    test.write("total toller Text")
+test = open("test/test.txt", "w")
+test.write("total toller Text")
+test.close()
 # OUT: 17
 
 # eine Datei löschen

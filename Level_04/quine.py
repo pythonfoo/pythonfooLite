@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
 
-with open(__file__, "r") as we:
-    print(we.read())
+we = open(__file__, "r")
+print(we.read())
+we.close()

@@ -2,9 +2,9 @@
 
 # alles wie gehabt (siehe label.py)
 
-from PySide2.QtCore import *
-from PySide2.QtGui import *
-from PySide2.QtWidgets import *
+from qtpy.QtCore import *
+from qtpy.QtGui import *
+from qtpy.QtWidgets import *
 
 import sys
 

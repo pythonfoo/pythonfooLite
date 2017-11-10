@@ -5,16 +5,22 @@
 
 """
 In diesem Level verwenden wir Qt 5 (https://www.qt.io/).
-Für eine Anbindung an Python nehmen wir PySide 2 (https://wiki.qt.io/PySide2).
-Dies ist leider in vielen Distributionen noch nicht in den Paketquellen.
-Für die aktuelle Ubuntu LTS (16.04) muss z.B. das PPA ppa:thopiekar/pyside-git
+Für eine Anbindung an Python kann man PySide 2 (https://wiki.qt.io/PySide2) oder PyQT 5 verwenden.
+PySide 2 ist etwas näher am "normalen" Qt für C++,
+aber leider in vielen Distributionen noch nicht in den Paketquellen.
+Für die aktuelle Ubuntu LTS (16.04) müsste z.B. das PPA ppa:thopiekar/pyside-git
 (https://launchpad.net/~thopiekar/+archive/ubuntu/pyside-git) hinzugefügt und
 das Paket "python3-pyside2" installiert werden.
+Daher verwenden wir qtpy (https://github.com/spyder-ide/qtpy),
+was die jeweils auf dem System installierte Bibliothek lädt.
+(Achtung: Dabei kann auch noch das alte Qt 4 herausfallen!)
+qtpy kann man z.B. unter Ubuntu mit dem Paket "python3-qtpy"
+oder auf allen Systemen mit pip3 installieren.
 """
 
-from PySide2.QtCore import *
-from PySide2.QtGui import *
-from PySide2.QtWidgets import *
+from qtpy.QtCore import *
+from qtpy.QtGui import *
+from qtpy.QtWidgets import *
 
 import sys
 

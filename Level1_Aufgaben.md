@@ -9,7 +9,7 @@ den Überblick zu behalten.
 
 Programmname: addierer.py
 
-* Schreibe ein Programm, das die Zahlen 23 und 42 addiert.
+* Schreibe ein Programm, das die Zahlen 23 und 42 addiert und das Ergebnis ausgibt.
 * Ändere dein Programm so ab, dass die Zahlen in zwei Variablen gespeichert werden.
 * Ändere dein Programm so ab, dass die Zahlen vom Benutzer eingegeben werden können.
 

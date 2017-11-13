@@ -10,7 +10,8 @@ werden, z.B.
         Test
 
 ## Wie lese ich eine Eingabe ein?
-Auch für die Eingabe bietet Python eine Funktion, die `input()` Funktion. Wichtig hierbei ist: da ich die Eingabe erhalten und speichern möchte, muss ich die Eingabe einer Variablen übergeben.
+Auch für die Eingabe bietet Python eine Funktion, die `input()` Funktion. Wichtig hierbei ist: da ich die Eingabe erhalten
+und speichern möchte, muss ich die Eingabe einer Variablen übergeben.
 
     >>> eingabe = input()
         Testeingabe
@@ -31,12 +32,15 @@ Variablen macht ein Programm flexibel, da Werte zur Laufzeit verändert werden k
 für weitere Berechnungen weiterverwendet werden können.
 
 ## Was ist denn jetzt eine Funktion?
-Eine Funktion ist eine Abfolge grundlegender Befehle, die eine Aufgabe ausführt. Eine Funktion kann:
+Eine Funktion ist eine Abfolge grundlegender Befehle, die eine Aufgabe ausführt. In Level 5 werden wir beleuchten, wie
+man in Python eigene Funktionen schreiben kann, bis dahin werden wir uns mit den mitgelieferten Funktionen und
+Methoden begnügen (wo der genaue Unterschied zwischen Funktion und Methode besteht wird ebenfalls später geklärt).
+Eine Funktion kann:
+
 * eine Eingabe entgegennehmen
 * einen Rückgabewert ausliefern
 * weitere Funktionen aufrufen (wird später vertieft, Stichwort Rekursion)
 * Variablen manipulieren
-
 
 Eine Funktion kann zum Beispiel benutzt werden, um Code mit verschiedenen Werten auszuführen. Später wird noch
 genauer darauf eingegangen, wie eine Funktion funktioniert.
@@ -102,4 +106,5 @@ markiert.
     >>> import keyword
     >>> print(keyword.kwlist)
 
-Gibt eine Liste von Schlüsselwörtern aus. Diese sind recht eindeutig und spezifisch. Im Allgemeinen sollte man daher auf keine Kollisionen stoßen, wenn man seine Variablennamen so gestaltet, dass der Name aussagt, wofür die Variable verwendet wird.
+Gibt eine Liste von Schlüsselwörtern aus. Diese sind recht eindeutig und spezifisch. Im Allgemeinen sollte man daher auf
+keine Kollisionen stoßen, wenn man seine Variablennamen so gestaltet, dass der Name aussagt, wofür die Variable verwendet wird.

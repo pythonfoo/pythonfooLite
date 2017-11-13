@@ -13,7 +13,7 @@ Wir schreiben:  `n! = n * n-1 * n-2 ... * 3 * 2 * 1`.
 6! = 720
 ```
 
-** Hinweis:** Die Fakultät von n entspricht ungefähr 1,6^n, was bedeutet, das sie exponentiell wächst, weshalb aus Zeitgründen, das Programm nur mit niedrigen Zahlen getestet werden sollte.
+**Hinweis:** Die Fakultät von n entspricht ungefähr 1,6^n, was bedeutet, das sie exponentiell wächst, weshalb aus Zeitgründen, das Programm nur mit niedrigen Zahlen getestet werden sollte.
 
 ## Aufgabe 2: Die gaußsche Summe
 Die gaußsche Summe von einer natürlichen Zahl n ist die Summe aller natürlicher Zahlen von 1 bis einschließlich n. 

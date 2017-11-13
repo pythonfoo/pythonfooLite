@@ -6,11 +6,13 @@ Viele Algorithmen in der Mathematik lassen sich als Summen oder Produkte beschre
 Die Fakultät einer natürlichen Zahl n ist das Produkt aller natürlichen Zahlen von 1 bis einschließlich n.
 Wir schreiben:  `n! = n * n-1 * n-2 ... * 3 * 2 * 1`.
 **Schreiben Sie ein Programm, das die Fakultät einer eingegebenen Zahl berechnet. Und überprüfen Sie mit Hilfe der vorgegebenen Werte**
+
 ```
 3! = 6
 4! = 24
 6! = 720
 ```
+
 ** Hinweis:** Die Fakultät von n entspricht ungefähr 1,6^n, was bedeutet, das sie exponentiell wächst, weshalb aus Zeitgründen, das Programm nur mit niedrigen Zahlen getestet werden sollte.
 
 ## Aufgabe 2: Die gaußsche Summe

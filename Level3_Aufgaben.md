@@ -41,4 +41,4 @@ Wenn das vordere Element größer als das hintere Element ist, werden diese vert
 5 [1, 2, 3, 4, 5, 6, 7, 8] # Vertauscht = False
 ```
 In dem Coderepository finden Sie im Ordner Level_3 eine Datei "bubblesort.py". Diese erstellt eine Liste mit `n`Elementen und durchmischt diese, das bedeutet, dass kein Element doppelt auftauchen wird.
-** Schreiben Sie ein Programm in diese Datei, dass die Liste `unsortet_list` mit Hilfe von Bubblesort sortiert. ** 
+ **Schreiben Sie ein Programm in diese Datei, dass die Liste `unsortet_list` mit Hilfe von Bubblesort sortiert.** 

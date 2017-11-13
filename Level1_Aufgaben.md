@@ -19,7 +19,7 @@ Programmname: addierer.py
 Programmname: print_string.py
 
 * Schreibe ein Programm, das den String "foo" ausgibt
-* Schreibe ein Programm, dass den String "foo" 5 mal ausgibt.
+* Ändere das Programm so ab, dass der String "foo" 5 mal ausgegeben wird.
 * Ändere das Programm so ab, dass der String 5 mal in der selben Zeile ausgegeben wird.
 * Ändere das Programm so ab, dass der Benutzer eingeben kann welcher String 5 mal in der selben
   Zeile ausgegeben werden soll.

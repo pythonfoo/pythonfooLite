@@ -13,7 +13,7 @@ import os
 import sys
 
 filename_text = "monty.txt"
-filename_new = "MONTY.py"
+filename_new = "MONTY.txt"
 
 # 1. Einlesen des Textes:
 if os.path.exists(filename_text):

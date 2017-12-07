@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 """
-Dieses Programm implementiert den euklidischen Algorithmus zur Bestimmung des größten gemeinsamen Teilers zweier Zahlen.
+Dieses Programm implementiert den euklidischen Algorithmus zur Bestimmung des größten gemeinsamen Teilers zweier Zahlen iterativ.
+
+(In Level 5 findet sich eine rekursive Implementation.)
 """
 
 # Eingabe

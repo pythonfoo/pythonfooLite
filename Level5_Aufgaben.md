@@ -7,7 +7,8 @@ Zur Erinnerung: Die Fakultät einer Zahl `n` ist gegeben durch:
 ```
 n! = n * (n-1) mit 0! = 1
 ```
-** Schreiben Sie eine Funktion, welche die Fakultät einer Zahl rekursiv berechnet. **
+
+**Schreiben Sie eine Funktion, welche die Fakultät einer Zahl rekursiv berechnet.**
 
 **Hinweis:**
 Wärend es bei der while-Schleife keine Begrenzung gibt, was die maximale Anzahl an Durchläufen angeht, existiert für die Tiefe einer Rekursion ein Limit.

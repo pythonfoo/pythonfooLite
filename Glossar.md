@@ -8,6 +8,10 @@ Ein Interpreter ist ein Programm, dass Anweisungen in einer Programmiersprache e
 ### Compiler
 Ein Compiler übersetzt Programmcode einer höheren **[Programmiersprache](#programmiersprache)** aus einer Datei in eine, vom Computer lesbare Sprache und speichert diese Übersetzung. Somit wird der Programmcode erst in eine Datei geschrieben, was es ermöglicht komplizierteren Code zu schreiben und zu schreiben. Da der Programmcode in Menschen lesbarer Form gespeichert wird, ist es möglich das Programm auf verschiedenen Systemen und an verschiedenen Zeitpunkten auszuführen.
 ## Level 1:
+### Ausdruck
+Ein Ausdruck (alternativ: Expression) ist ein grundlegender Bestandteil jedes Programms. Ein Ausdruck beschreibt einen **[Wert](#wert)** durch das Verknüpfen von **[Funktionen](#funktion)** oder **[Operatoren](#operator)** in Verbindung mit Werten oder **[Variabeln](#variable)**. Ein Ausdruck ist dabei immer Bestandteil einer **[Anweisung](#anweisung)**.
+### Anweisung
+Eine Anweisung (alternativ: Befehl) ist grundlegender Bestandteil jedes Programms. Eine Anweisung kann verschiedene **[Ausdrücke(#ausdruck)** miteinander durch Funktionsaufrufe oder **[Operatoren](#operator)** verbinden aber auch einer **[Variable](#variable)** zuweisen. Im Allgemeinen enthält eine Codezeile eine Anweisung.
 ### Variable
 Eine Variable zeigt auf einen **[Wert](#wert)**. Eine Variable hat immer einen Namen und einen Wert. In Python gibt es, anders als in anderen **[Programmiersprachen](#programmiersprache)**, keine Variablen mit einem festen **[Typ](#typ)**, das heißt einer Variable kann ein beliebiger Wert, mit einem beliebigen Typen zugeordnet werden. Die Arbeit mit Variablen erleichtert das Schreiben von Code stark. Zum Beispiel ist es möglich komplexe Anweisungen in kleinere Anweisungen zu kapseln und das Ergebnis dieser Anweisungen in Variablen zwischen zu speichern, dadurch wird der Code deutlich lesbarer. Durch geschickte Namenswahl einer Variable lässt sich die Lesbarkeit des Codes weiter erhöhen.
 ### Wert
@@ -23,6 +27,8 @@ Ein Integer ist ein **[Typ](#typ)**, der von Python mitgeliefert wird und die ga
 Ein String ist ein **[Typ](#typ)**, der von Python mitgeliefert wird. Die **[Werte](#wert)** eines Strings sind Zeichenketten beliebiger Länge. In Python wird ein String durch eine Zeichenkette in doppelten `""` oder einfach `''` Anführungszeichen ausgedrückt.
 ### Kommentare
 Kommentare dienen der Lesbarkeit des Codes und werden von **[Compiler](#compiler)** und **[Interpreter](#interpreter)** ignoriert. Kommentare können benutzt werden um den Code zu erklären und sollten nicht nur wiederholen, was der Code tut. Im Grunde sollten Kommentare die Frage nach dem "Warum?" und nicht nach dem "Was?" klären. In Python kann ein Kommentar an einer beliebigen Stelle im Code mit einem "#" bis zu Ende der Zeile eingesetzt werden.
+### Syntax
+### Operator
 ## Level 2:
 ### Boolean
 Der Boolean ist ein weiterer **[Typ](#typ)** der von Python mitgeliefert wird. Der Wertebereich besteht aus den beiden Werten `True` und `False`. Dabei erbt Boolean von **[Integer](#integer)**, besitzt also neben den Vergleichsoperatoren auch die Operatoren der Grundrechenarten, wobei `True` als 1 und `False` als 0 interpretiert wird. Der Ausdruck in der Definition einer **[if-Bedingung](#bedingung)** oder einer **[while-Schleife](#while-schleife)** wird in einen Boolean übersetzt und ausgewertet.
@@ -43,18 +49,19 @@ beiden Typen ist, dass ein Tupel unveränderlich ist, sowohl bzgl. der Anzahl de
 ### Dictionary
 Ein Dictionary ist ein **[Typ](#typ)**, der von Python mitgeliefert wird. Es ist ebenso wie die **[Liste](#liste)** oder das **[Tupel](#tupel)**, ein iterativer Typ. Im Gegensatz zu diesen beiden Typen wird auf ein **[Element](#element)**, dass in einem Dictionary gespeichert wird nicht über einen **[Index](#index)**, sondern über ein Schlüssel zugegriffen.
 ### Schleife
+Eine Schleife ist eine **[Kommandostruktur](#kommandostruktur)** und dient dazu eine Folge von Anweisungen wiederholt auszuführen, bis eine **[Bedingung](#bedingung)** erreicht ist. Diese Bedingung nennt man Abbruchbedingung. In Python gibt es zwei Arten von Schleifen, die in ihren Möglichkeiten gleichwertig sind, sie unterscheiden sich jedoch in der **[Syntax](#syntax)**, und Handhabung.
 #### while Schleife
-
+Eine while-Schleife ist eine **[Schleife](#schleife)** , die einen **[boolschen](#boolean)** Ausdruck entgegennimmt, diesen auf Wahrheit prüft und dann einen Codeblock wiederholt ausführt. Nach jedem Durchlauf wird der boolsche Ausdruck erneut geprüft. Sollte der Ausdruck nicht mehr den **[Wert](#wert)** `True`ergeben, wird das Durchlaufen der Schleife beendet. 
 #### for Schleife
-
-### Objekt
-
+Eine for-Schleife ist eine **[Schleife](#schleife)** die ein iterierbares **[Objekt](#objekt)** durchläuft. Beispielsweise lassen sich somit **[Strings](#string)**, **[Listen](#liste)**, **[Tupel](#tupel)** oder **[Dictionaries](#dictionary)** durchlaufen. Durch die `range()` **[Funktion](#funktion)** lassen sich sehr Zählschleifen implementieren.
 ## Level 5:
 ### Funktion
 
 ### Rekursion
 
 ## Level 6:
+### Objekt
+
 ### Klasse
 
 ### Modul

@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
-print ("""Fibonacci-Reihe:
-Die Summe zweier Elemente ergibt das naechste.""")
+"""
+Dieses Programm berechnet die Fibonacci-Reihe (iterativ).
+Dabei gilt: Die Summe zweier Elemente ergibt das Nächste.
+"""
 
-#a, b = 0, 1
-a = 0
-b = 1
-# while b < 50:
-for sprechend in range(10):
-    print(a)
-    #a, b = b, a+b
-    n = a
-    a = b
-    b += n
+anzahl = int(input("Wie viele Elemente sollen berechnet werden? "))
+
+# Die ersten beiden Elemente sind fix:
+a = 0 # a ist das jeweils aktuelle Element.
+b = 1 # b ist das jeweils nächste Element.
+
+for n in range(anzahl):
+    # Gebe das aktuelle Element aus:
+    print(" * ", a)
+    
+    # Setze das aktuelle Element eins weiter
+    # und das nächste auf die Summe des letzten und des aktuellen Elements.
+    a, b = b, a+b

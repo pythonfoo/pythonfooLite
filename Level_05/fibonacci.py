@@ -9,6 +9,7 @@ Dabei gilt: Die Summe zweier Elemente ergibt das Nächste.
 # Die Fibonacci-Folge ist rekursiv definiert
 #  - trotzdem ist die rekursive Berechnung ziemlich ineffizient im Vergleich zur Iterativen;
 # siehe dazu https://github.com/pythonfoo/pythonfooLite/wiki/Rekursion_Vs._Iteration.
+# Eine wesentlich perfomantere Version findet sich in Level 7.
 
 def fib(n):
     # Die ersten beiden Elemente sind fix:

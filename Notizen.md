@@ -5,6 +5,7 @@
 * Aufteilung in Präsentationsdateien und Beispielscode
 * genauere Formulierung der Aufgaben pro Level im Wiki
 * Verlinkung der Seiten im Wiki mit den Codebeispielen
+* Decoratoren: Als Beispiel das Cachen von Werten bei rekursiven mathematischen Funktionen
 
 ## ToDo:
 * anspruchsvollere Aufgaben

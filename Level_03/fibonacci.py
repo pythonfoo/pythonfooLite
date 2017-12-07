@@ -2,6 +2,8 @@
 """
 Dieses Programm berechnet die Fibonacci-Reihe (iterativ).
 Dabei gilt: Die Summe zweier Elemente ergibt das Nächste.
+
+(In Level 5 findet sich eine rekursive Implementation.)
 """
 
 anzahl = int(input("Wie viele Elemente sollen berechnet werden? "))

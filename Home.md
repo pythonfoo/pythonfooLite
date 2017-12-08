@@ -1,77 +1,65 @@
-# Anfängerthemen:
-
-Nur Python 3.x
-
+# PythonfooLite
+## Einleitung
+Das PythonfooLite beschäftigt sich dezidiert mit Programmieranfängern oder Python-Neulingen. Aus der Erfahrung heraus, das diese im normalen Pythonfoo sich abgehängt fühlen, widmen wir die ersten beiden Donnerstage jedes Monats den Neulingen. Wer Lust hat kommt einfach, jeweils am ersten oder zweiten Donnerstag im Monat ab 18:00 im Chaosdorf vorbei. Es hilft einen tragbaren Rechner mitzubringen, auf dem man auch Programme installieren kann. Vorwissen über Programmierung wird nicht benötigt.
+## Python
+Wir beschäftigen uns beim Pythonfoo mit Python in der Version 3.x. Python ist eine Programmiersprache, die leicht zu lernen aber schwer zu meistern ist ("easy to learn, hard to master"). Das soll uns aber nicht abschrecken. Python verzichtet auf einige Eigenheiten populärer Sprachen (wie z.B. Java oder C), büßt somit Performanz ein, ist allerdings leichter zu lernen. Wenn man sich lange genug mit Python beschäftigt, ist es problemlos möglich andere Programmiersprachen zu lernen, da Grundlegende Konzepte schon aus der Theorie und Praxis bekannt sind.
+## Sprache
+Grundsätzlich sind alle Texte in Deutsch verfasst, die Codebeispiele jedoch enthalten teilweise englische Namen, da auch die Programmiersprache mit englischen Begriffen arbeitet. An einigen Stellen, werden in den Texten englische Begriffe verwendet, was meistens daran liegt, dass die deutsche Übersetzung sehr sperrig ist ("integer" <-> "ganze Zahl", "float" <-> "Fließkommazahl") oder weil der englische Begriff der weitaus gebräuchlichere ist.
+## Glossar
+Im Wiki des Github Repositorys findest du ein Glossar, in dem die meisten Begriffe kurz erklärt werden.
+## Levelaufteilung:
+Wir haben den Ablauf in Level unterteilt, die aufeinander aufbauen. Das führt auch dazu, dass wir den Ablauf individuell an den Kenntnisstand der Anwesenden anpassen können, was es nicht langweilig werden lässt. Die Level sind unten grob skiziert und geben einen Überblick. Zu jedem Level sind Stichwörter aufgeführt, die sich entweder im Glossar oder im Internet suchen lassen, und einen Einblick geben sollen um was es geht.
+## Aufgaben
+Zur Auffrischung und Anwendung des Gelernten, bieten wir zu den meisten Leveln Aufgaben an, die sich auf das Level beziehen und der Übung dienen sollen. Die Aufgaben sind natürlich vollkommen freiwillig wir schauen gerne über Lösungen drüber. In einigen Leveln gibt es auch Beispiellösungen zu den Aufgaben.
 ### Level 0:
-Level 0 ist auf $Menschen ausgerichtet, die zum ersten
-Mal programmieren. Deshalb werden zum Anfang ganz rudimentäre
-Fragen beantwortet und Dinge geklärt.
-* Was ist eine Programmiersprache?
-* Was genau ist Python?
-* Wie programmiere ich mit Python?
-* Wie wird Python ausgeführt?
-
-#### Aufgaben:
-* Hello World
+Level 0 ist Programmieranfänger gedacht und klärt die Grundlagen von Programmierung im Allgemeinen und Programmierung mit Python.
+#### Stichwörter:
+* Programmiersprache
+* Anweisung
+* Compiler
+* Interpreter
+* hello_world.py
+* Code
 
 ### Level 1:
-Level 1 bietet den praktischen Einstieg in die Programmierung
-mit Python. Dabei ist es auf dieselbe Zielgruppe
-ausgerichtet wie Level 0.
-* Was ist eine Variable?
-* int und unäre und binäre int-Operatoren
-* string und einfache string-Manipulation
-* Eingabe und Ausgabe
-* Kommentare
-* Schlüsselwörter
-* Eingabe mit `getpass`
-
-#### Aufgaben:
-* Zahlen addieren
-* Zahlen multipliziereren
-* Strings konkatinieren
-* Strings multiplizieren
-* Funktionen aus `math`
+Level 1 beginnt dann mit dem Programmieren einfacher Programme in Python und klärt Grundlegende Konzepte der Programmierung in Python, die sich aber auch auf andere Programmiersprachen übertragen lassen.
+#### Stichwörter:
+* Variable
+* Typ
+* Wert
+* Ausdruck
+* Integer
+* Float
+* String
+* Eingabe
+* Ausgabe
+* Schlüsselwort
+* Kommentar
 
 ### Level 2:
-Level 2 führt nun in die einfachen Kontrollstrukturen ein.
-* Der Programmablauf
-* if-Bedingungen
-* Der Datentyp boolean
-* logische Operatoren
-
-#### Aufgaben:
-* einfache Passwortabfragen
-
+Level 2 führt eine erste Kontrollstruktur ein, welche ein wichtiges Element jeder Programmiersprache darstellt. Desweiteren wird ein neuer Typ eingeführt.
+#### Stichwörter:
+* Programmablauf
+* if-Bedingung
+* Boolean
 
 ### Level 3:
-Level 3 beschäftigt sich nun mit einer weiteren Kommandostruktur
-den Schleifen und führt zu dieser Gelegenheit
-den Datentyp der verschiedenen Listen ein.
-
-* for- und while-Schleife
-* lists, tupel und dictionaries
-
-
-
-#### Aufgaben:
-* Kennwortabfragen
-* Fakultät repitativ
-* Potenz repitativ
-* Euklid-Algorithmus repitativ
-* Quersumme berechnen
-* Fibonacci repitativ
+Level 3 beschäftigt sich nun mit einer weiteren Kommandostruktur, den Schleifen und führt dazu drei neue Typen ein. Nach Abschluss von Level 3, kann in der Theorie jedes Programm schon geschrieben werden.
+#### Stichwörter:
+* for-Schleife
+* while-Schleife
+* Liste
+* Tupel
+* Dictionary
 
 ### Level 4:
-* Dateizugriff und Dateimanipulation
-* Zugriff und Parsen von Dateien
-* Automatisches Generieren von Dateien
-* Dateisystemzugriff
-* Umgang mit `os` und `os.path`
-
-#### Aufgaben:
-* quine
-* Dictionaries in .csv Dateien abspeichern
+Level 4 beschäftigt sich mit dem Lesen und Bearbeiten von Textdateien.
+#### Stichwörter:
+* `os`
+* Dateien lesen
+* Dateien speichern
+* Dateien verschieben
+* Dateien löschen
 
 ### Level 5:
 Level 5 behandelt nun Funktionen und ermöglicht so das

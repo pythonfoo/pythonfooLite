@@ -73,21 +73,21 @@ Level 5 beschäftigt sich mit dem Erstellen von Funktionen (ob mit oder ohne Par
 * Rückgabewert
 
 ### Level 5.5
-Level 5.5 ist ein Zwischenschritt und behandelt all die Sachen, die in bisherigen Leveln keinen Platz gefunden haben, also quasi ein Lost and Found Level. 
-Dies betrifft:
+Dieses Level beschäftigt sich mit Themen, die in bisherigen Leveln nicht behandelt wurden, weil sie nichts mit Python zu tun haben oder nicht dem Fortschritt entsprachen. Dennoch sind diese Themen, nicht nur für die Programmierung in Python, sondern auch in anderen Programmiersprachen, sehr wichtig.
 
-* Ich hab' da eine IDE - Programmieren mit IDEs
-* Programmieren mit Versionskontrolle - Einstieg in Git und GitHub
-* Code richtig dokumentieren - Docstrings und sinnvolle Doku
-* Unser Code soll schöner werden - PEP8
-* Stringtheorie - Stringformatierung und Stringfunktionen
-* Kein Bashing! - Der Umgang mit der Shell
-* Käfersammeln - Suche nach Bugs und Refactoring
-
-Einige der Themen haben nicht direkt etwas mit Python zu tun, vermitteln aber dennoch wichtige Kompetenzen zum Programmieren im Allgemeinen.
+#### Stichwörter:
+* Texteditor
+* IDE
+* Git und GitHub
+* Docstrings
+* PEP8
+* `s.format()`
+* Bash / Terminal / Shell
+* Bugssuche
+* Refactoring
 
 ### Level 6 (OOP 1)
-Level 6 widmet sich den fortgeschritterenen Bereich der Objektorientierten Programmierung. Dieses Konzept hat auch in anderen Programmiersprachen eine große Bedeutung. In diesen Level werden die Kompetenzen vermittelt um eigene Typen zu definieren oder Module zu schreiben.
+Level 6 widmet sich den fortgeschritterenen Bereich der Objektorientierten Programmierung. Dieses Konzept hat auch in vielen anderen Programmiersprachen eine große Bedeutung. In diesen Level werden die Kompetenzen vermittelt um eigene Typen zu definieren, Klassen oder Module zu schreiben, sowie ein grundsätzliches Verständnis von Objektorientierter Programmierung.
 #### Stichwörter:
 * Klassen
 * Bibliotheken
@@ -103,7 +103,7 @@ Level 6 widmet sich den fortgeschritterenen Bereich der Objektorientierten Progr
 
 ### Level 7
 Level 7 beschäftigt sich mit Dingen, die thematisch in andere Level gehören, aber nicht zu deren Kenntnisstand passen.
-### Exkurse:
+#### Exkurse:
 * `turtle` - Ein Modul zum Steuern einer Schildkröte
 * `random` - Ein Modul dass verschiedene Methoden für Pseudozufallszahlen bereitstellt
 #### Stichwörter:
@@ -149,3 +149,4 @@ Mit `setuptools` und `pip` kann man Pakete erstellen, packen und installieren.
 * Pakete erstellen
 * Pakete bauen
 * Pakete hochladen
+~~~~

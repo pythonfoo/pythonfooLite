@@ -1,9 +1,12 @@
 # PythonfooLite
 ## Einleitung
-Das PythonfooLite beschäftigt sich dezidiert mit Programmieranfängern oder Python-Neulingen. Aus der Erfahrung heraus, das diese im normalen Pythonfoo sich abgehängt fühlen, widmen wir die ersten beiden Donnerstage jedes Monats den Neulingen. Wer Lust hat kommt einfach, jeweils am ersten oder zweiten Donnerstag im Monat ab 18:00 im Chaosdorf vorbei. Es hilft einen tragbaren Rechner mitzubringen, auf dem man auch Programme installieren kann. Vorwissen über Programmierung wird nicht benötigt.
+
+> "The only way to learn a new programming language is by writing programs in it." - Dennis Ritchie
+
+Das PythonfooLite beschäftigt sich dezidiert mit Programmieranfängern oder Python-Neulingen. Aus der Erfahrung heraus, das diese im sich "normalen" Pythonfoo abgehängt fühlen, widmen wir die ersten beiden Donnerstage jedes Monats den Neulingen. Wer Lust hat kommt einfach vorbei, jeweils am ersten oder zweiten Donnerstag im Monat ab 18:00 im Chaosdorf. Es hilft einen tragbaren Rechner mitzubringen, auf dem man auch Programme installieren kann. Vorwissen über Programmierung wird nicht benötigt.
 
 ## Python
-Wir beschäftigen uns beim Pythonfoo mit Python in der Version 3.x. Python ist eine Programmiersprache, die leicht zu lernen aber schwer zu meistern ist ("easy to learn, hard to master"). Das soll uns aber nicht abschrecken. Python verzichtet auf einige Eigenheiten populärer Sprachen (wie z.B. Java oder C), büßt somit Performanz ein, ist allerdings leichter zu lernen. Wenn man sich lange genug mit Python beschäftigt, ist es problemlos möglich andere Programmiersprachen zu lernen, da Grundlegende Konzepte schon aus der Theorie und Praxis bekannt sind.
+Wir beschäftigen uns beim Pythonfoo mit Python in der Version 3.x. Python ist eine Programmiersprache, die leicht zu lernen aber schwer zu meistern ist ("easy to learn, hard to master"). Das soll uns aber nicht abschrecken. Python verzichtet auf einige Eigenheiten populärer Sprachen (wie z.B. Java oder C), büßt somit Performanz ein, ist allerdings leichter zu lernen. Wenn man sich lange genug mit Python beschäftigt, ist es problemlos möglich andere Programmiersprachen zu lernen, da Grundlegende Konzepte schon aus der Theorie und Praxis bekannt sind und auf diesen aufgebaut werden kann.
 
 ## Sprache
 Grundsätzlich sind alle Texte in Deutsch verfasst, die Codebeispiele jedoch enthalten teilweise englische Namen, da auch die Programmiersprache mit englischen Begriffen arbeitet. An einigen Stellen, werden in den Texten englische Begriffe verwendet, was meistens daran liegt, dass die deutsche Übersetzung sehr sperrig ist ("integer" <-> "ganze Zahl", "float" <-> "Fließkommazahl") oder weil der englische Begriff der weitaus gebräuchlichere ist.
@@ -12,20 +15,20 @@ Grundsätzlich sind alle Texte in Deutsch verfasst, die Codebeispiele jedoch ent
 Im Wiki des Github Repositorys findest du ein Glossar, in dem die meisten Begriffe kurz erklärt werden.
 
 ## Kontakt und Feedback
-Falls du Anregungen, Fragen, Einwände oder Ideen hast kannst du uns natürlich an den ersten beiden Donnerstagen im Monat im Chaosdorf erreichen, oder eine Nachricht im Github Repository hinterlassen oder eine E-Mail an [pythonfoo@chaosdorf.de](mailto:pythonfoo@chaosdorf.de) schicken. Wir sind über jegliche Art von Feedback dankbar.
-Da wir nur zwei Studenten sind, die Spaß daran haben, anderen die Grundlagen der Programmierung in Python näherzubringen, sind wir natürlich weder allwissend oder unfehlbar. Die Codebeispiele und das Wiki im Repository sind insofern als "work in progress" zu sehen, dennoch sind wir wir für jegliches Feedback dankbar. Wir sind stetig damit beschäftigt die Codebeispiele und beiliegenden Texte zu verlängern und verbessern, auch in diesem Zusammenhang freuen wir uns über jegliches Feedback.
+Falls du Anregungen, Fragen, Einwände oder Ideen hast, kannst du uns natürlich an den ersten beiden Donnerstagen im Monat im Chaosdorf erreichen, oder eine Nachricht im Github Repository hinterlassen oder eine E-Mail an [pythonfoo@chaosdorf.de](mailto:pythonfoo@chaosdorf.de) schicken, zudem bietet GitHub noch ein Issue System, um Fehler im Repository zu melden. Wir sind über jegliche Art von Feedback dankbar.
+Da wir nur zwei Studenten sind, die Spaß daran haben, anderen die Grundlagen der Programmierung in Python näherzubringen, sind wir natürlich weder allwissend oder unfehlbar. Die Codebeispiele und das Wiki im Repository sind insofern als "work in progress" zu sehen, dennoch sind wir für jegliches Feedback dankbar. Wir sind stetig damit beschäftigt die Codebeispiele und beiliegenden Texte zu erweitern und verbessern, auch in diesem Zusammenhang freuen wir uns über jegliches Feedback.
 
 ## Levelaufteilung
-Wir haben den Ablauf in Level unterteilt, die aufeinander aufbauen. Das führt auch dazu, dass wir den Ablauf individuell an den Kenntnisstand der Anwesenden anpassen können, was es nicht langweilig werden lässt. Die Level sind unten grob skiziert und geben einen Überblick. Zu jedem Level sind Stichwörter aufgeführt, die sich entweder im Glossar oder im Internet suchen lassen, und einen Einblick geben sollen um was es geht.
+Wir haben den Ablauf in Level unterteilt, die aufeinander aufbauen. Das sorgt dafür, dass wir den Ablauf individuell an den Kenntnisstand der Anwesenden anpassen können, was es nicht langweilig werden lässt. Die Level sind unten grob skiziert und geben einen Überblick. Zu jedem Level sind Stichwörter aufgeführt, die sich entweder im Glossar oder im Internet suchen lassen, und einen Einblick geben sollen um was es geht, damit du falls du bereits Erfahrung im Programmieren mit Python oder einer anderen Programmiersprache hast, weißt wo du am besten einsteigen kannst.
 
 ### Zeiteinteilung
-Da die Level nicht gleich umfangreich sind und die Geschwindigkeit des Durchgehens stark vom Kenntnisstand bzw. eventuellen Vorkenntnissen abhängig ist, ist es schwierig allgemein zu sagen, wie viel Zeit für die Level eingeplant werden muss; die Erfahrung zeigt aber, dass die ersten 5 Level gut in einen bis zwei Abenden à 3 Stunden beendet werden können. Da zwischen Level 5.5 und Level 6 ein großer inhaltlicher Sprung besteht, bietet es sich an zwischen den Leveln eine Pause zur Auffrischung und Wiederholung einzulegen.
+Da die Level nicht gleich umfangreich sind und die Geschwindigkeit des Durchgehens stark vom Kenntnisstand bzw. eventuellen Vorkenntnissen abhängig ist, ist es schwierig allgemein zu sagen, wie viel Zeit für die Level eingeplant werden muss; die Erfahrung zeigt aber, dass die ersten 5 Level gut in einen bis zwei Abenden à 3 Stunden beendet werden können. Da zwischen Level 5.5 und Level 6 ein großer inhaltlicher Sprung besteht, bietet es sich an zwischen den Leveln eine Pause zur Auffrischung und Wiederholung einzulegen. Zudem ist der Einstieg in Level 6 zuerst theoretisch, weshalb es besser ist, ausgeruht in das Level zu starten.
 
 ### Aufgaben
-Zur Auffrischung und Anwendung des Gelernten, bieten wir zu den meisten Leveln Aufgaben an, die sich auf das Level beziehen und der Übung dienen sollen. Die Aufgaben sind natürlich vollkommen freiwillig wir schauen gerne über Lösungen drüber. In einigen Leveln gibt es auch Beispiellösungen zu den Aufgaben.
+Zur Auffrischung und Anwendung des Gelernten, bieten wir zu den meisten Leveln Aufgaben an, die sich auf das Level beziehen und der Übung dienen sollen. Die Aufgaben sind natürlich vollkommen freiwillig wir schauen gerne über Lösungen drüber. In einigen Leveln gibt es auch Beispiellösungen zu den Aufgaben. Da es für uns schwierig ist den Schwierigkeitsgrad der Aufgaben richtig zu wählen, sind wir hier auf Feedback angewiesen.
 
 ### Level 0
-Level 0 ist Programmieranfänger gedacht und klärt die Grundlagen von Programmierung im Allgemeinen und Programmierung mit Python.
+Level 0 ist Programmieranfänger gedacht und klärt die Grundlagen von Programmierung im Allgemeinen und mit Python.
 #### Stichwörter:
 * Programmiersprache
 * Anweisung
@@ -35,7 +38,7 @@ Level 0 ist Programmieranfänger gedacht und klärt die Grundlagen von Programmi
 * Code
 
 ### Level 1
-Level 1 beginnt dann mit dem Programmieren einfacher Programme in Python und klärt Grundlegende Konzepte der Programmierung in Python, die sich aber auch auf andere Programmiersprachen übertragen lassen.
+Level 1 beginnt mit dem Programmieren einfacher Programme in Python und klärt Grundlegende Konzepte der Programmierung in Python, die sich aber auch auf andere Programmiersprachen übertragen lassen.
 #### Stichwörter:
 * Variable
 * Typ
@@ -119,7 +122,7 @@ Level 7 beschäftigt sich mit Dingen, die thematisch in andere Level gehören, a
 * Generatoren
 * Decoratoren
 * Exceptions
-* map() und zip()
+* `map()` und `zip()`
 * assert
 
 **Folgendes ist eher fortgeschritten.**

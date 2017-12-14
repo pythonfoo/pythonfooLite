@@ -6,6 +6,7 @@
 * genauere Formulierung der Aufgaben pro Level im Wiki
 * Verlinkung der Seiten im Wiki mit den Codebeispielen
 * Decoratoren: Als Beispiel das Cachen von Werten bei rekursiven mathematischen Funktionen
+* Dokumentation: Sphinx
 
 ## ToDo:
 * anspruchsvollere Aufgaben
@@ -19,3 +20,4 @@
 * Erklärung Vorteile / Anwendungsmöglichkeiten der Schleifen
 * `with` in Level 7
 * Kapitel zu CLI-Anwendungen (argparse usw.)
+* Sets und Listcomprehension

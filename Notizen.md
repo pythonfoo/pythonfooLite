@@ -22,3 +22,4 @@
 * Kapitel zu CLI-Anwendungen (argparse usw.)
 * Sets und Listcomprehension
 * with in Level 7
+* pip erwähnen

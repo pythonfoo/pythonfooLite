@@ -161,7 +161,7 @@ class Vektor:
             x = self.x * faktor
             y = self.y * faktor
             z = self.z * faktor
-            return Vektor(self.p1, self.p1 + Punkt(x, y, z))
+            return Vektor(x, y, z)
         if isinstance(faktor, Vektor):
             # Multiplikation mit einem Vektor ergibt einen Skalar.
             x = self.x * faktor.x

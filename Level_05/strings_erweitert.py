@@ -24,6 +24,8 @@ print("Das folgende Wort wird ersetzt: '{}' Der Rest nicht.".format("blargh"))
 # Auch:
 print("Das folgende Wort wird ersetzt: '{0} und {1}' Der Rest nicht.".format("foo", "bar"))
 
+# Zum Weiterlesen und erweitern: https://www.digitalocean.com/community/tutorials/how-to-use-string-formatters-in-python-3
+
 # String.split()
 s = "a;b;cd"
 l = s.split(";")

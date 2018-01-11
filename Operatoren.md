@@ -14,6 +14,7 @@ Auf `int`-Werte angewandt, verhalten sich die Operatoren wie normale Rechenopera
  * `<int> * <int> -> <int>`: Das Produkt der beiden Zahlen.
  * `<int> / <int> -> <float>`: Der (exakte) Quotient der beiden Zahlen.
  * `<int> // <int> -> <int>`: Der abgerundete Quotient der beiden Zahlen.
+ * `<int> % <int> -> <int>`: Modulo Division (Rest einer Division)
  * `<int> ** <int> -> <int>`: Die Potenz der beiden Zahlen.
  * `<int> << <int> -> <int>`: Bitshift nach links (äquivalent zu `<int> * (2 ** <int>)`)
  * `<int> >> <int> -> <int>`: Bitshift nach rechts (äquivalent zu `<int> // (2 ** <int>)`)

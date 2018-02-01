@@ -67,6 +67,7 @@ Level 3 beschäftigt sich nun mit einer weiteren Kommandostruktur, den Schleifen
 * Liste
 * Tupel
 * Dictionary
+* Sets
 
 ### Level 4
 Level 4 beschäftigt sich mit dem Lesen und Bearbeiten von Textdateien.

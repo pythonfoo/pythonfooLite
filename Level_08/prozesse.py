@@ -10,12 +10,12 @@ Das Modul heißt anders und die Klasse auch (nämlich Process).
 """
 
 class PIDPrinter(Process):
-    def __init__(self, wait=0.1):
+    def __init__(self, wait: float = 0.1) -> None:
         Process.__init__(self)
         self.wait = wait
         self.daemon = True # siehe Threads
     
-    def run(self):
+    def run(self) -> None:
         while True:
             print(getpid())
             sleep(self.wait)
@@ -24,7 +24,7 @@ class PIDPrinter(Process):
 Alternativ kann man auch einfach eine bestimmte Methode
 in einem neuen Prozess ausführen ohne eine neue Klasse zu schreiben:
 
-def fun():
+def fun() -> None:
     pass
 
 Process(target=fun).start()

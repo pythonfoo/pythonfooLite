@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-x = 5
+x = 5 # type: int
 z = -3
 basis = 2
 exponent = 5
@@ -13,6 +13,7 @@ y = int("6")
 # (für mehr Informationen siehe die Wiki-Seite zu Operatoren)
 summe = x + y
 produkt = x * z
-quotient = 9 / 3
+quotient = 9 / 3 # type: float
 differenz = x - z
-potenz = pow(basis, exponent)  # Oder: basis ** exponent, Falsch ist basis ^ exponent
+potenz = pow(basis, exponent) # type: int
+# Oder: basis ** exponent, Falsch ist basis ^ exponent

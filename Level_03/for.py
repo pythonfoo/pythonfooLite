@@ -9,7 +9,7 @@
 # iterierbaren Objekte.
 String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
-for char in String:
+for char in String: # type: str
     print(char)
 
 # Beim Durchlaufen eines Dictionary wird jedoch nur

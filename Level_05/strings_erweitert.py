@@ -28,12 +28,12 @@ print("Das folgende Wort wird ersetzt: '{0} und {1}' Der Rest nicht.".format("fo
 
 # String.split()
 s = "a;b;cd"
-l = s.split(";")
+l = s.split(";") # type: list
 print(repr(l))
 # l entspricht nun: ["a", "b", "cd"]
 # Geeignet zum Parsen von .csv Dateien zum Beispiel
 
-s = ";".join(l)
+s = ";".join(l) # type: str
 # l enspricht nun: 'a;b;cd'
 
 # Wiederholung: 

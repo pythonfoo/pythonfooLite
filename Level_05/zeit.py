@@ -3,7 +3,7 @@ import sys
 import time
 
 # Timestamp:
-time.time()
+time.time() # type: float
 # OUT: 1444327310.2887266
 
 
@@ -13,7 +13,7 @@ time.localtime()
 # tm_min=2, tm_sec=11, tm_wday=3, tm_yday=281, tm_isdst=1)
 
 # Zugriff über Index
-time.localtime()[0]
+time.localtime()[0] # type: int
 # OUT: 2015
 
 list(time.localtime())

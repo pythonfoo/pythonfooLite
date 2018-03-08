@@ -2,7 +2,7 @@
 
 # zur Bedeutung von `print` siehe Ein_Ausgabe.py
 
-ein = "Dies ist ein einzeiliger String."
+ein = "Dies ist ein einzeiliger String." # type: str
 print(ein)
 
 mehr = """
@@ -10,7 +10,7 @@ Dies ist ein mehrzeiliger String.
 
 	Leerzeilen, Zeilenumbrüche und Einrückung
 	werden mit in den String übernommen.
-"""
+""" # type: str
 
 print(mehr)
 

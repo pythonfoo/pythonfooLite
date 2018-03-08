@@ -32,7 +32,7 @@ def cache(func):
 
 # die gleiche unpeformante Version von Fibonacci wie in Level 5
 @cache
-def fib(n):
+def fib(n: int) -> int:
     if n <= 1:
         return n
     return fib(n-1) + fib(n-2)

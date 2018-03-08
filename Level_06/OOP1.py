@@ -33,7 +33,7 @@ class HelloWorld:
 HelloWorld.hello_world()
 
 class Hello:
-    def hello(name="World"):
+    def hello(name: str = "World") -> None:
         """
         Natürlich können Methoden auch Parameter haben.
         Dies funktioniert genau so wie bei Funktionen.
@@ -49,7 +49,7 @@ class SpecialNumbers:
     Da dies hier Konstanten sind, sind ihre Namen großschrieben
     (https://www.python.org/dev/peps/pep-0008/#constants).
     """
-    PI = 3.14
+    PI = 3.14 # type: float
     E = 2.71
 
 # Zugriff
@@ -88,7 +88,7 @@ class Thing:
     Auch dies ist wieder eine ziemlich nutzlose Klasse.
     Aber sie hat einen Konstruktor!
     """
-    def __init__(self):
+    def __init__(self) -> None:
         """
         Dies ist ein Konstruktor.
         Bis auf den Namen ähnelt er anderen Instanzmethoden.
@@ -102,7 +102,7 @@ Thing() # Instanziierung
 
 class Contact:
     """ Ein Adressbucheintrag. """
-    def __init__(self, name, phone, email):
+    def __init__(self, name: str, phone: int, email: str) -> None:
         """
         Dies ist ein Konstruktor.
         Aber dieser hat Parameter.
@@ -120,8 +120,8 @@ print("E-Mail: {}".format(c.email))
 
 class HTTPURL:
     """ Diese Klasse repräsentiert eine HTTPURL. """
-    def __init__(self, url):
+    def __init__(self, url: str) -> None:
         self.url = url
     
-    def open(self):
+    def open(self) -> None:
         webbrowser.open(self.url)

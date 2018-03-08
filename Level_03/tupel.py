@@ -8,7 +8,7 @@
 # Folge von Elementen.
 
 # Ein Tuple wird über runde Klammern definiert:
-Tuple = ("foo", "bar")
+Tuple = ("foo", "bar") # type: tuple
 print(Tuple)
 
 # Mit einem Index kann auf ein Element zugegriffen

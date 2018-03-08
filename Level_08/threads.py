@@ -14,13 +14,13 @@ und start() darauf aufruft.
 """
 
 class PrintThread(Thread):
-    def __init__(self, string, wait=0.1):
+    def __init__(self, string: str, wait: float = 0.1) -> None:
         Thread.__init__(self)
         self.string = string
         self.wait = wait
         self.daemon = True # Soll dieser Thread beendet werden beim Programmende des Hauptthreads?
     
-    def run(self):
+    def run(self) -> None:
         while True:
             print(self.string, end="", flush=True)
             sleep(self.wait)
@@ -29,7 +29,7 @@ class PrintThread(Thread):
 Alternativ kann man auch einfach eine bestimmte Methode
 in einem neuen Thread ausführen ohne eine neue Klasse zu schreiben:
 
-def fun():
+def fun() -> None:
     pass
 
 Thread(target=fun).start()

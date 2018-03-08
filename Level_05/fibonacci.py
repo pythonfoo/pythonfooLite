@@ -11,7 +11,7 @@ Dabei gilt: Die Summe zweier Elemente ergibt das Nächste.
 # siehe dazu https://github.com/pythonfoo/pythonfooLite/wiki/Rekursion_Vs._Iteration.
 # Eine wesentlich perfomantere Version findet sich in Level 7.
 
-def fib(n):
+def fib(n: int) -> int:
     # Die ersten beiden Elemente sind fix:
     if n <= 1:
         return n

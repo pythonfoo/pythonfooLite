@@ -17,7 +17,7 @@ print(a + b)
 
 # 3. Ändere das Programm so ab, dass die Zahlen vom Benutzer eingegeben werden können:
 
-inp_a = input("Bitte geben Sie den ersten Summanden ein: ")
+inp_a = input("Bitte geben Sie den ersten Summanden ein: ") # type: str
 inp_b = input("Bitte geben Sie den zweiten Summanden ein: ")
 # Da input() immer einen String zurückgibt muss dieser in einen Integer umgewandelt werden,
 # dabei ensteht eine Fehlerquelle, da ein Fehler auftritt, wenn der Benutzer keine gültige

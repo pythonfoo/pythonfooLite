@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # Der Datentyp <boolean>:
-boolean = True
+boolean = True # type: bool
 boolean2 = False
 
 

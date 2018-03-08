@@ -12,7 +12,7 @@ anzahl = int(input("Wie viele Elemente sollen berechnet werden? "))
 a = 0 # a ist das jeweils aktuelle Element.
 b = 1 # b ist das jeweils nächste Element.
 
-for n in range(anzahl):
+for n in range(anzahl): # type: int
     # Gebe das aktuelle Element aus:
     print(" * ", a)
     

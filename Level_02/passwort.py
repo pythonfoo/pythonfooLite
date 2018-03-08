@@ -2,9 +2,9 @@
 
 from getpass import getpass
 
-PWD = "123456"
+PWD = "123456" # type: str
 
-eingabe = getpass()
+eingabe = getpass() # type: str
 
 if eingabe == PWD:
     print("Richtig.")

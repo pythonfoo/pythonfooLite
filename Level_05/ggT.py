@@ -6,7 +6,7 @@ Dieses Programm implementiert den euklidischen Algorithmus zur Bestimmung des gr
 """
 
 # Berechnung
-def ggT(a, b):
+def ggT(a: int, b: int) -> int:
     # a soll größer sein als b.
     # Falls das nicht bereits der Fall ist,
     # tauschen wir die beiden einfach.

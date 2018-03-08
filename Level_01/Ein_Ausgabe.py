@@ -11,9 +11,9 @@ print("Dieser Text wird ausgegeben.")
 print(1, 2, "Apfel", "Birne")
 
 # Man kann auch Variablen ausgeben:
-x = 5
-print(x)
-text = "Hallo, Welt!"
+x = 5  # type: int
+print(x) 
+text = "Hallo, Welt!" # type: str
 print(text)
 print(x, text)
 
@@ -21,7 +21,7 @@ print(x, text)
 ## Eingabe
 
 print("Bitte etwas eingeben:")
-eingabe = input()
+eingabe = input() # type: str
 
 print("Die Eingabe war: ")
 print(eingabe)
@@ -31,7 +31,7 @@ eingabe = input("Bitte etwas eingeben: ")
 print("Die Eingabe war:", eingabe)
 
 ## Eingabe ohne die Eingabe anzuzeigen:
-passwort = getpass() # Standardprompt: "Password: "
+passwort = getpass() # type: str # Standardprompt: "Password: "
 print("Eingabe:", passwort)
 
 passwort = getpass("Bitte Passwort eingeben: ")

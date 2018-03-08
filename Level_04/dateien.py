@@ -6,7 +6,7 @@ import os
 
 # Existiert eine Datei?
 
-os.path.exists("lorem_ipsum.txt")
+os.path.exists("lorem_ipsum.txt") # type: bool
 # OUT: False
 os.path.exists("loremipsum.txt")
 # OUT: True
@@ -24,9 +24,9 @@ lorem_ipsum.close()
 # eine Datei schreiben
 
 test = open("test/test.txt", "w")
-test.write("total toller Text")
-test.close()
+test.write("total toller Text") # type: int
 # OUT: 17
+test.close()
 
 # eine Datei löschen
 

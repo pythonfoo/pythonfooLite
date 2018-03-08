@@ -7,7 +7,7 @@
 # Eine Liste ist eine beliebig lange Folge von beliebigen Objekten
 
 # Eine Liste wird mit Hilfe von eckigen Klammern definiert.
-liste = [0, "foo"]
+liste = [0, "foo"] # type: list
 print(liste)
 
 
@@ -28,7 +28,7 @@ print(element)
 
 # Die Funktion liefert für viele Objekte die Länge zurück.
 # Bei einer Liste enspricht die Länge der Anzahl an Elementen.
-l = len(liste)
+l = len(liste) # type: int
 print(l)
 
 
@@ -55,7 +55,7 @@ print(liste)
 # auch über das Objekt, es wird allerdings nur das erste Auftreten des
 # Objektes gelöscht. Dabei wird ein Fehler geworfen, falls das Objekt
 # nicht in der Liste vorhanden ist.
-liste2.remove(9)
+liste2.remove(9) # type: None
 print(liste2)
 
 
@@ -68,7 +68,7 @@ print(liste3.count("d"))
 
 # Eine Liste kann mit sort() sortiert werden:
 liste2 = [9,6,3,2,7]
-liste2.sort()
+liste2.sort() # type: None
 print(liste2)
 
 

@@ -2,13 +2,13 @@
 
 # Funktionen:
 
-def funktion():
+def funktion() -> None:
     print("Hallo!")
 funktion()
 # OUT: Hallo!
 
 
-def funktion(text):
+def funktion(text: str) -> None:
     print(text)
 funktion("a")
 # OUT: a
@@ -25,7 +25,7 @@ funktion(True, "Hallo")
 # OUT: True
 
 
-def funktion(text="Beispiel", wirklich=False):
+def funktion(text: str = "Beispiel", wirklich: bool = False):
     if wirklich:
         print(text)
 
@@ -39,7 +39,7 @@ funktion(wirklich=True, text="Abc")
 # OUT: Abc
 
 
-def ja():
+def ja() -> str:
     return "Ja"
 ja()
 # OUT: 'Ja'
@@ -47,12 +47,12 @@ ja()
 
 # Rekursion:
 
-def fun():
+def fun() -> None:
     print("Fun!")
     fun()
 
 # Quersumme:
-def quersumme(zahl):
+def quersumme(zahl: int) -> int:
     qs = 0
     for ziffer in str(zahl):
         qs += int(ziffer)

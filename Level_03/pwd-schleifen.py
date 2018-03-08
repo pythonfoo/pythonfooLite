@@ -6,7 +6,7 @@ PWD = "123456"
 N_VERSUCHE = 3
 
 for x in range(N_VERSUCHE):
-    eingabe = getpass()
+    eingabe = getpass() # type: str
 
     if eingabe == PWD:
         print("Richtig.")

@@ -9,7 +9,7 @@
 
 # Ein Dictionary wird über geschweifte Klammern
 # definiert:
-dictionary = {"Eins": "one", "Zwei": "two"}
+dictionary = {"Eins": "one", "Zwei": "two"} # type: dict
 print(dictionary)
 
 # Auf einen value wird mit Hilfe des keys zu-

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-def run():
+def run() -> None:
     print("Hello World!")
 
 if __name__ == '__main__':

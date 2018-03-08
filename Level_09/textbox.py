@@ -41,7 +41,7 @@ window.setLayout(layout)
 # die Funktion, die beim Klick ausgeführt werden soll
 
 
-def onClick():
+def onClick() -> None:
     # die Eingabe holen
     input = text.text()
     print("Eingabe: {}".format(input))

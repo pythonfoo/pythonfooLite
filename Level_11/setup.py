@@ -42,14 +42,12 @@ setup(
         
         # Indicate who your project is intended for
         'Intended Audience :: Developers',
-        'Intended Audience :: End Users/Desktop',
         
         # Language
         'Natural Language :: English',
         
         # Topic
         'Topic :: Utilities',
-        'Topic :: Internet',
 
         # Specify the Python versions you support here.
         'Programming Language :: Python :: 3',

@@ -21,7 +21,7 @@ b = "bar"
 # (für mehr Informationen siehe die Wiki-Seite zu Operatoren)
 print(f + b)
 print(5 * f)
-print(5 + (f + " "))
+print(5 * (f + " "))
 
 # Daten anderer Typen in Strings umwandeln:
 s = str(5)

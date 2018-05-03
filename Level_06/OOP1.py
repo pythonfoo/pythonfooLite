@@ -66,22 +66,23 @@ class Calculator:
     PI = 3.14
     E = 2.71
 
-    def multiply_by_pi(self, number):
+    @classmethod
+    def multiply_by_pi(cls, number):
         """
-        Dies ist eine Instanzmethode.
-        Dies lässt sich daran erkennen, dass der erste Parameter `self` ist.
-        Dieses `self` ist eine Referenz auf das aktuelle Objekt.
+        Dies ist eine statische Methode mit Klassenreferenz.
+        Dies lässt sich daran erkennen, dass der erste Parameter `cls` ist
+        und an dem Dekorator `@classmethod`.
+        Dieses `cls` ist eine Referenz auf die Klasse.
         Da Variablennamen nur innerhalb von Funktionen und Modulen
         aufgelöst werden, ist dies nötig.
         """
-        return number * self.PI
+        return number * cls.PI
 
-    def multiply_by_e(self, number):
-        return number * self.E
+    @classmethod
+    def multiply_by_e(cls, number):
+        return number * cls.E
 
-c = Calculator() # Instanziierung
-print(c.multiply_by_pi(5)) # Aufruf der Methode
-# Achtung: Was nicht funktioniert: Calculator.multiply_by_pi(5)
+print(Calculator.multiply_by_pi(5)) # Aufruf der Methode
 
 class Thing:
     """

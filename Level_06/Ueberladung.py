@@ -19,24 +19,24 @@ class Punkt:
         """ die menschenlesbare Darstellung -- str und repr """
         return "({}|{}|{})".format(self.x, self.y, self.z)
     
-    def __eq__(self, p: Punkt) -> bool:
+    def __eq__(self, p: "Punkt") -> bool:
         """ prüft auf Äquivalenz -- == """
         if hasattr(p, "x") and hasattr(p, "y") and hasattr(p, "z"):
             return self.x == p.x and self.y == p.y and self.z == p.z
         else:
             return False
     
-    def __add__(self, p: Punkt) -> Punkt:
+    def __add__(self, p: "Punkt") -> "Punkt":
         """ addiert p und erzeugt einen neuen Punkt -- + """
         assert isinstance(p, Punkt)
         return Punkt(self.x + p.x, self.y + p.y, self.z + p.z)
     
-    def __sub__(self, p: Punkt) -> Punkt:
+    def __sub__(self, p: "Punkt") -> "Punkt":
         """ subtrahiert p und erzeugt einen neuen Punkt -- - """
         assert isinstance(p, Punkt)
         return self + -p
     
-    def __neg__(self) -> Punkt:
+    def __neg__(self) -> "Punkt":
         """ negiert dieses Objekt -- - """
         return Punkt(-self.x, -self.y, -self.z)
 
@@ -57,7 +57,7 @@ class Strecke:
         """ die menschenlesbare Darstellung -- str und repr """
         return "{} - {}".format(self.p1, self.p2)
     
-    def __eq__(self, l: Strecke) -> bool:
+    def __eq__(self, l: "Strecke") -> bool:
         """
         prüft auf Äquivalenz -- ==
         
@@ -82,7 +82,7 @@ class Strecke:
         """ Berechnet die Länge. Dies muss ein int sein. -- len """
         return int(abs(self))
     
-    def __gt__(self, l: Strecke) -> bool:
+    def __gt__(self, l: "Strecke") -> bool:
         """
         prüft auf echtes größer -- >
         
@@ -92,7 +92,7 @@ class Strecke:
         """
         return abs(self) > abs(l)
     
-    def __ge__(self, l: Strecke) -> bool:
+    def __ge__(self, l: "Strecke") -> bool:
         """
         prüft auf größer oder gleich -- >=
         
@@ -121,7 +121,7 @@ class Vektor:
         """ die menschenlesbare Darstellung -- str und repr """
         return "({}|{}|{})".format(self.x, self.y, self.z)
     
-    def __eq__(self, l: Vektor) -> bool:
+    def __eq__(self, l: "Vektor") -> bool:
         """ Äquivalenz: Vektoren haben eine Richtung. """
         if not isinstance(l, Vektor):
             return False
@@ -134,23 +134,23 @@ class Vektor:
     def __len__(self) -> int:
         return int(abs(self))
     
-    def __gt__(self, l: Vektor) -> bool:
+    def __gt__(self, l: "Vektor") -> bool:
         return abs(self) > abs(l)
     
-    def __ge__(self, l: Vektor) -> bool:
+    def __ge__(self, l: "Vektor") -> bool:
         return self == l or self > l
     
-    def __add__(self, l: Vektor) -> Vektor:
+    def __add__(self, l: "Vektor") -> "Vektor":
         """ Addition """
         assert isinstance(l, Vektor)
         return Vektor(self.x + l.x, self.y + l.y, self.z + l.z)
     
-    def __sub__(self, l: Vektor) -> Vektor:
+    def __sub__(self, l: "Vektor") -> "Vektor":
         """ Subtraktion """
         assert isinstance(l, Vektor)
         return self + -l
     
-    def __neg__(self) -> Vektor:
+    def __neg__(self) -> "Vektor":
         """ Negation """
         return Vektor(-self.x, -self.y, -self.z)
     

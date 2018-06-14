@@ -17,3 +17,22 @@ while counter < 10:
 while True:
 	print("foo")
 """
+
+# Schleifen vorzeitig beenden
+
+counter = 0
+while counter < 4:
+    counter += 1
+    print(counter)
+    if counter == 5:
+        break
+else:
+    print("Die Schleife ist bis zum Ende durchgelaufen.")
+
+# Schleifendurchläufe überspringen
+counter = 0
+while counter < 10:
+    counter += 1
+    if counter == 5:
+        continue
+    print(counter)

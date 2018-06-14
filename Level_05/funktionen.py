@@ -44,6 +44,15 @@ def ja() -> str:
 ja()
 # OUT: 'Ja'
 
+# beliebig viele Parameter
+def sum(*params):
+    s = 0
+    for x in params:
+        s += x
+    return s
+
+sum() # 0
+sum(1,5) # 6
 
 # Rekursion:
 

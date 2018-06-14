@@ -14,7 +14,6 @@ if boolean3 == True:
 if boolean3:
     print(True)
 
-
 # if-Bedingung mit else-Zweig:
 summertime = True
 

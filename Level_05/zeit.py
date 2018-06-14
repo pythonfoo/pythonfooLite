@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-import sys
 import time
 
 # Timestamp:
@@ -31,9 +30,7 @@ time.sleep(1)
 
 # Ladebalken:
 
-import time
 while True:
-    print(".", end="")
-    sys.stdout.flush()
+    print(".", end="", flush=True)
     time.sleep(1)
 # OUT: ...........................................

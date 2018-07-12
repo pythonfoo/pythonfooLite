@@ -100,7 +100,7 @@ def quotient():
     """
     divid = input("Bitte den Dividenden eingeben: ")
     divis = input("Bitte den Divisor eingeben: ")
-    if int(divis) == 0:
+    if float(divis) == 0.0:
         print("Ungültige Divisor.")
         return
     result = float(divid) / float(divis)
@@ -116,7 +116,7 @@ def modulo():
     """
     divid = input("Bitte den Dividenden eingeben: ")
     divis = input("Bitte den Divisor eingeben: ")
-    if int(divis) == 0:
+    if float(divis) == 0.0:
         print("Ungültige Divisor.")
         return
     result = int(divid) % int(divis)

@@ -100,6 +100,9 @@ def quotient():
     """
     divid = input("Bitte den Dividenden eingeben: ")
     divis = input("Bitte den Divisor eingeben: ")
+    if int(divis) == 0:
+        print("Ungültige Divisor.")
+        return
     result = float(divid) / float(divis)
     print("{} / {} = {}".format(divid, divis, result))
 
@@ -113,6 +116,9 @@ def modulo():
     """
     divid = input("Bitte den Dividenden eingeben: ")
     divis = input("Bitte den Divisor eingeben: ")
+    if int(divis) == 0:
+        print("Ungültige Divisor.")
+        return
     result = int(divid) % int(divis)
     print("{} % {} = {}".format(divid, divis, result))
 
@@ -150,7 +156,7 @@ def fak():
     """
     x = input("Bitte eine Zahl eingeben: ")
     result = 1
-    for i in range(2, x + 1):
+    for i in range(2, int(x) + 1):
         result *= i
     print("{}! = {}".format(x, result))
 

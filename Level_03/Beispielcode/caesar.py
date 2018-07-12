@@ -11,6 +11,7 @@ Schlüssel.
 
 plaintext = input("Bitte den Klartext eingeben: \n")
 key = input("Bitte die Verschiebungszahl eingaben: ")
+key = int(key)
 
 plaintext = plaintext.upper()
 

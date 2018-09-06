@@ -9,13 +9,13 @@ Dabei gilt: Die Summe zweier Elemente ergibt das Nächste.
 anzahl = int(input("Wie viele Elemente sollen berechnet werden? "))
 
 # Die ersten beiden Elemente sind fix:
-a = 0 # a ist das jeweils aktuelle Element.
-b = 1 # b ist das jeweils nächste Element.
+current = 0 # current ist das jeweils aktuelle Element.
+next = 1 # next ist das jeweils nächste Element.
 
 for n in range(anzahl): # type: int
     # Gebe das aktuelle Element aus:
-    print(" * ", a)
+    print(" * ", current)
     
     # Setze das aktuelle Element eins weiter
     # und das nächste auf die Summe des letzten und des aktuellen Elements.
-    a, b = b, a+b
+    current, next = next, current + next

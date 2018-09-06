@@ -10,8 +10,9 @@ text = text.upper()
 if "U" in text:
     text = text.replace("U", "V")
 
-print(text)
 print(orig)
+print("****************")
+print(text)
 
 lorem_ipsvm = open("loremipsvm.txt", "w")
 lorem_ipsvm.write(text)

@@ -17,7 +17,6 @@ for x in range(N_VERSUCHE):
         print("Falsch.")
 else:
     print("Passwort", N_VERSUCHE, "mal falsch eingegeben.")
-    import sys
-    sys.exit(1)
+    exit(1)
 
 print("...")

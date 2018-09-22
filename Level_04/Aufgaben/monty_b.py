@@ -6,10 +6,10 @@
 #   "chars.txt" einliest und
 # * die n häufigsten und die n seltesten Buchstaben ausgibt.
 
-import os
+from pathlib import Path
 import sys
 
-filename = "chars.txt"
+path = Path("chars.txt")
 
 # Eingabe Integer n:
 n = input("Bitte eine Zahl eingeben: ")
@@ -20,12 +20,12 @@ else:
     sys.exit()
 
 # Einlesen der Datei:
-if not os.path.exists(filename):
-    print("Die Datei {} wurde nicht gefunden.".format(filename))
+if not path.exists():
+    print("Die Datei {} wurde nicht gefunden.".format(path))
     sys.exit()
 
 table = {}
-file_obj = open(filename, "r")
+file_obj = path.open("r")
 for line in file_obj:
     key = line.split(";")[0]
     value = int(line.split(";")[1])

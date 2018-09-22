@@ -8,26 +8,26 @@
 # * und den entstandenen Text in einer Datei `MONTY.txt`
 #   (auf Windows unter `monty_upper.txt`) speichert
 
-# Wir benötigen die Bibliotheken os und sys für einige Funktionen:
-import os
+# Wir benötigen die Bibliotheken pathlib und sys für einige Funktionen:
+from pathlib import Path
 import sys
 
-filename_text = "monty.txt"
-filename_new = "MONTY.txt"
+path_text = Path("monty.txt")
+path_new = Path("MONTY.txt")
 
 # 1. Einlesen des Textes:
-if os.path.exists(filename_text):
-    file_obj = open("monty.txt", "r")
+if path_text.exists():
+    file_obj = path_text.open("r")
     text = file_obj.read()
     file_obj.close()
 else:
-    print("Die Datei {} existiert nicht.".format(filename_text))
+    print("Die Datei {} existiert nicht.".format(path_text))
     sys.exit()
 
 # 2. "Python" ersetzen:
 new_text = text.replace("Python", "PYTHON")
 
 # 3. Neuen Text in neue Datei schreiben:
-file_obj = open(filename_new, "w")
+file_obj = path_new.open("w")
 file_obj.write(new_text)
 file_obj.close()

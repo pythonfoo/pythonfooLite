@@ -2,36 +2,40 @@
 
 # Level 4: Dateien
 
-import os
+# Pathlib (https://docs.python.org/3/library/pathlib.html) ist die beste Möglichkeit,
+# mit Pfaden und Dateien zu hantieren.
+
+from pathlib import Path
 
 # Existiert eine Datei?
 
-os.path.exists("lorem_ipsum.txt") # type: bool
+Path("lorem_ipsum.txt").exists() # type: bool
 # OUT: False
-os.path.exists("loremipsum.txt")
+Path("loremipsum.txt").exists()
 # OUT: True
 
 # einen Ordner erstellen
 
-os.mkdir("test")
+test_dir = Path("test")
+test_dir.mkdir()
 
 # eine Datei auslesen
 
-lorem_ipsum = open("loremipsum.txt", "r")
+lorem_ipsum = Path("loremipsum.txt").open("r")
 print(lorem_ipsum.read())
 lorem_ipsum.close()
 
 # eine Datei schreiben
 
-test = open("test/test.txt", "w")
+test = (test_dir / Path("test.txt")).open("w")
 test.write("total toller Text") # type: int
 # OUT: 17
 test.close()
 
 # eine Datei löschen
 
-os.remove("test/test.txt")
+(test_dir / Path("test.txt")).unlink()
 
 # einen Ordner löschen
 
-os.rmdir("test")
+test_dir.rmdir()

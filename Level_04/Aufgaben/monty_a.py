@@ -8,22 +8,22 @@
 # * die Worthäufigkeiten lesbar formatiert in "words.txt" abspeichert,
 # * und die Buchstabenhäufigkeiten lesbar formatiert in "chars.txt" speichert.
 
-# Wir benötigen die Bibliotheken os und sys für einige Funktionen:
-import os
+# Wir benötigen die Bibliotheken pathlib und sys für einige Funktionen:
+from pathlib import Path
 import sys
 
-filename_text = "monty.txt"
-filename_words = "words.txt"
-filename_chars = "chars.txt"
+path_text = Path("monty.txt")
+path_words = Path("words.txt")
+path_chars = Path("chars.txt")
 
 # 1. Einlesen des Textes:
 
-if os.path.exists(filename_text):
-    file_obj = open("monty.txt", "r")
+if path_text.exists():
+    file_obj = path_text.open("r")
     text = file_obj.read()
     file_obj.close()
 else:
-    print("Die Datei {} existiert nicht.".format(filename_text))
+    print("Die Datei {} existiert nicht.".format(path_text))
     sys.exit()
 
 
@@ -53,14 +53,14 @@ for char in text:
 
 # 4. Abspeichern der Tabellen:
 # Worthäufigkeiten:
-file_obj = open(filename_words, "w")
+file_obj = path_words.open("w")
 for key in word_count:
     line = "{};{}\n".format(key, word_count[key])
     file_obj.writelines([line])
 file_obj.close()
 
 # Buchstabenhäufigkeiten:
-file_obj = open(filename_chars, "w")
+file_obj = path_chars.open("w")
 for key in char_count:
     line = "{};{}\n".format(key, char_count[key])
     file_obj.writelines([line])

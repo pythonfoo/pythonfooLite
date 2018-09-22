@@ -7,7 +7,6 @@
 # * die n häufigsten und die n seltesten Buchstaben ausgibt.
 
 from pathlib import Path
-import sys
 
 path = Path("chars.txt")
 
@@ -17,12 +16,12 @@ if n.isdigit():
     n = int(n)
 else:
     print("Es wurde keine Zahl eingegeben.")
-    sys.exit()
+    exit()
 
 # Einlesen der Datei:
 if not path.exists():
     print("Die Datei {} wurde nicht gefunden.".format(path))
-    sys.exit()
+    exit()
 
 table = {}
 file_obj = path.open("r")

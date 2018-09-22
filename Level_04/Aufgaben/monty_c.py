@@ -8,9 +8,8 @@
 # * und den entstandenen Text in einer Datei `MONTY.txt`
 #   (auf Windows unter `monty_upper.txt`) speichert
 
-# Wir benötigen die Bibliotheken pathlib und sys für einige Funktionen:
+# Wir benötigen die Bibliothek pathlib für einige Funktionen:
 from pathlib import Path
-import sys
 
 path_text = Path("monty.txt")
 path_new = Path("MONTY.txt")
@@ -22,7 +21,7 @@ if path_text.exists():
     file_obj.close()
 else:
     print("Die Datei {} existiert nicht.".format(path_text))
-    sys.exit()
+    exit()
 
 # 2. "Python" ersetzen:
 new_text = text.replace("Python", "PYTHON")

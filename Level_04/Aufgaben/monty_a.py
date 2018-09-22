@@ -8,9 +8,8 @@
 # * die Worthäufigkeiten lesbar formatiert in "words.txt" abspeichert,
 # * und die Buchstabenhäufigkeiten lesbar formatiert in "chars.txt" speichert.
 
-# Wir benötigen die Bibliotheken pathlib und sys für einige Funktionen:
+# Wir benötigen die Bibliothek pathlib für einige Funktionen:
 from pathlib import Path
-import sys
 
 path_text = Path("monty.txt")
 path_words = Path("words.txt")
@@ -24,7 +23,7 @@ if path_text.exists():
     file_obj.close()
 else:
     print("Die Datei {} existiert nicht.".format(path_text))
-    sys.exit()
+    exit()
 
 
 # 2. Worthäufigkeitstabelle

@@ -57,5 +57,8 @@ if __name__ == "__main__":
     # Verarbeiten der Argumente
     args = parser.parse_args()
     # die tatsächliche Funktion aufrufen
-    res = args.func(args.a, args.b)
-    print(res)
+    if args.func:
+        res = args.func(args.a, args.b)
+        print(res)
+    else:
+        print("Bitte Anweisung angeben.")

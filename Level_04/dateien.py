@@ -21,6 +21,7 @@ test_dir.mkdir()
 
 # eine Datei auslesen
 
+# schneller: print(Path("loremipsum.txt").read_text())
 lorem_ipsum = Path("loremipsum.txt").open("r")
 print(lorem_ipsum.read())
 lorem_ipsum.close()

@@ -28,6 +28,7 @@ lorem_ipsum.close()
 
 # eine Datei schreiben
 
+# schneller: (test_dir / Path("test.txt")).write_text("total toller Text")
 test = (test_dir / Path("test.txt")).open("w")
 test.write("total toller Text") # type: int
 # OUT: 17

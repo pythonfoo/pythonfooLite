@@ -38,3 +38,6 @@ print(h.lower())  # OUT: hamster
 
 # Den ersten Buchstaben groß:
 print(h.capitalize())  # OUT: Hamster
+
+# Länge
+print(len(h))  # OUT: 7

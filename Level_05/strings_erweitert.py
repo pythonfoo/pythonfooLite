@@ -5,6 +5,9 @@
 # String einzubauen
 print("Tab:\t#")
 
+# Zeichen über ihren Namen einbinden:
+print("Wal: \N{WHALE}")
+
 # Das Zeichen hinter einem \ wird entweder Steuerzeichen interpretiert oder ignoriert
 print("\aabc")
 

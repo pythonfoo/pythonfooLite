@@ -94,7 +94,7 @@ Dieses Level beschäftigt sich mit Themen, die in bisherigen Leveln nicht behand
 * IDE
 * Git und GitHub
 * Docstrings
-* PEP8
+* [PEP8](https://www.python.org/dev/peps/pep-0008/)
 * `s.format()`
 * Bash / Terminal / Shell
 * Bugssuche

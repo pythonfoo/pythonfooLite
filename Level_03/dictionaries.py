@@ -16,6 +16,8 @@ print(dictionary)
 # Auf einen value wird mit Hilfe des keys zu-
 # gegriffen:
 print(dictionary["Eins"])
+# dictionary["nicht da"]: schlägt fehl
+dictionary.get("nicht da")
 
 # Ein neues Key-Value-Paar wird erstellt,
 # indem auf ein nicht-existierenden value zu-

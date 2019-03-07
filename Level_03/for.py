@@ -19,6 +19,9 @@ for key in Dictionary:
     print(key)
     print(Dictionary[key])
 
+# besser:
+for key, value in Dictionary.items():
+    print(key, value)
 
 # Ebenso kann ein Tupel oder eine Liste durchlaufen werden
 

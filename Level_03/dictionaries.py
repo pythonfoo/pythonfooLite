@@ -26,6 +26,8 @@ dictionary["Wasser"] = "water"
 print(dictionary)
 # Als keys geeignet sind zum Beispiel: Integer, Strings, Tupel, Boolean
 
+# Einträge löschen
+del dictionary["Wasser"]
 
 # Mit len() lässt sich die Länge ausgeben:
 print(len(dictionary))

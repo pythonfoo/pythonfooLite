@@ -10,11 +10,14 @@
 # Ein Dictionary wird über geschweifte Klammern
 # definiert:
 dictionary = {"Eins": "one", "Zwei": "two"} # type: dict
+dictionary = dict([("Eins", "one"), ("Zwei", "two")])
 print(dictionary)
 
 # Auf einen value wird mit Hilfe des keys zu-
 # gegriffen:
 print(dictionary["Eins"])
+# dictionary["nicht da"]: schlägt fehl
+dictionary.get("nicht da")
 
 # Ein neues Key-Value-Paar wird erstellt,
 # indem auf ein nicht-existierenden value zu-
@@ -23,6 +26,8 @@ dictionary["Wasser"] = "water"
 print(dictionary)
 # Als keys geeignet sind zum Beispiel: Integer, Strings, Tupel, Boolean
 
+# Einträge löschen
+del dictionary["Wasser"]
 
 # Mit len() lässt sich die Länge ausgeben:
 print(len(dictionary))

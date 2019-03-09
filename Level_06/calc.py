@@ -35,7 +35,11 @@ def op_root(a: int, b: int) -> float:
 
 
 parser = ArgumentParser(description=__doc__)
-subparsers = parser.add_subparsers(help="die auszuführende Rechenoperation")
+subparsers = parser.add_subparsers(
+    dest="command",
+    help="die auszuführende Rechenoperation"
+)
+subparsers.required = True
 
 for function in (
     op_add,
@@ -57,8 +61,5 @@ if __name__ == "__main__":
     # Verarbeiten der Argumente
     args = parser.parse_args()
     # die tatsächliche Funktion aufrufen
-    if args.func:
-        res = args.func(args.a, args.b)
-        print(res)
-    else:
-        print("Bitte Anweisung angeben.")
+    res = args.func(args.a, args.b)
+    print(res)

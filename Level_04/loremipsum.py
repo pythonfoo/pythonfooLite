@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 
-lorem_ipsum = open("loremipsum.txt", "r")
-text = lorem_ipsum.read() # type: str
-lorem_ipsum.close()
+from pathlib import Path
+
+lorem_ipsum = Path("loremipsum.txt")
+text = lorem_ipsum.read_text() # type: str
 
 orig = text
 text = text.upper()
@@ -14,6 +15,5 @@ print(orig)
 print("****************")
 print(text)
 
-lorem_ipsvm = open("loremipsvm.txt", "w")
-lorem_ipsvm.write(text)
-lorem_ipsvm.close()
+lorem_ipsvm = Path("loremipsvm.txt")
+lorem_ipsvm.write_text(text)

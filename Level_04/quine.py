@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
-we = open(__file__, "r")
-print(we.read())
-we.close()
+from pathlib import Path
+
+we = Path(__file__)
+print(we.read_text())

@@ -4,10 +4,12 @@ x = 5 # type: int
 z = -3
 basis = 2
 exponent = 5
+print(x, "in binär:", bin(x), "in hexadezimal:", hex(x))
 
 # Daten andere Typen in Integer umwandeln
 # Achtung: Dies kann fehlschlagen!
 y = int("6")
+y = int("110", 2)  # 110 ist 6 in binär.
 
 # Operatoren auf Integer anwenden:
 # (für mehr Informationen siehe die Wiki-Seite zu Operatoren)

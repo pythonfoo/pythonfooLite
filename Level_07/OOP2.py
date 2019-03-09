@@ -49,7 +49,7 @@ class C(Complex):
         """
         return sqrt(self.real**2 + self.imag**2)
     
-    def __add__(self, o: Complex) -> C:
+    def __add__(self, o: Complex) -> "C":
         """
         Addiert zwei komplexe Zahlen.
         
@@ -59,7 +59,7 @@ class C(Complex):
         assert isinstance(o, Complex)
         return C(self.real + o.real, self.imag + o.imag)
     
-    def __radd__(self, o: float) -> C:
+    def __radd__(self, o: float) -> "C":
         """
         Addiert eine rationale Zahl zu einer komplexen Zahl.
         
@@ -67,7 +67,7 @@ class C(Complex):
         """
         return C(self.real + o, self.imag)
     
-    def __mul__(self, o: Complex) -> C:
+    def __mul__(self, o: Complex) -> "C":
         """
         Multipliziert zwei komplexe Zahlen.
         """
@@ -77,7 +77,7 @@ class C(Complex):
             imag=self.real * o.imag + self.imag * o.real
         )
     
-    def __rmul__(self, o: float) -> C:
+    def __rmul__(self, o: float) -> "C":
         """
         Multipliziert eine rationale Zahl an eine komplexe Zahl.
         
@@ -85,7 +85,7 @@ class C(Complex):
         """
         return C(self.real * o, self.imag)
     
-    def __pow__(self, o: int) -> C:
+    def __pow__(self, o: int) -> "C":
         """
         Potenziert eine komplexe Zahl.
         """
@@ -95,13 +95,13 @@ class C(Complex):
             value *= self
         return value
     
-    def __rpow__(self, o: float) -> C:
+    def __rpow__(self, o: float) -> "C":
         """
         Potenziert nur den Realteil.
         """
         return C(self.real ** o, self.imag)
     
-    def __truediv__(self, o: Complex) -> C:
+    def __truediv__(self, o: Complex) -> "C":
         """
         Dividiert zwei komplexe Zahlen.
         """
@@ -111,7 +111,7 @@ class C(Complex):
             imag=(self.imag * o.real - self.real * o.imag) / (o.real ** 2 + o.imag ** 2)
         )
     
-    def __rtruediv__(self, o: float) -> C:
+    def __rtruediv__(self, o: float) -> "C":
         """
         Dividiert eine komplexe Zahl durch eine rationale Zahl.
         
@@ -130,19 +130,19 @@ class C(Complex):
             return False
         return (self.real == o.real) and (self.imag == o.imag)
     
-    def conjugate(self) -> C:
+    def conjugate(self) -> "C":
         """
         Berechnet das komplexe Konjugat einer komplexen Zahl.
         """
         return C(self.real, -self.imag)
     
-    def __pos__(self) -> C:
+    def __pos__(self) -> "C":
         """
         Berechnet +x (für x eine komplexe Zahl).
         """
         return self
     
-    def __neg__(self) -> C:
+    def __neg__(self) -> "C":
         """
         Berechnet -x (für x eine komplexe Zahl).
         """

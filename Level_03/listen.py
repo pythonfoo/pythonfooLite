@@ -12,6 +12,7 @@ print(liste)
 
 
 # Mit list() lässt sich bspw. ein String in einen Liste verwandeln:
+String = "ABCDEFGHIJ"
 print(list(String))
 
 

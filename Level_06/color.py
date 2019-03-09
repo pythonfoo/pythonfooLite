@@ -3,6 +3,8 @@
 # huepy muss vorher installiert werden.
 import huepy
 
+print(huepy.bold(huepy.red("red and bold")))
+
 print(huepy.run("Starte..."))
 print(huepy.info("Info!!"))
 print(huepy.bad("Schlecht!"))
@@ -14,3 +16,4 @@ from tqdm import tqdm
 
 for x in tqdm(range(5000000), desc=huepy.run("Dinge")):
     pass
+

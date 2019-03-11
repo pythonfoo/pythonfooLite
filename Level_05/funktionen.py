@@ -54,6 +54,16 @@ def sum(*params):
 sum() # 0
 sum(1,5) # 6
 
+# beliebig viele Keyword-Argumente
+def print_kwargs(**kwargs):
+    print(kwargs)
+
+print_kwargs(a=5, b="foo")
+
+# die allgemeinste Funktion
+def allg(*args, **kwargs):
+    print(args, kwargs)
+
 # Rekursion:
 
 def fun() -> None:

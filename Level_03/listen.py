@@ -36,6 +36,7 @@ print(l)
 # Die append()-Methode fügt einer Liste ein beliebiges
 # Element hinzu:
 liste.append("bar")
+liste += ["bar"]  # tut das gleiche
 print(liste)
 
 
@@ -51,13 +52,19 @@ print(liste)
 liste.pop()
 print(liste)
 
+# alternativ per Index löschen
+del liste[1]
 
 # Ein Element kann aber nicht nur über den Index gelöscht werden, sondern
 # auch über das Objekt, es wird allerdings nur das erste Auftreten des
 # Objektes gelöscht. Dabei wird ein Fehler geworfen, falls das Objekt
 # nicht in der Liste vorhanden ist.
-liste2.remove(9) # type: None
-print(liste2)
+liste.remove('bar') # type: None
+print(liste)
+
+
+# Element über den Wert finden
+liste.index('foo')
 
 
 # Um festzustellen, wie oft ein Wert in einer Liste vorhanden ist kann
@@ -66,6 +73,8 @@ liste3 = list("aabbbcccc")
 print(liste3.count("a"))
 print(liste3.count("d"))
 
+# mit in kann man herausfinden, ob ein Element in einer Liste enthalten ist
+print("a" in liste3)
 
 # Eine Liste kann mit sort() sortiert werden:
 liste2 = [9,6,3,2,7]
@@ -78,3 +87,6 @@ print(liste2)
 String = "ABCDEFGHIJKLMNOPQRSTUVW"
 print(String)
 print(String[4])
+
+# Reversing
+print(String[::-1])

@@ -11,6 +11,9 @@
 Tuple = ("foo", "bar") # type: tuple
 print(Tuple)
 
+# man kann auch vorhandene Werte in Tupel umwandeln
+print(tuple('foo'))
+
 # Mit einem Index kann auf ein Element zugegriffen
 # werden:
 print(Tuple[0])

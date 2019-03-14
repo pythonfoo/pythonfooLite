@@ -14,6 +14,10 @@ Siehe auch https://docs.python.org/3.7/library/numbers.html.
 
 Abstrakte Klassen kann man auch selber definieren, siehe dazu:
 https://docs.python.org/3/library/abc.html
+
+Bei den Rückgabetypen ist `C` in Anführungszeichen gefasst,
+weil der Typ zu den Zeitpunkt noch nicht definiert ist.
+(Ab Python 3.7 wäre das nicht mehr nötig, siehe dazu PEP 563.)
 """
 
 from numbers import Complex

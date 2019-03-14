@@ -11,6 +11,9 @@ ist dieser Aufwand nicht nötig oder sinnvoll.
 `complex` ist bereits in der Standardbibliothek enthalten.)
 
 Siehe auch https://docs.python.org/3.7/library/numbers.html.
+
+Abstrakte Klassen kann man auch selber definieren, siehe dazu:
+https://docs.python.org/3/library/abc.html
 """
 
 from numbers import Complex

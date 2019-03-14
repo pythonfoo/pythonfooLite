@@ -5,9 +5,14 @@ def gen(s):
     for char in s:
         yield char
 
-
+# iterieren mit einer for-Schleife:
 for x in gen("abcdef"):
     print(x)
+
+# oder manuell mit next:
+g = gen("foobar")
+print(next(g))
+print(next(g))
 
 # Dekoratoren
 def f(x):

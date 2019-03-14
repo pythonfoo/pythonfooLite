@@ -61,7 +61,7 @@ print(SpecialNumbers.PI)
 class Calculator:
     """
     Diese Klasse hat zusätzlich zu den statischen Attributen
-    auch noch zwei Instanzmethoden.
+    auch noch zwei statische Methoden.
     """
     PI = 3.14
     E = 2.71
@@ -101,6 +101,8 @@ class Thing:
 
 Thing() # Instanziierung
 
+# Ab Python 3.7 kann man hierfür auch dataclasses benutzen:
+# https://docs.python.org/3/library/dataclasses.html
 class Contact:
     """ Ein Adressbucheintrag. """
     def __init__(self, name: str, phone: int, email: str) -> None:
@@ -113,11 +115,18 @@ class Contact:
         self.name = name
         self.phone = phone
         self.email = email
+    
+    def print(self):
+        """
+        Druckt den Kontakt aus.
+        """
+        print("Name: {}".format(self.name))
+        print("Telefonnummer: {}".format(self.phone))
+        print("E-Mail: {}".format(self.email))
+
 
 c = Contact("Ich", "01234-56789", "mail@example.org")
-print("Name: {}".format(c.name))
-print("Telefonnummer: {}".format(c.phone))
-print("E-Mail: {}".format(c.email))
+c.print()
 
 class HTTPURL:
     """ Diese Klasse repräsentiert eine HTTPURL. """

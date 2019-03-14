@@ -26,4 +26,7 @@ else:
     print("Kein Valuefehler")
 
 # So wird der Fehler bearbeitet, aber der Fehler bleibt nicht unentdeckt
-    
+
+# Man kann auch eigene Fehler definieren, die von Exception erben:
+class MeinFehler(Exception):
+    pass

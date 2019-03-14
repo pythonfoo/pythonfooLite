@@ -161,10 +161,12 @@ Textfelds in einem Dialog angezeigt werden.
 ### Level 11 Web
 Webanwendungen sind ein häufiger Einsatzzweck von Python.
 * Was ist HTTP und wie funktioniert es?
+* [requests](http://docs.python-requests.org/en/latest/)
+* [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 * CGI
 * WSGI
-* Werkzeug
-* Django (/Flask?) **nur kurz anreißen!**
+* [Werkzeug](http://werkzeug.pocoo.org/)
+* [Django](https://www.djangoproject.com/) (/[Flask](http://flask.pocoo.org/)?) **nur kurz anreißen!**
 
 #### Aufgaben
 * *Hallo Welt!* als Webapp

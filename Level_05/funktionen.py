@@ -76,3 +76,9 @@ def quersumme(zahl: int) -> int:
     for ziffer in str(zahl):
         qs += int(ziffer)
     return qs
+
+# Docstrings
+
+def fun():
+    """Diese Funktion macht Spaß."""
+    print("Spaß")

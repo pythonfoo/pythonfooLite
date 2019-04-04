@@ -85,6 +85,7 @@ Level 5 beschäftigt sich mit dem Erstellen von Funktionen (ob mit oder ohne Par
 * Gültigkeitsbereich
 * Rekursion
 * Rückgabewert
+* Docstrings
 
 ### Level 5.5
 Dieses Level beschäftigt sich mit Themen, die in bisherigen Leveln nicht behandelt wurden, weil sie nichts mit Python zu tun haben oder nicht dem Fortschritt entsprachen. Dennoch sind diese Themen, nicht nur für die Programmierung in Python, sondern auch in anderen Programmiersprachen, sehr wichtig.
@@ -93,7 +94,6 @@ Dieses Level beschäftigt sich mit Themen, die in bisherigen Leveln nicht behand
 * Texteditor
 * IDE
 * Git und GitHub
-* Docstrings
 * [PEP8](https://www.python.org/dev/peps/pep-0008/)
 * `s.format()`
 * Bash / Terminal / Shell

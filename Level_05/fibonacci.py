@@ -11,12 +11,14 @@ Dabei gilt: Die Summe zweier Elemente ergibt das Nächste.
 # siehe dazu https://github.com/pythonfoo/pythonfooLite/wiki/Rekursion_Vs._Iteration.
 # Eine wesentlich perfomantere Version findet sich in Level 7.
 
+
 def fib(n: int) -> int:
     # Die ersten beiden Elemente sind fix:
     if n <= 1:
         return n
     # Ansonsten: f(n) = f(n-1) + f(n-2)
-    return fib(n-1) + fib(n-2)
+    return fib(n - 1) + fib(n - 2)
+
 
 n = int(input("Welches Element soll berechnet werden? "))
 print(" =>", fib(n))

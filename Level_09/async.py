@@ -3,12 +3,10 @@ import asyncio
 import string
 from sys import argv
 
-# alternativ (ab Python 3.5): async def
-@asyncio.coroutine
-def print_string(mystring, wait=0.1):
+async def print_string(mystring, wait=0.1):
     while True:
         print(mystring, end="", flush=True)
-        yield from asyncio.sleep(wait) # alternativ (ab Python 3.5): await
+        await asyncio.sleep(wait)
 
 """
 Die Event-Loop ist bei asyncio sehr wichtig.

@@ -3,24 +3,24 @@
 Viele Algorithmen in der Mathematik lassen sich als Summen oder Produkte beschreiben. Diese wiederrum können mit Schleifen implementiert werden. Später werden wir allerdings noch einen anderen Weg kennenlernen solche Algorithmen zu implementieren (Rekursion). Im Folgenden soll die Benutzung von Schleifen an klassischen Beispielen geübt werden.
 
 ## Aufgabe 1: Die Fakultät
-Die Fakultät einer natürlichen Zahl n ist das Produkt aller natürlichen Zahlen von 1 bis einschließlich n.
-Wir schreiben:  `n! = n * n-1 * n-2 ... * 3 * 2 * 1`.
-**Schreiben Sie ein Programm, das die Fakultät einer eingegebenen Zahl berechnet. Und überprüfen Sie mit Hilfe der vorgegebenen Werte**
+Die Fakultät einer natürlichen Zahl `n` schreibt man als `n!` und ist das Produkt aller natürlichen Zahlen von 1 bis einschließlich n.
+Wir schreiben:  `n! = 1 * 2 * 3 * n-2 * n-1 * n`.
+**Schreibe ein Programm, das die Fakultät einer eingegebenen Zahl berechnet. Und überprüfe mit Hilfe der vorgegebenen Werte.**
 
 ```
-3! = 6
-4! = 24
-6! = 720
+3! = 1 * 2 * 3 = 6
+4! = 1 * 2 * 3 * 4 = 24
+6! = 1 * 2 * 3 * 4 * 5 * 6 = 720
 ```
 
 **Hinweis:** Die Fakultät von n entspricht ungefähr 1,6^n, was bedeutet, das sie exponentiell wächst, weshalb aus Zeitgründen, das Programm nur mit niedrigen Zahlen getestet werden sollte.
 
 ## Aufgabe 2: Die gaußsche Summe
 Die gaußsche Summe von einer natürlichen Zahl n ist die Summe aller natürlicher Zahlen von 1 bis einschließlich n. 
-Wie zu sehen ist hat die gaußsche Summe große Ähnlichkeit mit der Fakultät, weshalb Sie Ihren Code nicht so stark ändern müssen. Allerdings hat die gaußsche Summe den Vorteil, dass man sie nicht iterativ berechnen muss. Gauß soll für folgende Berechnungsmethode verantwortlich sein:
+Wie zu sehen ist hat die gaußsche Summe große Ähnlichkeit mit der Fakultät, weshalb der Code nicht so stark verändert werden muss. Allerdings hat die gaußsche Summe den Vorteil, dass man sie nicht iterativ berechnen muss. Gauß soll für folgende Berechnungsmethode verantwortlich sein:
 `n + n-1 + n-2 ... + 3 + 2 + 1 = n*(n+1)/2 `
 
-**Schreiben Sie ein Programm, dass die gaußsche Summe eine Zahl n iterativ und mit Hilfe der gaußschen Formel berechnet und vergleichen Sie die Ergebnisse (sollten Diskrepanzen auftreten ist Ihnen ein Fehler unterlaufen).**
+**Schreibe ein Programm, dass die gaußsche Summe eine Zahl n iterativ und mit Hilfe der gaußschen Formel berechnet und vergleiche die Ergebnisse (sollten Diskrepanzen auftreten ist Dir ein Fehler unterlaufen).**
 
 ## Aufgabe 3: Bubblesort
 Bubblesort ist ein Sortieralgorithmus, das heißt eine Prozedur um Folgen zu sortieren.
@@ -47,5 +47,5 @@ Wenn das vordere Element größer als das hintere Element ist, werden diese vert
 4 [2, 1, 3, 4, 5, 6, 7, 8] # Vertauscht = True
 5 [1, 2, 3, 4, 5, 6, 7, 8] # Vertauscht = False
 ```
-In dem Coderepository finden Sie im Ordner Level_3 eine Datei "bubblesort.py". Diese erstellt eine Liste mit `n`Elementen und durchmischt diese, das bedeutet, dass kein Element doppelt auftauchen wird.
- **Schreiben Sie ein Programm in diese Datei, dass die Liste `unsortet_list` mit Hilfe von Bubblesort sortiert.** 
+In dem Coderepository findet ihr im Ordner Level_3 eine Datei "bubblesort.py". Diese erstellt eine Liste mit `n`Elementen und durchmischt diese, das bedeutet, dass kein Element doppelt auftauchen wird.
+ **Schreibe ein Programm in diese Datei, dass die Liste `unsortet_list` mit Hilfe von Bubblesort sortiert.**

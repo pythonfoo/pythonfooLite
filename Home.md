@@ -73,6 +73,7 @@ Level 3 beschäftigt sich nun mit einer weiteren Kommandostruktur, den Schleifen
 Level 4 beschäftigt sich mit dem Lesen und Bearbeiten von Textdateien.
 #### Stichwörter:
 * `pathlib`
+* `shutil`
 * Dateien lesen
 * Dateien speichern
 * Dateien verschieben

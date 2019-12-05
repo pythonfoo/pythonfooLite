@@ -57,13 +57,13 @@ Level 2 führt eine erste Kontrollstruktur ein, welche ein wichtiges Element jed
 #### Stichwörter:
 * Programmablauf
 * if-Bedingung
+* while-Schleife
 * Boolean
 
 ### Level 3
 Level 3 beschäftigt sich nun mit einer weiteren Kommandostruktur, den Schleifen und führt dazu drei neue Typen ein. Nach Abschluss von Level 3, kann in der Theorie jedes Programm schon geschrieben werden.
 #### Stichwörter:
 * for-Schleife
-* while-Schleife
 * Liste
 * Tupel
 * Dictionary

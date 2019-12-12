@@ -234,7 +234,9 @@ t = ((key, value), (key2, value2))
 ```
 übergeben um daraus ein entsprechendes Dictionary zu basteln.
 
-#### Zugriff
+#### Zugriff1
+
+
 Anders als bei Listen und Tupeln, wird auf ein Wert in einem Dictonary nicht über den Index
 sondern über den Schlüssel zugegriffen. Praktischerweise ähnelt sich die Syntax dem 
 Zugriff auf eine Liste oder ein Tupel.
@@ -369,37 +371,5 @@ l = range(10)
 	7
 	8
 	9
-	Fertig
-```
-
-### while-Schleifen
-Die while-Schleife ist die zweite Art von Schleifen in Python. Statt einer Durchlaufavariable wird
-bei der while-Schleife ein boolscher Ausdruck, d.h. ein Ausdruck, der entweder `True`oder `False`
-zurückgibt. Die Syntax ist die folgende:
-``` python
->>> running = True
->>> while running == True:
-...		print("foo")
-```
-Dies ist eine Endlosschleife, die unter normalen Umständen immer weiter laufen wird.
-Was hinter dem `while` steht wird intern in einen boolschen Ausdruck umgewandelt, daher ist
-das Vergleichen mit `True` im oberen Fall überflüssig.
-Im Allgemeinen wird eine Variable als boolscher Ausdruck benutzt, die dann wärend der Laufzeit
-der Schleife geändert werden kann um die Laufzeit der Schleife zu beeinflussen. Bei der 
-while-Schleife ist es somit, im Gegensatz zur for-Schleife, möglich die Laufzeit zu verlängern
-oder zu verkürzen.
-Zum Beispiel kann mit der while-Schleife sehr viel flexiblere for-Schleifen implementieren.
-``` python
->>> counter = 0
->>> while counter < 3:
-... 	inp = input("Eingabe: ")
-... 	if inp == "exit":
-... 		break
-... 		print("foo")
-...		counter += 1
-...	print("Fertig")
-	Eingabe: 3
-	foo
-	Eingabe: exit
 	Fertig
 ```

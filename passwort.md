@@ -103,35 +103,26 @@ Zum Glück funktioniert `getpass.getpass()`fast genauso wie `input()` weshalb wi
 Dieser Issue ist gewissermaßen ein wenig widersinning, denn bisher kann das unser Programm vom Benutzer geändert werden. Trotzdem wollen wir uns anschauen wie dieser Issue geschlossen werden kann. Dafür müssen wir uns kurz mit Hashwerten befassen. Das Prinzip hinter einem Hashwert ist, dass ich aus einer Eingabe einen Wert erzeuge, wobei die Eingabe immer zu diesem Hashwert führen wird aber auch andere Eingaben zu diesem Hashwert führen können, weshalb man aus dem Hashwert nicht auf die Eingabe schließen kann. Beim Hashen der Eingabe gehen Informationen verloren, die nicht wiederhergestellt werden können. Genau diesen Effekt nutzen wir im Folgenden aus.
 
 ```python
-import hashlib
-MD5 = hashlib.md5()
-MD5.update("Test".encode("UTF-8"))
-MD5.hexdigest()
-
+import bcrypt
+pwd = b"Test1234"
+salt = bcrypt.gensalt()
+hashed_pwd = bcrypt.hashpw(pwd,salt)
+print(hashed_pwd)
 ```
 
-Doch wie nutzen wir den jetzt konkret Hashwerte für unsere Passwortabfrage? Nun im folgenden werden wir nicht mehr Passworteingabe und Passwort vergleichen, sondern die Passworteingabe hashen und mit dem Hash vom Passwort vergleichen, sodass das Passwort selber nicht im Quellcode steht. Wir nutzen dafür den MD5 Algorithmus, den das `hashlib` Modul bereitstellt: 
-
-``` python
-import hashlib	
-MD5 = hashlib.md5()
-MD5.update("12345678".encode("UTF-8"))
-MD5.hexdigest()
-'25d55ad283aa400af464c76d713c07ad'
-```
-
+Doch wie nutzen wir den jetzt konkret Hashwerte für unsere Passwortabfrage? Nun im folgenden werden wir nicht mehr Passworteingabe und Passwort vergleichen, sondern die Passworteingabe hashen und mit dem Hash vom Passwort vergleichen, sodass das Passwort selber nicht im Quellcode steht. Wir nutzen dafür das `bcrypt` Modul, das für das Hashen von Passwörtern gedacht ist.
 Nun können wir unser Programm umändern:
 
 ``` python
 from getpass import getpass as passinput
-import hashlib
-passwordHash = '25d55ad283aa400af464c76d713c07ad'
+import bcrypt
+passwordHash = ""
 counter = 1
 while counter <= 3
 	password_input = passinput("Bitte geben Sie das Passwort ein: ")
-	MD5 = hashlib.md5()
-	MD5.update(password_input.encode("UTF-8"))
-	input_hash = MD5.hexdigest()
+	password_input = password_input.encode(password_input)
+	salt = bcrypt.gensalt()
+	inputHash = bcrypt.hashpw(password_input, salt)
 	if passwordHash == inputHash:
 		print("Zugang gewährt")
 		break

@@ -57,13 +57,13 @@ Level 2 führt eine erste Kontrollstruktur ein, welche ein wichtiges Element jed
 #### Stichwörter:
 * Programmablauf
 * if-Bedingung
+* while-Schleife
 * Boolean
 
 ### Level 3
 Level 3 beschäftigt sich nun mit einer weiteren Kommandostruktur, den Schleifen und führt dazu drei neue Typen ein. Nach Abschluss von Level 3, kann in der Theorie jedes Programm schon geschrieben werden.
 #### Stichwörter:
 * for-Schleife
-* while-Schleife
 * Liste
 * Tupel
 * Dictionary
@@ -72,7 +72,8 @@ Level 3 beschäftigt sich nun mit einer weiteren Kommandostruktur, den Schleifen
 ### Level 4
 Level 4 beschäftigt sich mit dem Lesen und Bearbeiten von Textdateien.
 #### Stichwörter:
-* `os`
+* `pathlib`
+* `shutil`
 * Dateien lesen
 * Dateien speichern
 * Dateien verschieben
@@ -85,6 +86,7 @@ Level 5 beschäftigt sich mit dem Erstellen von Funktionen (ob mit oder ohne Par
 * Gültigkeitsbereich
 * Rekursion
 * Rückgabewert
+* Docstrings
 
 ### Level 5.5
 Dieses Level beschäftigt sich mit Themen, die in bisherigen Leveln nicht behandelt wurden, weil sie nichts mit Python zu tun haben oder nicht dem Fortschritt entsprachen. Dennoch sind diese Themen, nicht nur für die Programmierung in Python, sondern auch in anderen Programmiersprachen, sehr wichtig.
@@ -93,15 +95,27 @@ Dieses Level beschäftigt sich mit Themen, die in bisherigen Leveln nicht behand
 * Texteditor
 * IDE
 * Git und GitHub
-* Docstrings
-* PEP8
+* [PEP8](https://www.python.org/dev/peps/pep-0008/)
 * `s.format()`
 * Bash / Terminal / Shell
 * Bugssuche
 * Refactoring
 
-### Level 6 (OOP 1)
-Level 6 widmet sich den fortgeschritterenen Bereich der Objektorientierten Programmierung. Dieses Konzept hat auch in vielen anderen Programmiersprachen eine große Bedeutung. In diesen Level werden die Kompetenzen vermittelt um eigene Typen zu definieren, Klassen oder Module zu schreiben, sowie ein grundsätzliches Verständnis von Objektorientierter Programmierung.
+### Level 6
+
+In Level 6 geht es um Konsolenanwendungen. Diese kann man grob in zwei Arten unterteilen:
+ * Programme, die nur Parameter entgegennehmen und etwas ausgeben
+ * Programme, die interaktiv arbeiten
+
+Einfache Formen des letzteren Typs kamen bereits in den vorigen Level vor.
+
+#### Stichwörter:
+ * `argparse`
+ * `curses`
+
+### Level 7 (OOP 1)
+Level 7 widmet sich den fortgeschritterenen Bereich der Objektorientierten Programmierung. Dieses Konzept hat auch in vielen anderen Programmiersprachen eine große Bedeutung. In diesen Level werden die Kompetenzen vermittelt um eigene Typen zu definieren, Klassen oder Module zu schreiben, sowie ein grundsätzliches Verständnis von Objektorientierter Programmierung.
+
 #### Stichwörter:
 * Klassen
 * Bibliotheken
@@ -114,8 +128,9 @@ Level 6 widmet sich den fortgeschritterenen Bereich der Objektorientierten Progr
 * `super()`
 * `isInstance()` und `is`
 
-### Level 7
-Level 7 beschäftigt sich mit Dingen, die thematisch in andere Level gehören, aber nicht zu deren Kenntnisstand passen.
+### Level 8
+Level 8 beschäftigt sich mit Dingen, die thematisch in andere Level gehören, aber nicht zu deren Kenntnisstand passen.
+
 #### Exkurse:
 * `turtle` - Ein Modul zum Steuern einer Schildkröte
 * `random` - Ein Modul dass verschiedene Methoden für Pseudozufallszahlen bereitstellt
@@ -128,12 +143,12 @@ Level 7 beschäftigt sich mit Dingen, die thematisch in andere Level gehören, a
 
 **Folgendes ist eher fortgeschritten.**
 
-### Level 8 Nebenläufigkeit und Alternativen
+### Level 9 Nebenläufigkeit und Alternativen
 * Threads
 * `multiprocessing`
 * `asyncio`
 
-### Level 9 GUI
+### Level 10 GUI
 Es gibt wahnsinnig viele Möglichkeiten,
 grafische Benutzeroberflächen mit Python zu realisieren.
 Wir beschränken uns hier auf Qt 5 als GUI-Toolkit.
@@ -144,18 +159,20 @@ Ein Hauptfenster soll einen Button und ein Textfeld
 enthalten. Beim Klick auf den Button soll der Inhalt des
 Textfelds in einem Dialog angezeigt werden.
 
-### Level 10 Web
+### Level 11 Web
 Webanwendungen sind ein häufiger Einsatzzweck von Python.
 * Was ist HTTP und wie funktioniert es?
+* [requests](http://docs.python-requests.org/en/latest/)
+* [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 * CGI
 * WSGI
-* Werkzeug
-* Django (/Flask?) **nur kurz anreißen!**
+* [Werkzeug](http://werkzeug.pocoo.org/)
+* [Django](https://www.djangoproject.com/) (/[Flask](http://flask.pocoo.org/)?) **nur kurz anreißen!**
 
 #### Aufgaben
 * *Hallo Welt!* als Webapp
 
-### Level 11 Packaging und Repos
+### Level 12 Packaging und Repos
 Mit `setuptools` und `pip` kann man Pakete erstellen, packen und installieren.
 * [pypi](https://pypi.org/) als Repository
 * Pakete aus dem Internet herunterladen und installieren

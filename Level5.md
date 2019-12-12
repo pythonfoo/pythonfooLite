@@ -135,3 +135,10 @@ Es ist nicht nur möglich innerhalb einer Funktion Kontrollstrukturen wie eine i
 ```
 
 Wie oben zu sehen ist, kann das Rekursionslimit zwar geändert werden, die Tatsache, dass es ein Limit gibt, beschränkt trotzdem die Art der Algorithmen, die mit Rekursion implamentiert werden können.
+
+### WARNUNG: LIMIT
+Um nicht in das Rekursionslimit zu laufen, sollte Rekursion in der Praxis nur angewendet werden, wenn die Anzahl der rekursiven Aufrufe bekannt oder bekannt gering ist.  
+In realen einsatzbereichen kommt es immer wieder zu schwer lösbaren Fehlern, wenn diesem Problem nicht rechtzeitig aufmerksamkeit geschenkt wird.  
+
+### WARNUNG: Kompliziert
+Das Debuggen von Rekursiven aufrufen kann extrem Kompliziert werden. Das sollte unbedingt beachtet werden, wenn ein Programm einem realen Einsatzzweck zugeführt werden soll und ob eine lösung mit einer Schleife nicht besser geeignet wäre.

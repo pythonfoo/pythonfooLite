@@ -18,22 +18,25 @@ path_chars = Path("chars.txt")
 # 1. Einlesen des Textes:
 
 if path_text.exists():
-    file_obj = path_text.open("r")
-    text = file_obj.read()
-    file_obj.close()
+    file_obj = path_text.open("r")  # Öffnen der Datei
+    text = file_obj.read()  # Einlesen des Textes
+    file_obj.close()  # Schließen des Dateiobjekts
 else:
     print("Die Datei {} existiert nicht.".format(path_text))
     exit()
 
+# Alternativ:
+# with path_text.open("r") as file_obj:
+#     text = file_obj.read()
 
 # 2. Worthäufigkeitstabelle
-text = text.replace("\n"," ")
-text = text.lower()
-words = text.split(" ")
+text = text.replace("\n"," ")  # entfernen der Return-Steuerzeichen
+text = text.lower()  # der ganze Text in Kleinbuchstaben
+words = text.split(" ")  # Aufteilen am Leerzeichen
 
 word_count = {}
 for element in words:
-    if element.isalpha():
+    if element.isalpha():  # handelt es sich um ein Wort
         if element in word_count:
             word_count[element] += 1
         else:
@@ -43,7 +46,7 @@ for element in words:
 # 3. Buchstabenhäufigkeitstabelle:
 char_count = {}
 for char in text:
-    if char.isalpha():
+    if char.isalpha():  # handelt es sich um einen Buchstaben
         if char in char_count:
             char_count[char] += 1
         else:
@@ -53,14 +56,14 @@ for char in text:
 # 4. Abspeichern der Tabellen:
 # Worthäufigkeiten:
 file_obj = path_words.open("w")
-for key in word_count:
-    line = "{};{}\n".format(key, word_count[key])
+for word, count in word_count.items():
+    line = f"{word};{count}\n"
     file_obj.writelines([line])
 file_obj.close()
 
 # Buchstabenhäufigkeiten:
 file_obj = path_chars.open("w")
-for key in char_count:
-    line = "{};{}\n".format(key, char_count[key])
+for char, count in char_count.items():
+    line = "{char};{count}\n"
     file_obj.writelines([line])
 file_obj.close()

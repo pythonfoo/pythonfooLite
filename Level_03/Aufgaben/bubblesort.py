@@ -11,7 +11,7 @@ unsorted_list = get_random_list(n)
 
 # Bitte die Zeilen 1-12 unverändert lassen
 
-def bubblesort(unsorted_list):
+def bubblesort(unsorted_list: list) -> list:
     changed = True
     while changed:
         changed = False

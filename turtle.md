@@ -1,12 +1,14 @@
 # Einstieg in turtle
 ## Vorwort
 Im folgenden wird das `turtle`-Modul aus der Standardbibliothek vorgestellt, die Beispiele sind absichtlich einfach gehalten und sollen einen sanften Einstieg gewährleisten. Um den Codebeispielen folgen zu können, solltest du wissen:
+
 * wie du auf deinem System Pythoncode ausführst
 * was eine Variable ist
 * was ein Funktionsaufruf ist
 * was ein `int`, ein `string` und ein `float`sind
 * was eine `if`-Bedingung ist
 * was eine Schleife ist
+
 Solltest du bei einem der oben genannten Punkte noch Fragen oder Probleme haben, schau dir doch mal die Level 0 - 2 an.
 
 ## Das turtle-Modul

@@ -1,4 +1,15 @@
 # Einstieg in turtle
+## Vorwort
+Im folgenden wird das `turtle`-Modul aus der Standardbibliothek vorgestellt, die Beispiele sind absichtlich einfach gehalten und sollen einen sanften Einstieg gewährleisten. Um den Codebeispielen folgen zu können, solltest du wissen:
+* wie du auf deinem System Pythoncode ausführst
+* was eine Variable ist
+* was ein Funktionsaufruf ist
+* was ein `int`, ein `string` und ein `float`sind
+* was eine `if`-Bedingung ist
+* was eine Schleife ist
+Solltest du bei einem der oben genannten Punkte noch Fragen oder Probleme haben, schau dir doch mal die Level 0 - 2 an.
+
+## Das turtle-Modul
 Mit dem `turtle` Modul ist es möglich, mit Hilfe von einfachen Befehlen/Funktionen die namensgebende turtle über ein Fläche zu bewegen.
 Die turtle zeichnet dabei standardmäßig eine Spur hinter sich, dies kann benutzt werden um einfache bis komplexe Formen auf der 2D-Ebene zu zeichnen.
 Das `turtle`-Modul stellt dafür einfache Funktionen bereit, die miteinander verknüpft werden können um die turtle zu bewegen.
@@ -7,9 +18,9 @@ Viele `turtle`-Methoden bieten Aliasse an (z.B. `turtle.fd()` statt `turtle.forw
 
 Im folgenden sollen in kurzen Codeabschnitten, die einzelnen Funktionen vorgestellt werden. Die Codeabschnitte sind so konzipiert, dass sie einfach in den Interpreter oder eine .py-Datei kopiert werden können, ohne auf vorherige Abschnitte angewiesen zu sein. Daher fängt jeder Codeabschnitt auch mit dem `import`-Statement an.
 
-Führt man die Codeabschnitte aus, öffnet sich ein Fenster mit der Leinwand, auf der sich die turtle bewegt, die turtle führt dann die angegebenen Bewegungen durch und anschließend schließt sich das Fenster. Eine simple Methode zu verhindern, dass sich das Fenster zu schnell wieder schließt, ist es am Ende des Programms ein `input()`-Statement zu setzen, sodass auf eine Eingabe des Benutzers gewartet wird und das Fenster nicht geschlossen wird.
+Für den Anfang kannst du die turtle am einfachsten aus dem Interpreter heraus steuern. Öffne dazu den Python-Interpreter deiner Wahl, importiere die `turtle`-Bibliothek und fang an der turtle Befehle zu geben. Dann sollte sich ein Fenster öffnen, in dem du die turtle beobachten kannst. Die Arbeit im Interpreter hat den Vorteil, dass du die Auswirkungen deines Codes direkt sehen kannst. Es bietet sich also an deinen Python-Interpreter und das turtle-Fenster nebeneinander zu öffnen.
 
-## Bewegung
+## Die turtle bewegen
 Die `forward()` und `backward()` Methoden können für die Bewegung benutzt werden. Die turtle läuft dabei die angegebene Strecke ab und zieht eine Spur hinter sich her. Dabei ändert sich nicht ihre Richtung. Beim Start des Programms ist die Richtung `0` was nach rechts entspricht. 
 
 Alternativ zu `turtle.forward(n)` kann auch `turtle.fd(n)` und statt
@@ -30,7 +41,7 @@ turtle.right(180)   # dreht die turtle um 180° nach rechts
 turtle.forward(20)  # bewegt die turtle um 20px
 ```
 
-## Lesen von Position und Richtung
+## Auslesen von Position und Richtung
 Die Methoden `turtle.position()` und `turtle.heading()` liefern uns die aktuelle Position bzw. Richtung der turtle. Diese Methoden können zum Beispiel dabei helfen, nicht über den Rand zu laufen oder eine Kreislinie entlang zu laufen. 
 ``` python
 import turtle
@@ -86,7 +97,7 @@ print(gradient)
 # Out: 225.0
 ```
 
-## Manipulation der Linie
+## Manipulation der gezogenen Linie
 Standardmäßig zeichnet die turtle eine schwarze Linie, wenn sie sich bewegt. Mit `turtle.penup()` und `turtle.pendown()` ist es möglich den *Stift* zu heben un zu senken und somit das Zeichnen der Linie zu unterbrechen. Dies kann sinnvoll sein um die turtle zu einer Ausgangsposition zu bewegen, ohne dabei eine Linie zu ziehen. Gerade in Verbindung mit der `turtle.setposition()`- und der `turtle.home()`-Methode ergibt es Sinn den *Stift* anzuheben.
 
 Der folgende Codeabschnitt bewegt die turtle zu einer Ausgangsposition `(-100, -100)` und zeichnet anschließend ein Quadrat mit einer Seitenlänge von 200 Pixeln, dessen Mitte bei `(0.00, 0.00)` liegt.
@@ -171,9 +182,6 @@ Die Geschwindigkeit kann auf zwei Arten angegeben werden: als `int` zwischen `0`
 * `“normal”: 6`
 * `“slow”: 3`
 * `“slowest”: 1`
-
-
-
 
 ## ToDo:
 * fillcolor

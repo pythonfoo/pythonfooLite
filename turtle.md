@@ -10,7 +10,7 @@ Im folgenden sollen in kurzen Codeabschnitten, die einzelnen Funktionen vorgeste
 Führt man die Codeabschnitte aus, öffnet sich ein Fenster mit der Leinwand, auf der sich die turtle bewegt, die turtle führt dann die angegebenen Bewegungen durch und anschließend schließt sich das Fenster. Eine simple Methode zu verhindern, dass sich das Fenster zu schnell wieder schließt, ist es am Ende des Programms ein `input()`-Statement zu setzen, sodass auf eine Eingabe des Benutzers gewartet wird und das Fenster nicht geschlossen wird.
 
 ## Bewegung
-Die `forward()` und `backward()` Methoden können für die Bewegung benutzt werden. Die turtle läuft dabei die angegebene Strecke ab und zieht eine Spur hinter sich her. Dabei ändert sich nicht ihre Richtung. Beim Start des Programms ist die Richtung `0` was nacht rechts entspricht. 
+Die `forward()` und `backward()` Methoden können für die Bewegung benutzt werden. Die turtle läuft dabei die angegebene Strecke ab und zieht eine Spur hinter sich her. Dabei ändert sich nicht ihre Richtung. Beim Start des Programms ist die Richtung `0` was nach rechts entspricht. 
 
 Alternativ zu `turtle.forward(n)` kann auch `turtle.fd(n)` und statt
 `turtle.backward(n)` `turtle.bk(n)` benutzt werden.
@@ -86,7 +86,7 @@ print(gradient)
 # Out: 225.0
 ```
 
-## Maipulation der Linie
+## Manipulation der Linie
 Standardmäßig zeichnet die turtle eine schwarze Linie, wenn sie sich bewegt. Mit `turtle.penup()` und `turtle.pendown()` ist es möglich den *Stift* zu heben un zu senken und somit das Zeichnen der Linie zu unterbrechen. Dies kann sinnvoll sein um die turtle zu einer Ausgangsposition zu bewegen, ohne dabei eine Linie zu ziehen. Gerade in Verbindung mit der `turtle.setposition()`- und der `turtle.home()`-Methode ergibt es Sinn den *Stift* anzuheben.
 
 Der folgende Codeabschnitt bewegt die turtle zu einer Ausgangsposition `(-100, -100)` und zeichnet anschließend ein Quadrat mit einer Seitenlänge von 200 Pixeln, dessen Mitte bei `(0.00, 0.00)` liegt.
@@ -151,7 +151,7 @@ for i in range(4):
 Alternativ zur `turtle.pensize()`-Methode kann auch die `turtle.width()`-Methode benutzt werden.
 
 ## Ändern der Geschwindigkeit
-Die Geschwindigkeit der turtle kann mit der `turtle.speed()`-Methode gelesen und geändert werden. Im folgenden Codeschnippsel wird das bereits bekannte Quadrat gezeichnet, jedoch wird beim Zeichnen die Geschwindigkeit von Kante zu Kante varieirt.
+Die Geschwindigkeit der turtle kann mit der `turtle.speed()`-Methode gelesen und geändert werden. Im folgenden Codeschnippsel wird das bereits bekannte Quadrat gezeichnet, jedoch wird beim Zeichnen die Geschwindigkeit von Kante zu Kante variiert.
 ```python
 import turtle
 turtle.penup()                    # Stift heben -> keine Linie

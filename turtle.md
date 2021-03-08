@@ -187,6 +187,6 @@ Die Geschwindigkeit kann auf zwei Arten angegeben werden: als `int` zwischen `0`
 
 ## ToDo:
 * fillcolor
-* speed
 * anotherturtle
 * dot
+* clear

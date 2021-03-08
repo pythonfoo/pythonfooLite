@@ -213,7 +213,9 @@ Die Geschwindigkeit kann auf zwei Arten angegeben werden: als `int` zwischen `0`
 * `“slow”: 3`
 * `“slowest”: 1`
 
-## ToDo:
-* anotherturtle
-* dot
-* clear
+## Weitere Funktionen
+Das `turtle`-Modul umfasst noch viele weitere Funktionen, sie alle hier aufzulisten wäre müßig und redundant. Du solltest nun die wichtigsten Methoden kennengelernt haben. Gerüstet mit diesen Methoden kannst du jetzt mit dem Modul experimentieren. In diesem Abschnitt folgen noch ein paar weitere Methoden, falls du noch mehr kennenlernen möchtest. Da wir hier nicht alle Methoden vorstellen solltest du trotzdem dir die Dokumentation zum `turtle`-Modul (du findest sie unter: https://docs.python.org/3/library/turtle.html) ansehen, um rauszufinden, was noch alles möglich ist.
+
+### turtle.hide
+### turtle.screen
+### turtle.Turtle

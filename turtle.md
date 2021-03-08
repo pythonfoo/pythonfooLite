@@ -163,6 +163,34 @@ for i in range(4):
 ```
 Alternativ zur `turtle.pensize()`-Methode kann auch die `turtle.width()`-Methode benutzt werden.
 
+## Flächen füllen
+Mit den Methoden `turtle.begin_fill()` und `turtle.end_fill()` ist es möglich, Flächen zu färben, die von der turtle eingeschlossen wurden. Im folgenden Codeschnippsel wird dies (wieder am Beispiel eines Quadrates) demonstriert. Die Methode `turtle.fillcolor()` kann analog zur Methode `turtle.pencolor()` benutzt werden um die entsprechende Farbe festzulegen. Die Methode `turtle.filling()` wird analog zur Methode `turtle.isdown()` benutzt um zu erkennen, ob gerade eine Fläche gefüllt wird.
+```python
+import turtle
+turtle.penup()                    # Stift heben -> keine Linie
+turtle.setposition((-100, -100))  # Ausgangsposition
+turtle.pendown()                  # Stift senken -> Linie
+print("filling? ", turtle.filling())
+
+turtle.fillcolor("blue")          # Setzen der Farbe zum ausfüllen
+turtle.begin_fill()               # Ausfüllen starten
+
+for i in range(4):
+    turtle.forward(200)
+    turtle.left(90)
+    print("filling? ", turtle.filling())
+
+turtle.end_fill()                 # Ausfüllen beenden
+```
+
+Die Methode `turtle.color()` kann benutzt werden um sowohl die *pencolor* als auch die *fillcolor* festzulegen.
+```python
+import turtle
+turtle.color("red", "blue")
+print(turtle.pencolor())  # Out: red
+print(turtle.fillcolor())  # Out: blue 
+```
+
 ## Ändern der Geschwindigkeit
 Die Geschwindigkeit der turtle kann mit der `turtle.speed()`-Methode gelesen und geändert werden. Im folgenden Codeschnippsel wird das bereits bekannte Quadrat gezeichnet, jedoch wird beim Zeichnen die Geschwindigkeit von Kante zu Kante variiert.
 ```python
@@ -186,7 +214,6 @@ Die Geschwindigkeit kann auf zwei Arten angegeben werden: als `int` zwischen `0`
 * `“slowest”: 1`
 
 ## ToDo:
-* fillcolor
 * anotherturtle
 * dot
 * clear

@@ -219,5 +219,14 @@ Das `turtle`-Modul umfasst noch viele weitere Funktionen, sie alle hier aufzulis
 ### Sichtbarkeit der turtle
 Mit der Methode `turtle.hideturtle()` lässt sich die turtle verstecken, in der Dokumentation wird erwähnt, das dies die Performanz verbessern kann. Um die turtle wieder sichtbar zu machen, kann die Methode `turtle.showturtle()` verwendet werden. Alternativ können auch die Aliasmethoden `turtle.ht()` bzw. `turtle.st()` benutzt werden.
 
-### turtle.screen
+### Bildschirmgröße
+Das `turtle`-Modul bietet auch Methoden an auf den Fenster zuzugreifen, in dem sich die turtle bewegt. Beispielsweise kann mit der `turtle.screensize()` die Bildschirmgröße abgerufen und geändert werden.
+```python
+import turtle
+width, height = turtle.screensize()
+print(width, height)  # Out: 400 300
+turtle.screensize((800, 600))
+```
+Die genaue größe des Fensters in Pixeln zu kennen, kann hilfreich sein, um zu verhindern, dass die turtle den sichtbaren Bereich verlässt.
+
 ### turtle.Turtle

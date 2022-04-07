@@ -10,5 +10,5 @@ den Überblick zu behalten.
   Passwort richtig war.
 * Ändere dein Programm so ab, dass der Benutzer auch eine Nachricht bekommt, wenn
   das Passwort falsch war.
-* Ändere dein Programm so ab, dass der Benutzer 3 Versuche hat, dass Passwort richtig
+* Ändere dein Programm so ab, dass der Benutzer 3 Versuche hat, das Passwort richtig
   einzugeben.

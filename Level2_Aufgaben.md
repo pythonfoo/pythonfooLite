@@ -5,6 +5,9 @@ für das Programm vor. Außerdem empfehlen wir, dass du pro Level einen Ordner a
 den Überblick zu behalten.
 
 ## Aufgabe 1:
+
+Programmname: password.py
+
 * Schreibe ein Programm, das ein Passwort entgegennimmt, es mit einem intern 
   gespeicherten Passwort vergleicht und eine Begrüßungsnachricht ausgibt, falls das
   Passwort richtig war.

@@ -15,3 +15,25 @@ Programmname: password.py
   das Passwort falsch war.
 * Ändere dein Programm so ab, dass der Benutzer 3 Versuche hat, das Passwort richtig
   einzugeben.
+
+## Aufgabe 2:
+
+Programmname: diamond.py
+
+* Schreibe ein Programm, das die unten abgebildete ASCII-Art im Terminal darstellt.
+* Ändere dein Programm so ab, dass die maximale Breite der Raute vom Benutzer angegeben werden kann.
+* Ändere dein Programm so ab, dass das Zeichen, aus dem die Raute gebildet wird, vom Benutzer eingegeben werden kann.
+
+```
+    #
+   ###
+  #####
+   ###
+    #
+```
+
+Nach erfolgreicher Bearbeitung der Aufgabe sollte das Programm wie folgt ablaufen:
+
+* Der Benutzer gibt eine maximale Breite an Zeichen ein.
+* Der Benutzer gibt ein Zeichen ein.
+* Das Programm erstellt eine Raute entsprechend der maximalen Breite mit dem angegebenen Zeichen und gibt diese Raute aus.

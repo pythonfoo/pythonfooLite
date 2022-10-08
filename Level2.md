@@ -42,3 +42,17 @@ Nach erfolgreicher Bearbeitung der Aufgabe sollte das Programm wie folgt ablaufe
 * Der Benutzer gibt eine maximale Breite an Zeichen ein.
 * Der Benutzer gibt ein Zeichen ein.
 * Das Programm erstellt eine Raute entsprechend der maximalen Breite mit dem angegebenen Zeichen und gibt diese Raute aus.
+
+### 2.3 hangman_v1.py
+
+In dieser Aufgabe sollst du eine einfache Version des Kinderspiels Galgenmännchen erstellen. Diese Aufgabe ähnelt sehr der Aufgabe **password.py**.
+Zuerst soll ein Wort eingegeben werden können. Dieses Wort soll nun durch Eingabe von Buchstaben erraten werden. Dabei gibt es ein Limit für die Anzahl an Fehlern.
+Implementiere eine Version des Spiels, welche folgende Anforderungen erfüllt:
+
+* Das Spiel ist gewonnen, wenn das Wort erraten wurde und das Fehlerlimit noch nicht erreicht wurde.
+* Das Spiel ist verloren, wenn das Fehlerlimit erreicht wurde und das Wort noch nicht erreicht worden ist.
+* Wird ein Buchstabe vom Benutzer eingegeben, welcher im Wort vorkommt wird das Auftauchen dieses Buchstaben im Wort ausgegeben.
+* Wird ein Buchstabe vom Benutzer eingegeben, welcher nicht im Wort enthalten ist wird dies als Fehler gewertet.
+* Enthält eine Eingabe des Benutzers mehr als ein Zeichen, wird dies ebenfalls als Fehler gewertet.
+* Bei der Eingabe von Buchstaben soll die Groß- und Kleinschreibung keine Rolle spielen.
+* Die aktuelle Fehleranzahl soll stets für den Benutzer sichtbar sein.

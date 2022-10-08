@@ -41,7 +41,7 @@ Außerdem gibt es auch noch weitere boolesche Operatoren:
 
 ## str
 
-Bei Strings ist das Verhalten auch sinnvoll, aber auf den ersten Blick evtl. anders als erwartet:
+Bei Strings ist das Verhalten auch sinnvoll, aber auf den ersten Blick eventuell anders als erwartet:
 
  * `<str> + <str> -> <str>`: Verkettet die beiden Strings.
  * `<str> * <int> -> <str>`: Hängt den String n-mal hintereinander. (äquivalent zu n-mal `+`)

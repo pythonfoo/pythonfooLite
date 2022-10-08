@@ -29,12 +29,12 @@ Die dritte Zeile ersetzt `open` durch das aus Python 3 bekannte.
  * viele Funktionen geben Listen oder Tupel zurück statt Iteratoren (z.B. `xrange` statt `range` verwenden)
  * viele Funktionen verwenden Bytestrings statt Unicodestrings
  * Klassen müssen explizit von `object` erben
- * `int`s, `list`s und `dict`s haben eine maximale Länge (evtl. statt `int` `long` verwenden)
- * einige Dinge in der Standardlibrary wurden verschoben (siehe z.B. [diese Tabelle](https://six.readthedocs.io/#module-six.moves))
+ * `int`s, `list`s und `dict`s haben eine maximale Länge (eventuell statt `int` `long` verwenden)
+ * einige Dinge in der Standardbibliothek wurden verschoben (siehe z.B. [diese Tabelle](https://six.readthedocs.io/#module-six.moves))
  * ...
 
 
-## neue Module aus der Standardlibrary, die sich nachinstallieren lassen
+## neue Module aus der Standardbibliothek, die sich nachinstallieren lassen
 
  * [ipaddress](https://pypi.org/project/ipaddress/)
  * [enum34](https://pypi.org/project/enum34/)

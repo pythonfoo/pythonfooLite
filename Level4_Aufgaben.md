@@ -6,7 +6,7 @@ Schreibe ein Programm, dass seinen Quellcode ausgibt.
 ### a)
 **Schreibe ein Programm, dass:**
 
-* die Datei `monty.txt` aus dem Coderepository einliest,
+* die Datei `monty.txt` aus dem Code-Repository einliest,
 * eine Worthäufigkeitstabelle erstellt,
 * eine Buchstabenhäufigkeitstabelle erstellt,
 * die Worthäufigkeiten lesbar formatiert in "words.txt" abspeichert,
@@ -28,7 +28,7 @@ Schreibe ein Programm, dass seinen Quellcode ausgibt.
 
 ## Tipps:
 
-1. Bei Aufgabe 1 gibt es eine Beispiellösung im Coderepository, versuche
+1. Bei Aufgabe 1 gibt es eine Beispiellösung im Code-Repository, versuche
 aber trotzdem selber auf die Lösung zu kommen.
 2. Überlege dir für Aufgabe 2 eine sinnvolle Formatierung, um die
 Tabellen in den Dateien zu speichern.

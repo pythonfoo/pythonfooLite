@@ -1,4 +1,5 @@
 # PythonfooLite
+
 ## Einleitung
 
 > "The only way to learn a new programming language is by writing programs in it." - Dennis Ritchie
@@ -12,20 +13,20 @@ Wir beschäftigen uns beim Pythonfoo mit Python in der Version 3.x. Python ist e
 Grundsätzlich sind alle Texte in Deutsch verfasst, die Codebeispiele jedoch enthalten teilweise englische Namen, da auch die Programmiersprache mit englischen Begriffen arbeitet. An einigen Stellen, werden in den Texten englische Begriffe verwendet, was meistens daran liegt, dass die deutsche Übersetzung sehr sperrig ist ("integer" <-> "ganze Zahl", "float" <-> "Fließkommazahl") oder weil der englische Begriff der weitaus gebräuchlichere ist.
 
 ## Glossar
-Im Wiki des Github Repositorys findest du ein Glossar, in dem die meisten Begriffe kurz erklärt werden.
+Im Wiki des Github Repositories findest du ein Glossar, in dem die meisten Begriffe kurz erklärt werden.
 
 ## Kontakt und Feedback
 Falls du Anregungen, Fragen, Einwände oder Ideen hast, kannst du uns natürlich an den ersten beiden Donnerstagen im Monat im Chaosdorf erreichen, oder eine Nachricht im Github Repository hinterlassen oder eine E-Mail an [pythonfoo@chaosdorf.de](mailto:pythonfoo@chaosdorf.de) schicken, zudem bietet GitHub noch ein Issue System, um Fehler im Repository zu melden. Wir sind über jegliche Art von Feedback dankbar.
-Da wir nur zwei Studenten sind, die Spaß daran haben, anderen die Grundlagen der Programmierung in Python näherzubringen, sind wir natürlich weder allwissend oder unfehlbar. Die Codebeispiele und das Wiki im Repository sind insofern als "work in progress" zu sehen, dennoch sind wir für jegliches Feedback dankbar. Wir sind stetig damit beschäftigt die Codebeispiele und beiliegenden Texte zu erweitern und verbessern, auch in diesem Zusammenhang freuen wir uns über jegliches Feedback.
+Da wir nur zwei Studenten sind, die Spaß daran haben, anderen die Grundlagen der Programmierung in Python näher zu bringen, sind wir natürlich weder allwissend oder unfehlbar. Die Codebeispiele und das Wiki im Repository sind insofern als "work in progress" zu sehen, dennoch sind wir für jegliches Feedback dankbar. Wir sind stetig damit beschäftigt die Codebeispiele und beiliegenden Texte zu erweitern und verbessern, auch in diesem Zusammenhang freuen wir uns über jegliches Feedback.
 
-## Levelaufteilung
-Wir haben den Ablauf in Level unterteilt, die aufeinander aufbauen. Das sorgt dafür, dass wir den Ablauf individuell an den Kenntnisstand der Anwesenden anpassen können, was es nicht langweilig werden lässt. Die Level sind unten grob skiziert und geben einen Überblick. Zu jedem Level sind Stichwörter aufgeführt, die sich entweder im Glossar oder im Internet suchen lassen, und einen Einblick geben sollen um was es geht, damit du falls du bereits Erfahrung im Programmieren mit Python oder einer anderen Programmiersprache hast, weißt wo du am besten einsteigen kannst.
+## Gliederung
+Wir haben den Ablauf in Level unterteilt, die aufeinander aufbauen. Das sorgt dafür, dass wir den Ablauf individuell an den Kenntnisstand der Anwesenden anpassen können, was es nicht langweilig werden lässt. Die Level sind unten grob skizziert und geben einen Überblick. Zu jedem Level sind Stichwörter aufgeführt, die sich entweder im Glossar oder im Internet suchen lassen, und einen Einblick geben sollen um was es geht, damit du falls du bereits Erfahrung im Programmieren mit Python oder einer anderen Programmiersprache hast, weißt wo du am besten einsteigen kannst.
 
 ### Zeiteinteilung
-Da die Level nicht gleich umfangreich sind und die Geschwindigkeit des Durchgehens stark vom Kenntnisstand bzw. eventuellen Vorkenntnissen abhängig ist, ist es schwierig allgemein zu sagen, wie viel Zeit für die Level eingeplant werden muss; die Erfahrung zeigt aber, dass die ersten 5 Level gut in einen bis zwei Abenden à 3 Stunden beendet werden können. Da zwischen Level 5.5 und Level 6 ein großer inhaltlicher Sprung besteht, bietet es sich an zwischen den Leveln eine Pause zur Auffrischung und Wiederholung einzulegen. Zudem ist der Einstieg in Level 6 zuerst theoretisch, weshalb es besser ist, ausgeruht in das Level zu starten.
+Da die Level nicht gleich umfangreich sind und die Geschwindigkeit des Durchgehens stark vom Kenntnisstand bzw. eventuellen Vorkenntnissen abhängig ist, ist es schwierig allgemein zu sagen, wie viel Zeit für die Level eingeplant werden muss; die Erfahrung zeigt aber, dass die ersten 5 Level gut in einen bis zwei Abenden à 3 Stunden beendet werden können. Da zwischen Level 5.5 und Level 6 ein großer inhaltlicher Sprung besteht, bietet es sich an zwischen den Levels eine Pause zur Auffrischung und Wiederholung einzulegen. Zudem ist der Einstieg in Level 6 zuerst theoretisch, weshalb es besser ist, ausgeruht in das Level zu starten.
 
 ### Aufgaben
-Zur Auffrischung und Anwendung des Gelernten, bieten wir zu den meisten Leveln Aufgaben an, die sich auf das Level beziehen und der Übung dienen sollen. Die Aufgaben sind natürlich vollkommen freiwillig wir schauen gerne über Lösungen drüber. In einigen Leveln gibt es auch Beispiellösungen zu den Aufgaben. Da es für uns schwierig ist den Schwierigkeitsgrad der Aufgaben richtig zu wählen, sind wir hier auf Feedback angewiesen.
+Zur Auffrischung und Anwendung des Gelernten, bieten wir zu den meisten Level Aufgaben an, die sich auf das Level beziehen und der Übung dienen sollen. Die Aufgaben sind natürlich vollkommen freiwillig wir schauen gerne über Lösungen drüber. In einigen Levels gibt es auch Beispiellösungen zu den Aufgaben. Da es für uns schwierig ist den Schwierigkeitsgrad der Aufgaben richtig zu wählen, sind wir hier auf Feedback angewiesen.
 
 ### Level 0
 Level 0 ist Programmieranfänger gedacht und klärt die Grundlagen von Programmierung im Allgemeinen und mit Python.
@@ -89,7 +90,7 @@ Level 5 beschäftigt sich mit dem Erstellen von Funktionen (ob mit oder ohne Par
 * Docstrings
 
 ### Level 5.5
-Dieses Level beschäftigt sich mit Themen, die in bisherigen Leveln nicht behandelt wurden, weil sie nichts mit Python zu tun haben oder nicht dem Fortschritt entsprachen. Dennoch sind diese Themen, nicht nur für die Programmierung in Python, sondern auch in anderen Programmiersprachen, sehr wichtig.
+Dieses Level beschäftigt sich mit Themen, die in bisherigen Level nicht behandelt wurden, weil sie nichts mit Python zu tun haben oder nicht dem Fortschritt entsprachen. Dennoch sind diese Themen, nicht nur für die Programmierung in Python, sondern auch in anderen Programmiersprachen, sehr wichtig.
 
 #### Stichwörter:
 * Texteditor
@@ -98,7 +99,7 @@ Dieses Level beschäftigt sich mit Themen, die in bisherigen Leveln nicht behand
 * [PEP8](https://www.python.org/dev/peps/pep-0008/)
 * `s.format()`
 * Bash / Terminal / Shell
-* Bugssuche
+* Fehlersuche
 * Refactoring
 
 ### Level 6

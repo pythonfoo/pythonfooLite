@@ -9,4 +9,4 @@ n! = n * (n-1) mit 0! = 1
 ```
 
 **Hinweis:**
-Wärend es bei der while-Schleife keine Begrenzung gibt, was die maximale Anzahl an Durchläufen angeht, existiert für die Tiefe einer Rekursion ein Limit.
+Während es bei der while-Schleife keine Begrenzung gibt, was die maximale Anzahl an Durchläufen angeht, existiert für die Tiefe einer Rekursion ein Limit.

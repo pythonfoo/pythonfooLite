@@ -1,7 +1,7 @@
 # Level 5: Funktionen
 Mit Hilfe von Funktionen ist es möglich Codeabschnitte bzw. kleinere Programmteile zu speichern und wiederzuverwenden. So wird die Komplexität stark reduziert.
-Durch Funktionen muss du dich beim Schreiben eines Hello-World-Programms nicht erst mit der Kommunikation mit dem System Output kümmern oder um die Dekodierung deiner Eingabe. Du kannst einfach die print() Funktion benutzen, die alles wichtige für dich erledit, sodass du nur noch Text eingeben musst.
-Python liefert nun eine ganze Menge grundlegender Funktionen mit, was dir die Arbeit unglaublich erleichtert. Viele dieser Funktionen haben wir bereits in den vorherigen Leveln behandelt und sie auch als Funktionen bezeichnet, ohne näher darauf einzugehen.
+Durch Funktionen muss du dich beim Schreiben eines Hello-World-Programms nicht erst mit der Kommunikation mit dem System Output kümmern oder um die Dekodierung deiner Eingabe. Du kannst einfach die print() Funktion benutzen, die alles wichtige für dich erledigt, sodass du nur noch Text eingeben musst.
+Python liefert nun eine ganze Menge grundlegender Funktionen mit, was dir die Arbeit unglaublich erleichtert. Viele dieser Funktionen haben wir bereits in den vorherigen Levels behandelt und sie auch als Funktionen bezeichnet, ohne näher darauf einzugehen.
 Beispiele für diese grundlegenden Funktionen sind:
 
 * `print()`
@@ -15,7 +15,7 @@ Aber auch viele Funktionen, die zu einem Objekt gehören (solche Funktionen nenn
 * `list.pop()`
 
 Um aber nicht auf die Menge der mitgelieferten oder aus Drittquellen bezogenen (auch dazu mehr im nächsten Level) Funktionen beschränkt zu sein, bietet Python wie viele andere Programmiersprachen, die Möglichkeit eigene Funktionen zu definieren. Dadurch kann ich kleine Teile des Programms vorhalten und sie genau dann benutzen, wenn ich sie brauche.
-Der Name Funktion maf andeuten, dass es sich dabei um etwas ähnliches wie eine mathematische Funktion handelt, das ist jedoch nur zum Teil richtig. Wärend eine mathematische Funktion einen festen Definitionsbereich besitzt, der aus mathematischen Objekten beruht, nimmt eine Funktion in Python beliebige Objekte entgegen und verarbeitet diese. Mit einer Pythonfunktion kann ich beliebiege mathematisch Funktionen definieren, andersherum ist das deutlich schwieriger. Die Analogie des Ablaufs oder der Prozedur ist daher eventuell angebrachter. Wir werden im folgenden trotzdem den Begriff Funktion verwenden.
+Der Name Funktion maf andeuten, dass es sich dabei um etwas ähnliches wie eine mathematische Funktion handelt, das ist jedoch nur zum Teil richtig. Während eine mathematische Funktion einen festen Definitionsbereich besitzt, der aus mathematischen Objekten beruht, nimmt eine Funktion in Python beliebige Objekte entgegen und verarbeitet diese. Mit einer Python-Funktion kann ich beliebige mathematisch Funktionen definieren, andersherum ist das deutlich schwieriger. Die Analogie des Ablaufs oder der Prozedur ist daher eventuell angebrachter. Wir werden im folgenden trotzdem den Begriff Funktion verwenden.
 
 ## Die Funktionsdefinition
 Im Folgenden wollen wir eine Funktion definieren, die genau das macht was ein Hello-World-Programm auch macht: "Hello World" ausgeben
@@ -23,7 +23,7 @@ Im Folgenden wollen wir eine Funktion definieren, die genau das macht was ein He
 ``` python
 >>> def hello_world():
 ...     print("hello world")
-... 
+...
 >>> hello_world()
     hello world
 ```
@@ -45,7 +45,7 @@ Der Parameter wurde, wie bereits erwähnt in die runden Klammern eingetragen. `t
 
 ## Rückgabewerte
 
-In den meisten Anwendungsfällen wollen wir das Ergebnis einer Funktion allerdings nicht ausgeben, sondern zum Beispiel in einer Variabeln speichern können, um es später verwenden zu können. Dafür benötigt unsere Funktion einen Rückgabewert. Mit Hilfe eines Rückgabewertes kann eine Funktion ein Objekt beliebigen Typs zurückgeben, damit es weiter benutzt werden kann. Die folgende Funktion hat nun einen anderen Anwendungsfall verfügt jedoch über einen Übergabeparameter und einen Rückgabewert.
+In den meisten Anwendungsfällen wollen wir das Ergebnis einer Funktion allerdings nicht ausgeben, sondern zum Beispiel in einer Variablen speichern können, um es später verwenden zu können. Dafür benötigt unsere Funktion einen Rückgabewert. Mit Hilfe eines Rückgabewertes kann eine Funktion ein Objekt beliebigen Typs zurückgeben, damit es weiter benutzt werden kann. Die folgende Funktion hat nun einen anderen Anwendungsfall verfügt jedoch über einen Übergabeparameter und einen Rückgabewert.
 
 ``` python
 >>> def square(x):
@@ -134,11 +134,11 @@ Es ist nicht nur möglich innerhalb einer Funktion Kontrollstrukturen wie eine i
     1200
 ```
 
-Wie oben zu sehen ist, kann das Rekursionslimit zwar geändert werden, die Tatsache, dass es ein Limit gibt, beschränkt trotzdem die Art der Algorithmen, die mit Rekursion implamentiert werden können.
+Wie oben zu sehen ist, kann das Rekursionslimit zwar geändert werden, die Tatsache, dass es ein Limit gibt, beschränkt trotzdem die Art der Algorithmen, die mit Rekursion implementiert werden können.
 
 ### WARNUNG: LIMIT
-Um nicht in das Rekursionslimit zu laufen, sollte Rekursion in der Praxis nur angewendet werden, wenn die Anzahl der rekursiven Aufrufe bekannt oder bekannt gering ist.  
-In realen einsatzbereichen kommt es immer wieder zu schwer lösbaren Fehlern, wenn diesem Problem nicht rechtzeitig aufmerksamkeit geschenkt wird.  
+Um nicht in das Rekursionslimit zu laufen, sollte Rekursion in der Praxis nur angewendet werden, wenn die Anzahl der rekursiven Aufrufe bekannt oder bekannt gering ist.
+In realen einsatzbereichen kommt es immer wieder zu schwer lösbaren Fehlern, wenn diesem Problem nicht rechtzeitig Aufmerksamkeit geschenkt wird.
 
 ### WARNUNG: Kompliziert
-Das Debuggen von Rekursiven aufrufen kann extrem Kompliziert werden. Das sollte unbedingt beachtet werden, wenn ein Programm einem realen Einsatzzweck zugeführt werden soll und ob eine lösung mit einer Schleife nicht besser geeignet wäre.
+Das Debuggen von Rekursiven aufrufen kann extrem Kompliziert werden. Das sollte unbedingt beachtet werden, wenn ein Programm einem realen Einsatzzweck zugeführt werden soll und ob eine Lösung mit einer Schleife nicht besser geeignet wäre.

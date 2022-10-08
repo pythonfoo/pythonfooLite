@@ -60,7 +60,7 @@ auch die Laufzeit relativ schnell.
 
 ### Lösung
 Da jeder Algorithmus sowohl rekursiv, als auch iterativ implementiert werden
-kann und die rekursive Implementation Probleme aufwieß, versuchen wir jetzt die
+kann und die rekursive Implementation Probleme aufwies, versuchen wir jetzt die
 Fibonacci Folge iterativ zu implementieren:
 ```
 def fibI(n): # Fibonacci Iterativ

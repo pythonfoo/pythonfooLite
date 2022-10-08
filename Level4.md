@@ -23,7 +23,7 @@ Es sollte darauf geachtet werden, die Datei nach dem Lesen oder dem Bearbeiten w
 
 ``` python
 file_object.close()
-``` 
+```
 
 ## Datei einlesen
 ``` python
@@ -93,7 +93,7 @@ file_object.close()
 
 ## An eine Datei anfügen
 Beim Anhängen an eine Datei wird beim Öffnen der Datei der Zeiger auf das Dateiende gelegt,
-sodass etwas, das in die Datei geschrieben wird, an die Datei drangehängt wird.
+sodass etwas, das in die Datei geschrieben wird, an das Ende der Datei dran gehangen wird.
 
 ``` python
 content = 100*"spam\n"
@@ -101,8 +101,8 @@ filename = "test.txt"
 file_object = open(filename, "a")
 file_object.write(content)
 file_object.close()
-``` 
+```
 
 Ebenso wie beim Schreiben, wird die Datei erstellt, sollte sie nicht vorhanden sein.
-Das Verhalten der Methoden `writeline()`und `writeline()`ist in diesem Modus analog zu ihrem 
+Das Verhalten der Methoden `writeline()`und `writeline()`ist in diesem Modus analog zu ihrem
 Verhalten im Schreiben Modus.

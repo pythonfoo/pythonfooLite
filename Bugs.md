@@ -1,5 +1,5 @@
 # Bugs und Fehlerbehebung
-Grundsätzlich müssen drei Arten von Fehlern unterschieden werden: Syntaxfeheler, Laufzeitfehler und Semantikfehler.
+Grundsätzlich müssen drei Arten von Fehlern unterschieden werden: Syntaxfehler, Laufzeitfehler und Semantikfehler.
 
 ## Syntaxfehler
 Syntaxfehler sind ähnlich zu verstehen wie Rechtschreibfehler. Ein Befehl wurde nicht richtig geschrieben, eine Zeile nicht richtig eingerückt, eine Klammer nicht geschlossen. Syntaxfehler werden dabei gemeldet, bevor das eigentliche Programm ausgeführt wird.
@@ -36,7 +36,7 @@ ValueError: invalid literal for int() with base 10: 'a'
 
 ```
 
-Hier wurde versucht den String "a" in einen Integer umzuwandeln. Spezifischer in einen Integer mit der Basis 10, welches die Standardbasis für die Integerumwandlung ist. Dies ist ein Beispiel für einen `ValueError`. Diese Fehler können auftreten, wenn zum Beispiel die Nutzereingaben nicht überprüft wurden.
+Hier wurde versucht den String "a" in einen Integer umzuwandeln. Spezifischer in einen Integer mit der Basis 10, welches die Standardbasis für die Umwandlung in einen integer ist. Dies ist ein Beispiel für einen `ValueError`. Diese Fehler können auftreten, wenn zum Beispiel die Nutzereingaben nicht überprüft wurden.
 
 Laufzeitfehler zu finden ist weiterhin sehr einfach, da die Fehlermeldung sehr genau angibt, wo man zu suchen hat, weitaus schwieriger kann es allerdings werden einen Laufzeitfehler zu beheben, da dabei geklärt werden muss, ab wann das Programm den gewollten Zustand verlassen hat.
 
@@ -51,4 +51,4 @@ RecursionError: maximum recursion depth exceeded
 Hier wurde eine rekursive Funktion ohne Abbruchbedingung gestartet. Die wird bis zu einem Limit an Durchläufen durchlaufen und wirft dann einen `RecursionError`. Dieser ist zweifelsohne ein sehr spezieller Fehler.
 
 ## Semantikfehler
-Semantikfehler sind von den beschriebenen drei Fehlerarten die weitaus schwierigste Kategorie, da sie vom Compiler oder Interpreter nicht angezeigt werden. Bei semantische Fehler, macht der Quellcode alles richtig, leider macht er nicht das, was er tun soll. Dabei sind Semantische Fehler sehr leicht zu erreichen. Wenn ich zum Beispiel in einer verschachtelten Schleife eine Anweisung in der falschen Einrückungsebene platziere, wird der Code wahrscheinlich noch funktionieren, allerdings nicht mehr das tun, was er soll. Somit ist beim Finden von Semantischen Fehlern sehr wichtig den erwarteteten Output mit dem tatsächlichen Output zu vergleichen.
+Semantikfehler sind von den beschriebenen drei Fehlerarten die weitaus schwierigste Kategorie, da sie vom Compiler oder Interpreter nicht angezeigt werden. Bei semantische Fehler, macht der Quellcode alles richtig, leider macht er nicht das, was er tun soll. Dabei sind Semantische Fehler sehr leicht zu erreichen. Wenn ich zum Beispiel in einer verschachtelten Schleife eine Anweisung in der falschen Einrückungsebene platziere, wird der Code wahrscheinlich noch funktionieren, allerdings nicht mehr das tun, was er soll. Somit ist beim Finden von Semantischen Fehlern sehr wichtig den erwarteten Output mit dem tatsächlichen Output zu vergleichen.

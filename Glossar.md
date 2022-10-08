@@ -1,7 +1,7 @@
 # Glossar
 ## Level 0:
 ### Programmiersprache
-Eine Programmiersprache ist eine formalisierte Form um den Computer in menschenlesbarer Form Anweisungen zu geben.
+Eine Programmiersprache ist eine formalisierte Form um den Computer in menschen-lesbarer Form Anweisungen zu geben.
 Diese Anweisungen werden bei höheren Programmiersprachen vom Compiler bzw. Interpreter in eine vom Computer lesbare Sprache übersetzt. Höhere Programmiersprachen brauchen dieses Zwischenschritt um vom Computer verstanden werden zu können.
 ### Interpreter
 Ein Interpreter ist ein Programm, dass Anweisungen in einer Programmiersprache entgegennimmt und verarbeitet. Dabei arbeitet es eine Anweisung nach der anderen ab. Somit wird der Programmcode zur Laufzeit geschrieben. Im Interpreter lassen sich sehr leicht kleine Codestücke testen.
@@ -21,7 +21,7 @@ Ein Typ wird definiert durch den Wertebereich und die möglichen Operationen, di
 ### Schlüsselwort
 Schlüsselwörter dienen der Strukturierung des Programmcodes und können daher nicht als Namen für **[Variablen](#variable)** verwendet werden.
 ### Integer
-Ein Integer ist ein **[Typ](#typ)**, der von Python mitgeliefert wird und die ganzen Zahlen behandelt. Er bietet als Operationen die Grundrechenarten, sowie die Modulodivision, die Negation und Vergleichsoperationen. Ein Integer wird im Pythoncode durch die entsprechende Zahl ausgedrückt.
+Ein Integer ist ein **[Typ](#typ)**, der von Python mitgeliefert wird und die ganzen Zahlen behandelt. Er bietet als Operationen die Grundrechenarten, sowie die Modulodivision, die Negation und Vergleichsoperationen. Ein Integer wird im Python-Code durch die entsprechende Zahl ausgedrückt.
 ### Float
 ### String
 Ein String ist ein **[Typ](#typ)**, der von Python mitgeliefert wird. Die **[Werte](#wert)** eines Strings sind Zeichenketten beliebiger Länge. In Python wird ein String durch eine Zeichenkette in doppelten `""` oder einfach `''` Anführungszeichen ausgedrückt.
@@ -45,7 +45,7 @@ Als Index bezeichnet man die Position, bei 0 beginnend, eines **[Elementes](#ele
 Eine Liste ist ein **[Typ](#typ)**, der in Python mitgeliefert wird. In einer Liste können beliebig viele **[Werten](#wert)** mit beliebigen **[Typen](#typ)** gespeichert werden. Dabei kann ein Wert beliebig häufig in der selben Liste auftreten. Ebenso können Werte verschiedenen Typs in der selben Liste gespeichert werden. Häufig werden die Werte in einer Liste als **[Elemente](#element)** bezeichnet. Auf die Elemente einer Liste wird über deren Position in der Liste (ihren **[Index](#index)**) zugegriffen. Die Zählung der Indexe beginnt dabei bei `0`, d.h. das erste Element einer Liste mit `n` Elementen hat den Index `0` und das letzte Element den Index `n-1`. Zu beachten ist, das im Gegensatz zu den Typen **[Integer](#integer)**, **[String](#string)**, **[Float](#float)** und **[Boolean](#boolean)** die Liste ein dynamischer Typ ist.
 ### Tupel
 Ein Tupel ist ein **[Typ](#typ)**, der von Python mitgeliefert wird. Er besitzt ähnliche Eigenschaften wie der Typ **Liste**. Der markante Unterschied zwischen diesen
-beiden Typen ist, dass ein Tupel unveränderlich ist, sowohl bzgl. der Anzahl der **[Elemente](#element)** als auch bezgl. der Elemente. Der Zugriff geschieht wie bei dervListe über den **[Index](#index)** eines Elements.
+beiden Typen ist, dass ein Tupel unveränderlich ist, sowohl bezüglich der Anzahl der **[Elemente](#element)** als auch bezgl. der Elemente. Der Zugriff geschieht wie bei dervListe über den **[Index](#index)** eines Elements.
 ### Dictionary
 Ein Dictionary ist ein **[Typ](#typ)**, der von Python mitgeliefert wird. Es ist ebenso wie die **[Liste](#liste)** oder das **[Tupel](#tupel)**, ein iterativer Typ. Im Gegensatz zu diesen beiden Typen wird auf ein **[Element](#element)**, dass in einem Dictionary gespeichert wird nicht über einen **[Index](#index)**, sondern über ein Schlüssel zugegriffen.
 ### Schleife

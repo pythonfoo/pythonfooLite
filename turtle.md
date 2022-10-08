@@ -16,14 +16,14 @@ Mit dem `turtle` Modul ist es möglich, mit Hilfe von einfachen Befehlen/Funktio
 Die turtle zeichnet dabei standardmäßig eine Spur hinter sich, dies kann benutzt werden um einfache bis komplexe Formen auf der 2D-Ebene zu zeichnen.
 Das `turtle`-Modul stellt dafür einfache Funktionen bereit, die miteinander verknüpft werden können um die turtle zu bewegen.
 
-Viele `turtle`-Methoden bieten Aliasse an (z.B. `turtle.fd()` statt `turtle.forward()`). Diese Aliasse vermindern die Schreibarbeit, leider aber auch die Lesbarkeit. Ob du diese Aliasse benutzen willst, um ein paar Zeichen zu sparen, bleibt selbstverständlich dir überlassen. Wir weisen bei den Funktionen auf ihre jeweiligen Aliasse hin.
+Viele `turtle`-Methoden bieten Aliase an (z.B. `turtle.fd()` statt `turtle.forward()`). Diese Aliase vermindern die Schreibarbeit, leider aber auch die Lesbarkeit. Ob du diese Aliase benutzen willst, um ein paar Zeichen zu sparen, bleibt selbstverständlich dir überlassen. Wir weisen bei den Funktionen auf ihre jeweiligen Aliase hin.
 
 Im folgenden sollen in kurzen Codeabschnitten, die einzelnen Funktionen vorgestellt werden. Die Codeabschnitte sind so konzipiert, dass sie einfach in den Interpreter oder eine .py-Datei kopiert werden können, ohne auf vorherige Abschnitte angewiesen zu sein. Daher fängt jeder Codeabschnitt auch mit dem `import`-Statement an.
 
 Für den Anfang kannst du die turtle am einfachsten aus dem Interpreter heraus steuern. Öffne dazu den Python-Interpreter deiner Wahl, importiere die `turtle`-Bibliothek und fang an der turtle Befehle zu geben. Dann sollte sich ein Fenster öffnen, in dem du die turtle beobachten kannst. Die Arbeit im Interpreter hat den Vorteil, dass du die Auswirkungen deines Codes direkt sehen kannst. Es bietet sich also an deinen Python-Interpreter und das turtle-Fenster nebeneinander zu öffnen.
 
 ## Die turtle bewegen
-Die `forward()` und `backward()` Methoden können für die Bewegung benutzt werden. Die turtle läuft dabei die angegebene Strecke ab und zieht eine Spur hinter sich her. Dabei ändert sich nicht ihre Richtung. Beim Start des Programms ist die Richtung `0` was nach rechts entspricht. 
+Die `forward()` und `backward()` Methoden können für die Bewegung benutzt werden. Die turtle läuft dabei die angegebene Strecke ab und zieht eine Spur hinter sich her. Dabei ändert sich nicht ihre Richtung. Beim Start des Programms ist die Richtung `0` was nach rechts entspricht.
 
 Alternativ zu `turtle.forward(n)` kann auch `turtle.fd(n)` und statt
 `turtle.backward(n)` `turtle.bk(n)` benutzt werden.
@@ -33,7 +33,7 @@ turtle.forward(50)   # bewegt die turtle um 50 Pixel nach vorne
 turtle.backward(25)  # bewegt die turtle um 25 Pixel nach hinten
 ```
 
-Um die turtle zu drehen und somit ihre Richtung zu ändern, gibt es die `left()` und `right()` Methode, welche die turtle um eine bestimmte Gradzahl in die entsprechende Richtung drehen. Alternativ zu `left()` und `right()` können auch die Alias-Methoden `lt()` bzw. `rt()` benutzt werden.
+Um die turtle zu drehen und somit ihre Richtung zu ändern, gibt es die `left()` und `right()` Methode, welche die turtle um eine bestimmte Grad-Zahl in die entsprechende Richtung drehen. Alternativ zu `left()` und `right()` können auch die Alias-Methoden `lt()` bzw. `rt()` benutzt werden.
 ``` python
 import turtle
 turtle.forward(50)  # bewegt die turtle um 50px
@@ -67,12 +67,12 @@ turtle.setposition((100, 100))
 ```
 Alternativ zur `setposition()`-Methode können auch die Alias-Methoden `setpos()` oder `goto()` benutzt werden.
 
-Analog zur `turtle.setposition()`-Methode kann die `turtle.setheading()`-Methode benutzt werden um die Richtung der turtle unabhängig von ihrer aktuellen Richtung zu verändern. Standardmäßig erwartet die Methode eine Gradzahl als `int` oder `float`. Hierbei entsprechen 0° nach rechts, 90° nach oben, 180° nach links, 270° nach oben. Es ist allerdings auch möglich negative Werte anzugeben (-90° entspricht nach unten).
+Analog zur `turtle.setposition()`-Methode kann die `turtle.setheading()`-Methode benutzt werden um die Richtung der turtle unabhängig von ihrer aktuellen Richtung zu verändern. Standardmäßig erwartet die Methode eine Grad-Zahl als `int` oder `float`. Hierbei entsprechen 0° nach rechts, 90° nach oben, 180° nach links, 270° nach oben. Es ist allerdings auch möglich negative Werte anzugeben (-90° entspricht nach unten).
 ``` python
 import turtle
 print(turtle.heading())  # Out: 0.0
 
-turtle.setheading(90)  # setzt die Richtung der turtle auf die angegebene Gradzahl
+turtle.setheading(90)  # setzt die Richtung der turtle auf die angegebene Grad-Zahl
 turtle.forward(50)
 
 print(turtle.heading())  # Out: 90.0
@@ -164,7 +164,7 @@ for i in range(4):
 Alternativ zur `turtle.pensize()`-Methode kann auch die `turtle.width()`-Methode benutzt werden.
 
 ## Flächen füllen
-Mit den Methoden `turtle.begin_fill()` und `turtle.end_fill()` ist es möglich, Flächen zu färben, die von der turtle eingeschlossen wurden. Im folgenden Codeschnippsel wird dies (wieder am Beispiel eines Quadrates) demonstriert. Die Methode `turtle.fillcolor()` kann analog zur Methode `turtle.pencolor()` benutzt werden um die entsprechende Farbe festzulegen. Die Methode `turtle.filling()` wird analog zur Methode `turtle.isdown()` benutzt um zu erkennen, ob gerade eine Fläche gefüllt wird.
+Mit den Methoden `turtle.begin_fill()` und `turtle.end_fill()` ist es möglich, Flächen zu färben, die von der turtle eingeschlossen wurden. Im folgenden Codeausschnitt wird dies (wieder am Beispiel eines Quadrates) demonstriert. Die Methode `turtle.fillcolor()` kann analog zur Methode `turtle.pencolor()` benutzt werden um die entsprechende Farbe festzulegen. Die Methode `turtle.filling()` wird analog zur Methode `turtle.isdown()` benutzt um zu erkennen, ob gerade eine Fläche gefüllt wird.
 ```python
 import turtle
 turtle.penup()                    # Stift heben -> keine Linie
@@ -192,7 +192,7 @@ print(turtle.fillcolor())  # Out: blue
 ```
 
 ## Ändern der Geschwindigkeit
-Die Geschwindigkeit der turtle kann mit der `turtle.speed()`-Methode gelesen und geändert werden. Im folgenden Codeschnippsel wird das bereits bekannte Quadrat gezeichnet, jedoch wird beim Zeichnen die Geschwindigkeit von Kante zu Kante variiert.
+Die Geschwindigkeit der turtle kann mit der `turtle.speed()`-Methode gelesen und geändert werden. Im folgenden Codeausschnitt wird das bereits bekannte Quadrat gezeichnet, jedoch wird beim Zeichnen die Geschwindigkeit von Kante zu Kante variiert.
 ```python
 import turtle
 turtle.penup()                    # Stift heben -> keine Linie
@@ -214,10 +214,10 @@ Die Geschwindigkeit kann auf zwei Arten angegeben werden: als `int` zwischen `0`
 * `“slowest”: 1`
 
 ## Weitere Funktionen
-Das `turtle`-Modul umfasst noch viele weitere Funktionen, sie alle hier aufzulisten wäre müßig und redundant. Du solltest nun die wichtigsten Methoden kennengelernt haben. Gerüstet mit diesen Methoden kannst du jetzt mit dem Modul experimentieren. In diesem Abschnitt folgen noch ein paar weitere Methoden, falls du noch mehr kennenlernen möchtest. Da wir hier nicht alle Methoden vorstellen solltest du trotzdem dir die Dokumentation zum `turtle`-Modul (du findest sie unter: https://docs.python.org/3/library/turtle.html) ansehen, um rauszufinden, was noch alles möglich ist.
+Das `turtle`-Modul umfasst noch viele weitere Funktionen, sie alle hier aufzulisten wäre müßig und redundant. Du solltest nun die wichtigsten Methoden kennengelernt haben. Gerüstet mit diesen Methoden kannst du jetzt mit dem Modul experimentieren. In diesem Abschnitt folgen noch ein paar weitere Methoden, falls du noch mehr kennenlernen möchtest. Da wir hier nicht alle Methoden vorstellen solltest du trotzdem dir die Dokumentation zum `turtle`-Modul (du findest sie unter: https://docs.python.org/3/library/turtle.html) ansehen, um heraus zu finden, was noch alles möglich ist.
 
 ### Sichtbarkeit der turtle
-Mit der Methode `turtle.hideturtle()` lässt sich die turtle verstecken, in der Dokumentation wird erwähnt, das dies die Performanz verbessern kann. Um die turtle wieder sichtbar zu machen, kann die Methode `turtle.showturtle()` verwendet werden. Alternativ können auch die Aliasmethoden `turtle.ht()` bzw. `turtle.st()` benutzt werden.
+Mit der Methode `turtle.hideturtle()` lässt sich die turtle verstecken, in der Dokumentation wird erwähnt, das dies die Performanz verbessern kann. Um die turtle wieder sichtbar zu machen, kann die Methode `turtle.showturtle()` verwendet werden. Alternativ können auch die Aliase der Methoden `turtle.ht()` bzw. `turtle.st()` benutzt werden.
 
 ### Bildschirmgröße
 Das `turtle`-Modul bietet auch Methoden an auf den Fenster zuzugreifen, in dem sich die turtle bewegt. Beispielsweise kann mit der `turtle.screensize()` die Bildschirmgröße abgerufen und geändert werden.
@@ -227,6 +227,6 @@ width, height = turtle.screensize()
 print(width, height)  # Out: 400 300
 turtle.screensize((800, 600))
 ```
-Die genaue größe des Fensters in Pixeln zu kennen, kann hilfreich sein, um zu verhindern, dass die turtle den sichtbaren Bereich verlässt.
+Die genaue Größe des Fensters in Pixeln zu kennen, kann hilfreich sein, um zu verhindern, dass die turtle den sichtbaren Bereich verlässt.
 
 ### turtle.Turtle

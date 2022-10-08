@@ -12,7 +12,7 @@ Als Ausgabe bekommen wir:
 '_random', '_sha512', '_sin', '_sqrt', '_test', '_test_generator', '_urandom', '_warn', 'betavariate', 'choice', 'expovariate', 'gammavariate', 'gauss', 'getrandbits', 'getstate', 'lognormvariate', 'normalvariate', 'paretovariate', 'randint', 'random', 'randrange', 'sample', 'seed', 'setstate', 'shuffle', 'triangular', 'uniform', 'vonmisesvariate',
 'weibullvariate']
 ```
-Viele dieser Sachen sind allerdings erstmal uninteressant, deshalb wollen wir uns daher erstmal auf folgende Dinge beschränken:
+Viele dieser Sachen sind allerdings ersteinmal uninteressant, deshalb wollen wir uns daher ersteinmal auf folgende Dinge beschränken:
 
 * choice
 * gauss
@@ -35,7 +35,7 @@ Um Zufall zufällig zu behalten sollte **niemals** ein statischer Seed oder ein 
 
 
 ### random.random()
-Wir haben eben eine weitere Metode benutzt ohne sie einzuführen. Diese Methode liefert einen Fließkommawert zwischen 0 und ausschließend 1 zurück.
+Wir haben eben eine weitere Methode benutzt ohne sie einzuführen. Diese Methode liefert eine Fließkommazahl zwischen 0 und ausschließend 1 zurück.
 ```python
 import random
 random.random()

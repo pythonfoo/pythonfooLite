@@ -105,7 +105,7 @@ ValueError: 'test' is not in list
 
 Mit `count()` wird die Anzahl eines Objektes in einer Liste gezählt, sollte das Objekt
 nicht in der Liste enthalten sein, wird 0 zurückgeben.
- 
+
 ``` python
 
 >>> print(a.count("foo"))
@@ -116,7 +116,7 @@ nicht in der Liste enthalten sein, wird 0 zurückgeben.
 
 ##### pop()
 Mit der Methode pop() ist es möglich Elemente einer Liste anhand ihres Indexes zu
-entfernen. Das entfernte Element wird daei zurückgegeben.
+entfernen. Das entfernte Element wird dabei zurückgegeben.
 ``` python
 >>> a = [True, 'foo', 'python', 'foo', 'spam', 42]
 >>> print(a.pop(0))
@@ -135,7 +135,7 @@ Das entfernte Element wird dabei nicht zurückgegeben.
 	['foo', 'python', 'foo', 42]
 ```
 ##### sort()
-Mithilfe von sort() lassen sich Listen alphanummerisch sortieren. Dabei wird die Liste verändert.
+Mithilfe von sort() lassen sich Listen alphanumerisch sortieren. Dabei wird die Liste verändert.
 ``` python
 >>> a = ["foo", "python", "spam", "hamster", "test"]
 >>> a.sort()
@@ -270,7 +270,7 @@ verschiedenen Anwendungsfällen die eine Möglichkeit mehr Sinn als die andere.
 
 ### for-Schleifen
 Die for-Schleife ist eine der beiden Schleifenarten. Bei der for-Schleife gibt es eine
-Durchlaufvariable die durch ein iterierbares Objekt läuft. Die Syntax für eine for-Schleife ist
+Variable die durch ein iterierbares Objekt läuft und dabei den aktuellen Wert enthält. Die Syntax für eine for-Schleife ist
 wie folgt:
 ``` python
 >>> a = [1,2,3,4,5]
@@ -280,8 +280,8 @@ wie folgt:
 	2
 	3
 ```
-Hier bei ist `i`die Durchlaufvariable und die Liste `a` das iterierbare Objekt. 
-Mit einer for-Schleife kann über folgende Objekte beispielwwiese iteriert werden:
+Hier bei ist `i`die Durchlaufvariable und die Liste `a` das iterierbare Objekt.
+Mit einer for-Schleife kann über folgende Objekte beispielsweise iteriert werden:
 
 * string
 * Listen
@@ -302,7 +302,7 @@ Keys annimmt.
 	'Deutsch: drei'
 	'Englisch: three'
 	'Deutsch: vier'
-	'Englisch: four'	
+	'Englisch: four'
 ```
 
 #### range()
@@ -319,7 +319,7 @@ dem dann über die Integer iteriert wird.
  	3
  	4
 ```
- 
+
 Wie zu sehen ist, ist der Endwert exklusive.
 Es ist allerdings auch möglich einen Startwert und eine Schrittweite anzugeben
 
@@ -337,7 +337,7 @@ Objektes bestimmt wird. Es gibt keine Möglichkeit mehr Durchläufe durchzuführ
 Falls man jedoch aus einer Schleife ausbrechen möchte, d.h. sie frühzeitig beenden, kann
 man das Schlüsselwort `break` benutzen. Dabei ist zu beachten, dass mit `break` nur aus
 der aktuellen Schleife ausgebrochen wird. Sollte diese Schleife in einer weiteren enthalten
-sein, läuft diese weiter. 
+sein, läuft diese weiter.
 ``` python
 l = range(10)
 >>> for i in l:
@@ -350,7 +350,7 @@ l = range(10)
 	2
 	3
 	Fertig
-``` 
+```
 
 Mit dem Schlüsselwort `continue` ist es möglich den aktuellen Durchlauf abzubrechen, um
 mit dem nächsten fortzufahren.

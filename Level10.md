@@ -26,7 +26,7 @@ import sys
 
 ## `QApplication`-Objekt erstellen
 
-Um überhaupt irgendetwas mit Qt machen zu können, brauchen wir eine Instanz von `QApplication`. (Bei reinen Konsolenanwendungen kann man auch `QCoreApplication` verwenden.)
+Um überhaupt irgendetwas mit Qt machen zu können, brauchen wir eine Instanz von `QApplication`. (Bei reinen Konsolen-Anwendungen kann man auch `QCoreApplication` verwenden.)
 
 ``` python
 app = QApplication(sys.argv)

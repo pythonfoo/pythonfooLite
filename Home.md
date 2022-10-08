@@ -54,7 +54,7 @@ Level 1 beginnt mit dem Programmieren einfacher Programme in Python und klärt G
 * Kommentar
 
 ### Level 2
-Level 2 führt eine erste Kontrollstruktur ein, welche ein wichtiges Element jeder Programmiersprache darstellt. Desweiteren wird ein neuer Typ eingeführt.
+Level 2 führt eine erste Kontrollstruktur ein, welche ein wichtiges Element jeder Programmiersprache darstellt. Des Weiteren wird ein neuer Typ eingeführt.
 #### Stichwörter:
 * Programmablauf
 * if-Bedingung
@@ -104,7 +104,7 @@ Dieses Level beschäftigt sich mit Themen, die in bisherigen Level nicht behande
 
 ### Level 6
 
-In Level 6 geht es um Konsolenanwendungen. Diese kann man grob in zwei Arten unterteilen:
+In Level 6 geht es um Konsolen-Anwendungen. Diese kann man grob in zwei Arten unterteilen:
  * Programme, die nur Parameter entgegennehmen und etwas ausgeben
  * Programme, die interaktiv arbeiten
 
@@ -115,7 +115,7 @@ Einfache Formen des letzteren Typs kamen bereits in den vorigen Level vor.
  * `curses`
 
 ### Level 7 (OOP 1)
-Level 7 widmet sich den fortgeschritterenen Bereich der Objektorientierten Programmierung. Dieses Konzept hat auch in vielen anderen Programmiersprachen eine große Bedeutung. In diesen Level werden die Kompetenzen vermittelt um eigene Typen zu definieren, Klassen oder Module zu schreiben, sowie ein grundsätzliches Verständnis von Objektorientierter Programmierung.
+Level 7 widmet sich dem Bereich der Objektorientierten Programmierung. Dieses Konzept hat auch in vielen anderen Programmiersprachen eine große Bedeutung. In diesen Level werden die Kompetenzen vermittelt um eigene Typen zu definieren, Klassen oder Module zu schreiben, sowie ein grundsätzliches Verständnis von Objektorientierter Programmierung.
 
 #### Stichwörter:
 * Klassen

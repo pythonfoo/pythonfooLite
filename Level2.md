@@ -3,7 +3,7 @@
 In Level 1 hast du gelernt Eingaben in der Konsole vom Benutzer entgegen zu nehmen und, diese EIngaben zu verarbeiten und die Ergebnisse dieser Verarbeitung in der Konsole auszugeben.
 
 In Level 2 wirst die `if`-Bedingung kennenlernen, die es dir ermöglicht Bedingungen zu prüfen, die erfüllt sein müssen, damit ein Codeabschnitt ausgeführt werden kann.
-Desweiteren wirst du die `while`-Schleife kennenlernen, welche einen Codeabschnitt wiederholt ausführt, solange eine Bedingung erfüllt ist.
+Des Weiteren wirst du die `while`-Schleife kennenlernen, welche einen Codeabschnitt wiederholt ausführt, solange eine Bedingung erfüllt ist.
 Im Zusammenhang mit der `if`-Bedingung und der `while`-Schleife wirst du den Datentypen `boolean` kennenlernen. Dieser Datentyp beinhaltet Wahrheitswerte.
 Am Ende des Levels wirst bereits in der Lage sein komplexere Programme umzusetzen.
 

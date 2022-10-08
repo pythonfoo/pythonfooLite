@@ -3,8 +3,7 @@
 ## Was ist die Shell?
 ## Wie rufe ich die Shell auf?
 In UNIX Systemen wird meistens als Terminal oder Konsole ein Shell Emulator geöffnet.
-DIese können eine Graphische Oberfläche haben, können aber auch nur Textbasiert sein
-(beispielsweise die Standard Terminals tty1 - tty6).
+Diese können eine Graphische Oberfläche haben, können aber auch nur Textbasiert sein (beispielsweise die Standard Terminals tty1 - tty6).
 ## Welche Unterschiede gibt es zwischen den Betriebssystemen?
 ## Welche Befehle sind für den Anfang wichtig?
 #### UNIX:
@@ -19,10 +18,10 @@ DIese können eine Graphische Oberfläche haben, können aber auch nur Textbasie
 #### Windows:
 
 
-## Welche Konsolenprogramme empfehlt ihr mir?
+## Welche Konsolen-Programme empfehlt ihr mir?
 
 * **htop** - Prozessmonitor in der Konsole in Farbe (UNIX Systeme)
-* **git** - Ein Konsolenprogramm zur Versionskontrolle (siehe "Versionskontrolle.md")
+* **git** - Ein Konsolen-Programm zur Versionskontrolle (siehe "Versionskontrolle.md")
 * **pip3** - Paketmanager für Python3 Bibliotheken (UNIX Systeme)
 * **bpython3** - Bunter Python-Interpreter mit Autovervollständigung (UNIX Systeme)
 * **fish** - Weitere Shell mit Features, Unterschiede zur **Bash** vorhanden (UNIX Systeme)

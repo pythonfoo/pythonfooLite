@@ -35,7 +35,7 @@ Nun wollen wir unsere Funktion ein wenig aufpeppen, indem wir ihr einen Paramete
 ``` python
 >>> def new_print(text):
 ...     print(text)
-... 
+...
 >>> inp_text = input("Eingabe: ")
     Testeingabe
 >>> new_print(inp_text)
@@ -68,7 +68,7 @@ Diese Unterscheidung ist sehr wichtig, da die Verwendung von mehreren Parametern
 ``` python
 >>> def diff(a, b):
 ...     return a - b
-... 
+...
 >>> print(5, 3)
     2
 >>> print(3, 5)
@@ -80,9 +80,9 @@ Nun möchte ich aber einer Funktion eine beliebige Anzahl an Parametern übergeb
 
 ``` python
 >>> def string_add(*elemente):
-...     result = "" 
+...     result = ""
 ...     for e in elemente:
-...         result += str(e)	
+...         result += str(e)
 ...     return result
 ...
 >>> print( string_add(0, 1, "test"))
@@ -95,7 +95,7 @@ Das `*elemente` steht dabei für ein Tupel und kann innerhalb der Funktion als T
 ...     for summand in more_summands:
 ...         result += summand
 ...     return result
-... 
+...
 >>> print( add_int(1, 5, 6) )
     12
 ```
@@ -116,7 +116,7 @@ Es ist auch möglich, eine beliebige Anzahl von keyword arguments zu benutzen. D
 >>> def fun(**kwargs):
 ...     print(kwargs.keys())
 ...     print(kwargs.values())
-... 
+...
 >>> fun(test1 = "foo", test2 = "test")
     dict_keys(['test1', 'test2'])
     dict_values(['foo', 'test'])

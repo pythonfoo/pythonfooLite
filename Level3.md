@@ -12,7 +12,7 @@ Eine Liste wird mit `[]` definiert.
   Viele Objekte lassen sich mit `list()`in eine Liste umwandeln, dabei wird eine neue
   Liste erstellt.
 
-``` python 
+``` python
 >>> print(list("abcd"))
 	['a', 'b', 'c', 'd']
 ```
@@ -224,7 +224,7 @@ Ein Dictionary kann man mit `{}` definieren:
 	{'eins':'one', 'zwei':'two'}
 ```
 Es ist allerdings auch möglich ein Dictionary über die Funktion `dict()` zu definieren.
-Dabei kann man der `dict()` Funktion eine zweidimensionale Liste der  Form: 
+Dabei kann man der `dict()` Funktion eine zweidimensionale Liste der  Form:
 ``` python
 a = [[key, value], [key2, value2]]
 ```
@@ -237,8 +237,8 @@ t = ((key, value), (key2, value2))
 #### Zugriff1
 
 
-Anders als bei Listen und Tupeln, wird auf ein Wert in einem Dictonary nicht über den Index
-sondern über den Schlüssel zugegriffen. Praktischerweise ähnelt sich die Syntax dem 
+Anders als bei Listen und Tupeln, wird auf ein Wert in einem Dictionary nicht über den Index
+sondern über den Schlüssel zugegriffen. Praktischerweise ähnelt sich die Syntax dem
 Zugriff auf eine Liste oder ein Tupel.
 ``` python
 >>> d = {"eins":"one", "zwei":"two", "drei":"three"}

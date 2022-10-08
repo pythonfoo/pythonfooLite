@@ -33,12 +33,10 @@ text = file_object.read()
 file_object.close()
 ```
 Die Methode `read()` liefert dabei einen String zurück, der den Inhalt der Datei enthält.
-Alternativ kann auch die Methode `readlines()` benutzt werden. Diese gibt eine Liste von Zeilen 
+Alternativ kann auch die Methode `readlines()` benutzt werden. Diese gibt eine Liste von Zeilen
 zurück.
 
-Wichtig zu beachten ist, dass die Datei gelesen wird, indem ein Zeiger durch sie durch läuft,
-was bedeutet, dass nach dem vollständigen Lesen der Datei der Zeiger zurück gesetzt werden 
-muss, da sonst ein leerer String zurückgegeben werden wird. 
+Wichtig zu beachten ist, dass die Datei gelesen wird, indem ein Zeiger durch sie durch läuft, was bedeutet, dass nach dem vollständigen Lesen der Datei der Zeiger zurück gesetzt werden muss, da sonst ein leerer String zurückgegeben werden wird.
 
 ``` python
 filename = "loremipsum.txt"
@@ -69,8 +67,7 @@ file_object.close()
 Wenn die Datei mit dem Dateinamen nicht vorhanden ist, wird sie in diesem Modus erstellt.
 Wichtig ist, dass die Datei dabei überschrieben wird, falls sie schon vorhanden war.
 
-Es ist auch möglich einzelne Zeilen in die Datei zu schreiben, was grade bei größeren Texten 
-sinnvoll sein kann.
+Es ist auch möglich einzelne Zeilen in die Datei zu schreiben, was grade bei größeren Texten sinnvoll sein kann.
 
 ``` python
 content = 10*["spam"]
@@ -92,8 +89,7 @@ file_object.close()
 ```
 
 ## An eine Datei anfügen
-Beim Anhängen an eine Datei wird beim Öffnen der Datei der Zeiger auf das Dateiende gelegt,
-sodass etwas, das in die Datei geschrieben wird, an das Ende der Datei dran gehangen wird.
+Beim Anhängen an eine Datei wird beim Öffnen der Datei der Zeiger auf das Dateiende gelegt, sodass etwas, das in die Datei geschrieben wird, an das Ende der Datei dran gehangen wird.
 
 ``` python
 content = 100*"spam\n"
@@ -104,5 +100,4 @@ file_object.close()
 ```
 
 Ebenso wie beim Schreiben, wird die Datei erstellt, sollte sie nicht vorhanden sein.
-Das Verhalten der Methoden `writeline()`und `writeline()`ist in diesem Modus analog zu ihrem
-Verhalten im Schreiben Modus.
+Das Verhalten der Methoden `writeline()`und `writeline()`ist in diesem Modus analog zu ihrem Verhalten im Schreiben Modus.

@@ -17,7 +17,7 @@ Schreibe ein Programm, dass seinen Quellcode ausgibt.
 
 * einen Integer `n` einliest,
 * die Häufigkeitstabelle der Buchstaben aus der, zuvor erstellten, Datei `chars.txt`einliest,
-* die `n` häufigsten und die `n` seltesten Buchstaben ausgibt.
+* die `n` häufigsten und die `n` seltenen Buchstaben ausgibt.
 
 ### c)
 **Schreibe ein Programm, dass:**

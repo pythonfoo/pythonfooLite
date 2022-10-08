@@ -1,103 +1,44 @@
 # Level 2
 
-## Der Programmfluss
-Bisher hat unser Programm einen Schritt nach den anderen ausgeführt. Man kann also sagen,
-dass unsere Programme sehr linear aufgebaut waren. Damit waren die bisherigen Programme sehr primitiv, 
-da sie noch nicht auf verschiedene Eingaben mit verschiedenen Aktionen
-reagieren konnten. Um dies zu ändern gibt es in den meisten Programmiersprachen sogenannte
-Kontrollstrukturen. Diese dienen einerseits dazu, dem Benutzer das Programmieren zu erleichtern,
-andererseits ermöglichen diese Kontrollstrukturen aber auch erst die Formulierung komplexer
-Programme, denn sie es ermöglichen den Programmablauf nonlinear zu gestalten.
+In Level 1 hast du gelernt Konsoleneingaben vom Benutzer entgegen zu nehmen und, diese EIngaben zu verarbeiten und die Ergebnisse dieser Verarbeitung in der Konsole auszugeben.
 
-## Boolean
-Der Boolean-Typ ist ein Datentyp, der einen Wahrheitswert enthält. Er kann entweder `True`
-oder `False` sein.
+In Level 2 wirst die `if`-Bedingung kennenlernen, die es dir ermöglicht Bedingungen zu prüfen, die erfüllt sein müssen, damit ein Codeabschnitt ausgeführt werden kann.
+Desweiteren wirst du die `while`-Schleife kennenlernen, welche einen Codeabschnitt wiederholt ausführt, solange eine Bedingung erfüllt ist.
+Im Zusammenhang mit der `if`-Bedingung und der `while`-Schleife wirst du den Datentypen `boolean` kennenlernen. Dieser Datentyp beinhaltet Wahrheitswerte.
+Am Ende des Levels wirst bereits in der Lage sein komplexere Programme umzusetzen.
 
-    >>> a = True
-    >>> b = False
-    >>> print(a, b)
-        (True, False)
+Um mit diesem Level zu starten navigiere zur [Level2.ipynb](https://github.com/pythonfoo/pythonfooLite/blob/master/Level_02/Level_2.ipynb) Datei im Code Repository.
 
-Die aus der Mathematik bekannten Vergleichsoperatoren geben Booleanwerte zurück:
+## Aufgaben
 
-    >>> print(5 > 6)
-        False
-    >>> print(3 == 4) # WIchtig "==" entspricht dem mathematischen Operator "="
-        False
-    >>> print (not True)
-        False
-    >>> print (True != False) # a != b entspricht not(a == b)
-        True
+Die folgenden Aufgaben sollen dir helfen, die in diesem Level erlangten Kenntnisse unter die Probe zu stellen. Wie immer kannst du dich bei Fragen oder Problemen gerne an uns wenden.
 
-Die Vergleichsoperatoren "==", "!=", "<", ">", sowie die Kombinationen "<=" und ">=" heißen
-binäre Operatoren, da sie zwei Elemente bearbeiten. Das `not` ist, ähnlich zu dem `-` in der
-Mathematik ein unärer Operator, da es nur ein Element benötigt.
-Mit dem Befehl `bool()`kann man Werte in einen Boolean umwandeln lassen, dabei ist zu
-beachten, dass dies nur in Ausnahmefällen sinnvoll ist.
+### 2.1 password.py
 
-    >>> print(bool(0))
-        False
-    >>> print(bool(""))
-        False
-    >>> print(bool(1))
-        True
-    >>> print(bool("a"))
-        False
+* Schreibe ein Programm, das ein Passwort entgegennimmt, es mit einem intern 
+  gespeicherten Passwort vergleicht und eine Begrüßungsnachricht ausgibt, falls das
+  Passwort richtig war.
+* Ändere dein Programm so ab, dass der Benutzer auch eine Nachricht bekommt, wenn
+  das Passwort falsch war.
+* Ändere dein Programm so ab, dass der Benutzer 3 Versuche hat, das Passwort richtig
+  einzugeben.
 
-So ist ein String immer als Boolean True, solange er nicht leer ist und ein Integer immer True,
-solange er nicht `0` ist.
+### 2.2 diamond.py
 
-## Die if-Bedingung
-Man stelle sich eine Passwortabfrage vor: Das Programm soll nur weiterlaufen, wenn
-der Benutzer ein richtiges Passwort eingegeben hat. Dies war uns bisher nicht möglich, da wir
-noch keine Möglichkeit hatten zwei Werte miteinander zu vergleichen. Die if-Abfrage ist eine
-Kontrollstruktur, die einen boolschen Ausdruck entgegen nimmt und einen Block Code nur
-ausführt, wenn der boolsche Ausdruck `True` ist.
+* Schreibe ein Programm, das die unten abgebildete ASCII-Art im Terminal darstellt.
+* Ändere dein Programm so ab, dass die maximale Breite der Raute vom Benutzer angegeben werden kann.
+* Ändere dein Programm so ab, dass das Zeichen, aus dem die Raute gebildet wird, vom Benutzer eingegeben werden kann.
 
-    >>> x = int(input("'Geben Sie eine Zahl ein: '"))
-    >>> if x == 3:
-    >>>        print(3)
-        'Geben Sie eine Zahl ein:' 3
-        3
+```
+    #
+   ###
+  #####
+   ###
+    #
+```
 
-Allein mit einer if-Bedingung ist schon vieles möglich, allerdings möchte der Programmierer
-manchmal mehrere Fälle voneinander unterscheiden und verschieden darauf reagieren.
-Dafür gibt es das Schlüsselwort `else`, das immer am Ende einer if-Bedingung steht und nur
-dann ausgeführt wird, wenn alle vorherigen Abfragen gescheitert sind.
+Nach erfolgreicher Bearbeitung der Aufgabe sollte das Programm wie folgt ablaufen:
 
-    >>> password = input("Bitte das Passwort eingeben: ")
-    >>> if password == "Geheim":
-    >>>     print("Willkommen")
-    >>> else:
-    >>>    print("Zutritt verweigert")
-
-Zu beachten sind bei der if-Bedingung und allgemein auch bei anderen Kontrollstrukturen die
-Einrückung und die Syntax. Die Definition einer if-Bedingung ist allgemein ausgedrückt:
-
-    if boolscher Ausdruck :
-        Anweisungen
-    else:
-        Anweisungen
-
-Bei der Tiefe der Einrückung liegt eine häufige Fehlerquelle, deshalb hat man sich auf 4
-Leerzeichen oder einen Tab derselben Länge geeinigt. PEP8, ein Styleguide für die
-Programmierung mit Python, legt 4 Leerzeichen als Einrückungstiefe fest. Egal wie viele
-Leerzeichen oder Tabs du benutzt, ist es wichtig im gesamten Programm oder noch besser
-in allen deinen Programmen einheitlich zu bleiben, da dies Fehler vermeidet.
-Viele Texteditoren bieten zudem an, Tabs in Leerzeichen umzuwandeln, was den Vorteil hat,
-dass man sich Schreibarbeit spart aber trotzdem PEP8 kompatibel bleibt. Zu PEP8 kommen
-wir in späteren Leveln nochmal. 
-
-Zu zu `if` und `else`gibt es noch die Verknüpfung von
-beiden, nämlich `elif`, was für `else if ` steht.
-
-    if Bedingung1  :
-        Anweisungen1
-    elif Bedingung2 :
-        Anweisungen2
-    else:
-        Anweisungen
-
-Eine if-Bedingung kann beliebig viele `elif`Blöcke haben, aber jeweils nur ein `if`und nur ein
-`else`. `if`, `elif` und `else` sind Schlüsselwörter, was bedeutet, dass sie für if-Abfragen
-reserviert sind, weshalb keine Variable if, elif oder else heißen kann.
+* Der Benutzer gibt eine maximale Breite an Zeichen ein.
+* Der Benutzer gibt ein Zeichen ein.
+* Das Programm erstellt eine Raute entsprechend der maximalen Breite mit dem angegebenen Zeichen und gibt diese Raute aus.

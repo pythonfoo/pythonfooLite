@@ -5,7 +5,7 @@ from os import getpid
 from sys import argv
 
 """
-multiprocessing ist progammatisch ähnlich zu verwenden wie threading.
+multiprocessing ist programmatisch ähnlich zu verwenden wie threading.
 Das Modul heißt anders und die Klasse auch (nämlich Process).
 """
 
@@ -14,7 +14,7 @@ class PIDPrinter(Process):
         Process.__init__(self)
         self.wait = wait
         self.daemon = True # siehe Threads
-    
+
     def run(self) -> None:
         while True:
             print(getpid())

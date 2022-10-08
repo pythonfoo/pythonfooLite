@@ -9,11 +9,11 @@ Window {
     width: 360
     height: 360
     title: "Gravatar"
-    
+
     ColumnLayout {
         spacing: 2
         anchors.fill: parent
-    
+
         Image {
             id: avatar
             source: ""

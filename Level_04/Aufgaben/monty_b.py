@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 
-# Dies ist eine Beispielslösung für Aufgabe 2b aus Level 4
+# Dies ist eine Beispiellösung für Aufgabe 2b aus Level 4
 # * einen Integer n einliest,
 # * die Häufigkeitstabelle der Buchstaben aus der, zuvor erstellten, Datei
 #   "chars.txt" einliest und
-# * die n häufigsten und die n seltesten Buchstaben ausgibt.
+# * die n häufigsten und die n seltenen Buchstaben ausgibt.
 
 from pathlib import Path
 
@@ -47,7 +47,7 @@ for i in range(len(tmp)):
     tmp.remove(max_entry)
 
 
-# Ausgeben der n häufigsten und n seltesten Buchstaben:
+# Ausgeben der n häufigsten und n seltenen Buchstaben:
 common = []
 rare = []
 
@@ -60,5 +60,5 @@ for entry in table[-(n+1):-1]:
 print("Die {} häufigsten Buchstaben sind: ".format(n))
 print(common)
 
-print("Die {} seltesten Buchstaben sind: ".format(n))
+print("Die {} seltenen Buchstaben sind: ".format(n))
 print(rare)

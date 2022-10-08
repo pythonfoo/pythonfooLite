@@ -5,7 +5,7 @@ def get_random_list(n: int) -> list:
     result = list(range(n))
     random.shuffle(result)
     return result
-    
+
 n = int(input("Länge der Liste: "))
 unsorted_list = get_random_list(n)
 

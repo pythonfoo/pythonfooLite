@@ -7,10 +7,10 @@ class Simple:
     Dies ist die einfachst mögliche Klasse.
     Sie hat keine Methoden, keine Attribute
     und erbt (implizit) von `object`.
-    
+
     Sie ist allerdings relativ langweilig,
     weil man recht wenig mit ihr machen kann.
-    
+
     Klassennamen sollten laut PEP8 in CamelCase sein
     und mit einem Großbuchstaben beginnen
     (https://www.python.org/dev/peps/pep-0008/#class-names).
@@ -22,7 +22,7 @@ class HelloWorld:
     def hello_world():
         """
         Diese Methode gibt "Hello World!" auf der Konsole aus.
-        
+
         Funktions- oder Methodennamen sollten laut PEP8 kleingeschrieben
         werden und evtl. mit Unterstrichen getrennt sein
         (https://www.python.org/dev/peps/pep-0008/#function-names).
@@ -92,9 +92,9 @@ class Thing:
     def __init__(self) -> None:
         """
         Dies ist ein Konstruktor.
-        Bis auf den Namen ähnelt er anderen Instanzmethoden.
+        Bis auf den Namen ähnelt er anderen Instanz-Methoden.
         Er wird aufgerufen, wenn die Klasse instanziert wird.
-        
+
         Standardmäßig existiert ein leerer Konstruktor ohne Parameter.
         """
         print ("Hallo!")
@@ -109,13 +109,13 @@ class Contact:
         """
         Dies ist ein Konstruktor.
         Aber dieser hat Parameter.
-        
+
         Diese Parameter werden Instanzvariablen zugewiesen.
         """
         self.name = name
         self.phone = phone
         self.email = email
-    
+
     def print(self):
         """
         Druckt den Kontakt aus.
@@ -132,6 +132,6 @@ class HTTPURL:
     """ Diese Klasse repräsentiert eine HTTPURL. """
     def __init__(self, url: str) -> None:
         self.url = url
-    
+
     def open(self) -> None:
         webbrowser.open(self.url)

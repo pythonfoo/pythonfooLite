@@ -57,7 +57,7 @@ button.clicked.connect(onClick)
 # Alternative:
 #button.clicked.connect(lambda: QMessageBox(QMessageBox.Information, "Titel", "Der eingegebene Text war: \n{}".format(text.text()), QMessageBox.Ok, window).show())
 
-# Fenster anzeigenw
+# Fenster anzeigen
 window.show()
 
 # main loop

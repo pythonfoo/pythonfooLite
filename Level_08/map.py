@@ -4,7 +4,7 @@
 
 def add_2(x):
     return x + 2
-    
+
 l = range(10)
 
 # Statt:
@@ -15,7 +15,7 @@ for i in l:
 # Kann man map() benutzen:
 result = list(map(add_2, l))
 
-    
+
 # oder:
 result = [add_2(x) for x in l]
 

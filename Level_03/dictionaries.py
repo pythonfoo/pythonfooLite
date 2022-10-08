@@ -33,7 +33,7 @@ del dictionary["Wasser"]
 print(len(dictionary))
 
 
-# Die Schlüssel eines Dictionarys können als Liste zurückgegeben werden:
+# Die Schlüssel eines Dictionaries können als Liste zurückgegeben werden:
 print(dictionary.keys())
 
 

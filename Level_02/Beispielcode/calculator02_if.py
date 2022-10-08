@@ -5,7 +5,7 @@ Nach dem Eingeben zweier Zahlen kann eine Operation ausgewählt werden.
 """
 
 # Für die Berechnung der Quadratwurzel wird die math Bibliothek benötigt,
-# desweiteren wird zum vorzeitigen Beenden die sys Bibliothek benötigt.
+# des Weiteren wird zum vorzeitigen Beenden die sys Bibliothek benötigt.
 import math
 import sys
 
@@ -56,8 +56,8 @@ elif choice == "4":
     print("y / x =", y / x)  # Quotient
 
 elif choice == "5":
-    print("x % y =", x % y)  # Modulo Divison
-    print("y % x =", y % x)  # Modulo Divison
+    print("x % y =", x % y)  # Modulo Division
+    print("y % x =", y % x)  # Modulo Division
 
 elif choice == "6":
     print("sqrt(x) =", math.sqrt(x))  # Quadratwurzel

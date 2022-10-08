@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Dies ist eine Beispielslösung für Aufgabe 2c aus Level 4
+# Dies ist eine Beispiellösung für Aufgabe 2c aus Level 4
 # Schreiben Sie ein Programm, dass:
 # * die Datei `monty.txt` öffnet und den Inhalt einliest,
 # * im eingelesenen Inhalt jedes Auftauchen des Wortes `Python` durch `PYTHON`

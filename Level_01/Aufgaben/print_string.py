@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Dies ist eine Beispielslösung für die Aufgabe 2 aus Level 1:
+# Dies ist eine Beispiellösung für die Aufgabe 2 aus Level 1:
 
 # 1. Schreibe ein Programm, das den String "foo" ausgibt
 print("foo") # Sehr ähnlich dem "hello world" Code

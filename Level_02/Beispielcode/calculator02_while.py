@@ -6,7 +6,7 @@ Anschließend wird nach neuen Zahlen gefragt.
 """
 
 # Für die Berechnung der Quadratwurzel wird die math Bibliothek benötigt,
-# desweiteren wird zum vorzeitigen Beenden die sys Bibliothek benötigt.
+# des Weiteren wird zum vorzeitigen Beenden die sys Bibliothek benötigt.
 from math import sqrt
 import sys
 
@@ -29,7 +29,7 @@ print("q: Beenden")
 print()
 
 # Das Programm läuft in einer Endlosschleife und wird durch eine entsprechende
-# Usereingabe beendet.
+# Nutzereingabe beendet.
 while True:
     choice = input("Bitte eine Operation auswählen: ")
 
@@ -68,8 +68,8 @@ while True:
 
     elif choice == "5":
         print("Rest:")
-        print("x % y =", x % y)  # Modulo Divison
-        print("y % x =", y % x)  # Modulo Divison
+        print("x % y =", x % y)  # Modulo Division
+        print("y % x =", y % x)  # Modulo Division
 
     elif choice == "6":
         print("Quadratwurzel: sqrt(x) =", sqrt(x))  # Quadratwurzel

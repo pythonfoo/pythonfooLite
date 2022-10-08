@@ -32,5 +32,5 @@ with tempfile.TemporaryDirectory() as tmpdir:
     with open(join(tmpdir, "test.txt"), "w") as test:
         test.write("Dies ist auch ein Test.\n")
 
-# contextlib bietet Decoratoren an um eigene Contextmanager zu erstellen:
+# contextlib bietet Dekoratoren an um eigene Contextmanager zu erstellen:
 # https://docs.python.org/3/library/contextlib.html

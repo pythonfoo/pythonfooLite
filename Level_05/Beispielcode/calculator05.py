@@ -6,7 +6,7 @@ Anschließend wird nach neuen Zahlen gefragt.
 """
 
 # Für die Berechnung der Quadratwurzel wird die math Bibliothek benötigt,
-# desweiteren wird zum vorzeitigen Beenden die sys Bibliothek benötigt.
+# des Weiteren wird zum vorzeitigen Beenden die sys Bibliothek benötigt.
 import math
 import sys
 
@@ -177,7 +177,7 @@ def quit():
     sys.exit(0)
 
 
-# Die Funktionen für die Opertationen werden in einem Tuple gespeichert
+# Die Funktionen für die Operationen werden in einem Tuple gespeichert
 operations = (
     add,
     sum,

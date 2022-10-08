@@ -5,7 +5,7 @@
 # 1. Die while-Schleife:
 
 # Im Kopf der while-Schleife steht eine Bedingung.
-# Wenn die Begindung erfüllt ist, durchläuft die while-Schleife ihren Bauch.
+# Wenn die Bedingung erfüllt ist, durchläuft die while-Schleife ihren Bauch.
 # Danach prüft sie erneut die Bedingung. Und das immer so weiter.
 counter = 0
 

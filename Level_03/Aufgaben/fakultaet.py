@@ -22,4 +22,3 @@ while counter <= n:
 
 print(str(n) + "! = " + str(result))
 """
-    

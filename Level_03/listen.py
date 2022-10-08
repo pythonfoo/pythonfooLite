@@ -11,7 +11,7 @@ liste = [0, "foo"] # type: list
 print(liste)
 
 
-# Mit list() lässt sich bspw. ein String in einen Liste verwandeln:
+# Mit list() lässt sich beispielsweise ein String in einen Liste verwandeln:
 String = "ABCDEFGHIJ"
 print(list(String))
 
@@ -28,7 +28,7 @@ element = liste[0]
 print(element)
 
 # Die Funktion liefert für viele Objekte die Länge zurück.
-# Bei einer Liste enspricht die Länge der Anzahl an Elementen.
+# Bei einer Liste entspricht die Länge der Anzahl an Elementen.
 l = len(liste) # type: int
 print(l)
 
@@ -48,7 +48,7 @@ print(liste)
 
 
 # Die pop()-Methode löscht das Objekt an dem Index in der Liste.
-# Ist kein Index angegeben lösht pop() das letzte Element
+# Ist kein Index angegeben löscht pop() das letzte Element
 liste.pop()
 print(liste)
 

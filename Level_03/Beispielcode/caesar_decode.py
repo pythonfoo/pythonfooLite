@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 u"""
-Dieses Programm implementiert die Cäsarchiffre, die schon Gaius Julius Cäsar
+Dieses Programm implementiert die Cäsar-Chiffre, die schon Gaius Julius Cäsar
 benutzt haben soll, um mit seinen Generälen vertraulich zu kommunizieren.
-Es handelt sich dabei um eine monoalphabetische Subtitutionschiffre, das
+Es handelt sich dabei um eine mono-alphabetische Substitutionschiffre, das
 bedeutet, jeder Buchstabe im Klartext wird durch einen anderen Buchstaben aus
-dem Alphabet ersetzt, bei der Cäsarchiffre wird dieser zweite Buchstaben durch
+dem Alphabet ersetzt, bei der Cäsar-Chiffre wird dieser zweite Buchstaben durch
 Verschiebung um einen festen Wert ermittelt. Dieser feste Wert bildet dabei den
 Schlüssel. https://de.wikipedia.org/wiki/Caesar-Verschl%C3%BCsselung
 

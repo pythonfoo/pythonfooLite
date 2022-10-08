@@ -15,7 +15,7 @@ next = 1  # next ist das jeweils nächste Element.
 for n in range(anzahl):  # type: int
     # Gebe das aktuelle Element aus:
     print(" * ", current)
-    
+
     # Setze das aktuelle Element eins weiter
     # und das nächste auf die Summe des letzten und des aktuellen Elements.
     current, next = next, current + next

@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-# Dies ist eine Beispielslösung für Aufgabe 2a aus Level 4
+# Dies ist eine Beispiellösung für Aufgabe 2a aus Level 4
 # Schreibe ein Programm, dass:
-# die Datei `monty.txt` aus dem Coderepository einliest,
+# die Datei `monty.txt` aus dem Code-Repository einliest,
 # * eine Worthäufigkeitstabelle erstellt,
 # * eine Buchstabenhäufigkeitstabelle erstellt,
 # * die Worthäufigkeiten lesbar formatiert in "words.txt" abspeichert,

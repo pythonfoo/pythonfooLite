@@ -37,8 +37,8 @@ print(repr(l))
 # Geeignet zum Parsen von .csv Dateien zum Beispiel
 
 s = ";".join(l) # type: str
-# l enspricht nun: 'a;b;cd'
+# l entspricht nun: 'a;b;cd'
 
-# Wiederholung: 
+# Wiederholung:
 # string.split(char) Trennt den String bei jedem Auftreten von char
 # string.join(list) Trennt die Liste mit String und gibt einen String zurück

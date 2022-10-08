@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-# Dies ist eine Beispielslösung für die erste Aufgabe des fünften Levels:
+# Dies ist eine Beispiellösung für die erste Aufgabe des fünften Levels:
 
 def fakultaet(n):
     # Alternativ: n == 0

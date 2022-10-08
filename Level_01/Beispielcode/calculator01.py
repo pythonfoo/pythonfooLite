@@ -29,8 +29,8 @@ dif_yx = y - x  # Differenz
 pro_xy = x * y  # Produkt
 quo_xy = x / y  # Quotient
 quo_yx = y / x  # Quotient
-mod_xy = x % y  # Modulo Divison
-mod_yx = y % x  # Modulo Divison
+mod_xy = x % y  # Modulo Division
+mod_yx = y % x  # Modulo Division
 x_sqrt = math.sqrt(x)  # Quadratwurzel
 y_sqrt = math.sqrt(y)  # Quadratwurzel
 

@@ -18,8 +18,8 @@ class PrintThread(Thread):
         Thread.__init__(self)
         self.string = string
         self.wait = wait
-        self.daemon = True # Soll dieser Thread beendet werden beim Programmende des Hauptthreads?
-    
+        self.daemon = True # Soll dieser Thread beendet werden beim Programmende des Haupt-Threads?
+
     def run(self) -> None:
         while True:
             print(self.string, end="", flush=True)

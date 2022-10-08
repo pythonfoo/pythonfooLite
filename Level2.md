@@ -15,7 +15,7 @@ Die folgenden Aufgaben sollen dir helfen, die in diesem Level erlangten Kenntnis
 
 ### 2.1 password.py
 
-* Schreibe ein Programm, das ein Passwort entgegennimmt, es mit einem intern 
+* Schreibe ein Programm, das ein Passwort entgegennimmt, es mit einem intern
   gespeicherten Passwort vergleicht und eine Begrüßungsnachricht ausgibt, falls das
   Passwort richtig war.
 * Ändere dein Programm so ab, dass der Benutzer auch eine Nachricht bekommt, wenn

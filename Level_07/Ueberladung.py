@@ -17,7 +17,7 @@ class Punkt:
 
     def __repr__(self) -> str:
         """ die menschen-lesbare Darstellung -- str und repr """
-        return "({}|{}|{})".format(self.x, self.y, self.z)
+        return f"({self.x}|{self.y}|{self.z})"
 
     def __eq__(self, p: "Punkt") -> bool:
         """ prüft auf Äquivalenz -- == """
@@ -55,7 +55,7 @@ class Strecke:
 
     def __repr__(self) -> str:
         """ die menschen-lesbare Darstellung -- str und repr """
-        return "{} - {}".format(self.p1, self.p2)
+        return f"{self.p1} - {self.p2}"
 
     def __eq__(self, l: "Strecke") -> bool:
         """
@@ -119,7 +119,7 @@ class Vektor:
 
     def __repr__(self) -> str:
         """ die menschen-lesbare Darstellung -- str und repr """
-        return "({}|{}|{})".format(self.x, self.y, self.z)
+        return f"({self.x}|{self.y}|{self.z})"
 
     def __eq__(self, l: "Vektor") -> bool:
         """ Äquivalenz: Vektoren haben eine Richtung. """

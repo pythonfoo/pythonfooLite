@@ -22,7 +22,7 @@ if path_text.exists():
     text = file_obj.read()  # Einlesen des Textes
     file_obj.close()  # Schließen des Dateiobjekts
 else:
-    print("Die Datei {} existiert nicht.".format(path_text))
+    print(f"Die Datei {path_text} existiert nicht.")
     exit()
 
 # Alternativ:

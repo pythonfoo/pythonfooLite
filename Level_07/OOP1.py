@@ -38,7 +38,7 @@ class Hello:
         Natürlich können Methoden auch Parameter haben.
         Dies funktioniert genau so wie bei Funktionen.
         """
-        print("Hello, {}!".format(name))
+        print(f"Hello, {name}!")
 
 # Die Methode aufrufen:
 Hello.hello(getuser())
@@ -120,9 +120,9 @@ class Contact:
         """
         Druckt den Kontakt aus.
         """
-        print("Name: {}".format(self.name))
-        print("Telefonnummer: {}".format(self.phone))
-        print("E-Mail: {}".format(self.email))
+        print(f"Name: {self.name}")
+        print(f"Telefonnummer: {self.phone}")
+        print(f"E-Mail: {self.email}")
 
 
 c = Contact("Ich", "01234-56789", "mail@example.org")

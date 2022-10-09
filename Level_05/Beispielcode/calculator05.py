@@ -22,7 +22,7 @@ def menu():
         print()
         counter = 0
         for fun in operations:
-            print("{} {}".format(counter, fun.__name__))
+            print(f"{counter} {fun.__name__}")
             counter += 1
         print("Bitte eine Zahl für eine der Operationen angeben")
         choice = input(":")
@@ -45,7 +45,7 @@ def add():
     sum1 = input("Bitte den ersten Summanden eingaben: ")
     sum2 = input("Bitte den zweiten Summanden eingeben: ")
     result = float(sum1) + float(sum2)
-    print("{} + {} = {}".format(sum1, sum2, result))
+    print(f"{sum1} + {sum2} = {result}")
 
 
 def sum():
@@ -60,7 +60,7 @@ def sum():
     result = 0.0
     for i in values:
         result += float(i)
-    print("sum({}) = {}".format(values, result))
+    print(f"sum({values}) = {result}")
 
 
 def product():
@@ -75,7 +75,7 @@ def product():
     result = 1.0
     for i in values:
         result *= float(i)
-    print("product({}) = {}".format(values, result))
+    print(f"product({values}) = {result}")
 
 
 def difference():
@@ -88,7 +88,7 @@ def difference():
     minu = input("Bitte den Minuenden eingeben: ")
     subt = input("Bitte den Subtrahenden eingeben: ")
     result = float(minu) - float(subt)
-    print("{} - {} = {}".format(minu, subt, result))
+    print(f"{minu} - {subt} = {result}")
 
 
 def quotient():
@@ -104,7 +104,7 @@ def quotient():
         print("Ungültige Divisor.")
         return
     result = float(divid) / float(divis)
-    print("{} / {} = {}".format(divid, divis, result))
+    print(f"{divid} / {divis} = {result}")
 
 
 def modulo():
@@ -120,7 +120,7 @@ def modulo():
         print("Ungültige Divisor.")
         return
     result = int(divid) % int(divis)
-    print("{} % {} = {}".format(divid, divis, result))
+    print(f"{divid} % {divis} = {result}")
 
 
 def sqrt():
@@ -132,7 +132,7 @@ def sqrt():
     """
     radiant = input("Bitte eine Zahl eingeben: ")
     result = math.sqrt(float(radiant))
-    print("sqrt({}) = {}".format(radiant, result))
+    print(f"sqrt({radiant}) = {result}")
 
 
 def power():
@@ -145,7 +145,7 @@ def power():
     base = input("Bitte die Basis eingeben: ")
     exp = input("Bitte den Exponenten eingeben: ")
     result = pow(float(base), float(exp))
-    print("{} ^ {} = {}".format(base, exp, result))
+    print(f"{base} ^ {exp} = {result}")
 
 
 def fak():
@@ -158,7 +158,7 @@ def fak():
     result = 1
     for i in range(2, int(x) + 1):
         result *= i
-    print("{}! = {}".format(x, result))
+    print(f"{x}! = {result}")
 
 
 def help():

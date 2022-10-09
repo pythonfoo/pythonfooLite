@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-# coding: utf-8
 
 # Level 9: Ein Label in einem Fenster.
 

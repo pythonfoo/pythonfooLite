@@ -2,8 +2,7 @@
 
 # Generatoren und yield
 def gen(s):
-    for char in s:
-        yield char
+    yield from s
 
 # iterieren mit einer for-Schleife:
 for x in gen("abcdef"):

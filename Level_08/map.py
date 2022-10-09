@@ -38,6 +38,6 @@ print(list(zip(iter1, iter2)))
 # lambda
 print(list(filter(lambda x: x % 2 == 0, r)))
 
-print(all((even(x) for x in even_numbers)))
+print(all(even(x) for x in even_numbers))
 
 # für mehr Spaß mit Generatoren: https://docs.python.org/3/library/itertools.html

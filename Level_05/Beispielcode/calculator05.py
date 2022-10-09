@@ -1,4 +1,4 @@
-u"""
+"""
 Das folgende Programm ist ein einfacher Taschenrechner.
 
 Nach dem Eingeben zweier Zahlen kann eine Operation ausgewählt werden.
@@ -12,7 +12,7 @@ import sys
 
 
 def menu():
-    u"""Zeigt ein Menü an."""
+    """Zeigt ein Menü an."""
     # Zuerst eine Willkommensnachricht
     print()
     print("Dies ist ein einfacher Taschenrechner.")
@@ -36,7 +36,7 @@ def menu():
 
 
 def add():
-    u"""
+    """
     Addiert zwei eingegebene Zahlen.
 
     Die Zahlen können sowohl ganze Zahlen (integer) oder Fließkommazahlen
@@ -49,7 +49,7 @@ def add():
 
 
 def sum():
-    u"""
+    """
     Summiert eine Menge an Zahlen auf.
 
     Die Summanden können sowohl ganze Zahlen (integer) oder Fließkommazahlen
@@ -64,7 +64,7 @@ def sum():
 
 
 def product():
-    u"""
+    """
     Multipliziert eine Menge an Zahlen auf.
 
     Die Faktoren können sowohl ganze Zahlen (integer) oder Fließkommazahlen
@@ -79,7 +79,7 @@ def product():
 
 
 def difference():
-    u"""
+    """
     Subtrahiert eine Zahl von einer anderen.
 
     Minuend und Subtrahend können sowohl ganze Zahlen (integer) oder
@@ -92,7 +92,7 @@ def difference():
 
 
 def quotient():
-    u"""
+    """
     Teilt einen Divisor durch einen Dividenden.
 
     Dividend und Divisor können sowohl ganze Zahlen (integer), als auch
@@ -108,7 +108,7 @@ def quotient():
 
 
 def modulo():
-    u"""
+    """
     Gibt das Ergebnis einer Modulo Division zurück.
 
     Dividend und Divisor müssen ganze Zahlen sein. 0 ist als Divisor nicht
@@ -124,7 +124,7 @@ def modulo():
 
 
 def sqrt():
-    u"""
+    """
     Berechnet die Quadratwurzel einer eingegebenen Zahl.
 
     Die Zahl kann sowohl eine ganze Zahl (integer) als auch eine Fließkommazahl
@@ -136,7 +136,7 @@ def sqrt():
 
 
 def power():
-    u"""
+    """
     Berechnet eine Potenz.
 
     Basis und Exponent können sowohl ganze Zahlen (integer), als auch
@@ -149,7 +149,7 @@ def power():
 
 
 def fak():
-    u"""
+    """
     Berechnet die Fakultät einer Zahl.
 
     Die Zahl sollte eine positive ganze Zahl (natürliche Zahl) sein.
@@ -162,7 +162,7 @@ def fak():
 
 
 def help():
-    u"""
+    """
     Ruft das Hilfe Menü auf.
 
     Das Hilfe Menü zeigt die Docstrings der einzelnen Funktionen an.
@@ -173,7 +173,7 @@ def help():
 
 
 def quit():
-    u"""Beendet das Programm."""
+    """Beendet das Programm."""
     sys.exit(0)
 
 

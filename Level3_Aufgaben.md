@@ -40,7 +40,7 @@ Nun vergleichen wir jeweils zwei benachbarte Elemente:
 ```
 Wenn das vordere Element größer als das hintere Element ist, werden diese vertauscht. Bei jeder Vertauschung merken wir uns, das wir eine Vertauschung gemacht haben. Dies wird solange durchgeführt, bis es in einem Durchgang keine Vertauschung mehr gab. Dann ist die Liste sortiert.
 ```
-0 [7, 4, 6. 2, 8, 1, 3, 5] # Vertauscht = True
+0 [7, 4, 6, 2, 8, 1, 3, 5] # Vertauscht = True
 1 [4, 6, 2, 7, 1, 3, 5, 8] # Vertauscht = True
 2 [4, 2, 6, 1, 3, 5, 7, 8] # Vertauscht = True
 3 [2, 4, 1, 3, 5, 6, 7, 8] # Vertauscht = True

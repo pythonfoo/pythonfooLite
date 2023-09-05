@@ -1,4 +1,4 @@
-u"""
+"""
 Das folgende Programm soll eine einfacher Taschenrechner sein.
 
 Das Programm nimmt zwei Zahlen entgegen und führt daraufhin einige Berechnungen

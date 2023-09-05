@@ -1,4 +1,4 @@
-u"""
+"""
 Das folgende Programm ist ein einfacher Taschenrechner.
 
 Nach dem Eingeben zweier Zahlen kann eine Operation ausgewählt werden.

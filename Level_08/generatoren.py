@@ -28,7 +28,7 @@ def dec(func):
     def inner_func(*args):
         print(args)
         r = func(*args)
-        print("Return: {}".format(r))
+        print(f"Return: {r}")
         return r
     return inner_func
 

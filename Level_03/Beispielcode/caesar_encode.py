@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-u"""
+"""
 Dieses Programm implementiert die Cäsar-Chiffre, die schon Gaius Julius Cäsar
 benutzt haben soll, um mit seinen Generälen vertraulich zu kommunizieren.
 Es handelt sich dabei um eine mono-alphabetische Substitutionschiffre, das

@@ -5,6 +5,7 @@ def gen(s):
     for char in s:
         yield char
 
+
 # iterieren mit einer for-Schleife:
 for x in gen("abcdef"):
     print(x)
@@ -24,13 +25,16 @@ def f(x):
 # IN: f(3)
 # OUT: 9
 
+
 def dec(func):
     def inner_func(*args):
         print(args)
         r = func(*args)
         print("Return: {}".format(r))
         return r
+
     return inner_func
+
 
 @dec
 def f(x):

@@ -10,7 +10,7 @@ Hier folgen nun einige Beispiele.
 
 # Dateien öffnen
 
-with open("../Level_04/loremipsum.txt", "r") as lorem:
+with open("../Level_04/loremipsum.txt") as lorem:
     print(lorem.read())
 
 # Exceptions ignorieren

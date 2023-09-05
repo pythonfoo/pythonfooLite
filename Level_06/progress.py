@@ -9,7 +9,7 @@ for x in tqdm(range(25000000)):
     pass
 
 print("unbekannte Länge:")
-for x in tqdm((x for x in range(25000000))):
+for x in tqdm(x for x in range(25000000)):
     pass
 
 print("grafisch:")

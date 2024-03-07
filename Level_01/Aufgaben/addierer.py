@@ -15,7 +15,7 @@ b = 42
 print(a + b)
 
 
-# 3. Ändere das Programm so ab, dass die Zahlen vom Benutzer eingegeben werden können:
+# 3. Ändere dein Programm so ab, dass die Zahlen interaktiv eingegeben werden können:
 
 inp_a = input("Bitte geben Sie den ersten Summanden ein: ") # type: str
 inp_b = input("Bitte geben Sie den zweiten Summanden ein: ")

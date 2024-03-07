@@ -18,14 +18,14 @@ print("foo")
 print(5*"foo")
 
 
-# 4. Ändere das Programm so ab, dass der Benutzer eingeben kann welcher String 5 mal in der
-#    selben Zeile ausgegeben werden soll.
+# 4. Ändere das Programm so ab, dass interaktiv eingegeben werden kann,
+#    welcher String 5 mal in der selben Zeile ausgegeben werden soll.
 string = input("Welcher String soll ausgegeben werden? ")
 print(5*string)
 
 
-# 5. Ändere das Programm so ab, dass der Benutzer angeben kann, wie oft der angegebene String
-#    ausgegeben werden soll.
+# 5. Ändere das Programm so ab, dass interaktiv eingegeben werden kann,
+#    wie oft der angegebene String ausgegeben werden soll.
 string = input("Welcher String soll ausgegeben werden? ")
 wiederholung = input("Wie oft soll '" + string + "' ausgegeben werden? ")
 # Hier wird in dem Aufruf von input() ein String zusammen gebaut

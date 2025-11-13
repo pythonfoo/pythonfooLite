@@ -64,6 +64,6 @@ file_obj.close()
 # Buchstabenhäufigkeiten:
 file_obj = path_chars.open("w")
 for char, count in char_count.items():
-    line = "{char};{count}\n"
+    line = f"{char};{count}\n"
     file_obj.writelines([line])
 file_obj.close()

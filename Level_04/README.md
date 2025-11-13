@@ -28,10 +28,8 @@ Schreibe ein Programm, dass seinen Quellcode ausgibt.
 
 ## Tipps:
 
-1. Bei Aufgabe 1 gibt es eine Beispiellösung im Code-Repository, versuche
-aber trotzdem selber auf die Lösung zu kommen.
-2. Überlege dir für Aufgabe 2 eine sinnvolle Formatierung, um die
+1. Überlege dir für Aufgabe 2 eine sinnvolle Formatierung, um die
 Tabellen in den Dateien zu speichern.
-3. Überlege dir eine Methode, um die Wörter zählen zu können
-4. Bedenke, dass für die Häufigkeit von Buchstaben irrelevant ist,
+2. Überlege dir eine Methode, um die Wörter zählen zu können
+3. Bedenke, dass für die Häufigkeit von Buchstaben irrelevant ist,
 ob diese groß oder klein geschrieben wurden.

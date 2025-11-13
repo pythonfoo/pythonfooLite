@@ -20,7 +20,7 @@ else:
 
 # Einlesen der Datei:
 if not path.exists():
-    print("Die Datei {} wurde nicht gefunden.".format(path))
+    print(f"Die Datei {path} wurde nicht gefunden.")
     exit()
 
 table = {}
@@ -57,8 +57,8 @@ for entry in table[0:n]:
 for entry in table[-(n+1):-1]:
     rare.append(entry[0])
 
-print("Die {} häufigsten Buchstaben sind: ".format(n))
+print(f"Die {n} häufigsten Buchstaben sind: ")
 print(common)
 
-print("Die {} seltenen Buchstaben sind: ".format(n))
+print(f"Die {n} seltenen Buchstaben sind: ")
 print(rare)

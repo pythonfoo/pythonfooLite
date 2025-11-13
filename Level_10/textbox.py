@@ -44,10 +44,10 @@ window.setLayout(layout)
 def onClick() -> None:
     # die Eingabe holen
     input = text.text()
-    print("Eingabe: {}".format(input))
+    print(f"Eingabe: {input}")
     # MessageBox erstellen
     mb = QMessageBox(QMessageBox.Information, "Titel",
-                     "Der eingegebene Text war: \n{}".format(input), QMessageBox.Ok, window)
+                     f"Der eingegebene Text war: \n{input}", QMessageBox.Ok, window)
     # MessageBox anzeigen
     mb.show()
 

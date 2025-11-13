@@ -20,7 +20,7 @@ if path_text.exists():
     text = file_obj.read()
     file_obj.close()
 else:
-    print("Die Datei {} existiert nicht.".format(path_text))
+    print(f"Die Datei {path_text} existiert nicht.")
     exit()
 
 # 2. "Python" ersetzen:

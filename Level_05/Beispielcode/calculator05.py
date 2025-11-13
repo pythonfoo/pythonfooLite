@@ -1,4 +1,4 @@
-u"""
+"""
 Das folgende Programm ist ein einfacher Taschenrechner.
 
 Nach dem Eingeben zweier Zahlen kann eine Operation ausgewählt werden.
@@ -12,7 +12,7 @@ import sys
 
 
 def menu():
-    u"""Zeigt ein Menü an."""
+    """Zeigt ein Menü an."""
     # Zuerst eine Willkommensnachricht
     print()
     print("Dies ist ein einfacher Taschenrechner.")
@@ -22,7 +22,7 @@ def menu():
         print()
         counter = 0
         for fun in operations:
-            print("{} {}".format(counter, fun.__name__))
+            print(f"{counter} {fun.__name__}")
             counter += 1
         print("Bitte eine Zahl für eine der Operationen angeben")
         choice = input(":")
@@ -36,7 +36,7 @@ def menu():
 
 
 def add():
-    u"""
+    """
     Addiert zwei eingegebene Zahlen.
 
     Die Zahlen können sowohl ganze Zahlen (integer) oder Fließkommazahlen
@@ -45,11 +45,11 @@ def add():
     sum1 = input("Bitte den ersten Summanden eingaben: ")
     sum2 = input("Bitte den zweiten Summanden eingeben: ")
     result = float(sum1) + float(sum2)
-    print("{} + {} = {}".format(sum1, sum2, result))
+    print(f"{sum1} + {sum2} = {result}")
 
 
 def sum():
-    u"""
+    """
     Summiert eine Menge an Zahlen auf.
 
     Die Summanden können sowohl ganze Zahlen (integer) oder Fließkommazahlen
@@ -60,11 +60,11 @@ def sum():
     result = 0.0
     for i in values:
         result += float(i)
-    print("sum({}) = {}".format(values, result))
+    print(f"sum({values}) = {result}")
 
 
 def product():
-    u"""
+    """
     Multipliziert eine Menge an Zahlen auf.
 
     Die Faktoren können sowohl ganze Zahlen (integer) oder Fließkommazahlen
@@ -75,11 +75,11 @@ def product():
     result = 1.0
     for i in values:
         result *= float(i)
-    print("product({}) = {}".format(values, result))
+    print(f"product({values}) = {result}")
 
 
 def difference():
-    u"""
+    """
     Subtrahiert eine Zahl von einer anderen.
 
     Minuend und Subtrahend können sowohl ganze Zahlen (integer) oder
@@ -88,11 +88,11 @@ def difference():
     minu = input("Bitte den Minuenden eingeben: ")
     subt = input("Bitte den Subtrahenden eingeben: ")
     result = float(minu) - float(subt)
-    print("{} - {} = {}".format(minu, subt, result))
+    print(f"{minu} - {subt} = {result}")
 
 
 def quotient():
-    u"""
+    """
     Teilt einen Divisor durch einen Dividenden.
 
     Dividend und Divisor können sowohl ganze Zahlen (integer), als auch
@@ -104,11 +104,11 @@ def quotient():
         print("Ungültige Divisor.")
         return
     result = float(divid) / float(divis)
-    print("{} / {} = {}".format(divid, divis, result))
+    print(f"{divid} / {divis} = {result}")
 
 
 def modulo():
-    u"""
+    """
     Gibt das Ergebnis einer Modulo Division zurück.
 
     Dividend und Divisor müssen ganze Zahlen sein. 0 ist als Divisor nicht
@@ -120,11 +120,11 @@ def modulo():
         print("Ungültige Divisor.")
         return
     result = int(divid) % int(divis)
-    print("{} % {} = {}".format(divid, divis, result))
+    print(f"{divid} % {divis} = {result}")
 
 
 def sqrt():
-    u"""
+    """
     Berechnet die Quadratwurzel einer eingegebenen Zahl.
 
     Die Zahl kann sowohl eine ganze Zahl (integer) als auch eine Fließkommazahl
@@ -132,11 +132,11 @@ def sqrt():
     """
     radiant = input("Bitte eine Zahl eingeben: ")
     result = math.sqrt(float(radiant))
-    print("sqrt({}) = {}".format(radiant, result))
+    print(f"sqrt({radiant}) = {result}")
 
 
 def power():
-    u"""
+    """
     Berechnet eine Potenz.
 
     Basis und Exponent können sowohl ganze Zahlen (integer), als auch
@@ -145,11 +145,11 @@ def power():
     base = input("Bitte die Basis eingeben: ")
     exp = input("Bitte den Exponenten eingeben: ")
     result = pow(float(base), float(exp))
-    print("{} ^ {} = {}".format(base, exp, result))
+    print(f"{base} ^ {exp} = {result}")
 
 
 def fak():
-    u"""
+    """
     Berechnet die Fakultät einer Zahl.
 
     Die Zahl sollte eine positive ganze Zahl (natürliche Zahl) sein.
@@ -158,11 +158,11 @@ def fak():
     result = 1
     for i in range(2, int(x) + 1):
         result *= i
-    print("{}! = {}".format(x, result))
+    print(f"{x}! = {result}")
 
 
 def help():
-    u"""
+    """
     Ruft das Hilfe Menü auf.
 
     Das Hilfe Menü zeigt die Docstrings der einzelnen Funktionen an.
@@ -173,7 +173,7 @@ def help():
 
 
 def quit():
-    u"""Beendet das Programm."""
+    """Beendet das Programm."""
     sys.exit(0)
 
 

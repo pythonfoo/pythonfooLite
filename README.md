@@ -105,6 +105,7 @@ Dieses Level beschäftigt sich mit Themen, die in bisherigen Level nicht behande
 * [PEP8](https://www.python.org/dev/peps/pep-0008/)
 * `s.format()`
 * Bash / Terminal / Shell
+* JSON / CSV / TOML
 * Fehlersuche
 * Refactoring
 

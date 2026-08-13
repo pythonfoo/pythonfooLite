@@ -95,7 +95,15 @@ Level 5 beschäftigt sich mit dem Erstellen von Funktionen (ob mit oder ohne Par
 * Rückgabewert
 * Docstrings
 
-### Level 5.5
+### Level 6
+
+Level 6 beschäftigt sich mit Persistenz und Datenformaten.
+#### Stichwörter:
+ * CSV
+ * JSON
+ * sqlite3
+
+### Level 7
 Dieses Level beschäftigt sich mit Themen, die in bisherigen Level nicht behandelt wurden, weil sie nichts mit Python zu tun haben oder nicht dem Fortschritt entsprachen. Dennoch sind diese Themen, nicht nur für die Programmierung in Python, sondern auch in anderen Programmiersprachen, sehr wichtig.
 
 #### Stichwörter:
@@ -109,9 +117,9 @@ Dieses Level beschäftigt sich mit Themen, die in bisherigen Level nicht behande
 * Fehlersuche
 * Refactoring
 
-### Level 6
+### Level 8
 
-In Level 6 geht es um Konsolen-Anwendungen. Diese kann man grob in zwei Arten unterteilen:
+In Level 8 geht es um Konsolen-Anwendungen. Diese kann man grob in zwei Arten unterteilen:
  * Programme, die nur Parameter entgegennehmen und etwas ausgeben
  * Programme, die interaktiv arbeiten
 
@@ -121,8 +129,8 @@ Einfache Formen des letzteren Typs kamen bereits in den vorigen Level vor.
  * `argparse`
  * `curses`
 
-### Level 7 (OOP 1)
-Level 7 widmet sich dem Bereich der Objektorientierten Programmierung. Dieses Konzept hat auch in vielen anderen Programmiersprachen eine große Bedeutung. In diesen Level werden die Kompetenzen vermittelt um eigene Typen zu definieren, Klassen oder Module zu schreiben, sowie ein grundsätzliches Verständnis von Objektorientierter Programmierung.
+### Level 9 (OOP 1)
+Level 9 widmet sich dem Bereich der Objektorientierten Programmierung. Dieses Konzept hat auch in vielen anderen Programmiersprachen eine große Bedeutung. In diesen Level werden die Kompetenzen vermittelt um eigene Typen zu definieren, Klassen oder Module zu schreiben, sowie ein grundsätzliches Verständnis von Objektorientierter Programmierung.
 
 #### Stichwörter:
 * Klassen
@@ -136,7 +144,7 @@ Level 7 widmet sich dem Bereich der Objektorientierten Programmierung. Dieses Ko
 * `super()`
 * `isInstance()` und `is`
 
-### Level 8
+### Level 10
 Level 8 beschäftigt sich mit Dingen, die thematisch in andere Level gehören, aber nicht zu deren Kenntnisstand passen.
 
 #### Exkurse:
@@ -151,12 +159,12 @@ Level 8 beschäftigt sich mit Dingen, die thematisch in andere Level gehören, a
 
 **Folgendes ist eher fortgeschritten.**
 
-### Level 9 Nebenläufigkeit und Alternativen
+### Level 11 Nebenläufigkeit und Alternativen
 * Threads
 * `multiprocessing`
 * `asyncio`
 
-### Level 10 GUI
+### Level 12 GUI
 Es gibt wahnsinnig viele Möglichkeiten,
 grafische Benutzeroberflächen mit Python zu realisieren.
 Wir beschränken uns hier auf Qt 5 als GUI-Toolkit.
@@ -167,7 +175,7 @@ Ein Hauptfenster soll einen Button und ein Textfeld
 enthalten. Beim Klick auf den Button soll der Inhalt des
 Textfelds in einem Dialog angezeigt werden.
 
-### Level 11 Web
+### Level 13 Web
 Webanwendungen sind ein häufiger Einsatzzweck von Python.
 * Was ist HTTP und wie funktioniert es?
 * [requests](http://docs.python-requests.org/en/latest/)
@@ -180,7 +188,7 @@ Webanwendungen sind ein häufiger Einsatzzweck von Python.
 #### Aufgaben
 * *Hallo Welt!* als Webapp
 
-### Level 12 Packaging und Repos
+### Level 14 Packaging und Repos
 Mit `setuptools` und `pip` kann man Pakete erstellen, packen und installieren.
 * [pypi](https://pypi.org/) als Repository
 * Pakete aus dem Internet herunterladen und installieren

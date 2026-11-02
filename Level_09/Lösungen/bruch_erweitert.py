@@ -6,9 +6,11 @@
 #   __eq__ (Vergleich zweier Brüche)
 #   __float__ (Umwandlung in eine Fließkommazahl)
 
+from __future__ import annotations
+
 
 class Bruch:
-    def __init__(self, zähler, nenner):
+    def __init__(self, zähler: int, nenner: int) -> None:
         if nenner < 0:
             zähler, nenner = -zähler, -nenner
         if nenner == 0:
@@ -17,52 +19,52 @@ class Bruch:
         self.nenner = nenner
         self.kürzen()
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"({self.zähler}/{self.nenner})"
 
     @staticmethod
-    def ggt(a, b):
+    def ggt(a: int, b: int) -> int:
         while b != 0:
             a, b = b, a % b
         return a
 
-    def kürzen(self):
+    def kürzen(self) -> None:
         g = Bruch.ggt(self.zähler, self.nenner)
         self.zähler //= g
         self.nenner //= g
 
-    def __add__(self, rechts):
+    def __add__(self, rechts: Bruch | int) -> Bruch:
         if isinstance(rechts, int):
             rechts = Bruch(rechts, 1)
         return Bruch(self.zähler * rechts.nenner + self.nenner * rechts.zähler,
                      self.nenner * rechts.nenner)
 
-    def __radd__(self, links):
+    def __radd__(self, links: int) -> Bruch:
         return self + links
 
-    def __mul__(self, rechts):
+    def __mul__(self, rechts: Bruch | int) -> Bruch:
         if isinstance(rechts, int):
             rechts = Bruch(rechts, 1)
         return Bruch(self.zähler * rechts.zähler, self.nenner * rechts.nenner)
 
-    def __truediv__(self, rechts):
+    def __truediv__(self, rechts: Bruch | int) -> Bruch:
         if isinstance(rechts, int):
             rechts = Bruch(rechts, 1)
         return Bruch(self.zähler * rechts.nenner, self.nenner * rechts.zähler)
 
     # --- Aufgabe 9.3.1: rechtsseitige Operatoren ---
 
-    def __rmul__(self, links):
+    def __rmul__(self, links: int) -> Bruch:
         # Multiplikation ist vertauschbar, also einfach __mul__ benutzen:
         return self * links
 
-    def __rtruediv__(self, links):
+    def __rtruediv__(self, links: int) -> Bruch:
         # links / self, z.B. 6 / Bruch(1, 2)
         return Bruch(links, 1) / self
 
     # --- Aufgabe 9.3.2: Vergleich ---
 
-    def __eq__(self, anderer):
+    def __eq__(self, anderer: object) -> bool:
         if isinstance(anderer, int):
             anderer = Bruch(anderer, 1)
         if not isinstance(anderer, Bruch):
@@ -70,14 +72,14 @@ class Bruch:
         # Beide Brüche sind immer gekürzt -> es genügt der direkte Vergleich:
         return self.zähler == anderer.zähler and self.nenner == anderer.nenner
 
-    def __hash__(self):
+    def __hash__(self) -> int:
         # Wer __eq__ definiert, sollte auch __hash__ definieren, damit sich
         # Brüche z.B. in einem set verwenden lassen.
         return hash((self.zähler, self.nenner))
 
     # --- Aufgabe 9.3.3 (freiwillig): Umwandlung in float ---
 
-    def __float__(self):
+    def __float__(self) -> float:
         return self.zähler / self.nenner
 
 

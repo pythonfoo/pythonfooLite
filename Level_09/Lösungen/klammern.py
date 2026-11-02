@@ -4,20 +4,20 @@
 
 
 class Stack(list):          # Stapel, wie im Notebook
-    def is_empty(self):
+    def is_empty(self) -> bool:
         return len(self) == 0
 
-    def push(self, element):
+    def push(self, element: str) -> None:
         self.append(element)
 
-    def pop(self):
+    def pop(self) -> str:
         return super().pop()
 
 
-def klammern_korrekt(text):
+def klammern_korrekt(text: str) -> bool:
     """Prüft, ob die Klammern in text korrekt geschachtelt sind."""
     # Zu jeder schließenden Klammer die passende öffnende:
-    paare = {")": "(", "]": "[", "}": "{"}
+    paare: dict[str, str] = {")": "(", "]": "[", "}": "{"}
     stapel = Stack()
     for zeichen in text:
         if zeichen in "([{":

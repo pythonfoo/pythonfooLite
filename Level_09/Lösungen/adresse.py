@@ -4,7 +4,8 @@
 
 
 class Adresse:
-    def __init__(self, name, strasse, plz, ort, telefon="", email=""):
+    def __init__(self, name: str, strasse: str, plz: str, ort: str,
+                 telefon: str = "", email: str = "") -> None:
         # telefon und email haben einen Standardwert und sind daher optional.
         self.name = name
         self.strasse = strasse
@@ -13,7 +14,7 @@ class Adresse:
         self.telefon = telefon
         self.email = email
 
-    def visitenkarte(self):
+    def visitenkarte(self) -> None:
         """Gibt die Adresse formatiert aus (print)."""
         print(self.name)
         print(self.strasse)
@@ -24,7 +25,7 @@ class Adresse:
         if self.email:
             print("E-Mail:", self.email)
 
-    def __str__(self):
+    def __str__(self) -> str:
         """Gibt die Adresse als eine einzige Zeile zurück (return)."""
         return f"{self.name}, {self.strasse}, {self.plz} {self.ort}"
 

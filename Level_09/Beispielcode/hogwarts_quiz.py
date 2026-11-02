@@ -10,17 +10,21 @@ zusammenfasst.
 Starte das Programm mit:  python3 hogwarts_quiz.py
 """
 
+# Erlaubt es, die Klasse Frage in den Typangaben von Quiz zu benutzen,
+# obwohl Frage erst weiter unten definiert wird.
+from __future__ import annotations
+
 import random
 
 
 class Quiz:
-    ergebnisse = ["Gryffindor", "Slytherin", "Hufflepuff", "Ravenclaw"]
-    fragen = []
+    ergebnisse: list[str] = ["Gryffindor", "Slytherin", "Hufflepuff", "Ravenclaw"]
+    fragen: list[Frage] = []
 
-    def __init__(self, fragen):
+    def __init__(self, fragen: list[Frage]) -> None:
         self.fragen = fragen
 
-    def durchführen(self, anzahl=None):
+    def durchführen(self, anzahl: int | None = None) -> list[int]:
         if anzahl is None:
             anzahl = len(self.fragen)
         punkte = [0] * len(self.ergebnisse)
@@ -32,21 +36,21 @@ class Quiz:
 
 
 class Frage:
-    frage = ""
-    antworten = []
-    zeichen = "abcdefgh"
+    frage: str = ""
+    antworten: list[str] = []
+    zeichen: str = "abcdefgh"
 
-    def __init__(self, frage, antworten):
+    def __init__(self, frage: str, antworten: list[str]) -> None:
         self.frage = frage
         self.antworten = antworten
 
-    def __str__(self):
+    def __str__(self) -> str:
         return self.frage
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return "Frage('%s')" % self.frage
 
-    def frage_nutzer(self):
+    def frage_nutzer(self) -> int:
         print(self.frage)
         antw = random.sample(self.antworten, len(self.antworten))
         for zeichen, antwort in zip(self.zeichen, antw):

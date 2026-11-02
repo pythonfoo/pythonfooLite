@@ -18,7 +18,6 @@ class Quiz:
     fragen = []
 
     def __init__(self, fragen):
-        super().__init__()
         self.fragen = fragen
 
     def durchführen(self, anzahl=None):
@@ -38,7 +37,6 @@ class Frage:
     zeichen = "abcdefgh"
 
     def __init__(self, frage, antworten):
-        super().__init__()
         self.frage = frage
         self.antworten = antworten
 

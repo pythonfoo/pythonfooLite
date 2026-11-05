@@ -72,7 +72,7 @@ class C(Complex):
 
         Hierbei ändert sich einfach nur der Realteil.
         """
-        assert isinstance(o, float)
+        assert isinstance(o, (float, int))
         return C(self.real + o, self.imag)
 
     def __mul__(self, o: Complex) -> "C":
@@ -91,7 +91,7 @@ class C(Complex):
 
         Hierbei ändert sich nur der Realteil.
         """
-        assert isinstance(o, float)
+        assert isinstance(o, (float, int))
         return C(self.real * o, self.imag)
 
     def __pow__(self, o: int) -> "C":
@@ -99,7 +99,7 @@ class C(Complex):
         Potenziert eine komplexe Zahl.
         """
         assert o >= 0
-        value = C(1, 1)
+        value = C(1, 0)
         for i in range(o):
             value *= self
         return value

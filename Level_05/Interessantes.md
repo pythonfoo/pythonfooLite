@@ -5,14 +5,16 @@ Es ist uns egal, wie ihr euren Code schreibt. Es ist möglich einen Texteditor z
 
 ### Beispielprogramme:
 #### Texteditor in der Konsole
-* vi
-* vim
-* nano
+* [vi](https://de.wikipedia.org/wiki/Vi)
+* [vim](https://www.vim.org)
+* [nano](https://www.nano-editor.org)
 #### Texteditor mit graphischer Oberfläche
-* gedit
-* sublime text (2/3)
-* notepad++
-* Atom
+* [gedit](https://gedit-text-editor.org)
+* [Sublime Text (2/3)](https://www.sublimetext.com)
+* [Notepad++](https://notepad-plus-plus.org)
+* [Atom](https://github.com/atom/atom) (Entwicklung eingestellt)
 #### IDE
-* PyCharm
-* geany
+* [geany](https://www.geany.org) (Open Source: https://github.com/geany)
+* [spyder](https://www.spyder-ide.org) (Open Source: https://github.com/spyder-ide/spyder)
+* [PyCharm](https://www.jetbrains.com/de-de/pycharm/)
+* [Visual Studio Code](https://code.visualstudio.com)
